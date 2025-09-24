@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sınav Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="ekran-dersler" class="ekran aktif">
+        <h1>Ders Seçimi</h1>
+        <div id="ders-listesi">
+            <p>Lütfen bekleyin, dersler yükleniyor...</p>
+        </div>
+    </div>
+
+    <div id="ekran-modlar" class="ekran">
+        <h1 id="secilen-ders-baslik"></h1>
+        <button class="mod-btn" data-mod="ogrenme">Tüm Soruları Gözden Geçir</button>
+        <button class="mod-btn" data-mod="sinav">20 Soruluk Sınava Başla</button>
+        <button id="derse-geri-don">Ders Listesine Dön</button>
+    </div>
+
+    <div id="ekran-sinav" class="ekran">
+        <div class="sinav-ust-bilgi">
+            <span id="soru-sayac">Soru: 1/20</span>
+        </div>
+        <div id="soru-metni"></div>
+        <div id="secenekler-konteyeri"></div>
+        <div id="aciklama-konteyeri" class="gizli">
+            <h3>Açıklama</h3>
+            <p id="aciklama-metni"></p>
+        </div>
+        <div class="navigasyon">
+            <button id="geri-btn">Geri</button>
+            <button id="ileri-btn">İleri</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
