@@ -1,0 +1,2 @@
+# akillisinavrehberi
+Akıllı Sınav Rehberi
