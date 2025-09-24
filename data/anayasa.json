@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "soru": "TBMM'nin bir yasama yılı içinde yapabileceği azami tatil süresi ne kadardır?",
+        "secenekler": [
+            "En çok bir ay",
+            "En çok iki ay",
+            "En çok üç ay",
+            "En çok dört ay",
+            "Süre sınırı yoktur"
+        ],
+        "dogruCevapIndex": 2,
+        "aciklama": "Anayasa'ya göre Meclis, bir yasama yılında en çok üç ay tatil yapabilir."
+    },
+    {
+        "id": 2,
+        "soru": "Türkiye'nin başkenti neresidir?",
+        "secenekler": [
+            "İstanbul",
+            "Ankara",
+            "İzmir"
+        ],
+        "dogruCevapIndex": 1,
+        "aciklama": "Türkiye Cumhuriyeti'nin başkenti Ankara'dır."
+    }
+]
