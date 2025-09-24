@@ -1,10 +1,129 @@
-/* Basit bir stil, kendi zevkinize göre geliştirebilirsiniz */
-body { font-family: sans-serif; text-align: center; background-color: #f4f4f9; }
-.ekran { display: none; padding: 20px; max-width: 700px; margin: 40px auto; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-.ekran.aktif { display: block; }
-button { display: block; width: 100%; padding: 15px; margin-top: 10px; font-size: 16px; cursor: pointer; border: none; border-radius: 5px; background-color: #5b21b6; color: white; }
-button:hover { background-color: #4c1d95; }
-.secenek-btn.dogru { background-color: #16a34a; }
-.secenek-btn.yanlis { background-color: #dc2626; }
-.gizli { display: none !important; }
-#aciklama-konteyeri { margin-top: 20px; padding: 15px; background-color: #eef2ff; border-radius: 5px; text-align: left; }
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background-color: #f8f7ff; /* Daha açık bir arka plan rengi */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.ekran {
+    display: none;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ekran.aktif {
+    display: block;
+}
+
+/* --- YENİ SINAV EKRANI STİLLERİ --- */
+
+.sinav-ust-bilgi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ikonlar .ikon {
+    font-size: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#soru-sayac {
+    background-color: #ede9fe;
+    color: #5b21b6;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+#soru-metni {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.secenek-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #f9fafb; /* Buton rengi */
+    color: #333;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: background-color 0.2s;
+}
+
+.secenek-btn:hover {
+    background-color: #f3f4f6;
+}
+
+.secenek-btn.dogru {
+    background-color: #22c55e; /* Yeşil */
+    color: white;
+    border-color: #16a34a;
+}
+
+.secenek-btn.yanlis {
+    background-color: #ef4444; /* Kırmızı */
+    color: white;
+    border-color: #dc2626;
+}
+
+#aciklama-konteyeri {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f0fdf4; /* Açık yeşil */
+    border: 1px solid #bbf7d0;
+    border-radius: 12px;
+    text-align: left;
+}
+
+#aciklama-konteyeri h3 {
+    margin-top: 0;
+    color: #15803d;
+}
+
+/* Navigasyon ve Mod Butonları */
+.navigasyon {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.navigasyon button, .mod-btn, #derse-geri-don, #ders-listesi button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #6d28d9; /* Ana mor renk */
+    color: white;
+    flex-grow: 1; /* Butonların boşluğu doldurması için */
+    margin-top: 10px;
+}
+
+.navigasyon #ana-menuye-don-btn {
+    background-color: #a78bfa; /* Farklı renk */
+}
+
+.navigasyon button:hover, .mod-btn:hover, #derse-geri-don:hover {
+    opacity: 0.9;
+}
