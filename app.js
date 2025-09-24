@@ -1,9 +1,5 @@
-// Not: Bu örnekte ders listesi doğrudan koda yazılmıştır.
-// JSON'dan çekme kısmı, sadece web arayüzü kullanıldığı için basitleştirilmiştir.
 const dersler = [
     { "id": "anayasa", "ad": "Anayasa" }
-    // Buraya başka dersler de ekleyebilirsiniz.
-    // { "id": "tarih", "ad": "Tarih" }
 ];
 
 let tumSorular = [];
@@ -11,7 +7,6 @@ let mevcutSorular = [];
 let mevcutSoruIndex = 0;
 let secilenDersId = '';
 
-// Ekranlar
 const ekranDersler = document.getElementById('ekran-dersler');
 const ekranModlar = document.getElementById('ekran-modlar');
 const ekranSinav = document.getElementById('ekran-sinav');
@@ -80,9 +75,13 @@ function soruyuGoster() {
     document.getElementById('soru-metni').innerText = soru.soru;
     const seceneklerKonteyeri = document.getElementById('secenekler-konteyeri');
     seceneklerKonteyeri.innerHTML = '';
+    
+    // --- YENİLİK: Seçeneklerin başına harf ekleme ---
+    const secenekHarfleri = ['A) ', 'B) ', 'C) ', 'D) ', 'E) '];
+    
     soru.secenekler.forEach((secenek, index) => {
         const button = document.createElement('button');
-        button.innerText = secenek;
+        button.innerText = secenekHarfleri[index] + secenek; // Harfi ve seçeneği birleştir
         button.classList.add('secenek-btn');
         button.onclick = () => cevapKontrol(index, soru.dogruCevapIndex);
         seceneklerKonteyeri.appendChild(button);
@@ -114,6 +113,9 @@ document.getElementById('geri-btn').addEventListener('click', () => {
 });
 
 document.getElementById('derse-geri-don').addEventListener('click', () => ekranGecisi('ekran-dersler'));
+
+// --- YENİLİK: "Ana Menüye Dön" butonuna işlev ekleme ---
+document.getElementById('ana-menuye-don-btn').addEventListener('click', () => ekranGecisi('ekran-dersler'));
 
 function ekranGecisi(gosterilecekEkranId) {
     document.querySelectorAll('.ekran').forEach(ekran => ekran.classList.remove('aktif'));
