@@ -1,129 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body {
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    background-color: #f8f7ff; /* Daha açık bir arka plan rengi */
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* Arka plan tamamen beyaz */
+    color: #1f2937; /* Yazı rengi koyu gri */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding-top: 20px;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 .ekran {
     display: none;
-    padding: 20px;
-    max-width: 500px;
     width: 100%;
-    margin: 0 auto;
+    max-width: 550px; /* Geniş ekranlar için maksimum genişlik */
 }
 
 .ekran.aktif {
     display: block;
 }
 
-/* --- YENİ SINAV EKRANI STİLLERİ --- */
+/* Sınav Ekranı Ana Stilleri */
+#ekran-sinav {
+    display: flex;
+    flex-direction: column;
+}
 
 .sinav-ust-bilgi {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end; /* Sayacı sağa yaslamak için */
+    width: 100%;
     margin-bottom: 20px;
 }
 
-.ikonlar .ikon {
-    font-size: 24px;
-    margin-right: 15px;
-    cursor: pointer;
-}
-
 #soru-sayac {
-    background-color: #ede9fe;
-    color: #5b21b6;
-    padding: 5px 15px;
-    border-radius: 15px;
-    font-weight: 600;
+    background-color: #e5e7eb; /* Resimdeki gibi gri bir arka plan */
+    color: #4b5563; /* İçindeki yazı rengi */
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 #soru-metni {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
     text-align: left;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     line-height: 1.6;
 }
 
+/* Seçenek Butonlarının Yeni Stili */
 .secenek-btn {
-    display: block;
     width: 100%;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 16px 20px;
+    margin-bottom: 12px; /* Butonlar arası boşluk */
     font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    background-color: #f9fafb; /* Buton rengi */
-    color: #333;
+    border: 1px solid #d1d5db; /* İnce, gri çerçeve */
+    border-radius: 12px; /* Daha yuvarlak köşeler */
+    background-color: #f9fafb; /* Çok hafif kirli beyaz */
+    color: #1f2937;
     text-align: left;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: background-color 0.2s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Çok ince gölge */
+    transition: background-color 0.2s, border-color 0.2s;
 }
 
-.secenek-btn:hover {
+.secenek-btn:hover:not([disabled]) { /* Henüz cevaplanmamışsa */
     background-color: #f3f4f6;
+    border-color: #9ca3af;
 }
 
+/* Cevap verildikten sonraki renkler */
 .secenek-btn.dogru {
-    background-color: #22c55e; /* Yeşil */
+    background-color: #22c55e;
     color: white;
     border-color: #16a34a;
 }
 
 .secenek-btn.yanlis {
-    background-color: #ef4444; /* Kırmızı */
+    background-color: #ef4444;
     color: white;
     border-color: #dc2626;
 }
 
+/* Açıklama Kutusu */
 #aciklama-konteyeri {
-    margin-top: 25px;
-    padding: 15px;
-    background-color: #f0fdf4; /* Açık yeşil */
-    border: 1px solid #bbf7d0;
+    margin-top: 20px;
+    padding: 16px;
+    background-color: #f0fdf4; /* Resimdeki gibi açık yeşil */
     border-radius: 12px;
     text-align: left;
+    font-size: 15px;
+    line-height: 1.7;
 }
 
 #aciklama-konteyeri h3 {
     margin-top: 0;
-    color: #15803d;
+    color: #166534;
+    font-size: 16px;
 }
 
-/* Navigasyon ve Mod Butonları */
+/* Alt Navigasyon Butonları */
 .navigasyon {
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 30px;
     gap: 10px;
 }
 
-.navigasyon button, .mod-btn, #derse-geri-don, #ders-listesi button {
-    padding: 12px 20px;
+.navigasyon button {
+    padding: 14px 20px;
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
     border: none;
-    border-radius: 8px;
-    background-color: #6d28d9; /* Ana mor renk */
+    border-radius: 12px;
+    background-color: #4f46e5; /* Ana mor renk */
     color: white;
-    flex-grow: 1; /* Butonların boşluğu doldurması için */
-    margin-top: 10px;
+    flex-grow: 1; /* Boşluğu doldur */
 }
 
-.navigasyon #ana-menuye-don-btn {
-    background-color: #a78bfa; /* Farklı renk */
+#ana-menuye-don-btn {
+    background-color: #a78bfa; /* Ana menü butonu için farklı, daha açık bir renk */
 }
 
-.navigasyon button:hover, .mod-btn:hover, #derse-geri-don:hover {
-    opacity: 0.9;
+/* Ana menüdeki ders/mod seçme butonları */
+#ders-listesi button, .mod-btn, #derse-geri-don {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    background-color: #4f46e5;
+    color: white;
+    font-weight: 500;
 }
