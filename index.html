@@ -2,6 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sınav Uygulaması</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,17 +24,23 @@
 
     <div id="ekran-sinav" class="ekran">
         <div class="sinav-ust-bilgi">
-            <span id="soru-sayac">Soru: 1/20</span>
+            <div class="ikonlar">
+                <span class="ikon">♡</span> <span class="ikon">↑</span> </div>
+            <div id="soru-sayac">Soru: 1/20</div>
         </div>
-        <div id="soru-metni"></div>
+
+        <div id="soru-metni">Soru metni buraya gelecek...</div>
+        
         <div id="secenekler-konteyeri"></div>
+
         <div id="aciklama-konteyeri" class="gizli">
             <h3>Açıklama</h3>
             <p id="aciklama-metni"></p>
         </div>
+        
         <div class="navigasyon">
             <button id="geri-btn">Geri</button>
-            <button id="ileri-btn">İleri</button>
+            <button id="ana-menuye-don-btn">Ana Menü</button> <button id="ileri-btn">İleri</button>
         </div>
     </div>
 
