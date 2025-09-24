@@ -76,12 +76,11 @@ function soruyuGoster() {
     const seceneklerKonteyeri = document.getElementById('secenekler-konteyeri');
     seceneklerKonteyeri.innerHTML = '';
     
-    // --- YENİLİK: Seçeneklerin başına harf ekleme ---
     const secenekHarfleri = ['A) ', 'B) ', 'C) ', 'D) ', 'E) '];
     
     soru.secenekler.forEach((secenek, index) => {
         const button = document.createElement('button');
-        button.innerText = secenekHarfleri[index] + secenek; // Harfi ve seçeneği birleştir
+        button.innerText = secenekHarfleri[index] + secenek;
         button.classList.add('secenek-btn');
         button.onclick = () => cevapKontrol(index, soru.dogruCevapIndex);
         seceneklerKonteyeri.appendChild(button);
@@ -114,7 +113,6 @@ document.getElementById('geri-btn').addEventListener('click', () => {
 
 document.getElementById('derse-geri-don').addEventListener('click', () => ekranGecisi('ekran-dersler'));
 
-// --- YENİLİK: "Ana Menüye Dön" butonuna işlev ekleme ---
 document.getElementById('ana-menuye-don-btn').addEventListener('click', () => ekranGecisi('ekran-dersler'));
 
 function ekranGecisi(gosterilecekEkranId) {
