@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // --- DERSLERİN TANIMLANDIĞI YER ---
-    // Ana menü bu listeye göre otomatik olarak oluşturulur.
-    // 'name': Ekranda görünecek ders adı.
-    // 'file': O derse ait soruların bulunduğu dosyanın adı.
     const subjectsConfig = [
         { name: "Anayasa", file: "anayasa.json" },
         { name: "Disiplin Kanunu", file: "disiplinkanunu.json" },
@@ -15,13 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Uluslararası Hukuk", file: "uluslararasihukuk.json" },
         { name: "MSB Yazışma Usulleri", file: "msbyazisma.json" },
         { name: "İdare Hukuku", file: "idarehukuku.json" }
-        // Buraya yeni dersler ekleyebilirsiniz...
-        // { name: "Yeni Ders", file: "yeniders.json" },
     ];
 
     const loadedQuestionsCache = {};
     let currentQuizQuestions = [];
     let currentQuestionIndex = 0;
+    let selectedSubject = null;
+    let currentMode = ''; // 'learn' veya 'quiz'
 
     // Ekranlar ve Elementler
     const screenMainMenu = document.getElementById("screen-main-menu");
@@ -60,44 +57,49 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function showSubjectMenu(subject) {
+        selectedSubject = subject;
         subjectMenuTitle.innerText = subject.name;
-        btnLearnMode.onclick = () => loadQuestionsAndStartQuiz(subject, "learn");
-        btnQuizMode20.onclick = () => loadQuestionsAndStartQuiz(subject, "quiz", 20);
+        btnLearnMode.onclick = () => loadQuestionsAndStartQuiz("learn");
+        btnQuizMode20.onclick = () => loadQuestionsAndStartQuiz("quiz", 20);
         showScreen("screen-subject-menu");
     }
     
-    function loadQuestionsAndStartQuiz(subject, mode, questionCount) {
-        if (loadedQuestionsCache[subject.name]) {
-            startQuiz(loadedQuestionsCache[subject.name], mode, questionCount);
+    function loadQuestionsAndStartQuiz(mode, questionCount) {
+        currentMode = mode;
+        if (loadedQuestionsCache[selectedSubject.name]) {
+            startQuiz(loadedQuestionsCache[selectedSubject.name], mode, questionCount);
             return;
         }
 
-        fetch(subject.file)
+        fetch(selectedSubject.file)
             .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP hatası! Durum: ${response.status}`);
-                }
+                if (!response.ok) throw new Error(`HTTP hatası! Durum: ${response.status}`);
                 return response.json();
             })
             .then(data => {
-                loadedQuestionsCache[subject.name] = data;
+                loadedQuestionsCache[selectedSubject.name] = data;
                 startQuiz(data, mode, questionCount);
             })
             .catch(error => {
                 console.error("Sorular yüklenirken hata oluştu:", error);
-                alert(`'${subject.file}' dosyası yüklenemedi veya hatalı.\n\nDosyanın var olduğundan ve geçerli bir JSON formatında olduğundan emin olun.`);
+                alert(`'${selectedSubject.file}' dosyası yüklenemedi veya hatalı.`);
             });
     }
 
     function startQuiz(questions, mode, questionCount) {
-        let questionsForSubject = [...questions];
-        if (mode === "quiz") {
-            currentQuizQuestions = shuffleArray(questionsForSubject).slice(0, questionCount);
-        } else {
-            currentQuizQuestions = questionsForSubject;
+        // Sınav modunda soruları karıştır ve 20 tane seç.
+        if (mode === 'quiz') {
+            currentQuizQuestions = shuffleArray([...questions]).slice(0, questionCount);
+            currentQuestionIndex = 0;
+        } 
+        // Öğrenme modunda tüm soruları sırasıyla al.
+        else {
+            currentQuizQuestions = questions;
+            // Kaydedilmiş ilerlemeyi kontrol et.
+            const savedIndex = localStorage.getItem(`progress_${selectedSubject.name}`);
+            currentQuestionIndex = savedIndex ? parseInt(savedIndex, 10) : 0;
         }
         
-        currentQuestionIndex = 0;
         if (currentQuizQuestions.length > 0) {
             showQuestion();
             showScreen("screen-quiz");
@@ -112,12 +114,16 @@ document.addEventListener("DOMContentLoaded", () => {
         questionText.innerText = question.soru_metni;
         optionsContainer.innerHTML = "";
         
-        Object.keys(question.secenekler).forEach(key => {
+        // --- YENİ: ŞIKLARI KARIŞTIRMA ---
+        const correctAnswerText = question.secenekler[question.dogru_secenek];
+        let options = Object.values(question.secenekler);
+        const shuffledOptions = shuffleArray(options);
+
+        shuffledOptions.forEach(optionText => {
             const button = document.createElement("button");
             button.className = "option-btn";
-            button.innerHTML = `<strong>${key.toUpperCase()})</strong> ${question.secenekler[key]}`;
-            button.dataset.key = key;
-            button.onclick = () => handleOptionClick(button, key, question.dogru_secenek);
+            button.innerText = optionText; // Şıklarda A) B) yazısını kaldırdık.
+            button.onclick = () => handleOptionClick(button, optionText, correctAnswerText, question);
             optionsContainer.appendChild(button);
         });
 
@@ -126,23 +132,41 @@ document.addEventListener("DOMContentLoaded", () => {
         btnNext.disabled = currentQuestionIndex === currentQuizQuestions.length - 1;
     }
 
-    function handleOptionClick(clickedButton, selectedKey, correctKey) {
-        document.querySelectorAll(".option-btn").forEach(btn => btn.disabled = true);
-        if (selectedKey === correctKey) {
-            clickedButton.classList.add("correct");
-        } else {
+    function handleOptionClick(clickedButton, selectedText, correctText, question) {
+        document.querySelectorAll(".option-btn").forEach(btn => {
+            btn.disabled = true;
+            // Doğru cevabı her zaman yeşil yap
+            if (btn.innerText === correctText) {
+                btn.classList.add("correct");
+            }
+        });
+        
+        // Eğer yanlış cevap seçildiyse, onu kırmızı yap
+        if (selectedText !== correctText) {
             clickedButton.classList.add("incorrect");
-            const correctButton = optionsContainer.querySelector(`[data-key="${correctKey}"]`);
-            if (correctButton) correctButton.classList.add("correct");
         }
-        const question = currentQuizQuestions[currentQuestionIndex];
-        explanationText.innerHTML = `<strong>Kanıt:</strong> ${question.kanit_cumlesi || 'Yok'}<br><br><strong>Açıklama:</strong> ${question.aciklama}`;
+        
+        // --- YENİ: UNDEFINED HATASI DÜZELTMESİ ---
+        const aciklamaText = question.aciklama || "Bu soru için ek bir açıklama bulunmamaktadır.";
+        explanationText.innerHTML = `<strong>Kanıt:</strong> ${question.kanit_cumlesi || 'Yok'}<br><br><strong>Açıklama:</strong> ${aciklamaText}`;
         explanationBox.style.display = "block";
     }
 
+    function navigateQuestion(direction) {
+        const newIndex = currentQuestionIndex + direction;
+        if (newIndex >= 0 && newIndex < currentQuizQuestions.length) {
+            currentQuestionIndex = newIndex;
+            // --- YENİ: ÖĞRENME MODUNDA İLERLEMEYİ KAYDET ---
+            if (currentMode === 'learn') {
+                localStorage.setItem(`progress_${selectedSubject.name}`, currentQuestionIndex);
+            }
+            showQuestion();
+        }
+    }
+
     btnBackToMain.onclick = () => showScreen("screen-main-menu");
-    btnPrev.onclick = () => { if (currentQuestionIndex > 0) { currentQuestionIndex--; showQuestion(); } };
-    btnNext.onclick = () => { if (currentQuestionIndex < currentQuizQuestions.length - 1) { currentQuestionIndex++; showQuestion(); } };
+    btnPrev.onclick = () => navigateQuestion(-1);
+    btnNext.onclick = () => navigateQuestion(1);
     btnBackToSubject.onclick = () => showScreen("screen-subject-menu");
 
     function shuffleArray(array) {
