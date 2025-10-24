@@ -1,233 +1,170 @@
-document.addEventListener("DOMContentLoaded", () => {
+const subjectsConfig = [
+  { name: 'Anayasa', file: 'anayasa.json' },
+  // Yeni ders eklemek için: { name: 'Ders Adı', file: 'dersadı.json' }
+];
 
-    const subjectsConfig = [
-        { name: "Anayasa", file: "anayasa.json" },
-        { name: "Disiplin Kanunu", file: "disiplinkanunu.json" },
-        { name: "İç Hizmet Kanunu", file: "ichizmetkanunu.json" },
-        { name: "İç Hizmet Yönetmeliği", file: "ichizmetyonetmeligi.json" },
-        { name: "Siyasi Tarih", file: "siyasitarih.json" },
-        { name: "Türkiye Cumhuriyeti Tarihi", file: "tctarihi.json" },
-        { name: "Basında Güncel Olaylar", file: "guncelolaylar.json" },
-        { name: "Uluslararası Hukuk", file: "uluslararasihukuk.json" },
-        { name: "MSB Yazışma Usulleri", file: "msbyazisma.json" },
-        { name: "İdare Hukuku", file: "idarehukuku.json" }
-    ];
+const EXAM_DATE = new Date('2025-12-20T00:00:00');
 
-    const loadedQuestionsCache = {};
-    let currentQuizQuestions = [];
-    let userAnswers = [];
-    let currentQuestionIndex = 0;
-    let selectedSubject = null;
-    let currentMode = '';
+let currentSubject = null;
+let questions = [];
+let currentQuestionIndex = 0;
+let currentMode = '';
+let userAnswers = [];
+let selectedQuestions = [];
 
-    const screens = {
-        mainMenu: document.getElementById("screen-main-menu"),
-        subjectMenu: document.getElementById("screen-subject-menu"),
-        quiz: document.getElementById("screen-quiz"),
-        results: document.getElementById("screen-results")
-    };
-
-    const mainMenuButtonsContainer = document.getElementById("main-menu-buttons");
-    const subjectMenuTitle = document.getElementById("subject-menu-title");
-    const btnBackToMain = document.getElementById("btn-back-to-main");
-    const btnLearnMode = document.getElementById("btn-learn-mode");
-    const btnQuizMode20 = document.getElementById("btn-quiz-mode-20");
-    const btnBackToSubject = document.getElementById("btn-back-to-subject");
-    const questionCounter = document.getElementById("question-counter");
-    const questionText = document.getElementById("question-text");
-    const optionsContainer = document.getElementById("options-container");
-    const explanationBox = document.getElementById("explanation-box");
-    const explanationText = document.getElementById("explanation-text");
-    const btnPrev = document.getElementById("btn-prev");
-    const btnNext = document.getElementById("btn-next");
-    const resultsScore = document.getElementById("results-score");
-    const wrongAnswersList = document.getElementById("wrong-answers-list");
-    const btnRestartQuiz = document.getElementById("btn-restart-quiz");
-    const btnResultsToMenu = document.getElementById("btn-results-to-menu");
-
-    buildMainMenu();
-    startCountdown(); 
-
-    function showScreen(screenName) {
-        Object.values(screens).forEach(screen => screen.classList.remove("active"));
-        screens[screenName].classList.add("active");
+function startCountdown() {
+  const timerElement = document.getElementById('timer');
+  const updateTimer = () => {
+    const now = new Date();
+    const timeDiff = EXAM_DATE - now;
+    if (timeDiff <= 0) {
+      timerElement.textContent = 'Sınav Zamanı Geldi! Başarılar!';
+      return;
     }
+    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+    timerElement.textContent = `${days} Gün ${hours} Saat ${minutes} Dakika ${seconds} Saniye`;
+  };
+  updateTimer();
+  setInterval(updateTimer, 1000);
+}
 
-    function buildMainMenu() {
-        mainMenuButtonsContainer.innerHTML = "";
-        subjectsConfig.forEach(subject => {
-            const button = document.createElement("button");
-            button.className = "menu-button";
-            button.innerText = subject.name;
-            button.onclick = () => showSubjectMenu(subject);
-            mainMenuButtonsContainer.appendChild(button);
-        });
+function loadSubjects() {
+  const subjectsDiv = document.getElementById('subjects');
+  subjectsDiv.innerHTML = '';
+  subjectsConfig.forEach(subject => {
+    const button = document.createElement('button');
+    button.textContent = subject.name;
+    button.addEventListener('click', () => showSubjectMenu(subject));
+    subjectsDiv.appendChild(button);
+  });
+}
+
+function showSubjectMenu(subject) {
+  currentSubject = subject;
+  document.getElementById('home-screen').style.display = 'none';
+  document.getElementById('subject-menu').style.display = 'block';
+  document.getElementById('subject-title').textContent = subject.name;
+}
+
+function loadQuestions(file, callback) {
+  fetch(file)
+    .then(response => response.json())
+    .then(data => {
+      questions = data;
+      callback();
+    })
+    .catch(error => console.error('Soru yükleme hatası:', error));
+}
+
+function startQuiz(mode) {
+  currentMode = mode;
+  currentQuestionIndex = 0;
+  userAnswers = [];
+  document.getElementById('subject-menu').style.display = 'none';
+  document.getElementById('quiz-screen').style.display = 'block';
+  document.getElementById('quiz-title').textContent = currentSubject.name;
+  if (mode === 'test') {
+    selectedQuestions = questions.sort(() => Math.random() - 0.5).slice(0, 20);
+    document.getElementById('prev-question').style.display = 'none';
+  } else {
+    selectedQuestions = questions;
+    const savedIndex = localStorage.getItem(`${currentSubject.name}_progress`);
+    currentQuestionIndex = savedIndex ? parseInt(savedIndex) : 0;
+    document.getElementById('prev-question').style.display = 'inline';
+  }
+  showQuestion();
+}
+
+function showQuestion() {
+  const question = selectedQuestions[currentQuestionIndex];
+  document.getElementById('question-number').textContent = `Soru ${currentQuestionIndex + 1}/${selectedQuestions.length}`;
+  document.getElementById('question-text').textContent = question.question;
+  const optionsDiv = document.getElementById('options');
+  optionsDiv.innerHTML = '';
+  question.options.forEach((option, index) => {
+    const optionDiv = document.createElement('div');
+    optionDiv.className = 'option';
+    optionDiv.textContent = option;
+    optionDiv.addEventListener('click', () => handleAnswer(index));
+    optionsDiv.appendChild(optionDiv);
+  });
+  document.getElementById('feedback').textContent = '';
+  document.getElementById('explanation').textContent = '';
+  document.getElementById('next-question').textContent = currentQuestionIndex === selectedQuestions.length - 1 && currentMode === 'test' ? 'Sınavı Bitir' : 'İleri';
+}
+
+function handleAnswer(selectedIndex) {
+  const question = selectedQuestions[currentQuestionIndex];
+  const options = document.querySelectorAll('.option');
+  const isCorrect = selectedIndex === question.correctAnswer;
+  options[selectedIndex].classList.add(isCorrect ? 'correct' : 'wrong');
+  if (currentMode === 'review') {
+    options[question.correctAnswer].classList.add('correct');
+    document.getElementById('feedback').textContent = isCorrect ? 'Doğru!' : 'Yanlış!';
+    document.getElementById('explanation').textContent = question.explanation;
+  } else {
+    userAnswers.push({ questionIndex: currentQuestionIndex, selectedIndex, isCorrect });
+  }
+}
+
+function nextQuestion() {
+  if (currentMode === 'review') {
+    localStorage.setItem(`${currentSubject.name}_progress`, currentQuestionIndex + 1);
+  }
+  if (currentQuestionIndex < selectedQuestions.length - 1) {
+    currentQuestionIndex++;
+    showQuestion();
+  } else if (currentMode === 'test') {
+    showResults();
+  }
+}
+
+function prevQuestion() {
+  if (currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    showQuestion();
+  }
+}
+
+function showResults() {
+  document.getElementById('quiz-screen').style.display = 'none';
+  document.getElementById('result-screen').style.display = 'block';
+  const correctCount = userAnswers.filter(answer => answer.isCorrect).length;
+  document.getElementById('score').textContent = `${selectedQuestions.length} sorudan ${correctCount} doğru, ${selectedQuestions.length - correctCount} yanlış yaptınız.`;
+  const wrongAnswersDiv = document.getElementById('wrong-answers');
+  wrongAnswersDiv.innerHTML = '<h3>Yanlış Yanıtladığınız Sorular:</h3>';
+  userAnswers.forEach(answer => {
+    if (!answer.isCorrect) {
+      const question = selectedQuestions[answer.questionIndex];
+      const div = document.createElement('div');
+      div.innerHTML = `<p><strong>Soru ${answer.questionIndex + 1}:</strong> ${question.question}<br><strong>Seçtiğiniz cevap:</strong> ${question.options[answer.selectedIndex]}<br><strong>Doğru cevap:</strong> ${question.options[question.correctAnswer]}</p>`;
+      wrongAnswersDiv.appendChild(div);
     }
+  });
+}
 
-    function showSubjectMenu(subject) {
-        selectedSubject = subject;
-        subjectMenuTitle.innerText = subject.name;
-        showScreen("subjectMenu");
-    }
-    
-    function loadQuestionsAndStartQuiz(mode, questionCount) {
-        currentMode = mode;
-        if (loadedQuestionsCache[selectedSubject.name]) {
-            startQuiz(loadedQuestionsCache[selectedSubject.name], questionCount);
-            return;
-        }
-        fetch(selectedSubject.file)
-            .then(response => response.json())
-            .then(data => {
-                loadedQuestionsCache[selectedSubject.name] = data;
-                startQuiz(data, questionCount);
-            })
-            .catch(error => alert(`'${selectedSubject.file}' dosyası yüklenemedi veya hatalı.`));
-    }
+document.getElementById('review-mode').addEventListener('click', () => startQuiz('review'));
+document.getElementById('test-mode').addEventListener('click', () => startQuiz('test'));
+document.getElementById('back-to-home').addEventListener('click', () => {
+  document.getElementById('subject-menu').style.display = 'none';
+  document.getElementById('home-screen').style.display = 'block';
+});
+document.getElementById('prev-question').addEventListener('click', prevQuestion);
+document.getElementById('next-question').addEventListener('click', nextQuestion);
+document.getElementById('restart-quiz').addEventListener('click', () => {
+  document.getElementById('result-screen').style.display = 'none';
+  startQuiz('test');
+});
+document.getElementById('back-to-subject').addEventListener('click', () => {
+  document.getElementById('result-screen').style.display = 'none';
+  document.getElementById('subject-menu').style.display = 'block';
+});
 
-    function startQuiz(questions, questionCount) {
-        userAnswers = new Array(questionCount); 
-        if (currentMode === 'quiz') {
-            currentQuizQuestions = shuffleArray([...questions]).slice(0, questionCount);
-            currentQuestionIndex = 0;
-            btnPrev.style.display = 'none';
-            btnNext.style.display = 'block';
-        } else {
-            currentQuizQuestions = questions;
-            const savedIndex = localStorage.getItem(`progress_${selectedSubject.name}`);
-            currentQuestionIndex = savedIndex ? parseInt(savedIndex, 10) : 0;
-            btnPrev.style.display = 'block';
-            btnNext.style.display = 'block';
-        }
-        
-        if (currentQuizQuestions.length > 0) {
-            showQuestion();
-            showScreen("quiz");
-        } else {
-            alert("Bu ders için soru bulunamadı!");
-        }
-    }
-    
-    function showQuestion() {
-        if (currentMode === 'quiz' && currentQuestionIndex === currentQuizQuestions.length - 1) {
-            btnNext.innerText = "Sınavı Bitir";
-        } else {
-            btnNext.innerText = "İleri";
-        }
-
-        const question = currentQuizQuestions[currentQuestionIndex];
-        questionCounter.innerText = `Soru: ${currentQuestionIndex + 1}/${currentQuizQuestions.length}`;
-        questionText.innerText = question.soru_metni;
-        optionsContainer.innerHTML = "";
-        
-        const correctAnswerText = question.secenekler[question.dogru_secenek];
-        const shuffledOptions = shuffleArray(Object.values(question.secenekler));
-
-        shuffledOptions.forEach(optionText => {
-            const button = document.createElement("button");
-            button.className = "option-btn";
-            button.innerText = optionText;
-            button.onclick = () => handleOptionClick(button, optionText, correctAnswerText, question);
-            optionsContainer.appendChild(button);
-        });
-
-        explanationBox.style.display = "none";
-        btnPrev.disabled = currentQuestionIndex === 0;
-        btnNext.disabled = false;
-    }
-
-    function handleOptionClick(clickedButton, selectedText, correctText, question) {
-        document.querySelectorAll(".option-btn").forEach(btn => btn.disabled = true);
-        const isCorrect = selectedText === correctText;
-
-        if (currentMode === 'learn') {
-            document.querySelectorAll(".option-btn").forEach(btn => {
-                if (btn.innerText === correctText) btn.classList.add("correct");
-            });
-            if (!isCorrect) clickedButton.classList.add("incorrect");
-            
-            const aciklamaText = question.aciklama || "Bu soru için ek bir açıklama bulunmamaktadır.";
-            explanationText.innerHTML = `<strong>Kanıt:</strong> ${question.kanit_cumlesi || 'Yok'}<br><br><strong>Açıklama:</strong> ${aciklamaText}`;
-            explanationBox.style.display = "block";
-        } else {
-            clickedButton.classList.add(isCorrect ? "correct" : "incorrect");
-            userAnswers[currentQuestionIndex] = { question, selectedText, correctText, isCorrect };
-        }
-    }
-
-    function navigateQuestion(direction) {
-        if (currentMode === 'quiz' && currentQuestionIndex === currentQuizQuestions.length - 1 && direction === 1) {
-            showResults();
-            return;
-        }
-        const newIndex = currentQuestionIndex + direction;
-        if (newIndex >= 0 && newIndex < currentQuizQuestions.length) {
-            currentQuestionIndex = newIndex;
-            if (currentMode === 'learn') {
-                localStorage.setItem(`progress_${selectedSubject.name}`, currentQuestionIndex);
-            }
-            showQuestion();
-        }
-    }
-
-    function showResults() {
-        const correctCount = userAnswers.filter(answer => answer && answer.isCorrect).length;
-        const totalCount = currentQuizQuestions.length;
-        resultsScore.innerText = `${totalCount} sorudan ${correctCount} doğru, ${totalCount - correctCount} yanlış yaptınız.`;
-        
-        wrongAnswersList.innerHTML = "";
-        userAnswers.forEach(answer => {
-            if (answer && !answer.isCorrect) {
-                const li = document.createElement("li");
-                li.innerHTML = `<p class="question-text">${answer.question.soru_metni}</p><p class="correct-answer">Doğru Cevap: ${answer.correctText}</p>`;
-                wrongAnswersList.appendChild(li);
-            }
-        });
-        showScreen("results");
-    }
-    
-    // Tüm Buton Olayları
-    btnBackToMain.onclick = () => showScreen("mainMenu");
-    btnLearnMode.onclick = () => loadQuestionsAndStartQuiz('learn');
-    btnQuizMode20.onclick = () => loadQuestionsAndStartQuiz('quiz', 20);
-    btnPrev.onclick = () => navigateQuestion(-1);
-    btnNext.onclick = () => navigateQuestion(1);
-    btnBackToSubject.onclick = () => showScreen("subjectMenu");
-    btnResultsToMenu.onclick = () => showScreen("subjectMenu");
-    btnRestartQuiz.onclick = () => loadQuestionsAndStartQuiz('quiz', 20);
-
-    // Yardımcı Fonksiyonlar
-    function shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-        return array;
-    }
-
-    function startCountdown() {
-        const countdownDate = new Date("December 20, 2025 00:00:00").getTime();
-
-        const countdownFunction = setInterval(() => {
-            const now = new Date().getTime();
-            const distance = countdownDate - now;
-
-            if (distance < 0) {
-                clearInterval(countdownFunction);
-                document.getElementById("countdown-container").innerHTML = "<h2>Sınav Zamanı Geldi! Başarılar!</h2>";
-                return;
-            }
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("days").innerText = String(days).padStart(2, '0');
-            document.getElementById("hours").innerText = String(hours).padStart(2, '0');
-            document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
-            document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
-
-        }, 1000);
-    }
+document.addEventListener('DOMContentLoaded', () => {
+  startCountdown();
+  loadSubjects();
+  loadQuestions(subjectsConfig[0].file, () => {});
 });
