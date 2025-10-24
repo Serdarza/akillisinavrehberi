@@ -3,38 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ders Seçimi</title>
+    <title>Sınav Uygulaması</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="ekran-dersler" class="ekran aktif">
-        <div id="ders-listesi">
-            <!-- JS yüklenince buraya ders butonları eklenecek -->
-        </div>
-    </div>
 
-    <div id="ekran-modlar" class="ekran">
-        <h2 id="secilen-ders-baslik"></h2>
-        <button class="mod-btn" data-mod="ogrenme">Tüm Soruları Gözden Geçir</button>
-        <button class="mod-btn" data-mod="sinav">20 Soruluk Sınava Başla</button>
-        <button id="derse-geri-don">Ders Listesine Dön</button>
-    </div>
+    <div id="app-container">
 
-    <div id="ekran-sinav" class="ekran">
-        <div class="sinav-ust-bilgi">
-            <span id="soru-sayac">Soru: 1/20</span>
+        <div id="screen-main-menu" class="screen active">
+            <h1>Ders Seçin</h1>
+            <div id="main-menu-buttons">
+                </div>
         </div>
-        <p id="soru-metni">Soru metni buraya gelecek...</p>
-        <div id="secenekler-konteyeri"></div>
-        <div id="aciklama-konteyneri" class="gizli">
-            <h3>Açıklama</h3>
-            <p id="aciklama-metni"></p>
+
+        <div id="screen-subject-menu" class="screen">
+            <h1 id="subject-menu-title">Anayasa</h1> <button id="btn-back-to-main" class="menu-button-secondary">Ana Menüye Dön</button>
+            <button id="btn-learn-mode" class="menu-button">Tüm Soruları Gözden Geçir (Öğrenme Modu)</button>
+            <button id="btn-quiz-mode-20" class="menu-button">20 Soruluk Sınava Başla</button>
+            <button class="menu-button disabled">Favori Soru Havuzu (Yakında)</button>
+            <button class="menu-button disabled">Ders Kitabını Aç (Yakında)</button>
         </div>
-        <div class="navigasyon">
-            <button id="geri-btn">Geri</button>
-            <button id="ana-menuye-don-btn">Ana Menü</button>
-            <button id="ileri-btn">İleri</button>
+
+        <div id="screen-quiz" class="screen">
+            <div id="quiz-header">
+                <button id="btn-back-to-subject" class="menu-button-secondary small">Derse Dön</button>
+                <div id="question-counter">Soru: 1/20</div>
+            </div>
+            
+            <div id="quiz-container">
+                <div id="question-text">Soru metni buraya gelecek...</div>
+                
+                <div id="options-container">
+                    </div>
+                
+                <div id="explanation-box" style="display: none;">
+                    <strong>Açıklama:</strong>
+                    <p id="explanation-text"></p>
+                </div>
+                
+                <div id="quiz-nav-buttons">
+                    <button id="btn-prev" class="menu-button-secondary">Geri</button>
+                    <button id="btn-next" class="menu-button-secondary">İleri</button>
+                </div>
+            </div>
         </div>
+
     </div>
 
     <script src="app.js"></script>
