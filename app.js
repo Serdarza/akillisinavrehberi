@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const seceneklerContainer = document.getElementById('seceneklerContainer');
     const aciklamaKutusu = document.getElementById('aciklamaKutusu');
     const aciklamaMetni = document.getElementById('aciklamaMetni');
-    const kanitMetni = document.getElementById('kanitMetni'); // Yeni Kanıt Cümlesi alanı
-    const paylasIcon = document.getElementById('paylasIcon'); // Yeni Paylaşma İkonu
+    const kanitMetni = document.getElementById('kanitMetni');
+    const paylasIcon = document.getElementById('paylasIcon');
     const geriButton = document.getElementById('geriButton');
     const ileriButton = document.getElementById('ileriButton');
     
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Paylaşma Fonksiyonu ---
     const shareScreenshot = async () => {
         if (!html2canvas) {
-            alert('Ekran görüntüsü alma kütüphanesi yüklenemedi.');
+            alert('Ekran görüntüsü alma kütüphanesi yüklenemedi. Lütfen internet bağlantınızı kontrol edin.');
             return;
         }
         
@@ -105,18 +105,18 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // html2canvas ile DOM elementini tuval (canvas) üzerine çiz
             const canvas = await html2canvas(elementToCapture, {
-                useCORS: true, // CORS ile ilgili sorunları çözmek için
-                allowTaint: true, // İçeriği güvenilir olmayan kaynaklardan yüklemeye izin ver (dikkatli kullanılmalı)
-                scrollX: -window.scrollX, // Kaydırma konumunu düzelt
+                useCORS: true, 
+                allowTaint: true, 
+                scrollX: -window.scrollX, 
                 scrollY: -window.scrollY,
-                windowWidth: document.documentElement.offsetWidth,
-                windowHeight: document.documentElement.offsetHeight
+                windowWidth: elementToCapture.offsetWidth, // Sadece elementin genişliğini yakala
+                windowHeight: elementToCapture.offsetHeight
             });
 
             const base64image = canvas.toDataURL('image/png');
 
             if (navigator.share) {
-                // Tarayıcı yerel paylaşım API'si (Android/iOS)
+                // Tarayıcı yerel paylaşım API'si
                 const blob = await (await fetch(base64image)).blob();
                 const file = new File([blob], 'Soru_Ekranı.png', { type: 'image/png' });
                 
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     text: 'Anayasa sorusu çözüyorum, bilgini test et!',
                 });
             } else {
-                // Paylaşım API'si yoksa: Sadece resmi indir veya pop-up ile göster (Alternatif)
+                // Paylaşım API'si yoksa: Sadece resmi indir (alternatif)
                 const link = document.createElement('a');
                 link.download = 'soru_ekrani.png';
                 link.href = base64image;
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } catch (error) {
             console.error('Ekran görüntüsü alma veya paylaşma hatası:', error);
-            alert('Paylaşım sırasında bir hata oluştu. (Hata: Konsolu kontrol edin)');
+            alert('Paylaşım sırasında bir hata oluştu. Lütfen konsolu kontrol edin.');
         }
     };
 
@@ -172,19 +172,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadQuestions = async (dosyaAdi, mod, konuAdi) => {
         try {
-            // JSON dosya adını kontrol et (anayasajson.json, disiplinkanunu.json vb.)
             const response = await fetch(`${dosyaAdi}.json`);
             if (!response.ok) {
-                 // Eğer dosya bulunamazsa boş bir dizi ile devam et (Diğer dersler için)
+                 // Eğer dosya bulunamazsa (veya boşsa), uyarı verip boş bir dizi ile devam et
                  console.warn(`Uyarı: Dosya bulunamadı veya boş. ${dosyaAdi}.json`);
                  tumSorular = []; 
             } else {
                 let data = await response.json();
             
-                // JSON dizisi beklenir (Tek obje ise diziye dönüştürür)
                 if (!Array.isArray(data)) {
-                    if (data && data.soru_metni) data = [data]; 
-                    else data = []; // Boş JSON
+                    if (data && data.soru_metni) {
+                         // Tek bir soru objesi gönderildiyse (kullanıcının örneği gibi), onu diziye al.
+                         data = [data];
+                    } else {
+                         // Hatalı veya boş JSON
+                         data = []; 
+                    }
                 }
                 tumSorular = data;
             }
@@ -258,33 +261,38 @@ document.addEventListener('DOMContentLoaded', () => {
             seceneklerContainer.appendChild(button);
         });
 
-        // Sınav modunda önceden cevaplanmışsa renklendir (Açıklama sınavda gösterilmez)
-        if (aktifMod === 'sinav' && sinavCevaplari[soru.soru_id]) {
-            renklendirCevaplar(soru, sinavCevaplari[soru.soru_id]);
-        } 
-        
         // Yanlışları Gözden Geçirme Modunda Açıklamayı Hemen Göster
-        if (aktifMod === 'ogrenme' && soru.kullanici_cevabi) {
-             cevapKontrol(null, soru); // Cevap kontrolünü tetikle, ancak butona tıklama
-             renklendirCevaplar(soru, soru.kullanici_cevabi); // Yanlışını renklendir
+        if (aktifMod === 'ogrenme' && (soru.kullanici_cevabi || (mevcutSoruIndex > -1))) {
+             // Eğer öğrenme modundaysak ve yeni soru açılmışsa
+             // Sınavdan gelme bir yanlış yoksa, ilk yüklemede açıklama görünmez.
+             if (soru.kullanici_cevabi) {
+                 cevapKontrol(null, soru); // Sınavdan gelen yanlışsa cevabını renklendir ve açıklamayı göster
+             }
+             
+             // NOT: Öğrenme modunda ilk tıklama beklenir. Bu kısım sadece sınav sonrası
+             // yanlışları gözden geçirme (yanlışlık varsa) veya zaten cevaplanmışsa renklendirme yapar.
+             
+             // Tüm seçeneklerin tıklanabilirliğini geri yükle (öğrenme modunda yeni sorudayken)
+             if (!seceneklerContainer.classList.contains('cevaplandi')) {
+                 seceneklerContainer.querySelectorAll('.option-button').forEach(btn => {
+                     btn.disabled = false;
+                 });
+             }
         }
     };
 
-    // --- Cevap Kontrolü ve Renklendirme ---
+    // --- Cevap Kontrolü ve Renklendirme (Açıklama Gösterme Garantisi) ---
 
     const cevapKontrol = (tiklananButton, soru) => {
-        if (tiklananButton && seceneklerContainer.classList.contains('cevaplandi')) return;
+        const isAlreadyAnswered = seceneklerContainer.classList.contains('cevaplandi');
+        
+        // Yanlışları gözden geçirme modundan geliyorsa butona tıklamadan direkt renklendir.
+        let kullaniciOrijinalCevap = soru.kullanici_cevabi || (tiklananButton ? tiklananButton.getAttribute('data-orijinal-cevap') : null);
+
+        if (tiklananButton && isAlreadyAnswered && aktifMod !== 'ogrenme') return;
         seceneklerContainer.classList.add('cevaplandi');
 
         const dogruOrijinalCevap = soru.dogru_secenek;
-        let kullaniciOrijinalCevap;
-
-        if (tiklananButton) {
-             kullaniciOrijinalCevap = tiklananButton.getAttribute('data-orijinal-cevap');
-        } else if (aktifMod === 'ogrenme' && soru.kullanici_cevabi) {
-             // Yanlışları gözden geçirme modu için kullanıcının önceki cevabını al
-             kullaniciOrijinalCevap = soru.kullanici_cevabi; 
-        }
 
         if (aktifMod === 'sinav' && tiklananButton) {
             sinavCevaplari[soru.soru_id] = kullaniciOrijinalCevap;
@@ -293,10 +301,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Renklendirmeyi yap
         renklendirCevaplar(soru, kullaniciOrijinalCevap);
         
-        // Açıklamayı sadece Öğrenme Modunda göster
-        if (aktifMod === 'ogrenme') {
-            aciklamaMetni.innerHTML = soru.aciklama || 'Açıklama metni bulunmamaktadır.';
-            kanitMetni.innerHTML = soru.kanit_cumlesi || 'Kanıt cümlesi bulunmamaktadır.';
+        // Açıklamayı Göster (Her iki öğrenme modunda da)
+        if (aktifMod === 'ogrenme' || isAlreadyAnswered || tiklananButton) {
+            aciklamaMetni.innerHTML = soru.aciklama || 'Açıklama metni JSON verisinde bulunmamaktadır.';
+            kanitMetni.innerHTML = soru.kanit_cumlesi || 'Kanıt cümlesi JSON verisinde bulunmamaktadır.';
             aciklamaKutusu.classList.remove('hidden');
         }
     };
