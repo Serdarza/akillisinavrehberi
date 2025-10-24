@@ -30,14 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const quoteAuthor = document.getElementById('quoteAuthor');
     
     // Motivasyon Sözleri Havuzu
-   const quotes = [
-        { text: "Çalışmak, hayatın biricik ve gerçek sahibidir.", author: "Voltaire" },
-        { text: "Dehanın yüzde biri ilham, yüzde doksan dokuzu ise terdir (çok çalışmaktır).", author: "Thomas Edison" },
-        { text: "Her şeyin üstünde tuttuğum ilim, beni şüpheden kurtaran tek şeydir.", author: "Albert Einstein" },
-        { text: "Okumayı en sevdiği kitap, alın teriyle yazılan kitaptır.", author: "Halil Cibran" },
-        { text: "Zeka ve azim, hayatın bütün kapılarını açacak altın anahtarlardır.", author: "Charles Dickens" },
-        { text: "Azimli bir kişi için imkansız diye bir şey yoktur.", author: "Büyük İskender" },
-        { text: "İlim, maldan daha hayırlıdır. Çünkü ilim seni korur, sen ise malı korursun.", author: "Hz. Ali" },
+    const quotes = [
+        { text: "Çalışmadan, yorulmadan, üretmeden rahat yaşamak isteyen toplumlar; önce haysiyetlerini, sonra hürriyetlerini ve daha sonra da istikballerini kaybetmeye mahkumdurlar.", author: "Mustafa Kemal Atatürk" },
+        { text: "Herkesin dehasına inandığı bir bilim dalı yoktur, herkesin dehasına inandığı tek şey çalışmadır.", author: "Louis Pasteur" },
+        { text: "Büyük işleri başarmak sadece güç gerektirmez, azim de gerektirir.", author: "Samuel Johnson" },
+        { text: "Kendime ait olan tek şey, azmimdir. Başarımın nedeni budur.", author: "Thomas Edison" },
+        { text: "Eğitim, okulda öğrenilen her şeyi unuttuğunda geriye kalandır.", author: "Albert Einstein" },
+        { text: "İnsan aklının ulaştığı en yüksek mertebe, ilimdir.", author: "Sokrates" },
+        { text: "En değerli hazine, ilimdir. En kötü yoksulluk ise cehalettir.", author: "Hz. Ali" },
         { text: "Hayatta başarılı olmak istiyorsanız, azminizi rutin hale getirin.", author: "Confucius" },
         { text: "Yarınlar yorgun ve bezgin oturanlara değil, rahatı terk edebilen gayretli insanlara aittir.", author: "Cicero" },
         { text: "En büyük tehlike, büyük hedefler koyup onlara ulaşamamak değil, küçük hedefler koyup onlara ulaşmaktır.", author: "Michelangelo" },
@@ -64,10 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Pop-up Yönetimi ---
     const showMotivationQuote = () => {
-        // Kontrol: Pop-up'ın daha önce gösterilip gösterilmediğini Local Storage'dan kontrol et
+        // Kontrol: Sadece Local Storage'da 'motivationQuoteShown' yoksa göster
         const isQuoteShown = localStorage.getItem('motivationQuoteShown');
-        // NOT: Her seferinde göstermek isterseniz bu satırı silin. (Mevcut istekte sadece bir kez gösterilmesi istendiği için bırakıldı.)
-        // if (isQuoteShown) return; 
+        if (isQuoteShown) return;
 
         // Rastgele sözü seç
         const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -77,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Modal'ı göster
         motivationModal.classList.remove('hidden');
         
-        // Local Storage'a kaydet (Bu oturum için gösterildi)
+        // Local Storage'a kaydet
         localStorage.setItem('motivationQuoteShown', 'true');
     };
 
@@ -342,5 +341,119 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Açıklamayı sadece Öğrenme Modunda göster
         if (aktifMod === 'ogrenme') {
-            // JSON'da hem 'aciklama' hem de 'aclama' alanını kontrol et
-            const aciklamaMetniContent = soru.aciklama ||
+            // JSON'da hem 'aciklama' hem de 'aclama' alanını kontrol et (typo ihtimaline karşı)
+            const aciklamaMetniContent = soru.aciklama || soru.aclama || 'Açıklama metni JSON verisinde bulunmamaktadır.';
+            const kanitMetniContent = soru.kanit_cumlesi || 'Kanıt cümlesi JSON verisinde bulunmamaktadır.';
+
+            aciklamaMetni.innerHTML = aciklamaMetniContent;
+            kanitMetni.innerHTML = kanitMetniContent;
+            aciklamaKutusu.classList.remove('hidden');
+            
+        } else {
+             aciklamaKutusu.classList.add('hidden');
+
+             // Sınav modunda işaretlemeden sonra 1 saniye bekle ve otomatik sonraki soruya geç
+             if (tiklananButton) {
+                 setTimeout(() => {
+                     if (mevcutSoruIndex < tumSorular.length - 1) {
+                         mevcutSoruIndex++;
+                         renderSoru(mevcutSoruIndex);
+                     } else {
+                         gosterSinavSonucu();
+                     }
+                 }, 1000); // 1 saniye bekleme süresi
+             }
+        }
+    };
+
+    const renklendirCevaplar = (soru, kullaniciOrijinalCevap) => {
+        const dogruOrijinalCevap = soru.dogru_secenek;
+
+        seceneklerContainer.querySelectorAll('.option-button').forEach(btn => {
+            btn.disabled = true;
+
+            if (btn.getAttribute('data-orijinal-cevap') === dogruOrijinalCevap) {
+                btn.classList.add('dogru');
+            } else if (btn.getAttribute('data-orijinal-cevap') === kullaniciOrijinalCevap) {
+                btn.classList.add('yanlis');
+            }
+        });
+    };
+
+    // --- Navigasyon ve Sınav Sonu ---
+
+    ileriButton.addEventListener('click', () => {
+        // Sınav modunda işaretleme yapılmadıysa veya sınav bitmişse (yanlışları incelerken bile) manuel geçişe izin verilir.
+        if (aktifMod === 'sinav' && !seceneklerContainer.classList.contains('cevaplandi')) return; 
+
+        if (mevcutSoruIndex < tumSorular.length - 1) {
+            mevcutSoruIndex++;
+            if(aktifMod === 'ogrenme') {
+                saveLastIndex(aktifKonuDosyasi, mevcutSoruIndex); 
+            }
+            renderSoru(mevcutSoruIndex);
+        } else {
+            if (aktifMod === 'sinav') {
+                gosterSinavSonucu();
+            } else {
+                // Öğrenme modu bitti, başa dön ve alt menüye geç
+                saveLastIndex(aktifKonuDosyasi, 0); 
+                gosterEkrani(altMenu); 
+            }
+        }
+    });
+
+    geriButton.addEventListener('click', () => {
+        if (mevcutSoruIndex > 0) {
+            mevcutSoruIndex--;
+            if(aktifMod === 'ogrenme') {
+                saveLastIndex(aktifKonuDosyasi, mevcutSoruIndex); 
+            }
+            renderSoru(mevcutSoruIndex);
+        } else {
+            gosterEkrani(altMenu); 
+        }
+    });
+
+    const gosterSinavSonucu = () => {
+        let dogruSayisi = 0;
+        let yanlisSorular = [];
+
+        tumSorular.forEach(soru => {
+            const kullaniciCevabi = sinavCevaplari[soru.soru_id];
+            if (kullaniciCevabi === soru.dogru_secenek) {
+                dogruSayisi++;
+            } else {
+                const orjinalSoru = ogrenmeModuSorulari.find(q => q.soru_id === soru.soru_id);
+                if (orjinalSoru) {
+                    orjinalSoru.kullanici_cevabi = kullaniciCevabi; 
+                    yanlisSorular.push(orjinalSoru);
+                }
+            }
+        });
+
+        let sonucMetni = `Sınav Tamamlandı! Doğru Sayısı: ${dogruSayisi} / ${tumSorular.length}`;
+        alert(sonucMetni);
+
+        if (yanlisSorular.length > 0) {
+            tumSorular = yanlisSorular;
+            mevcutSoruIndex = 0;
+            aktifMod = 'ogrenme'; 
+            
+            alert(`Yanlış yaptığınız ${yanlisSorular.length} soru, cevap ve açıklamalarıyla gösteriliyor.`);
+            renderSoru(mevcutSoruIndex);
+        } else {
+            gosterEkrani(altMenu);
+        }
+    };
+
+
+    // --- Başlangıç Fonksiyonları ---
+    startCountdown(); 
+    gosterEkrani(konuSecimEkrani);
+    showMotivationQuote(); 
+
+    // Paylaşma İkonu dinleyicisi
+    paylasIcon.addEventListener('click', shareScreenshot);
+
+});
