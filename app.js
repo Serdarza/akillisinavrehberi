@@ -14,9 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const geriButton = document.getElementById('geriButton');
     const ileriButton = document.getElementById('ileriButton');
 
-    let tumSorular = []; // Seçilen konuya ait tüm soruları tutar
+    let tumSorular = []; 
     let mevcutSoruIndex = 0;
     let aktifKonuDosyasi = '';
+    let aktifMod = 'ogrenme'; // Varsayılan: Öğrenme Modu
 
     // --- Ekran Görünürlüğü Fonksiyonları ---
 
@@ -27,35 +28,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Konu Seçimi ve Alt Menü İşlemleri ---
 
-    document.querySelectorAll('.menu-button').forEach(button => {
+    document.querySelectorAll('#konuButonlari .menu-button').forEach(button => {
         button.addEventListener('click', (e) => {
             const konuDosyasi = e.target.getAttribute('data-konu');
+            const konuAdi = e.target.textContent;
 
             if (konuDosyasi) {
+                aktifKonuDosyasi = konuDosyasi;
+                
                 if (konuDosyasi === 'anayasajson') {
-                    aktifKonuDosyasi = konuDosyasi;
-                    altMenuBaslik.textContent = e.target.textContent;
+                    altMenuBaslik.textContent = konuAdi;
                     gosterEkrani(anayasaAltMenu);
                 } else {
-                    // Diğer konular için doğrudan soru yükleme (Şimdilik sadece Anayasa'yı açıyoruz)
-                    aktifKonuDosyasi = konuDosyasi;
-                    alert(`${e.target.textContent} konusu seçildi. Sorular yükleniyor...`);
-                    // loadQuestions(konuDosyasi);
+                    // Diğer konular için doğrudan Öğrenme Modunu yükle
+                    loadQuestions(konuDosyasi, 'ogrenme', konuAdi);
                 }
-            } else if (e.target.getAttribute('data-action') === 'geri') {
-                gosterEkrani(konuSecimEkrani);
             }
         });
     });
 
     // Anayasa Alt Menü Aksiyonları
-    anayasaAltMenu.querySelectorAll('.purple-button').forEach(button => {
+    anayasaAltMenu.querySelectorAll('.menu-button').forEach(button => {
         button.addEventListener('click', (e) => {
             const action = e.target.getAttribute('data-action');
-            if (action === 'ogrenme') {
-                loadQuestions(aktifKonuDosyasi, 'ogrenme');
+            if (action === 'geri') {
+                gosterEkrani(konuSecimEkrani);
             } else {
-                alert(`Şu an sadece "Tüm Soruları Gözden Geçir (Öğrenme Modu)" aktiftir.`);
+                // Öğrenme veya Sınav Modunu yükle
+                const konuAdi = altMenuBaslik.textContent;
+                loadQuestions(aktifKonuDosyasi, action, konuAdi);
             }
         });
     });
@@ -63,48 +64,65 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Soru Yükleme ve Gösterme İşlemleri ---
 
-    const loadQuestions = async (dosyaAdi, mod) => {
+    const loadQuestions = async (dosyaAdi, mod, konuAdi) => {
         try {
-            // Gerçek projede JSON dosyalarının adını .json olarak kullanırsınız.
+            // JSON yükleme düzeltmesi: Dosya adının sonuna '.json' ekleniyor.
             const response = await fetch(`${dosyaAdi}.json`);
-            if (!response.ok) throw new Error(`Dosya bulunamadı: ${dosyaAdi}.json`);
+            
+            if (!response.ok) {
+                // Hata mesajını daha anlaşılır hale getir
+                throw new Error(`Dosya bulunamadı veya yüklenemedi: ${dosyaAdi}.json (HTTP Hata: ${response.status})`);
+            }
             
             const data = await response.json();
             
-            // JSON yapısı bir dizi (Array) bekliyor.
+            // Veriyi dizi olarak işleme (Tüm json dosyaları dizi bekler)
             if (Array.isArray(data)) {
                 tumSorular = data;
             } else if (data && data.soru_metni) {
                  // Eğer tek bir soru JSON'u ise (örneğin TSKDK_004)
                  tumSorular = [data]; 
             } else {
-                throw new Error("JSON formatı geçerli değil.");
+                throw new Error("JSON formatı geçerli değil veya boş.");
             }
 
             if (tumSorular.length > 0) {
+                aktifMod = mod;
                 mevcutSoruIndex = 0;
+                
+                if (mod === 'sinav') {
+                    // Sınav modu için sadece 20 soru seç ve karıştır
+                    alert(`"${konuAdi}" konusu için 20 soruluk sınav başlatıldı.`);
+                    tumSorular = tumSorular.sort(() => 0.5 - Math.random()).slice(0, 20);
+                } else {
+                    alert(`"${konuAdi}" konusu için Öğrenme Modu başlatıldı.`);
+                }
+                
                 gosterEkrani(soruEkrani);
-                renderSoru(mevcutSoruIndex, mod === 'ogrenme');
+                renderSoru(mevcutSoruIndex);
             } else {
-                alert('Bu konuda hiç soru bulunamadı.');
-                gosterEkrani(konuSecimEkrani);
+                alert(`Bu konuda (${konuAdi}) hiç soru bulunamadı.`);
+                // Anayasadan geliyorsa alt menüye, diğerlerinden geliyorsa ana menüye dön
+                gosterEkrani(aktifKonuDosyasi === 'anayasajson' ? anayasaAltMenu : konuSecimEkrani);
             }
 
         } catch (error) {
             console.error('Sorular yüklenirken hata oluştu:', error);
-            alert('Sorular yüklenemedi. Konsolu kontrol edin.');
+            alert(`Sorular yüklenemedi. Detaylar için konsolu kontrol edin. Hata: ${error.message}`);
             gosterEkrani(konuSecimEkrani);
         }
     };
 
 
-    const renderSoru = (index, ogrenmeModu = true) => {
+    const renderSoru = (index) => {
         const soru = tumSorular[index];
         if (!soru) return;
 
         // Ekranı temizle/resetle
         seceneklerContainer.innerHTML = '';
         aciklamaKutusu.classList.add('hidden');
+        // Cevap durumlarını kaldır
+        seceneklerContainer.classList.remove('cevaplandi'); 
         favoriIcon.classList.remove('fas', 'far');
         favoriIcon.classList.add('far'); // Favori değil (içi boş kalp)
 
@@ -113,30 +131,32 @@ document.addEventListener('DOMContentLoaded', () => {
         gosterilenSoruMetni.textContent = soru.soru_metni;
 
         // Seçenekleri oluştur
-        Object.keys(soru.secenekler).forEach(key => {
-            const button = document.createElement('button');
-            button.className = 'option-button';
-            button.setAttribute('data-cevap', key);
-            
-            // Seçenek metnini formatla (A) B) gibi)
-            const secenekMetni = `${key.toUpperCase()}) ${soru.secenekler[key]}`;
-            button.textContent = secenekMetni;
+        const harfler = ['a', 'b', 'c', 'd', 'e'];
+        harfler.forEach(key => {
+            if (soru.secenekler[key] !== undefined) {
+                const button = document.createElement('button');
+                button.className = 'option-button';
+                button.setAttribute('data-cevap', key);
+                
+                const secenekMetni = `${key.toUpperCase()}) ${soru.secenekler[key]}`;
+                button.textContent = secenekMetni;
 
-            // Öğrenme modunda cevap kontrolü ekle
-            if (ogrenmeModu) {
                 button.addEventListener('click', () => {
-                    cevapKontrol(button, soru, ogrenmeModu);
+                    // Sınav modunda veya öğrenme modunda cevap kontrolü
+                    cevapKontrol(button, soru);
                 });
+
+                seceneklerContainer.appendChild(button);
             }
-
-            seceneklerContainer.appendChild(button);
         });
-
-        // Öğrenme modunda ise doğru cevabı göstermeden sadece tıklama beklenir.
     };
 
-    const cevapKontrol = (tiklananButton, soru, ogrenmeModu) => {
-        // Tıklama sonrası diğer butonların tıklamasını engelle
+    const cevapKontrol = (tiklananButton, soru) => {
+        // Zaten cevaplanmışsa bir daha cevaplama
+        if (seceneklerContainer.classList.contains('cevaplandi')) return;
+        seceneklerContainer.classList.add('cevaplandi');
+
+
         seceneklerContainer.querySelectorAll('.option-button').forEach(btn => {
             btn.disabled = true;
         });
@@ -153,11 +173,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Açıklamayı göster
-        if (ogrenmeModu && soru.aciklama) {
+        // Açıklamayı sadece Öğrenme Modunda göster
+        if (aktifMod === 'ogrenme' && soru.aciklama) {
             aciklamaMetni.textContent = soru.aciklama;
             aciklamaKutusu.classList.remove('hidden');
         }
+        
+        // Sınav modu için skor takibi burada yapılabilir. (Şu an sadece görsel feedback veriyor.)
     };
 
     // --- Navigasyon (Geri/İleri) ---
@@ -165,19 +187,20 @@ document.addEventListener('DOMContentLoaded', () => {
     ileriButton.addEventListener('click', () => {
         if (mevcutSoruIndex < tumSorular.length - 1) {
             mevcutSoruIndex++;
-            renderSoru(mevcutSoruIndex, true); // Öğrenme Modunda Kal
+            renderSoru(mevcutSoruIndex);
         } else {
-            alert('Son soruya ulaştınız.');
+            alert('Son soruya ulaştınız. Sınavı tamamla veya ana menüye dön.');
         }
     });
 
     geriButton.addEventListener('click', () => {
         if (mevcutSoruIndex > 0) {
             mevcutSoruIndex--;
-            renderSoru(mevcutSoruIndex, true); // Öğrenme Modunda Kal
+            renderSoru(mevcutSoruIndex);
         } else {
-            // Soru 1'deyken geri basılırsa ana menüye dön
-            gosterEkrani(anayasaAltMenu);
+             // Soru 1'deyken geri basılırsa bir önceki ekrana dön
+            const oncekiEkran = (aktifKonuDosyasi === 'anayasajson' || aktifKonuDosyasi === '') ? anayasaAltMenu : konuSecimEkrani;
+            gosterEkrani(oncekiEkran);
         }
     });
 
@@ -190,10 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Soru favorilere eklendi/kaldırıldı.');
     });
 
-
     // Sayfa yüklendiğinde Konu Seçim Ekranı görünür.
     gosterEkrani(konuSecimEkrani);
 
-    // İlk JSON örneğini yüklemek için (Test amaçlı, TSKDK_004'ü yükler)
-    // loadQuestions('ornek', 'ogrenme'); 
 });
