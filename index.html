@@ -1,66 +1,54 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akıllı Sınav Rehberi</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akıllı Sınav Rehberi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div id="app-container">
-
-        <div id="screen-main-menu" class="screen active">
-            <div id="countdown-container">
-                <h2>Sınava Kalan Süre</h2>
-                <div id="countdown">
-                    <div class="countdown-item"><span id="days">0</span><p>Gün</p></div>
-                    <div class="countdown-item"><span id="hours">0</span><p>Saat</p></div>
-                    <div class="countdown-item"><span id="minutes">0</span><p>Dakika</p></div>
-                    <div class="countdown-item"><span id="seconds">0</span><p>Saniye</p></div>
-                </div>
-            </div>
-            <h1 class="main-title">Dersler</h1>
-            <div id="main-menu-buttons"></div>
-        </div>
-
-        <div id="screen-subject-menu" class="screen">
-            <h1 id="subject-menu-title">Ders Adı</h1>
-            <button id="btn-back-to-main" class="menu-button-secondary">Derslere Dön</button>
-            <button id="btn-learn-mode" class="menu-button">Tüm Soruları Gözden Geçir (Öğrenme)</button>
-            <button id="btn-quiz-mode-20" class="menu-button">20 Soruluk Sınava Başla</button>
-        </div>
-
-        <div id="screen-quiz" class="screen">
-            <div id="quiz-header">
-                <button id="btn-back-to-subject" class="menu-button-secondary small">Sınavdan Çık</button>
-                <div id="question-counter">Soru: 1/20</div>
-            </div>
-            <div id="quiz-container">
-                <div id="question-text">Soru metni...</div>
-                <div id="options-container"></div>
-                <div id="explanation-box" style="display: none;"><p id="explanation-text"></p></div>
-                <div id="quiz-nav-buttons">
-                    <button id="btn-prev" class="menu-button-secondary">Geri</button>
-                    <button id="btn-next" class="menu-button-secondary">İleri</button>
-                </div>
-            </div>
-        </div>
-
-        <div id="screen-results" class="screen">
-            <h1>Sınav Sonucu</h1>
-            <div id="results-summary">
-                <p id="results-score"></p>
-            </div>
-            <div id="wrong-answers-container">
-                <h2>Yanlış Cevaplar</h2>
-                <ul id="wrong-answers-list"></ul>
-            </div>
-            <button id="btn-restart-quiz" class="menu-button">Sınavı Tekrarla</button>
-            <button id="btn-results-to-menu" class="menu-button-secondary">Ders Menüsüne Dön</button>
-        </div>
-
+  <div id="app">
+    <!-- Ana sayfa ekranı -->
+    <div id="home-screen">
+      <div id="countdown">
+        <h1>Sınava Kalan Süre</h1>
+        <div id="timer"></div>
+      </div>
+      <h2>Ders Seçimi</h2>
+      <div id="subjects"></div>
     </div>
-    <script src="app.js"></script>
+
+    <!-- Ders menüsü ekranı -->
+    <div id="subject-menu" style="display: none;">
+      <h2 id="subject-title"></h2>
+      <button id="review-mode">Tüm Soruları Gözden Geçir</button>
+      <button id="test-mode">20 Soruluk Sınava Başla</button>
+      <button id="back-to-home">Ana Sayfaya Dön</button>
+    </div>
+
+    <!-- Sınav ekranı -->
+    <div id="quiz-screen" style="display: none;">
+      <h2 id="quiz-title"></h2>
+      <div id="question-number"></div>
+      <div id="question-text"></div>
+      <div id="options"></div>
+      <div id="feedback"></div>
+      <div id="explanation"></div>
+      <div id="quiz-buttons">
+        <button id="prev-question" style="display: none;">Geri</button>
+        <button id="next-question">İleri</button>
+      </div>
+    </div>
+
+    <!-- Sonuç ekranı -->
+    <div id="result-screen" style="display: none;">
+      <h2>Sınav Sonucu</h2>
+      <div id="score"></div>
+      <div id="wrong-answers"></div>
+      <button id="restart-quiz">Sınavı Tekrarla</button>
+      <button id="back-to-subject">Ders Menüsüne Dön</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
