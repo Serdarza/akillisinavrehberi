@@ -9,62 +9,89 @@
 </head>
 <body>
 
-    <div class="container" id="konuSecimEkrani">
-        <h1 class="header-title">Konu Seçimi</h1>
-        <div id="konuButonlari">
-            <button class="menu-button" data-konu="anayasajson">Anayasa</button>
-            <button class="menu-button" data-konu="guncelolaylar">Basın Güncel Olaylar</button>
-            <button class="menu-button" data-konu="disiplinkanunu">Disiplin Kanunu</button>
-            <button class="menu-button" data-konu="ichizmetkanunu">İç Hizmet Kanunu</button>
-            <button class="menu-button" data-konu="ichizmetyonetmeligi">İç Hizmet Yönetmeliği</button>
-            <button class="menu-button" data-konu="idarehukuku">İdare Hukuku</button>
-            <button class="menu-button" data-konu="msbyazisma">Resmi Yazışma Usulleri</button>
-            <button class="menu-button" data-konu="siyasitarih">Siyasi Tarih</button>
-            <button class="menu-button" data-konu="tctarihi">Türkiye Cumhuriyeti Tarihi</button>
-            <button class="menu-button" data-konu="uluslararasihukuk">Uluslararası Hukuk</button>
+    <div class="countdown-container" id="countdownContainer">
+        <div class="countdown-header">20 Aralık Sınavına Kalan Süre:</div>
+        <div class="countdown-timer">
+            <div class="time-box">
+                <span id="days">00</span>
+                <span class="label">Gün</span>
             </div>
-    </div>
-
-    <div class="container hidden" id="anayasaAltMenu">
-        <h1 class="header-title" id="altMenuBaslik">Anayasa</h1>
-        <button class="menu-button purple-button" data-action="ogrenme">Tüm Soruları Gözden Geçir (Öğrenme Modu)</button>
-        <button class="menu-button purple-button" data-action="sinav">20 Soruluk Sınava Başla</button>
-        <button class="menu-button back-button" data-action="geri">Geri Dön</button>
-    </div>
-
-    <div class="container hidden" id="soruEkrani">
-        <div class="question-header">
-            <span id="soruNumarasi">Soru: 1/1</span>
-            <div class="header-icons">
-                <i class="far fa-heart" id="favoriIcon"></i>
-                <i class="fas fa-share-alt"></i>
+            <div class="time-separator">:</div>
+            <div class="time-box">
+                <span id="hours">00</span>
+                <span class="label">Saat</span>
+            </div>
+            <div class="time-separator">:</div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <span class="label">Dakika</span>
+            </div>
+            <div class="time-separator">:</div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <span class="label">Saniye</span>
             </div>
         </div>
-        
-        <div class="question-area">
-            <p class="soru-metni" id="gosterilenSoruMetni">Soru metni buraya yüklenecek.</p>
+    </div>
 
-            <div class="options-container" id="seceneklerContainer">
+    <div class="app-content-wrapper"> 
+        <div class="container" id="konuSecimEkrani">
+            <h1 class="header-title">Konu Seçimi</h1>
+            <div id="konuButonlari">
+                <button class="menu-button" data-konu="anayasajson">Anayasa</button>
+                <button class="menu-button" data-konu="guncelolaylar">Basın Güncel Olaylar</button>
+                <button class="menu-button" data-konu="disiplinkanunu">Disiplin Kanunu</button>
+                <button class="menu-button" data-konu="ichizmetkanunu">İç Hizmet Kanunu</button>
+                <button class="menu-button" data-konu="ichizmetyonetmeligi">İç Hizmet Yönetmeliği</button>
+                <button class="menu-button" data-konu="idarehukuku">İdare Hukuku</button>
+                <button class="menu-button" data-konu="msbyazisma">Resmi Yazışma Usulleri</button>
+                <button class="menu-button" data-konu="siyasitarih">Siyasi Tarih</button>
+                <button class="menu-button" data-konu="tctarihi">Türkiye Cumhuriyeti Tarihi</button>
+                <button class="menu-button" data-konu="uluslararasihukuk">Uluslararası Hukuk</button>
+            </div>
+        </div>
+
+        <div class="container hidden" id="anayasaAltMenu">
+            <h1 class="header-title" id="altMenuBaslik">Anayasa</h1>
+            <button class="menu-button purple-button" data-action="ogrenme">Tüm Soruları Gözden Geçir (Öğrenme Modu)</button>
+            <button class="menu-button purple-button" data-action="sinav">20 Soruluk Sınava Başla</button>
+            <button class="menu-button back-button" data-action="geri">Geri Dön</button>
+        </div>
+
+        <div class="container hidden" id="soruEkrani">
+            <div class="question-header">
+                <span id="soruNumarasi">Soru: 1/1</span>
+                <div class="header-icons">
+                    <i class="far fa-heart" id="favoriIcon"></i>
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+            
+            <div class="question-area">
+                <p class="soru-metni" id="gosterilenSoruMetni">Soru metni buraya yüklenecek.</p>
+
+                <div class="options-container" id="seceneklerContainer">
                 </div>
 
-            <div class="aciklama-kutusu hidden" id="aciklamaKutusu">
-                <p class="aciklama-baslik">Açıklama</p>
-                <p id="aciklamaMetni">Açıklama metni buraya yüklenecek.</p>
-                <p class="kanit-baslik">Kanıt Cümlesi</p>
-                <p id="kanitMetni"></p>
+                <div class="aciklama-kutusu hidden" id="aciklamaKutusu">
+                    <p class="aciklama-baslik">Açıklama</p>
+                    <p id="aciklamaMetni">Açıklama metni buraya yüklenecek.</p>
+                    <p class="kanit-baslik">Kanıt Cümlesi</p>
+                    <p id="kanitMetni"></p>
+                </div>
             </div>
-        </div>
 
-        <div class="nav-buttons">
-            <button class="nav-button" id="geriButton">Geri</button>
-            <button class="nav-button" id="ileriButton">İleri</button>
-        </div>
+            <div class="nav-buttons">
+                <button class="nav-button" id="geriButton">Geri</button>
+                <button class="nav-button" id="ileriButton">İleri</button>
+            </div>
 
-        <div class="footer-nav">
-            <i class="fas fa-home"></i>
-            <i class="fas fa-history"></i>
-            <i class="fas fa-cog"></i>
-            <i class="fas fa-user"></i>
+            <div class="footer-nav">
+                <i class="fas fa-home"></i>
+                <i class="fas fa-history"></i>
+                <i class="fas fa-cog"></i>
+                <i class="fas fa-user"></i>
+            </div>
         </div>
     </div>
 
