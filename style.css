@@ -186,16 +186,17 @@ body {
     margin-top: 20px;
 }
 
-.aciklama-baslik {
+.aciklama-baslik, .kanit-baslik {
     font-weight: 600;
     color: var(--green-correct);
     margin-bottom: 5px;
 }
 
-#aciklamaMetni {
+#aciklamaMetni, #kanitMetni {
     font-size: 14px;
     line-height: 1.5;
     color: var(--text-light);
+    margin-bottom: 10px;
 }
 
 /* Navigasyon Butonları (Geri/İleri) */
