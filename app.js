@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let selectedSubject = null;
     let currentMode = '';
 
-    // Ekranları tek bir yerden yönetmek için obje
     const screens = {
         mainMenu: document.getElementById("screen-main-menu"),
         subjectMenu: document.getElementById("screen-subject-menu"),
@@ -28,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
         results: document.getElementById("screen-results")
     };
 
-    // Tüm elementleri başta bir kere seçiyoruz
     const mainMenuButtonsContainer = document.getElementById("main-menu-buttons");
     const subjectMenuTitle = document.getElementById("subject-menu-title");
     const btnBackToMain = document.getElementById("btn-back-to-main");
@@ -47,8 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnRestartQuiz = document.getElementById("btn-restart-quiz");
     const btnResultsToMenu = document.getElementById("btn-results-to-menu");
 
-    // Uygulamayı Başlat
     buildMainMenu();
+    startCountdown(); 
 
     function showScreen(screenName) {
         Object.values(screens).forEach(screen => screen.classList.remove("active"));
@@ -94,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
             currentQuestionIndex = 0;
             btnPrev.style.display = 'none';
             btnNext.style.display = 'block';
-        } else { // Öğrenme Modu
+        } else {
             currentQuizQuestions = questions;
             const savedIndex = localStorage.getItem(`progress_${selectedSubject.name}`);
             currentQuestionIndex = savedIndex ? parseInt(savedIndex, 10) : 0;
@@ -151,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const aciklamaText = question.aciklama || "Bu soru için ek bir açıklama bulunmamaktadır.";
             explanationText.innerHTML = `<strong>Kanıt:</strong> ${question.kanit_cumlesi || 'Yok'}<br><br><strong>Açıklama:</strong> ${aciklamaText}`;
             explanationBox.style.display = "block";
-        } else { // Sınav Modu
+        } else {
             clickedButton.classList.add(isCorrect ? "correct" : "incorrect");
             userAnswers[currentQuestionIndex] = { question, selectedText, correctText, isCorrect };
         }
@@ -162,7 +160,6 @@ document.addEventListener("DOMContentLoaded", () => {
             showResults();
             return;
         }
-
         const newIndex = currentQuestionIndex + direction;
         if (newIndex >= 0 && newIndex < currentQuizQuestions.length) {
             currentQuestionIndex = newIndex;
@@ -182,14 +179,10 @@ document.addEventListener("DOMContentLoaded", () => {
         userAnswers.forEach(answer => {
             if (answer && !answer.isCorrect) {
                 const li = document.createElement("li");
-                li.innerHTML = `
-                    <p class="question-text">${answer.question.soru_metni}</p>
-                    <p class="correct-answer">Doğru Cevap: ${answer.correctText}</p>
-                `;
+                li.innerHTML = `<p class="question-text">${answer.question.soru_metni}</p><p class="correct-answer">Doğru Cevap: ${answer.correctText}</p>`;
                 wrongAnswersList.appendChild(li);
             }
         });
-
         showScreen("results");
     }
     
@@ -203,12 +196,38 @@ document.addEventListener("DOMContentLoaded", () => {
     btnResultsToMenu.onclick = () => showScreen("subjectMenu");
     btnRestartQuiz.onclick = () => loadQuestionsAndStartQuiz('quiz', 20);
 
-    // Yardımcı Fonksiyon
+    // Yardımcı Fonksiyonlar
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [array[i], array[j]] = [array[j], array[i]];
         }
         return array;
+    }
+
+    function startCountdown() {
+        const countdownDate = new Date("December 20, 2025 00:00:00").getTime();
+
+        const countdownFunction = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown-container").innerHTML = "<h2>Sınav Zamanı Geldi! Başarılar!</h2>";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = String(days).padStart(2, '0');
+            document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+            document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+
+        }, 1000);
     }
 });
