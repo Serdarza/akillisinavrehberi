@@ -11,20 +11,17 @@
     <div id="app-container">
 
         <div id="screen-main-menu" class="screen active">
-            
             <div id="countdown-container">
                 <h2>Sınava Kalan Süre</h2>
                 <div id="countdown">
-                    <div class="countdown-item"><span id="days">00</span> Gün</div>
-                    <div class="countdown-item"><span id="hours">00</span> Saat</div>
-                    <div class="countdown-item"><span id="minutes">00</span> Dakika</div>
-                    <div class="countdown-item"><span id="seconds">00</span> Saniye</div>
+                    <div class="countdown-item"><span id="days">0</span><p>Gün</p></div>
+                    <div class="countdown-item"><span id="hours">0</span><p>Saat</p></div>
+                    <div class="countdown-item"><span id="minutes">0</span><p>Dakika</p></div>
+                    <div class="countdown-item"><span id="seconds">0</span><p>Saniye</p></div>
                 </div>
             </div>
-            
             <h1 class="main-title">Dersler</h1>
-            <div id="main-menu-buttons">
-                </div>
+            <div id="main-menu-buttons"></div>
         </div>
 
         <div id="screen-subject-menu" class="screen">
@@ -40,11 +37,9 @@
                 <div id="question-counter">Soru: 1/20</div>
             </div>
             <div id="quiz-container">
-                <div id="question-text">Soru metni buraya gelecek...</div>
+                <div id="question-text">Soru metni...</div>
                 <div id="options-container"></div>
-                <div id="explanation-box" style="display: none;">
-                    <p id="explanation-text"></p>
-                </div>
+                <div id="explanation-box" style="display: none;"><p id="explanation-text"></p></div>
                 <div id="quiz-nav-buttons">
                     <button id="btn-prev" class="menu-button-secondary">Geri</button>
                     <button id="btn-next" class="menu-button-secondary">İleri</button>
@@ -55,7 +50,7 @@
         <div id="screen-results" class="screen">
             <h1>Sınav Sonucu</h1>
             <div id="results-summary">
-                <p id="results-score">20 sorudan 15 doğru, 5 yanlış yaptınız.</p>
+                <p id="results-score"></p>
             </div>
             <div id="wrong-answers-container">
                 <h2>Yanlış Cevaplar</h2>
@@ -66,7 +61,6 @@
         </div>
 
     </div>
-
     <script src="app.js"></script>
 </body>
 </html>
