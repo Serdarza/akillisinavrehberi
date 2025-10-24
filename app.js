@@ -1,137 +1,200 @@
-const dersler = [
-    { "id": "anayasa", "ad": "Anayasa" }
-    // Buraya daha fazla ders ekleyebilirsiniz: { "id": "hukuk", "ad": "Hukuk" }
-];
+// DOM Hazır Olduğunda Başla
+document.addEventListener("DOMContentLoaded", () => {
 
-let tumSorular = [];
-let mevcutSorular = [];
-let mevcutSoruIndex = 0;
-let secilenDersId = '';
+    // Global Değişkenler
+    let allQuestions = []; // Tüm soruları tutacak dizi
+    let currentQuizQuestions = []; // Mevcut sınavdaki sorular
+    let currentQuestionIndex = 0; // Mevcut soru indeksi
+    let selectedSubject = ""; // Seçilen ders
 
-document.addEventListener('DOMContentLoaded', () => {
-    dersleriYukle();
-    // Diğer event listener'lar buraya eklenecek
-});
+    // Ekranlar
+    const screenMainMenu = document.getElementById("screen-main-menu");
+    const screenSubjectMenu = document.getElementById("screen-subject-menu");
+    const screenQuiz = document.getElementById("screen-quiz");
 
-function dersleriYukle() {
-    const dersListesiDiv = document.getElementById('ders-listesi');
-    dersListesiDiv.innerHTML = ''; // Temizle
-    if (dersler.length === 0) {
-        dersListesiDiv.innerHTML = '<p>Henüz ders eklenmemiş.</p>';
-        return;
+    // Ana Menü Elementleri
+    const mainMenuButtonsContainer = document.getElementById("main-menu-buttons");
+
+    // Ders Menüsü Elementleri
+    const subjectMenuTitle = document.getElementById("subject-menu-title");
+    const btnBackToMain = document.getElementById("btn-back-to-main");
+    const btnLearnMode = document.getElementById("btn-learn-mode");
+    const btnQuizMode20 = document.getElementById("btn-quiz-mode-20");
+
+    // Sınav Ekranı Elementleri
+    const btnBackToSubject = document.getElementById("btn-back-to-subject");
+    const questionCounter = document.getElementById("question-counter");
+    const questionText = document.getElementById("question-text");
+    const optionsContainer = document.getElementById("options-container");
+    const explanationBox = document.getElementById("explanation-box");
+    const explanationText = document.getElementById("explanation-text");
+    const btnPrev = document.getElementById("btn-prev");
+    const btnNext = document.getElementById("btn-next");
+
+    // --- UYGULAMA BAŞLANGICI ---
+    
+    // 1. Soruları JSON dosyasından yükle
+    fetch("sorular.json")
+        .then(response => response.json())
+        .then(data => {
+            allQuestions = data;
+            // 2. Ana menüyü oluştur
+            buildMainMenu();
+        })
+        .catch(error => {
+            console.error("Sorular yüklenirken hata oluştu:", error);
+            mainMenuButtonsContainer.innerHTML = "<p>Sorular yüklenemedi. Lütfen dosyayı kontrol edin.</p>";
+        });
+
+    // --- EKRAN YÖNETİMİ ---
+
+    function showScreen(screenId) {
+        // Tüm ekranları gizle
+        document.querySelectorAll(".screen").forEach(screen => {
+            screen.classList.remove("active");
+        });
+        // İstenen ekranı göster
+        document.getElementById(screenId).classList.add("active");
     }
-    dersler.forEach(ders => {
-        const button = document.createElement('button');
-        button.innerText = ders.ad;
-        button.onclick = () => dersSec(ders.id, ders.ad);
-        dersListesiDiv.appendChild(button);
-    });
-}
 
-async function dersSec(dersId, dersAdi) {
-    secilenDersId = dersId;
-    document.getElementById('secilen-ders-baslik').innerText = dersAdi;
-    ekranGecisi('ekran-modlar');
-    await sorulariYukle(dersId);
-}
+    // --- ANA MENÜ İŞLEVLERİ ---
 
-async function sorulariYukle(dersId) {
-    try {
-        const response = await fetch(`data/${dersId}.json`);
-        if (!response.ok) throw new Error('Dosya bulunamadı');
-        tumSorular = await response.json();
-        console.log(`${dersAdi} için ${tumSorular.length} soru yüklendi.`);
-    } catch (error) {
-        console.error("Sorular yüklenemedi:", error);
-        alert("Bu dersin soruları yüklenemedi. 'data' klasöründe doğru JSON dosyası olduğundan emin olun.");
-        tumSorular = [];
+    function buildMainMenu() {
+        // JSON'daki benzersiz dersleri bul
+        const subjects = [...new Set(allQuestions.map(q => q.ders))];
+        
+        mainMenuButtonsContainer.innerHTML = ""; // Menüyü temizle
+        
+        subjects.forEach(subject => {
+            const button = document.createElement("button");
+            button.className = "menu-button";
+            button.innerText = subject;
+            button.onclick = () => showSubjectMenu(subject);
+            mainMenuButtonsContainer.appendChild(button);
+        });
     }
-}
 
-// Mod butonları event'leri
-document.querySelectorAll('.mod-btn').forEach(button => {
-    button.addEventListener('click', (e) => {
-        const mod = e.target.dataset.mod;
-        if (tumSorular.length === 0) {
-            alert("Bu dersin soruları yüklenemedi veya boş.");
-            return;
-        }
-        if (mod === 'sinav') {
-            // 20 rastgele soru
-            mevcutSorular = [...tumSorular].sort(() => Math.random() - 0.5).slice(0, 20);
-        } else if (mod === 'ogrenme') {
-            // Tüm sorular
-            mevcutSorular = [...tumSorular];
-        }
-        if (mevcutSorular.length > 0) {
-            sinaviBaslat();
+    // --- DERS MENÜSÜ İŞLEVLERİ ---
+
+    function showSubjectMenu(subject) {
+        selectedSubject = subject; // Dersi global değişkene ata
+        subjectMenuTitle.innerText = subject; // Başlığı güncelle
+        showScreen("screen-subject-menu"); // Ders menüsünü göster
+    }
+
+    // Ders menüsündeki butonlara tıklama olayları
+    btnBackToMain.onclick = () => showScreen("screen-main-menu");
+    btnLearnMode.onclick = () => startQuiz("learn");
+    btnQuizMode20.onclick = () => startQuiz("quiz", 20);
+
+    // --- SINAV İŞLEVLERİ ---
+
+    function startQuiz(mode, questionCount) {
+        // Derse göre soruları filtrele
+        let questionsForSubject = allQuestions.filter(q => q.ders === selectedSubject);
+        
+        if (mode === "quiz") {
+            // Soruları karıştır ve istenen sayıda al (Fisher-Yates Shuffle)
+            currentQuizQuestions = shuffleArray(questionsForSubject).slice(0, questionCount);
         } else {
-            alert("Soru bulunamadı.");
+            // Öğrenme modu (Tüm sorular, karıştırma)
+            currentQuizQuestions = questionsForSubject;
         }
-    });
-});
 
-function sinaviBaslat() {
-    mevcutSoruIndex = 0;
-    ekranGecisi('ekran-sinav');
-    soruyuGoster();
-}
-
-function soruyuGoster() {
-    if (mevcutSoruIndex >= mevcutSorular.length) {
-        alert("Sınav/Öğrenme bitti!");
-        ekranGecisi('ekran-modlar');
-        return;
+        currentQuestionIndex = 0;
+        showQuestion(); // İlk soruyu göster
+        showScreen("screen-quiz"); // Sınav ekranını göster
     }
-    const soru = mevcutSorular[mevcutSoruIndex];
-    document.getElementById('soru-sayac').innerText = `Soru: ${mevcutSoruIndex + 1}/${mevcutSorular.length}`;
-    document.getElementById('soru-metni').innerText = soru.soru;
-    const seceneklerKonteyeri = document.getElementById('secenekler-konteyeri');
-    seceneklerKonteyeri.innerHTML = '';
     
-    const secenekHarfleri = ['A) ', 'B) ', 'C) ', 'D) ', 'E) '];
-    
-    soru.secenekler.forEach((secenek, index) => {
-        const button = document.createElement('button');
-        button.innerText = secenekHarfleri[index] + secenek; // Harf ekle
-        button.classList.add('secenek-btn');
-        button.onclick = () => cevapKontrol(index, soru.dogruCevapIndex);
-        seceneklerKonteyeri.appendChild(button);
-    });
-    document.getElementById('aciklama-konteyneri').classList.add('gizli');
-}
+    function showQuestion() {
+        // Mevcut soruyu al
+        const question = currentQuizQuestions[currentQuestionIndex];
+        
+        // Soru sayacını güncelle
+        questionCounter.innerText = `Soru: ${currentQuestionIndex + 1}/${currentQuizQuestions.length}`;
+        
+        // Soru metnini güncelle
+        questionText.innerText = question.soru_metni;
+        
+        // Seçenekleri temizle
+        optionsContainer.innerHTML = "";
+        
+        // Seçenekleri oluştur (A, B, C, D, E)
+        const optionKeys = Object.keys(question.secenekler); // ['a', 'b', 'c', 'd', 'e']
+        optionKeys.forEach(key => {
+            const button = document.createElement("button");
+            button.className = "option-btn";
+            // "a" -> "A) " şeklinde formatla
+            button.innerHTML = `<strong>${key.toUpperCase()})</strong> ${question.secenekler[key]}`;
+            button.dataset.key = key; // Hangi seçeneğe tıklandığını bilmek için
+            button.onclick = () => handleOptionClick(button, key, question.dogru_secenek);
+            optionsContainer.appendChild(button);
+        });
 
-function cevapKontrol(secilenIndex, dogruIndex) {
-    const secenekButonlari = document.querySelectorAll('.secenek-btn');
-    secenekButonlari.forEach((button, index) => {
-        button.disabled = true;
-        if (index === dogruIndex) {
-            button.classList.add('dogru');
-        } else if (index === secilenIndex && index !== dogruIndex) {
-            button.classList.add('yanlis');
+        // Açıklama kutusunu gizle
+        explanationBox.style.display = "none";
+
+        // Navigasyon butonlarını ayarla
+        btnPrev.disabled = currentQuestionIndex === 0;
+        btnNext.disabled = currentQuestionIndex === currentQuizQuestions.length - 1;
+    }
+
+    function handleOptionClick(clickedButton, selectedKey, correctKey) {
+        // Tüm seçenekleri pasif hale getir
+        document.querySelectorAll(".option-btn").forEach(btn => {
+            btn.disabled = true;
+        });
+
+        const isCorrect = selectedKey === correctKey;
+
+        if (isCorrect) {
+            clickedButton.classList.add("correct"); // Tıklanana yeşil sınıfı ekle
+        } else {
+            clickedButton.classList.add("incorrect"); // Tıklanana kırmızı sınıfı ekle
+            
+            // Doğru olanı bul ve yeşil yap
+            const correctButton = optionsContainer.querySelector(`[data-key="${correctKey}"]`);
+            if (correctButton) {
+                correctButton.classList.add("correct");
+            }
         }
-    });
-    document.getElementById('aciklama-metni').innerText = mevcutSorular[mevcutSoruIndex].aciklama || 'Açıklama yok.';
-    document.getElementById('aciklama-konteyneri').classList.remove('gizli');
-}
-
-// Navigasyon butonları
-document.getElementById('ileri-btn').addEventListener('click', () => {
-    mevcutSoruIndex++;
-    soruyuGoster();
-});
-
-document.getElementById('geri-btn').addEventListener('click', () => {
-    if (mevcutSoruIndex > 0) {
-        mevcutSoruIndex--;
-        soruyuGoster();
+        
+        // Açıklamayı göster
+        const question = currentQuizQuestions[currentQuestionIndex];
+        explanationText.innerHTML = `<strong>Kanıt Cümlesi:</strong> ${question.kanit_cumlesi || 'Yok'}<br><br><strong>Açıklama:</strong> ${question.aciklama}`;
+        explanationBox.style.display = "block";
     }
+
+    // Sınav navigasyon butonları
+    btnPrev.onclick = () => {
+        if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            showQuestion();
+        }
+    };
+    
+    btnNext.onclick = () => {
+        if (currentQuestionIndex < currentQuizQuestions.length - 1) {
+            currentQuestionIndex++;
+            showQuestion();
+        }
+    };
+
+    // Sınavdan ders menüsüne dön
+    btnBackToSubject.onclick = () => showScreen("screen-subject-menu");
+
+    // --- YARDIMCI FONKSİYONLAR ---
+    
+    // Fisher-Yates (aka Knuth) Shuffle Algoritması
+    function shuffleArray(array) {
+        let currentIndex = array.length, randomIndex;
+        
+        while (currentIndex != 0) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+        }
+        return array;
+    }
+
 });
-
-document.getElementById('derse-geri-don').addEventListener('click', () => ekranGecisi('ekran-dersler'));
-document.getElementById('ana-menuye-don-btn').addEventListener('click', () => ekranGecisi('ekran-dersler'));
-
-function ekranGecisi(gosterilecekEkranId) {
-    document.querySelectorAll('.ekran').forEach(ekran => ekran.classList.remove('aktif'));
-    document.getElementById(gosterilecekEkranId).classList.add('aktif');
-}
