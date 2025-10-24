@@ -51,7 +51,7 @@ body {
     margin: 10px;
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Konu butonları arasındaki boşluk */
+    gap: 15px; 
 }
 
 .hidden {
@@ -129,7 +129,6 @@ body {
 }
 
 /* --- Konu ve Menü Butonları --- */
-/* BUTONLARIN YAN YANA GELMESİNİ ENGELLEMEK İÇİN display: flex VE flex-direction: column YAPIYI KORU */
 #konuButonlari {
     display: flex;
     flex-direction: column;
@@ -153,7 +152,7 @@ body {
     background-color: var(--white);
     color: var(--text-dark);
     border: 1px solid var(--gray-light);
-    display: block; /* Butonların satır bazında yer kaplamasını sağla */
+    display: block; /* Butonların dikey sıralanmasını sağlar */
 }
 
 #konuButonlari .menu-button:hover {
@@ -177,7 +176,7 @@ body {
     margin-top: 10px;
 }
 
-/* Soru Ekranı Stilleri (Öncekiyle aynı) */
+/* Soru Ekranı Stilleri */
 #soruEkrani {
     padding: 20px 0; 
     gap: 0;
@@ -236,10 +235,9 @@ body {
     cursor: pointer;
     transition: background-color 0.2s, border-color 0.2s;
     line-height: 1.4;
-    display: block; /* Düğmeleri düzeltmek için eklendi */
+    display: block; /* Düğmeleri dikey sıralanmasını sağlar */
 }
 
-/* Cevap Renklendirmeleri */
 .option-button.dogru {
     background-color: var(--green-correct);
     color: var(--white);
