@@ -27,7 +27,7 @@ body {
     align-items: flex-start;
     min-height: 100vh;
     padding-top: 20px; 
-    flex-direction: column; /* Sayfayı dikey eksende sırala */
+    flex-direction: column; 
 }
 
 /* Uygulama İçerik Sınırlayıcısı */
@@ -41,7 +41,6 @@ body {
 
 .container {
     width: 100%;
-    /* max-width: 450px; KALDIRILDI, app-content-wrapper'da tanımlı */
     background-color: var(--white);
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -61,7 +60,7 @@ body {
     width: 100%;
     max-width: 450px;
     margin-bottom: 20px;
-    background-color: var(--purple-dark); /* Koyu mor arka plan */
+    background-color: var(--purple-dark); 
     color: var(--white);
     padding: 15px 20px;
     border-radius: 12px;
@@ -73,7 +72,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 10px;
-    color: #ffcc80; /* Açık turuncu/altın rengi */
+    color: #ffcc80; 
 }
 
 .countdown-timer {
@@ -93,7 +92,7 @@ body {
     font-size: 32px;
     font-weight: 700;
     line-height: 1;
-    color: var(--countdown-color); /* Dikkat çekici zaman rengi */
+    color: var(--countdown-color); 
     background-color: var(--white);
     padding: 5px 10px;
     border-radius: 6px;
@@ -330,7 +329,7 @@ body {
 
     .app-content-wrapper {
         min-height: 100vh;
-        padding-bottom: 70px; /* Footer yüksekliği kadar boşluk */
+        padding-bottom: 70px; 
     }
 
     .container {
