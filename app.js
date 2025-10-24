@@ -1,6 +1,14 @@
 const subjectsConfig = [
-  { name: 'Anayasa', file: 'anayasa.json' },
-  // Yeni ders eklemek için: { name: 'Ders Adı', file: 'dersadı.json' }
+  { name: '6413 S.K. - Kanunun Künyesi ve Amacı', file: 'anayasa.json' },
+  { name: 'Disiplin Kanunu', file: 'disiplinkanunu.json' },
+  { name: 'Güncel Olaylar', file: 'guncelolaylar.json' },
+  { name: 'İç Hizmet Kanunu', file: 'ichizmetkanunu.json' },
+  { name: 'İçişleri Yönetmeligi', file: 'ichizmetyonetmeligi.json' },
+  { name: 'İdare Hukuku', file: 'idarehukuku.json' },
+  { name: 'MSB Yazışmaları', file: 'msbyazisma.json' },
+  { name: 'Siyasi Tarih', file: 'siyasitarih.json' },
+  { name: 'TCTarihi', file: 'tctarihi.json' },
+  { name: 'Uluslararası Hukuk', file: 'uluslararasihukuk.json' }
 ];
 
 const EXAM_DATE = new Date('2025-12-20T00:00:00');
@@ -53,7 +61,13 @@ function loadQuestions(file, callback) {
   fetch(file)
     .then(response => response.json())
     .then(data => {
-      questions = data;
+      questions = data.map(q => ({
+        question: q.soru_metni,
+        options: Object.values(q.secenekler),
+        correctAnswer: Object.keys(q.secenekler).indexOf(q.dogru_secenek),
+        explanation: q.aciklama,
+        evidence: q.kanit_cumlesi
+      }));
       callback();
     })
     .catch(error => console.error('Soru yükleme hatası:', error));
@@ -104,7 +118,7 @@ function handleAnswer(selectedIndex) {
   if (currentMode === 'review') {
     options[question.correctAnswer].classList.add('correct');
     document.getElementById('feedback').textContent = isCorrect ? 'Doğru!' : 'Yanlış!';
-    document.getElementById('explanation').textContent = question.explanation;
+    document.getElementById('explanation').textContent = `${question.evidence}\n${question.explanation}`;
   } else {
     userAnswers.push({ questionIndex: currentQuestionIndex, selectedIndex, isCorrect });
   }
@@ -140,7 +154,7 @@ function showResults() {
     if (!answer.isCorrect) {
       const question = selectedQuestions[answer.questionIndex];
       const div = document.createElement('div');
-      div.innerHTML = `<p><strong>Soru ${answer.questionIndex + 1}:</strong> ${question.question}<br><strong>Seçtiğiniz cevap:</strong> ${question.options[answer.selectedIndex]}<br><strong>Doğru cevap:</strong> ${question.options[question.correctAnswer]}</p>`;
+      div.innerHTML = `<p><strong>Soru ${answer.questionIndex + 1}:</strong> ${question.question}<br><strong>Seçtiğiniz cevap:</strong> ${question.options[answer.selectedIndex]}<br><strong>Doğru cevap:</strong> ${question.options[question.correctAnswer]}<br><strong>Açıklama:</strong> ${question.evidence} ${question.explanation}</p>`;
       wrongAnswersDiv.appendChild(div);
     }
   });
