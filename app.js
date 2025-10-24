@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const aciklamaMetni = document.getElementById('aciklamaMetni');
     const kanitMetni = document.getElementById('kanitMetni');
     const paylasIcon = document.getElementById('paylasIcon');
+    
+    // Navigasyon Butonları
+    const anaSayfaButton = document.getElementById('anaSayfaButton'); // Yeni Anasayfa butonu
     const geriButton = document.getElementById('geriButton');
     const ileriButton = document.getElementById('ileriButton');
     
@@ -64,23 +67,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Pop-up Yönetimi ---
     const showMotivationQuote = () => {
-        // Kontrol: Sadece Local Storage'da 'motivationQuoteShown' yoksa göster
         const isQuoteShown = localStorage.getItem('motivationQuoteShown');
         if (isQuoteShown) return;
 
-        // Rastgele sözü seç
         const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
         quoteText.textContent = `"${randomQuote.text}"`;
         quoteAuthor.textContent = `- ${randomQuote.author}`;
         
-        // Modal'ı göster
         motivationModal.classList.remove('hidden');
         
-        // Local Storage'a kaydet
         localStorage.setItem('motivationQuoteShown', 'true');
     };
 
-    // Modal Kapatma Dinleyicisi
     closeModal.addEventListener('click', () => {
         motivationModal.classList.add('hidden');
     });
@@ -220,6 +218,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    
+    // --- Soru Numarasına Tıklama İşlevi (Jump To Question) ---
+    soruNumarasiSpan.addEventListener('click', () => {
+        if (aktifMod !== 'ogrenme') return; // Sadece öğrenme modunda aktif
+
+        const totalQuestions = tumSorular.length;
+        let targetIndex = prompt(`Lütfen 1 ile ${totalQuestions} arasında bir soru numarası girin:`);
+
+        if (targetIndex !== null) {
+            targetIndex = parseInt(targetIndex.trim());
+
+            if (!isNaN(targetIndex) && targetIndex >= 1 && targetIndex <= totalQuestions) {
+                mevcutSoruIndex = targetIndex - 1;
+                saveLastIndex(aktifKonuDosyasi, mevcutSoruIndex); // Kalınan yeri güncelle
+                renderSoru(mevcutSoruIndex);
+            } else {
+                alert('Geçersiz giriş. Lütfen sadece bir sayı (1 ile ' + totalQuestions + ' arası) girin.');
+            }
+        }
+    });
 
     // --- Soru Yükleme ve Yönlendirme ---
 
@@ -245,13 +263,26 @@ document.addEventListener('DOMContentLoaded', () => {
             if (tumSorular.length > 0) {
                 aktifMod = mod;
                 ogrenmeModuSorulari = [...tumSorular]; 
-
+                
+                // NAVİGASYON BUTONLARINI YÖNET
                 if (mod === 'sinav') {
+                    // Test Modu Başlangıcı: Sadece otomatik geçiş olduğu için butonları gizle
+                    geriButton.classList.add('hidden-nav-button');
+                    ileriButton.classList.add('hidden-nav-button');
+                    anaSayfaButton.classList.add('hidden-nav-button');
+                    soruNumarasiSpan.classList.remove('clickable-soru-numarasi'); // Tıklanabilirliği kaldır
+
                     const sinavBoyutu = Math.min(20, tumSorular.length);
                     tumSorular = shuffleArray(tumSorular).slice(0, sinavBoyutu); 
                     mevcutSoruIndex = 0;
                     sinavCevaplari = {}; 
                 } else {
+                    // Öğrenme Modu/İnceleme: Butonları göster
+                    geriButton.classList.remove('hidden-nav-button');
+                    ileriButton.classList.remove('hidden-nav-button');
+                    anaSayfaButton.classList.remove('hidden-nav-button');
+                    soruNumarasiSpan.classList.add('clickable-soru-numarasi'); // Tıklanabilirliği ekle
+                    
                     // Öğrenme Modu: Son kalınan sorudan devam et
                     mevcutSoruIndex = loadLastIndex(aktifKonuDosyasi);
                     if (mevcutSoruIndex >= tumSorular.length) mevcutSoruIndex = 0; 
@@ -341,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Açıklamayı sadece Öğrenme Modunda göster
         if (aktifMod === 'ogrenme') {
-            // JSON'da hem 'aciklama' hem de 'aclama' alanını kontrol et (typo ihtimaline karşı)
+            // JSON'daki 'aciklama' ve 'kanit_cumlesi' alanlarını yazdır
             const aciklamaMetniContent = soru.aciklama || soru.aclama || 'Açıklama metni JSON verisinde bulunmamaktadır.';
             const kanitMetniContent = soru.kanit_cumlesi || 'Kanıt cümlesi JSON verisinde bulunmamaktadır.';
 
@@ -383,7 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Navigasyon ve Sınav Sonu ---
 
     ileriButton.addEventListener('click', () => {
-        // Sınav modunda işaretleme yapılmadıysa veya sınav bitmişse (yanlışları incelerken bile) manuel geçişe izin verilir.
+        // Test modunda otomatik geçiş devredeyken manuel ileriye engeli (sadece inceleme/öğrenme hariç)
         if (aktifMod === 'sinav' && !seceneklerContainer.classList.contains('cevaplandi')) return; 
 
         if (mevcutSoruIndex < tumSorular.length - 1) {
@@ -396,7 +427,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (aktifMod === 'sinav') {
                 gosterSinavSonucu();
             } else {
-                // Öğrenme modu bitti, başa dön ve alt menüye geç
                 saveLastIndex(aktifKonuDosyasi, 0); 
                 gosterEkrani(altMenu); 
             }
@@ -436,10 +466,17 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(sonucMetni);
 
         if (yanlisSorular.length > 0) {
+            // İNCELEME AŞAMASI BAŞLANGICI
             tumSorular = yanlisSorular;
             mevcutSoruIndex = 0;
-            aktifMod = 'ogrenme'; 
+            aktifMod = 'ogrenme'; // İnceleme için öğrenme modu mantığı kullanılır
             
+            // İnceleme aşamasında butonları göster
+            geriButton.classList.remove('hidden-nav-button');
+            ileriButton.classList.remove('hidden-nav-button');
+            anaSayfaButton.classList.remove('hidden-nav-button');
+            soruNumarasiSpan.classList.add('clickable-soru-numarasi'); // Tıklanabilirliği ekle
+
             alert(`Yanlış yaptığınız ${yanlisSorular.length} soru, cevap ve açıklamalarıyla gösteriliyor.`);
             renderSoru(mevcutSoruIndex);
         } else {
@@ -455,5 +492,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Paylaşma İkonu dinleyicisi
     paylasIcon.addEventListener('click', shareScreenshot);
+
+    // YENİ İŞLEV: Anasayfa Butonu dinleyicisi (Tekrar eklendi, zaten HTML'de vardı)
+    // Bu, diğer navigasyon fonksiyonları içinde zaten tanımlıydı, sadece dinleyiciyi anaSayfaButton üzerine de ekleyelim.
+    anaSayfaButton.addEventListener('click', () => {
+        gosterEkrani(konuSecimEkrani);
+    });
 
 });
