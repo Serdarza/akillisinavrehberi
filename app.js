@@ -30,14 +30,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const quoteAuthor = document.getElementById('quoteAuthor');
     
     // Motivasyon Sözleri Havuzu
-    const quotes = [
-        { text: "Çalışmadan, yorulmadan, üretmeden rahat yaşamak isteyen toplumlar; önce haysiyetlerini, sonra hürriyetlerini ve daha sonra da istikballerini kaybetmeye mahkumdurlar.", author: "Mustafa Kemal Atatürk" },
-        { text: "Herkesin dehasına inandığı bir bilim dalı yoktur, herkesin dehasına inandığı tek şey çalışmadır.", author: "Louis Pasteur" },
-        { text: "Büyük işleri başarmak sadece güç gerektirmez, azim de gerektirir.", author: "Samuel Johnson" },
-        { text: "Kendime ait olan tek şey, azmimdir. Başarımın nedeni budur.", author: "Thomas Edison" },
-        { text: "Eğitim, okulda öğrenilen her şeyi unuttuğunda geriye kalandır.", author: "Albert Einstein" },
-        { text: "İnsan aklının ulaştığı en yüksek mertebe, ilimdir.", author: "Sokrates" },
-        { text: "En değerli hazine, ilimdir. En kötü yoksulluk ise cehalettir.", author: "Hz. Ali" }
+   const quotes = [
+        { text: "Çalışmak, hayatın biricik ve gerçek sahibidir.", author: "Voltaire" },
+        { text: "Dehanın yüzde biri ilham, yüzde doksan dokuzu ise terdir (çok çalışmaktır).", author: "Thomas Edison" },
+        { text: "Her şeyin üstünde tuttuğum ilim, beni şüpheden kurtaran tek şeydir.", author: "Albert Einstein" },
+        { text: "Okumayı en sevdiği kitap, alın teriyle yazılan kitaptır.", author: "Halil Cibran" },
+        { text: "Zeka ve azim, hayatın bütün kapılarını açacak altın anahtarlardır.", author: "Charles Dickens" },
+        { text: "Azimli bir kişi için imkansız diye bir şey yoktur.", author: "Büyük İskender" },
+        { text: "İlim, maldan daha hayırlıdır. Çünkü ilim seni korur, sen ise malı korursun.", author: "Hz. Ali" },
+        { text: "Hayatta başarılı olmak istiyorsanız, azminizi rutin hale getirin.", author: "Confucius" },
+        { text: "Yarınlar yorgun ve bezgin oturanlara değil, rahatı terk edebilen gayretli insanlara aittir.", author: "Cicero" },
+        { text: "En büyük tehlike, büyük hedefler koyup onlara ulaşamamak değil, küçük hedefler koyup onlara ulaşmaktır.", author: "Michelangelo" },
+        { text: "Bilgi, denenmiş ve doğrulanmış inançtır.", author: "Francis Bacon" },
+        { text: "Bir eylem için en iyi zaman, dündü. İkinci en iyi zaman ise şimdi.", author: "Çin Atasözü" },
+        { text: "Çok bilen, az konuşur. Bilgisizler ise her şeyi bilir.", author: "William Shakespeare" },
+        { text: "Hiç kimse, başarı merdivenlerini elleri cebinde tırmanmamıştır.", author: "K. K. Varma" },
+        { text: "Öğrenme, rüzgara karşı kürek çekmeye benzer. İlerleyemediğiniz an, gerilemeye başlarsınız.", author: "Benjamin Britten" },
+        { text: "İlimsiz geçen her gün, kayıp edilmiş bir hayat parçasıdır.", author: "Mevlana" },
+        { text: "Zorluklar, başarının değerini artıran süslerdir.", author: "Molière" },
+        { text: "Başlamak için en mükemmel anı beklersen, hiçbir zaman başlayamazsın.", author: "John Wanamaker" },
+        { text: "Zafer, ben yapabilirim diyebilenindir.", author: "Virgil" },
+        { text: "Büyük düşünürler fikirleri, ortalama insanlar olayları, küçük insanlar ise kişileri tartışır.", author: "Eleanor Roosevelt" }
     ];
 
     // --- Uygulama Durumu (State) ---
