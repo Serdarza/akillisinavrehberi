@@ -1,54 +1,81 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akıllı Sınav Rehberi</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akillisinavrehberi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div id="app">
-    <!-- Ana sayfa ekranı -->
-    <div id="home-screen">
-      <div id="countdown">
-        <h1>Sınava Kalan Süre</h1>
-        <div id="timer"></div>
-      </div>
-      <h2>Ders Seçimi</h2>
-      <div id="subjects"></div>
+
+    <div class="container" id="konuSecimEkrani">
+        <h1 class="header-title">Konu Seçimi</h1>
+        <div id="konuButonlari">
+            <button class="menu-button" data-konu="anayasajson">Anayasa</button>
+            <button class="menu-button" data-konu="guncelolaylarjson">Basın Güncel Olaylar</button>
+            <button class="menu-button" data-konu="disiplinkanunujson">Disiplin Kanunu</button>
+            <button class="menu-button" data-konu="ichizmetkanunujson">İç Hizmet Kanunu</button>
+            <button class="menu-button" data-konu="ichizmetyonetmeligijson">İç Hizmet Yönetmeliği</button>
+            <button class="menu-button" data-konu="idarehukukujason">İdare Hukuku</button>
+            <button class="menu-button" data-konu="msbyazismajson">Resmi Yazışma Usulleri</button>
+            <button class="menu-button" data-konu="siyasitarihjson">Siyasi Tarih</button>
+            <button class="menu-button" data-konu="tctarihjson">Türkiye Cumhuriyeti Tarihi</button>
+            <button class="menu-button" data-konu="uluslararasihukukjson">Uluslararası Hukuk</button>
+            <button class="menu-button" data-konu="mdkteskilatjson">MDK TEŞKİLÂT</button>
+        </div>
     </div>
 
-    <!-- Ders menüsü ekranı -->
-    <div id="subject-menu" style="display: none;">
-      <h2 id="subject-title"></h2>
-      <button id="review-mode">Tüm Soruları Gözden Geçir</button>
-      <button id="test-mode">20 Soruluk Sınava Başla</button>
-      <button id="back-to-home">Ana Sayfaya Dön</button>
+    <div class="container hidden" id="anayasaAltMenu">
+        <h1 class="header-title" id="altMenuBaslik">Anayasa</h1>
+        <button class="menu-button purple-button" data-action="ogrenme">Tüm Soruları Gözden Geçir (Öğrenme Modu)</button>
+        <button class="menu-button purple-button" data-action="sinav">20 Soruluk Sınava Başla</button>
+        <button class="menu-button purple-button" data-action="favori">Favori Soru Havuzu</button>
+        <button class="menu-button purple-button" data-action="derskitabi">Ders Kitabını Aç</button>
+        <button class="menu-button back-button" data-action="geri">Geri Dön</button>
     </div>
 
-    <!-- Sınav ekranı -->
-    <div id="quiz-screen" style="display: none;">
-      <h2 id="quiz-title"></h2>
-      <div id="question-number"></div>
-      <div id="question-text"></div>
-      <div id="options"></div>
-      <div id="feedback"></div>
-      <div id="explanation"></div>
-      <div id="quiz-buttons">
-        <button id="prev-question" style="display: none;">Geri</button>
-        <button id="next-question">İleri</button>
-      </div>
+    <div class="container hidden" id="soruEkrani">
+        <div class="question-header">
+            <span id="soruNumarasi">Soru: 169/750</span>
+            <div class="header-icons">
+                <i class="far fa-heart" id="favoriIcon"></i>
+                <i class="fas fa-share-alt"></i>
+            </div>
+        </div>
+        
+        <div class="question-area">
+            <p class="soru-metni" id="gosterilenSoruMetni">
+                Anayasa'nın 148. Maddesi'ne göre, bir kişinin Anayasa Mahkemesine 'bireysel başvuruda' bulunabilmesi için yerine getirmesi gereken temel şart nedir?
+            </p>
+
+            <div class="options-container" id="seceneklerContainer">
+                <button class="option-button" data-cevap="a">A) Davasının en az bir yıldır devam ediyor olması</button>
+                <button class="option-button dogru" data-cevap="b">B) Olağan kanun yollarının tüketilmiş olması</button>
+                <button class="option-button yanlis" data-cevap="c">C) En az on bin imza toplamış olması</button>
+                <button class="option-button" data-cevap="d">D) Hakkında kesinleşmiş bir mahkumiyet kararı olması</button>
+                <button class="option-button" data-cevap="e">E) Avrupa İnsan Hakları Mahkemesine başvurmuş olması</button>
+            </div>
+
+            <div class="aciklama-kutusu hidden" id="aciklamaKutusu">
+                <p class="aciklama-baslik">Açıklama</p>
+                <p id="aciklamaMetni">Başvuruda bulunabilmek için olağan kanun yollarının tüketilmiş olması şarttır. Bu hüküm, bireysel başvurunun ikincil bir hak arama yolu olduğunu belirtir. Bir kişi, bir hak ihlali iddiasıyla doğrudan Anayasa Mahkemesine gidemez. Öncelikle, o konuyla ilgili olarak kanunların kendisine tanıdığı...</p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="nav-button" id="geriButton">Geri</button>
+            <button class="nav-button" id="ileriButton">İleri</button>
+        </div>
+
+        <div class="footer-nav">
+            <i class="fas fa-home"></i>
+            <i class="fas fa-history"></i>
+            <i class="fas fa-cog"></i>
+            <i class="fas fa-user"></i>
+        </div>
     </div>
 
-    <!-- Sonuç ekranı -->
-    <div id="result-screen" style="display: none;">
-      <h2>Sınav Sonucu</h2>
-      <div id="score"></div>
-      <div id="wrong-answers"></div>
-      <button id="restart-quiz">Sınavı Tekrarla</button>
-      <button id="back-to-subject">Ders Menüsüne Dön</button>
-    </div>
-  </div>
-  <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
