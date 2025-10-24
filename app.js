@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const seceneklerContainer = document.getElementById('seceneklerContainer');
     const aciklamaKutusu = document.getElementById('aciklamaKutusu');
     const aciklamaMetni = document.getElementById('aciklamaMetni');
-    const kanitMetni = document.getElementById('kanitMetni');
-    const favoriIcon = document.getElementById('favoriIcon');
+    const kanitMetni = document.getElementById('kanitMetni'); // Yeni Kanıt Cümlesi alanı
+    const paylasIcon = document.getElementById('paylasIcon'); // Yeni Paylaşma İkonu
     const geriButton = document.getElementById('geriButton');
     const ileriButton = document.getElementById('ileriButton');
-
+    
     // Geri Sayım Elementleri
     const daysSpan = document.getElementById('days');
     const hoursSpan = document.getElementById('hours');
@@ -28,12 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let mevcutSoruIndex = 0;
     let aktifKonuDosyasi = '';
     let aktifMod = ''; // 'ogrenme' veya 'sinav'
-    let sinavCevaplari = {}; // Sınav modu için: {soru_id: 'orijinal_cevap_key', ...}
+    let sinavCevaplari = {}; 
     let ogrenmeModuSorulari = []; 
     const HARFLER = ['A', 'B', 'C', 'D', 'E'];
 
     // --- Geri Sayım Fonksiyonu ---
-
     const startCountdown = () => {
         // Sınav Tarihi: 20 Aralık 2025
         const sinavTarihi = new Date('2025-12-20T00:00:00'); 
@@ -44,27 +43,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (distance < 0) {
                 clearInterval(interval);
-                countdownHeader.textContent = "Sınav Başladı!";
+                countdownHeader.textContent = "SINAV BAŞLADI! BAŞARILAR DİLERİZ.";
                 daysSpan.textContent = hoursSpan.textContent = minutesSpan.textContent = secondsSpan.textContent = "00";
                 return;
             }
 
-            // Hesaplamalar
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Değerleri DOM'a yazma (tek haneli ise önüne 0 ekle)
             daysSpan.textContent = String(days).padStart(2, '0');
             hoursSpan.textContent = String(hours).padStart(2, '0');
             minutesSpan.textContent = String(minutes).padStart(2, '0');
             secondsSpan.textContent = String(seconds).padStart(2, '0');
         };
 
-        // Her saniye güncelle
         const interval = setInterval(updateCountdown, 1000);
-        updateCountdown(); // Sayfa yüklenir yüklenmez ilk güncellemeyi yap
+        updateCountdown(); 
     };
 
     // --- Yardımcı Fonksiyonlar ---
@@ -92,7 +88,60 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem(`lastIndex_${dosyaAdi}`, index);
     };
 
-    // --- Başlangıç/Navigasyon İşlemleri ---
+    // --- Paylaşma Fonksiyonu ---
+    const shareScreenshot = async () => {
+        if (!html2canvas) {
+            alert('Ekran görüntüsü alma kütüphanesi yüklenemedi.');
+            return;
+        }
+        
+        // Sadece soru ekranını yakala
+        const elementToCapture = document.getElementById('soruEkrani'); 
+        if (!elementToCapture || elementToCapture.classList.contains('hidden')) {
+             alert('Paylaşılacak bir soru ekranı bulunmamaktadır.');
+             return;
+        }
+
+        try {
+            // html2canvas ile DOM elementini tuval (canvas) üzerine çiz
+            const canvas = await html2canvas(elementToCapture, {
+                useCORS: true, // CORS ile ilgili sorunları çözmek için
+                allowTaint: true, // İçeriği güvenilir olmayan kaynaklardan yüklemeye izin ver (dikkatli kullanılmalı)
+                scrollX: -window.scrollX, // Kaydırma konumunu düzelt
+                scrollY: -window.scrollY,
+                windowWidth: document.documentElement.offsetWidth,
+                windowHeight: document.documentElement.offsetHeight
+            });
+
+            const base64image = canvas.toDataURL('image/png');
+
+            if (navigator.share) {
+                // Tarayıcı yerel paylaşım API'si (Android/iOS)
+                const blob = await (await fetch(base64image)).blob();
+                const file = new File([blob], 'Soru_Ekranı.png', { type: 'image/png' });
+                
+                await navigator.share({
+                    files: [file],
+                    title: 'Akıllı Sınav Rehberi Soru Paylaşımı',
+                    text: 'Anayasa sorusu çözüyorum, bilgini test et!',
+                });
+            } else {
+                // Paylaşım API'si yoksa: Sadece resmi indir veya pop-up ile göster (Alternatif)
+                const link = document.createElement('a');
+                link.download = 'soru_ekrani.png';
+                link.href = base64image;
+                link.click();
+                alert('Paylaşım API\'si desteklenmediği için ekran görüntüsü indirildi.');
+            }
+
+        } catch (error) {
+            console.error('Ekran görüntüsü alma veya paylaşma hatası:', error);
+            alert('Paylaşım sırasında bir hata oluştu. (Hata: Konsolu kontrol edin)');
+        }
+    };
+
+
+    // --- Konu Seçimi ve Alt Menü İşlemleri ---
 
     document.querySelectorAll('#konuButonlari .menu-button').forEach(button => {
         button.addEventListener('click', (e) => {
@@ -123,21 +172,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadQuestions = async (dosyaAdi, mod, konuAdi) => {
         try {
+            // JSON dosya adını kontrol et (anayasajson.json, disiplinkanunu.json vb.)
             const response = await fetch(`${dosyaAdi}.json`);
-            if (!response.ok) throw new Error(`Dosya bulunamadı: ${dosyaAdi}.json`);
+            if (!response.ok) {
+                 // Eğer dosya bulunamazsa boş bir dizi ile devam et (Diğer dersler için)
+                 console.warn(`Uyarı: Dosya bulunamadı veya boş. ${dosyaAdi}.json`);
+                 tumSorular = []; 
+            } else {
+                let data = await response.json();
             
-            let data = await response.json();
-            
-            if (!Array.isArray(data)) {
-                 if (data && data.soru_metni) data = [data]; 
-                 else throw new Error("JSON formatı geçerli değil veya boş.");
+                // JSON dizisi beklenir (Tek obje ise diziye dönüştürür)
+                if (!Array.isArray(data)) {
+                    if (data && data.soru_metni) data = [data]; 
+                    else data = []; // Boş JSON
+                }
+                tumSorular = data;
             }
-
-            tumSorular = data;
 
             if (tumSorular.length > 0) {
                 aktifMod = mod;
-                ogrenmeModuSorulari = [...data]; 
+                ogrenmeModuSorulari = [...tumSorular]; 
 
                 if (mod === 'sinav') {
                     const sinavBoyutu = Math.min(20, tumSorular.length);
@@ -154,13 +208,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 gosterEkrani(soruEkrani);
                 renderSoru(mevcutSoruIndex);
             } else {
-                alert(`Bu konuda (${konuAdi}) hiç soru bulunamadı.`);
+                alert(`Bu konuda (${konuAdi}) hiç soru bulunamadı. Lütfen JSON dosyasını doldurun.`);
                 gosterEkrani(aktifKonuDosyasi === 'anayasajson' ? anayasaAltMenu : konuSecimEkrani);
             }
 
         } catch (error) {
-            console.error('Sorular yüklenirken hata oluştu:', error);
-            alert(`Sorular yüklenemedi. Konsolu kontrol edin. Hata: ${error.message}`);
+            console.error('Sorular yüklenirken genel hata oluştu:', error);
+            alert(`Sorular yüklenemedi. JSON dosya yapısını kontrol edin. Hata: ${error.message}`);
             gosterEkrani(konuSecimEkrani);
         }
     };
@@ -176,8 +230,6 @@ document.addEventListener('DOMContentLoaded', () => {
         seceneklerContainer.innerHTML = '';
         seceneklerContainer.classList.remove('cevaplandi');
         aciklamaKutusu.classList.add('hidden');
-        favoriIcon.classList.remove('fas', 'far');
-        favoriIcon.classList.add('far');
         
         // Soru numarasını güncelle
         soruNumarasiSpan.textContent = `Soru: ${index + 1}/${tumSorular.length}`;
@@ -206,25 +258,39 @@ document.addEventListener('DOMContentLoaded', () => {
             seceneklerContainer.appendChild(button);
         });
 
-        // Sınav modunda önceden cevaplanmışsa renklendir ve göster
+        // Sınav modunda önceden cevaplanmışsa renklendir (Açıklama sınavda gösterilmez)
         if (aktifMod === 'sinav' && sinavCevaplari[soru.soru_id]) {
             renklendirCevaplar(soru, sinavCevaplari[soru.soru_id]);
+        } 
+        
+        // Yanlışları Gözden Geçirme Modunda Açıklamayı Hemen Göster
+        if (aktifMod === 'ogrenme' && soru.kullanici_cevabi) {
+             cevapKontrol(null, soru); // Cevap kontrolünü tetikle, ancak butona tıklama
+             renklendirCevaplar(soru, soru.kullanici_cevabi); // Yanlışını renklendir
         }
     };
 
     // --- Cevap Kontrolü ve Renklendirme ---
 
     const cevapKontrol = (tiklananButton, soru) => {
-        if (seceneklerContainer.classList.contains('cevaplandi')) return;
+        if (tiklananButton && seceneklerContainer.classList.contains('cevaplandi')) return;
         seceneklerContainer.classList.add('cevaplandi');
 
         const dogruOrijinalCevap = soru.dogru_secenek;
-        const kullaniciOrijinalCevap = tiklananButton.getAttribute('data-orijinal-cevap');
-        
-        if (aktifMod === 'sinav') {
+        let kullaniciOrijinalCevap;
+
+        if (tiklananButton) {
+             kullaniciOrijinalCevap = tiklananButton.getAttribute('data-orijinal-cevap');
+        } else if (aktifMod === 'ogrenme' && soru.kullanici_cevabi) {
+             // Yanlışları gözden geçirme modu için kullanıcının önceki cevabını al
+             kullaniciOrijinalCevap = soru.kullanici_cevabi; 
+        }
+
+        if (aktifMod === 'sinav' && tiklananButton) {
             sinavCevaplari[soru.soru_id] = kullaniciOrijinalCevap;
         }
 
+        // Renklendirmeyi yap
         renklendirCevaplar(soru, kullaniciOrijinalCevap);
         
         // Açıklamayı sadece Öğrenme Modunda göster
@@ -293,7 +359,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 const orjinalSoru = ogrenmeModuSorulari.find(q => q.soru_id === soru.soru_id);
                 if (orjinalSoru) {
-                    // Kullanıcının yanlış cevabını da sorunun içine koy ki, gözden geçirirken hangi şıkkı işaretlediğini hatırlasın.
                     orjinalSoru.kullanici_cevabi = kullaniciCevabi; 
                     yanlisSorular.push(orjinalSoru);
                 }
@@ -304,7 +369,6 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(sonucMetni);
 
         if (yanlisSorular.length > 0) {
-            // Yanlışları gözden geçirme modu
             tumSorular = yanlisSorular;
             mevcutSoruIndex = 0;
             aktifMod = 'ogrenme'; 
@@ -317,8 +381,11 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
-    // --- Başlangıç Fonksiyonları ---
-    startCountdown(); // Geri sayımı başlat
-    gosterEkrani(konuSecimEkrani); // Konu seçim ekranını göster
+    // --- Event Listenerlar (Başlangıç ve Paylaşma) ---
+    startCountdown(); 
+    gosterEkrani(konuSecimEkrani);
+
+    // Paylaşma İkonu dinleyicisi
+    paylasIcon.addEventListener('click', shareScreenshot);
 
 });
