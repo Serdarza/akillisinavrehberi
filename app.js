@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Motivasyon Sözleri Havuzu
     const quotes = [
         { text: "Çalışmadan, yorulmadan, üretmeden rahat yaşamak isteyen toplumlar; önce haysiyetlerini, sonra hürriyetlerini ve daha sonra da istikballerini kaybetmeye mahkumdurlar.", author: "Mustafa Kemal Atatürk" },
-        { text: "Dehanın yüzde biri ilham, yüzde doksan dokuzu ise terdir (çok çalışmaktır).", author: "Thomas Edison" },
+        { text: "Herkesin dehasına inandığı bir bilim dalı yoktur, herkesin dehasına inandığı tek şey çalışmadır.", author: "Louis Pasteur" },
         { text: "Büyük işleri başarmak sadece güç gerektirmez, azim de gerektirir.", author: "Samuel Johnson" },
         { text: "Kendime ait olan tek şey, azmimdir. Başarımın nedeni budur.", author: "Thomas Edison" },
         { text: "Eğitim, okulda öğrenilen her şeyi unuttuğunda geriye kalandır.", author: "Albert Einstein" },
@@ -72,8 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Pop-up Yönetimi ---
     const showMotivationQuote = () => {
-        // Kontrol: Sadece Local Storage'da 'motivationQuoteShown' yoksa göster
-        const isQuoteShown = sessionStorage.getItem('motivationQuoteShown'); // Session Storage kullanıldı (sayfa yenilenince tekrar gösterir)
+        // Pop-up'ın sadece tarayıcı kapatılıp açılınca bir kez gösterilmesi için Session Storage kullanılır
+        const isQuoteShown = sessionStorage.getItem('motivationQuoteShown');
         if (isQuoteShown) return;
 
         const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         motivationModal.classList.remove('hidden');
         
-        // Session Storage'a kaydet (Tarayıcı kapanana kadar tekrar göstermez)
         sessionStorage.setItem('motivationQuoteShown', 'true');
     };
 
@@ -150,14 +149,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const saveLastIndex = (dosyaAdi, index) => {
         localStorage.setItem(`lastIndex_${dosyaAdi}`, index);
     };
-    
+
     // --- Soru Listesi Modal Yönetimi ---
     const populateQuestionList = () => {
         questionListContainer.innerHTML = '';
         tumSorular.forEach((soru, index) => {
             const listItem = document.createElement('div');
             listItem.className = 'question-list-item';
-            listItem.textContent = `${index + 1}. ${soru.soru_metni.substring(0, 50)}...`; // İlk 50 karakteri göster
+            // Soru metni yoksa konu adını kullan
+            const soruBasligi = soru.soru_metni ? soru.soru_metni.substring(0, 50) + '...' : soru.konu || 'Başlıksız Soru';
+            listItem.textContent = `${index + 1}. ${soruBasligi}`; 
             listItem.setAttribute('data-index', index);
             
             listItem.addEventListener('click', (e) => {
@@ -181,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
             populateQuestionList();
         }
     });
-    // --- Paylaşma Fonksiyonu (Kalan Kısımlar için korunur) ---
+    // --- Paylaşma Fonksiyonu ---
     const shareScreenshot = async () => { /* ... fonksiyon içeriği önceki yanıttan korunur ... */ };
     paylasIcon.addEventListener('click', shareScreenshot);
 
@@ -248,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     mevcutSoruIndex = 0;
                     sinavCevaplari = {}; 
                 } else {
-                    // Öğrenme Modu/İnceleme: Tüm butonları göster (İnceleme aşamasında da bu mod kullanılır)
+                    // Öğrenme Modu/İnceleme: Tüm butonları göster 
                     geriButton.classList.remove('hidden-nav-button');
                     ileriButton.classList.remove('hidden-nav-button');
                     anaSayfaButton.classList.remove('hidden-nav-button');
@@ -383,6 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Navigasyon ve Sınav Sonu ---
 
     ileriButton.addEventListener('click', () => {
+        // Test modunda otomatik geçiş devredeyken manuel ileriye engeli (sadece inceleme/öğrenme hariç)
         if (aktifMod === 'sinav' && !seceneklerContainer.classList.contains('cevaplandi')) return; 
 
         if (mevcutSoruIndex < tumSorular.length - 1) {
@@ -413,7 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // YENİ İŞLEV: Anasayfa Butonu dinleyicisi
+    // Anasayfa Butonu dinleyicisi
     anaSayfaButton.addEventListener('click', () => {
         gosterEkrani(konuSecimEkrani);
     });
@@ -444,10 +446,10 @@ document.addEventListener('DOMContentLoaded', () => {
             mevcutSoruIndex = 0;
             aktifMod = 'ogrenme'; // İnceleme için öğrenme modu mantığı kullanılır
             
-            // İnceleme aşamasında butonları göster
+            // İnceleme aşamasında (ogrenme modu) butonları göster
             geriButton.classList.remove('hidden-nav-button');
             ileriButton.classList.remove('hidden-nav-button');
-            anaSayfaButton.classList.remove('hidden-nav-button'); // Anasayfa da göster
+            anaSayfaButton.classList.remove('hidden-nav-button'); 
             soruNumarasiSpan.classList.add('clickable-soru-numarasi'); 
 
             alert(`Yanlış yaptığınız ${yanlisSorular.length} soru, cevap ve açıklamalarıyla gösteriliyor.`);
