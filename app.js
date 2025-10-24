@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const altMenu = document.getElementById('altMenu'); 
     const soruEkrani = document.getElementById('soruEkrani');
     const altMenuBaslik = document.getElementById('altMenuBaslik');
-
-    const soruNumarasiSpan = document.getElementById('soruNumarasi');
-    const gosterilenSoruMetni = document.getElementById('gosterilenSoruMetni');
+    const paylasIcon = document.getElementById('paylasIcon');
+    // ... Diğer Elementler ...
     const seceneklerContainer = document.getElementById('seceneklerContainer');
     const aciklamaKutusu = document.getElementById('aciklamaKutusu');
     const aciklamaMetni = document.getElementById('aciklamaMetni');
     const kanitMetni = document.getElementById('kanitMetni');
-    const paylasIcon = document.getElementById('paylasIcon');
+    const soruNumarasiSpan = document.getElementById('soruNumarasi');
+    const gosterilenSoruMetni = document.getElementById('gosterilenSoruMetni');
     const geriButton = document.getElementById('geriButton');
     const ileriButton = document.getElementById('ileriButton');
     
@@ -22,15 +22,55 @@ document.addEventListener('DOMContentLoaded', () => {
     const minutesSpan = document.getElementById('minutes');
     const secondsSpan = document.getElementById('seconds');
     const countdownHeader = document.querySelector('.countdown-header');
+    
+    // Modal Elementleri
+    const motivationModal = document.getElementById('motivationModal');
+    const closeModal = document.getElementById('closeModal');
+    const quoteText = document.getElementById('quoteText');
+    const quoteAuthor = document.getElementById('quoteAuthor');
+    
+    // Motivasyon Sözleri Havuzu
+    const quotes = [
+        { text: "Çalışmadan, yorulmadan, üretmeden rahat yaşamak isteyen toplumlar; önce haysiyetlerini, sonra hürriyetlerini ve daha sonra da istikballerini kaybetmeye mahkumdurlar.", author: "Mustafa Kemal Atatürk" },
+        { text: "Herkesin dehasına inandığı bir bilim dalı yoktur, herkesin dehasına inandığı tek şey çalışmadır.", author: "Louis Pasteur" },
+        { text: "Büyük işleri başarmak sadece güç gerektirmez, azim de gerektirir.", author: "Samuel Johnson" },
+        { text: "Kendime ait olan tek şey, azmimdir. Başarımın nedeni budur.", author: "Thomas Edison" },
+        { text: "Eğitim, okulda öğrenilen her şeyi unuttuğunda geriye kalandır.", author: "Albert Einstein" },
+        { text: "İnsan aklının ulaştığı en yüksek mertebe, ilimdir.", author: "Sokrates" },
+        { text: "En değerli hazine, ilimdir. En kötü yoksulluk ise cehalettir.", author: "Hz. Ali" }
+    ];
 
     // --- Uygulama Durumu (State) ---
     let tumSorular = []; 
     let mevcutSoruIndex = 0;
     let aktifKonuDosyasi = '';
-    let aktifMod = ''; // 'ogrenme' veya 'sinav'
+    let aktifMod = ''; 
     let sinavCevaplari = {}; 
     let ogrenmeModuSorulari = []; 
     const HARFLER = ['A', 'B', 'C', 'D', 'E'];
+
+    // --- Pop-up Yönetimi ---
+    const showMotivationQuote = () => {
+        // Kontrol: Pop-up'ın daha önce gösterilip gösterilmediğini Local Storage'dan kontrol et
+        const isQuoteShown = localStorage.getItem('motivationQuoteShown');
+        if (isQuoteShown) return;
+
+        // Rastgele sözü seç
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        quoteText.textContent = `"${randomQuote.text}"`;
+        quoteAuthor.textContent = `- ${randomQuote.author}`;
+        
+        // Modal'ı göster
+        motivationModal.classList.remove('hidden');
+        
+        // Local Storage'a kaydet (Bu oturum için gösterildi)
+        localStorage.setItem('motivationQuoteShown', 'true');
+    };
+
+    // Modal Kapatma Dinleyicisi
+    closeModal.addEventListener('click', () => {
+        motivationModal.classList.add('hidden');
+    });
 
     // --- Geri Sayım Fonksiyonu ---
     const startCountdown = () => {
@@ -63,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // --- Yardımcı Fonksiyonlar ---
-
     const gosterEkrani = (ekran) => {
         [konuSecimEkrani, altMenu, soruEkrani].forEach(e => e.classList.add('hidden'));
         ekran.classList.remove('hidden');
@@ -75,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
             countdownContainer.classList.add('hidden');
         }
     };
-
 
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
@@ -95,57 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem(`lastIndex_${dosyaAdi}`, index);
     };
 
-    // --- Paylaşma Fonksiyonu ---
-    const shareScreenshot = async () => {
-        if (!html2canvas) {
-            alert('Ekran görüntüsü alma kütüphanesi yüklenemedi. Lütfen internet bağlantınızı kontrol edin.');
-            return;
-        }
-        
-        const elementToCapture = document.getElementById('soruEkrani'); 
-        if (!elementToCapture || elementToCapture.classList.contains('hidden')) {
-             alert('Paylaşılacak bir soru ekranı bulunmamaktadır.');
-             return;
-        }
-
-        try {
-            const canvas = await html2canvas(elementToCapture, {
-                useCORS: true, 
-                allowTaint: true, 
-                scrollX: -window.scrollX, 
-                scrollY: -window.scrollY,
-                windowWidth: elementToCapture.offsetWidth, 
-                windowHeight: elementToCapture.offsetHeight
-            });
-
-            const base64image = canvas.toDataURL('image/png');
-
-            if (navigator.share) {
-                const blob = await (await fetch(base64image)).blob();
-                const file = new File([blob], 'Soru_Ekranı.png', { type: 'image/png' });
-                
-                await navigator.share({
-                    files: [file],
-                    title: 'Akıllı Sınav Rehberi Soru Paylaşımı',
-                    text: 'Bilgini test et!',
-                });
-            } else {
-                const link = document.createElement('a');
-                link.download = 'soru_ekrani.png';
-                link.href = base64image;
-                link.click();
-                alert('Paylaşım API\'si desteklenmediği için ekran görüntüsü indirildi.');
-            }
-
-        } catch (error) {
-            console.error('Ekran görüntüsü alma veya paylaşma hatası:', error);
-            alert('Paylaşım sırasında bir hata oluştu. Lütfen konsolu kontrol edin.');
-        }
-    };
-
-
     // --- Konu Seçimi ve Alt Menü İşlemleri ---
-
     document.querySelectorAll('#konuButonlari .menu-button').forEach(button => {
         button.addEventListener('click', (e) => {
             const konuDosyasi = e.target.getAttribute('data-konu');
@@ -153,12 +141,10 @@ document.addEventListener('DOMContentLoaded', () => {
             aktifKonuDosyasi = konuDosyasi;
             altMenuBaslik.textContent = konuAdi;
             
-            // Tüm dersler alt menüye yönlendirilir
             gosterEkrani(altMenu);
         });
     });
 
-    // Alt Menü Aksiyonları (Mod seçimi)
     altMenu.querySelectorAll('.menu-button').forEach(button => {
         button.addEventListener('click', (e) => {
             const action = e.target.getAttribute('data-action');
@@ -172,7 +158,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Soru Yükleme ve Yönlendirme ---
-
     const loadQuestions = async (dosyaAdi, mod, konuAdi) => {
         try {
             const response = await fetch(`${dosyaAdi}.json`);
@@ -202,6 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     mevcutSoruIndex = 0;
                     sinavCevaplari = {}; 
                 } else {
+                    // Öğrenme Modu: Son kalınan sorudan devam et (Pop-up'sız)
                     mevcutSoruIndex = loadLastIndex(aktifKonuDosyasi);
                     if (mevcutSoruIndex >= tumSorular.length) mevcutSoruIndex = 0; 
                 }
@@ -270,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cevapKontrol = (tiklananButton, soru) => {
         const isAlreadyAnswered = seceneklerContainer.classList.contains('cevaplandi');
         
-        // Eğer zaten cevaplanmışsa ve butona tıklanıyorsa (sınav sonrası gözden geçirme hariç) çık
+        // Eğer zaten cevaplanmışsa ve butona tıklanıyorsa çık
         if (tiklananButton && isAlreadyAnswered) return;
         seceneklerContainer.classList.add('cevaplandi');
 
@@ -278,7 +264,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (tiklananButton) {
              kullaniciOrijinalCevap = tiklananButton.getAttribute('data-orijinal-cevap');
         } else if (soru.kullanici_cevabi) {
-             // Sınav sonrası yanlış gözden geçirme modu için
              kullaniciOrijinalCevap = soru.kullanici_cevabi; 
         }
 
@@ -296,15 +281,12 @@ document.addEventListener('DOMContentLoaded', () => {
             kanitMetni.innerHTML = soru.kanit_cumlesi || 'Kanıt cümlesi JSON verisinde bulunmamaktadır.';
             aciklamaKutusu.classList.remove('hidden');
             
-            // Öğrenme modunda 1 saniye bekleme kuralı yok, hemen geçilebilir.
         } else {
-             // Sınav modu için açıklama kutusunu gizle
              aciklamaKutusu.classList.add('hidden');
 
              // Sınav modunda işaretlemeden sonra 1 saniye bekle ve otomatik sonraki soruya geç
              if (tiklananButton) {
                  setTimeout(() => {
-                     // Son soruya gelindiyse sınavı bitir, yoksa bir sonraki soruya geç
                      if (mevcutSoruIndex < tumSorular.length - 1) {
                          mevcutSoruIndex++;
                          renderSoru(mevcutSoruIndex);
@@ -344,11 +326,8 @@ document.addEventListener('DOMContentLoaded', () => {
             renderSoru(mevcutSoruIndex);
         } else {
             if (aktifMod === 'sinav') {
-                // Sınav modu: Son soruyu da işaretlemeden sonra otomatik olarak bu fonksiyon çağrılacaktır.
-                // Buraya elle basılırsa ve son soru işaretlenmişse:
                 gosterSinavSonucu();
             } else {
-                alert('Tüm soruları tamamladınız. Öğrenme modu başlangıca döndürülüyor.');
                 saveLastIndex(aktifKonuDosyasi, 0); 
                 gosterEkrani(altMenu); 
             }
@@ -403,6 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Başlangıç Fonksiyonları ---
     startCountdown(); 
     gosterEkrani(konuSecimEkrani);
+    showMotivationQuote(); // Pop-up'ı göster
 
     // Paylaşma İkonu dinleyicisi
     paylasIcon.addEventListener('click', shareScreenshot);
