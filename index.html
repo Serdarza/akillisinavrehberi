@@ -11,7 +11,18 @@
     <div id="app-container">
 
         <div id="screen-main-menu" class="screen active">
-            <h1>Dersler</h1>
+            
+            <div id="countdown-container">
+                <h2>Sınava Kalan Süre</h2>
+                <div id="countdown">
+                    <div class="countdown-item"><span id="days">00</span> Gün</div>
+                    <div class="countdown-item"><span id="hours">00</span> Saat</div>
+                    <div class="countdown-item"><span id="minutes">00</span> Dakika</div>
+                    <div class="countdown-item"><span id="seconds">00</span> Saniye</div>
+                </div>
+            </div>
+            
+            <h1 class="main-title">Dersler</h1>
             <div id="main-menu-buttons">
                 </div>
         </div>
@@ -48,8 +59,7 @@
             </div>
             <div id="wrong-answers-container">
                 <h2>Yanlış Cevaplar</h2>
-                <ul id="wrong-answers-list">
-                    </ul>
+                <ul id="wrong-answers-list"></ul>
             </div>
             <button id="btn-restart-quiz" class="menu-button">Sınavı Tekrarla</button>
             <button id="btn-results-to-menu" class="menu-button-secondary">Ders Menüsüne Dön</button>
