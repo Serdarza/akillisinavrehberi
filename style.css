@@ -26,7 +26,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding-top: 20px; /* Sayaç artık fixed değil, normal padding geri geldi */
+    padding-top: 20px; 
     flex-direction: column; 
 }
 
@@ -37,8 +37,8 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding-top: 0; /* Artık üst boşluğa gerek yok */
-    padding-bottom: 70px; /* Footer (alt menü) yüksekliği kadar boşluk */
+    padding-top: 0; 
+    padding-bottom: 70px; 
     flex-grow: 1; 
 }
 
@@ -58,19 +58,18 @@ body {
     display: none !important;
 }
 
-/* --- Geri Sayım Sayacı Stilleri: Normal Akışta --- */
+/* --- Geri Sayım Sayacı Stilleri: Normal Akışta (Fixed kaldırıldı) --- */
 .countdown-container {
     width: 100%;
     max-width: 450px;
-    margin: 10px auto 20px auto; /* Normal akışta üstte, ortada ve altında boşluk */
+    margin: 10px auto 20px auto; 
     
-    /* Stil */
     background-color: var(--purple-dark); 
     color: var(--white);
     padding: 15px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    border-radius: 12px; /* Köşeler normalleşti */
+    border-radius: 12px; 
 }
 
 /* Geri Sayım İç stilleri (Öncekiyle aynı) */
@@ -337,7 +336,7 @@ body {
     }
 
     .app-content-wrapper {
-        padding-top: 0; /* Artık fixed sayaç yok */
+        padding-top: 0; 
         margin: 0;
         max-width: none;
     }
