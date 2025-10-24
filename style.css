@@ -1,14 +1,15 @@
-/* Genel Stil */
+/* Genel Stil ve Değişkenler */
 :root {
     --purple-light: #f8f6fb;
-    --purple-dark: #673ab7; /* Mor rengin ana tonu */
-    --purple-button: #7c4dff; /* Butonların canlı moru */
+    --purple-dark: #673ab7; 
+    --purple-button: #7c4dff; 
     --gray-light: #e0e0e0;
     --white: #ffffff;
-    --green-correct: #4caf50; /* Doğru cevap yeşili */
-    --red-wrong: #f44336; /* Yanlış cevap kırmızısı */
+    --green-correct: #4caf50; 
+    --red-wrong: #f44336; 
     --text-dark: #333333;
     --text-light: #666666;
+    --countdown-color: #f4511e; /* Turuncu-Kırmızı (Dikkat çekici) */
 }
 
 * {
@@ -25,12 +26,22 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding-top: 20px;
+    padding-top: 20px; 
+    flex-direction: column; /* Sayfayı dikey eksende sırala */
+}
+
+/* Uygulama İçerik Sınırlayıcısı */
+.app-content-wrapper {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
     width: 100%;
-    max-width: 450px; /* Telefon ekranı genişliği simülasyonu */
+    /* max-width: 450px; KALDIRILDI, app-content-wrapper'da tanımlı */
     background-color: var(--white);
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -45,6 +56,66 @@ body {
     display: none !important;
 }
 
+/* --- Geri Sayım Sayacı Stilleri --- */
+.countdown-container {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+    background-color: var(--purple-dark); /* Koyu mor arka plan */
+    color: var(--white);
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.countdown-header {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #ffcc80; /* Açık turuncu/altın rengi */
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.time-box span:first-child {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--countdown-color); /* Dikkat çekici zaman rengi */
+    background-color: var(--white);
+    padding: 5px 10px;
+    border-radius: 6px;
+    min-width: 45px;
+    margin-bottom: 3px;
+}
+
+.label {
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--gray-light);
+}
+
+.time-separator {
+    font-size: 32px;
+    color: var(--white);
+    line-height: 1;
+    font-weight: 700;
+}
+/* --- Geri Sayım Sayacı Stilleri SON --- */
+
+
 /* Başlıklar */
 .header-title {
     color: var(--purple-dark);
@@ -54,7 +125,7 @@ body {
     font-weight: 600;
 }
 
-/* Menü Butonları */
+/* Menü Butonları (Geri kalan stiller öncekiyle aynıdır) */
 .menu-button {
     width: 100%;
     padding: 15px 20px;
@@ -68,7 +139,6 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Konu Seçim Butonları (Hafif Mor) */
 #konuButonlari .menu-button {
     background-color: var(--white);
     color: var(--text-dark);
@@ -79,7 +149,6 @@ body {
     background-color: var(--gray-light);
 }
 
-/* Ana Menü Butonları (Koyu Mor) */
 .purple-button {
     background-color: var(--purple-button);
     color: var(--white);
@@ -87,7 +156,7 @@ body {
 }
 
 .purple-button:hover {
-    background-color: #6200ea; /* Daha koyu mor */
+    background-color: #6200ea; 
     transform: translateY(-1px);
 }
 
@@ -99,7 +168,7 @@ body {
 
 /* Soru Ekranı Stilleri */
 #soruEkrani {
-    padding: 20px 0; /* İç paddingi kaldırıp, iç elemanlara veriyoruz */
+    padding: 20px 0; 
     gap: 0;
 }
 
@@ -179,7 +248,7 @@ body {
 
 /* Açıklama Kutusu */
 .aciklama-kutusu {
-    background-color: #e8f5e9; /* Hafif yeşil arka plan */
+    background-color: #e8f5e9; 
     border: 1px solid #c8e6c9;
     border-radius: 10px;
     padding: 15px;
@@ -195,11 +264,11 @@ body {
 #aciklamaMetni, #kanitMetni {
     font-size: 14px;
     line-height: 1.5;
-    color: var(--text-light);
+    color: var(--text-dark);
     margin-bottom: 10px;
 }
 
-/* Navigasyon Butonları (Geri/İleri) */
+/* Navigasyon Butonları */
 .nav-buttons {
     display: flex;
     justify-content: space-between;
@@ -232,7 +301,9 @@ body {
     position: sticky;
     bottom: 0;
     width: 100%;
-    margin-top: 20px;
+    max-width: 450px;
+    margin: 0 auto;
+    z-index: 10; 
 }
 
 .footer-nav i {
@@ -245,18 +316,27 @@ body {
     color: var(--purple-button);
 }
 
-/* Mobil için alt menü ve alt footer alt kısma sabitlenmiştir (Ekrandaki görüntüyü taklit etmek için) */
+/* Mobil için düzeltmeler */
 @media (max-width: 600px) {
     body {
         padding-top: 0;
         align-items: stretch;
     }
+    
+    .countdown-container {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .app-content-wrapper {
+        min-height: 100vh;
+        padding-bottom: 70px; /* Footer yüksekliği kadar boşluk */
+    }
+
     .container {
         margin: 0;
-        min-height: 100vh;
-        border-radius: 0;
         box-shadow: none;
-        padding-bottom: 70px; /* Footer yüksekliği kadar boşluk */
+        border-radius: 0;
     }
 
     .footer-nav {
@@ -264,7 +344,5 @@ body {
         bottom: 0;
         left: 0;
         right: 0;
-        max-width: 450px;
-        margin: 0 auto;
     }
 }
