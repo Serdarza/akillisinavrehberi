@@ -1,0 +1,1332 @@
+[
+
+  {
+    "soru_id": "11",
+    "konu": "TCG İstanbul Sınıfı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Metne göre TCG İstanbul, hangi sınıf fırkateynlerin ilk gemisidir?",
+    "secenekler": {
+      "a": "MİLGEM sınıfı",
+      "b": "ADA sınıfı",
+      "c": "İSTİF sınıfı",
+      "d": "BARBAROS sınıfı",
+      "e": "PREVEZE sınıfı"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "İSTİF sınıfı fırkateynlerin ilk gemı̇sı̇ ve yerli imkânlar ile üretilen ilk firkateyndir.",
+    "aclama": "İSTİF sınıfı"
+  },
+  {
+    "soru_id": "12",
+    "konu": "ADVENT Savaş Yönetim Sistemi",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "TCG İstanbul'da kullanılan ADVENT Savaş Yönetim Sistemi, hangi kurumların ortak geliştirmesidir?",
+    "secenekler": {
+      "a": "ROKETSAN ve ASELSAN",
+      "b": "ARMERKOM ve HAVELSAN",
+      "c": "ASFAT ve MKE",
+      "d": "MSB ve SSB",
+      "e": "TUSAŞ ve BAYKAR"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Deniz Kuvvetleri Araştırma Merkezi Komutanlığı (ARMERKOM) ve HAVELSAN tarafından ortaklaşa geliştirilen, modern ve son teknoloji ürün olan Ağ Destekli Veri Entegre Savaş Yönetim Sistemi (ADVENT) ile entegre olarak;",
+    "aclama": "ARMERKOM ve HAVELSAN"
+  },
+  {
+    "soru_id": "13",
+    "konu": "TCG İstanbul Seyir Siası",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "TCG İstanbul fırkateyninin ekonomik süratteki seyir siası (menzili) ne kadardır?",
+    "secenekler": {
+      "a": "120 nm",
+      "b": "3171 nm",
+      "c": "4,15 nm",
+      "d": "10545 nm",
+      "e": "5700 nm"
+    },
+    "dogru_secenek": "e",
+    "kanit_cumlesi": "Ekonomik Süratte Seyir Siası: 5700 nm (10545 km)",
+    "aclama": "5700 nm"
+  },
+  {
+    "soru_id": "14",
+    "konu": "ATMACA Güdümlü Mermisi",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "ATMACA güdümlü mermisi, atış planı dahilinde en fazla kaç adet dönüş noktası tanımlama imkânına sahiptir?",
+    "secenekler": {
+      "a": "4",
+      "b": "8",
+      "c": "12",
+      "d": "16",
+      "e": "32"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "16 adete kadar dönüş noktası tanımlama imkânı.",
+    "aclama": "16 adete kadar"
+  },
+  {
+    "soru_id": "15",
+    "konu": "Askeri Tatbikatlar",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Metinde bahsedilen Neptune Strike geliştirilmiş Teyakkuz Faaliyeti hangi denizlerde düzenlenmektedir?",
+    "secenekler": {
+      "a": "Doğu Akdeniz",
+      "b": "Karadeniz",
+      "c": "Taranto Körfezi",
+      "d": "Adriyatik ve İyon Denizi",
+      "e": "Ege Denizi"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "NATO’da, uçak gemisi görev gruplarının da katılımıyla dinamik olarak planlanan ve icra edilen Neptune Strike geliştirilmiş Teyakkuz Faaliyeti (enhanced Vigilance Acitivity-eVA) 22-26 Eylül tarihleri arasında Adriyatik ve İyon Denizi’nde düzenlenmektedir.",
+    "aclama": "Adriyatik ve İyon Denizi"
+  },
+  {
+    "soru_id": "16",
+    "konu": "Hava Kuvvetleri Başarıları",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Türk Yıldızları Akrobasi timi, 20-21 Eylül tarihlerinde Çekya'da düzenlenen havacılık gösterilerinde hangi ödülü almıştır?",
+    "secenekler": {
+      "a": "En Hızlı Uçuş Ödülü",
+      "b": "En İyi Gösteri Uçuşu Ödülü",
+      "c": "En İyi Takım Koordinasyonu Ödülü",
+      "d": "Altın Kanat Ödülü",
+      "e": "Jüri Özel Ödülü"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "20-21 Eylül tarihlerinde Çekya’da düzenlenen ve 18 ülkeden 21 gösteri ekibinin katıldığı “NATO Days in Ostrava & Czech Air Force Days 2025 Havacılık Gösterileri”nde “En İyi Gösteri Uçuşu” ödülünü alan Türk Yıldızları Akrobasi timimizi tebrik ediyoruz.",
+    "aclama": "En İyi Gösteri Uçuşu Ödülü"
+  },
+  {
+    "soru_id": "17",
+    "konu": "Kosova Görevi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Metne göre, İhtiyat Taburumuz Kosova Operatif İhtiyat Taburu görevini hangi tarihte devralacaktır?",
+    "secenekler": {
+      "a": "25 Eylül",
+      "b": "26 Eylül",
+      "c": "27 Eylül",
+      "d": "1 Ekim",
+      "e": "3 Ekim"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "NATO Kosova Gücü (KFOR) ihtiyat birliği rotasyon planlaması kapsamında, 25-26 Eylül tarihlerinde kara ve hava yolu ile Kosova’ya intikal edecek İhtiyat Taburumuz, 1 Ekim’de Çok Uluslu Taburdan 4’üncü kez icra edeceği Kosova Operatif İhtiyat Taburu görevini 3 ay süreyle devralacaktır.",
+    "aclama": "1 Ekim"
+  },
+  {
+    "soru_id": "18",
+    "konu": "Personel Temini",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Metne göre, 'Türk Silahlı Kuvvetleri 2025 Yılı Hukuk Sınıfı Muvazzaf Subay Adayı Temini' başvuruları hangi tarihte sona erecektir?",
+    "secenekler": {
+      "a": "6 Ekim",
+      "b": "15 Ekim",
+      "c": "16 Ekim",
+      "d": "1 Ekim",
+      "e": "26 Eylül"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "“Türk Silahlı Kuvvetleri 2025 Yılı Hukuk Sınıfı Muvazzaf Subay Adayı Temini” başvuruları 15 Ekim...",
+    "aclama": "15 Ekim"
+  },
+
+  {
+    "soru_id": "01",
+    "konu": "MİLGEM Projesi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Ağustos 2025'te İstanbul Tersanesi Komutanlığı'nda denize indirilen ve MİLGEM Projesi'nin 7. gemisi olan İSTİF sınıfı fırkateynin adı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "TCG İSTANBUL (F-515)",
+      "b": "TCG ANKARA (F-516)",
+      "c": "TCG İZMİR (F-517)",
+      "d": "TCG BURSA (F-518)",
+      "e": "TCG KOCAELİ (F-519)"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "MİLGEM Projesi kapsamında inşa edilen 7. gemi ve İSTİF sınıfının ikinci fırkateyni olan TCG İZMİR (F-517), 15 Ağustos 2025 tarihinde İstanbul Tersanesi Komutanlığı'nda düzenlenen törenle denize indirildi.",
+    "aclama": "TCG İZMİR (F-517)"
+  },
+  {
+    "soru_id": "02",
+    "konu": "Savunma Sanayii İhracatı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Ağustos 2025'te, ROKETSAN üretimi ATMACA gemisavar füze sisteminin ihracatı için aşağıdaki dost ve müttefik ülkelerden hangisi ile sözleşme imzalanmıştır?",
+    "secenekler": {
+      "a": "Azerbaycan",
+      "b": "Pakistan",
+      "c": "Libya",
+      "d": "Katar",
+      "e": "Polonya"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Savunma Sanayii Başkanlığı tarafından yapılan açıklamada, ROKETSAN üretimi ATMACA gemisavar füze sisteminin satışı için dost ve müttefik ülke Katar ile 22 Ağustos 2025'te ihracat sözleşmesi imzalandığı duyuruldu.",
+    "aclama": "Katar"
+  },
+  {
+    "soru_id": "03",
+    "konu": "ASELSAN Radar Sistemleri",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Türk Silahlı Kuvvetleri'nin hava savunma kabiliyetini artırmak amacıyla ASELSAN tarafından geliştirilen ve Ağustos 2025'te ilk partisi Hava Kuvvetleri Komutanlığı'na teslim edilen Alçak İrtifa Radarı'nın adı nedir?",
+    "secenekler": {
+      "a": "CENK",
+      "b": "AKREP",
+      "c": "ALPER Gezgin",
+      "d": "KALKAN",
+      "e": "FERSAH"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Türk Silahlı Kuvvetleri'nin hava savunma kabiliyetini artırmak amacıyla ASELSAN tarafından geliştirilen ALPER Gezgin Alçak İrtifa Radarı'nın ilk partisi, 5 Ağustos 2025 tarihinde Hava Kuvvetleri Komutanlığı'na teslim edildi.",
+    "aclama": "ALPER Gezgin"
+  },
+  {
+    "soru_id": "04",
+    "konu": "İnsansız Savaş Uçağı Projeleri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "BAYKAR tarafından geliştirilen insansız savaş uçağı Bayraktar KIZILELMA, Ağustos 2025'te gerçekleştirilen testte ilk atışını aşağıdaki ROKETSAN üretimi mühimmatlardan hangisiyle başarıyla tamamlamıştır?",
+    "secenekler": {
+      "a": "ATMACA",
+      "b": "SOM",
+      "c": "MAM-L",
+      "d": "BOZDOĞAN",
+      "e": "ÇAKIR"
+    },
+    "dogru_secenek": "e",
+    "kanit_cumlesi": "BAYKAR tarafından geliştirilen insansız savaş uçağı Bayraktar KIZILELMA, 28 Ağustos 2025'te gerçekleştirilen testte ROKETSAN üretimi ÇAKIR seyir füzesi ile ilk atışını başarıyla tamamladı.",
+    "aclama": "ÇAKIR"
+  },
+  {
+    "soru_id": "05",
+    "konu": "Zırhlı Kara Araçları",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Ağustos 2025'te Kara Kuvvetleri Komutanlığı envanterine alınan 50 adet PARS IV 6x6 Zırhlı Muharebe Aracı'nın üreticisi olan firma aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "BMC",
+      "b": "Otokar",
+      "c": "Nurol Makina",
+      "d": "FNSS",
+      "e": "Katmerciler"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Kara Kuvvetleri Komutanlığı'nın zırhlı muharebe aracı ihtiyacını karşılamak üzere FNSS tarafından üretilen 50 adet PARS IV 6x6 Zırhlı Muharebe Aracı, 11 Ağustos 2025'te düzenlenen törenle envantere alındı.",
+    "aclama": "FNSS"
+  },
+  {
+    "soru_id": "1",
+    "konu": "Roketsan, DSEI 2025 Londra",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Roketsan, hangi uluslararası savunma fuarında yeni nesil ürünleriyle güçlü şekilde yer almaktadır?",
+    "secenekler": {
+      "a": "DSEI 2025 (Londra)",
+      "b": "MSPO 2025 (Kielce)",
+      "c": "IDEF 2025 (İstanbul)",
+      "d": "Farnborough Airshow 2024",
+      "e": "Eurosatory 2024 (Paris)"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Roketsan, Birleşik Krallık’ın en büyük savunma sanayi organizasyonlarından DSEI 2025’te yeni nesil ürünleriyle, oldukça güçlü bir şekilde yer alıyor.",
+    "aclama": "Roketsan, Birleşik Krallık’ın en büyük savunma sanayi organizasyonlarından DSEI 2025’te yeni nesil ürünleriyle, oldukça güçlü bir şekilde yer alıyor."
+  },
+  {
+    "soru_id": "2",
+    "konu": "HÜRJET DOA & POA Onayı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "HÜRJET, sertifikasyon yolculuğunda hangi iki önemli organizasyon onayını almıştır?",
+    "secenekler": {
+      "a": "Tasarım Organizasyon Onayı (DOA) ve Üretim Organizasyon Onayı (POA)",
+      "b": "EASA Part-145 ve Part-147",
+      "c": "FAA Tip Sertifikası ve EASA Tip Sertifikası",
+      "d": "ISO 9001 ve AS9100",
+      "e": "Uçuşa Elverişlilik Sertifikası ve CE Belgesi"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Tasarım Organizasyon Onayı (DOA) ve Üretim Organizasyon Onayı (POA) belgelerini almaya hak kazandı.",
+    "aclama": "Tasarım Organizasyon Onayı (DOA) ve Üretim Organizasyon Onayı (POA) belgelerini almaya hak kazandı."
+  },
+  {
+    "soru_id": "3",
+    "konu": "Türkiye–Pakistan İş Birliği Görüşmesi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Millî Savunma Bakanı Yaşar Güler, Pakistan’daki ilk programında hangi şehirde görüşme gerçekleştirmiştir?",
+    "secenekler": {
+      "a": "İslamabad",
+      "b": "Karaçi",
+      "c": "Lahor",
+      "d": "Ankara",
+      "e": "Doha"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Millî Savunma Bakanı Yaşar Güler, başkent İslamabad’daki ilk programında Pakistan Ticaret Bakanı Jam Kamal Khan ile bir araya geldi.",
+    "aclama": "Millî Savunma Bakanı Yaşar Güler, başkent İslamabad’daki ilk programında Pakistan Ticaret Bakanı Jam Kamal Khan ile bir araya geldi."
+  },
+  {
+    "soru_id": "4",
+    "konu": "SYS Grup MSPO ve DSEI 2025",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "SYS Grup, DSEI 2025’ten önce hangi fuara ve hangi tarihlerde katılmıştır?",
+    "secenekler": {
+      "a": "MSPO, 2–5 Eylül",
+      "b": "IDEF, 20–25 Temmuz",
+      "c": "Eurosatory, 17–21 Haziran",
+      "d": "LAAD, 2–5 Nisan",
+      "e": "AUSA, 9–12 Ekim"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Hafif ve orta sınıf silah sistemlerinde dünya markası şirketleri bünyesinde barındıran Samsun Yurt Savunma (SYS Grup), 2-5 Eylül tarihlerinde Polonya’da gerçekleştirilen MSPO fuarının ardından 9-12 Eylül’de Birleşik Krallık’taki DSEI 2025 Fuarında Türk savunma sanayiini temsil ediyor.",
+    "aclama": "2-5 Eylül tarihlerinde Polonya’da gerçekleştirilen MSPO fuarının ardından 9-12 Eylül’de Birleşik Krallık’taki DSEI 2025 Fuarında..."
+  },
+  {
+    "soru_id": "5",
+    "konu": "Gülden Özel’in Biyografisi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "TRT spikeri Gülden Özel hangi yıl doğmuştur?",
+    "secenekler": {
+      "a": "1967",
+      "b": "1970",
+      "c": "1965",
+      "d": "1972",
+      "e": "1969"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "1967 yılında Ankara’da dünyaya gelen Gülden Özel, Ankara...",
+    "aclama": "1967 yılında Ankara’da dünyaya gelen Gülden Özel, Ankara..."
+  },
+  {
+    "soru_id": "6",
+    "konu": "Yılmaz Küçükseyhan’ın Vefatı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Emekli Tuğgeneral Yılmaz Küçükseyhan’ın cenazesi hangi tarihte defnedilecektir?",
+    "secenekler": {
+      "a": "09 Eylül Salı",
+      "b": "10 Eylül Çarşamba",
+      "c": "08 Eylül Pazartesi",
+      "d": "07 Eylül Pazar",
+      "e": "11 Eylül Perşembe"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Emekli Tuğgeneral Yılmaz KÜÇÜKSEYHAN'ın Cenazesi 09 Eylül Salı günü Ankara...",
+    "aclama": "Emekli Tuğgeneral Yılmaz KÜÇÜKSEYHAN'ın Cenazesi 09 Eylül Salı günü Ankara..."
+  },
+  {
+    "soru_id": "7",
+    "konu": "MKE’nin İhracat Kapasitesi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "MKE kaç ülkeye ihracat yapmaktadır?",
+    "secenekler": {
+      "a": "105",
+      "b": "90",
+      "c": "75",
+      "d": "60",
+      "e": "120"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Türkiye’nin en köklü savunma sanayii kuruluşu Makine ve Kimya Endüstrisi (MKE) tam 105 ülkeye ihracat yapıyor.",
+    "aclama": "Makine ve Kimya Endüstrisi (MKE) tam 105 ülkeye ihracat yapıyor."
+  },
+  {
+    "soru_id": "8",
+    "konu": "MKE Yatırım Projeleri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Metne göre MKE’nin devam eden yatırım projesi sayısı kaçtır?",
+    "secenekler": {
+      "a": "323",
+      "b": "250",
+      "c": "150",
+      "d": "375",
+      "e": "210"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "MKE’nin Devam Eden 323 Yatırım Projesiyle Türkiye’nin Patlayıcılar Konusunda Dışa Bağımlılığı Yakında Tamamen Sona Erecek!",
+    "aclama": "MKE’nin Devam Eden 323 Yatırım Projesiyle Türkiye’nin Patlayıcılar Konusunda Dışa Bağımlılığı Yakında Tamamen Sona Erecek!"
+  },
+  {
+    "soru_id": "9",
+    "konu": "RMK Marine – SG Arama Kurtarma Korvetleri",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "RMK Marine hangi projesiyle gündeme gelmiştir?",
+    "secenekler": {
+      "a": "Sahil Güvenlik Arama Kurtarma Korvetleri",
+      "b": "MİLGEM İstif Sınıfı",
+      "c": "Denizaltı Modernizasyonu",
+      "d": "Fırkateyn Hava Savunma Modernizasyonu",
+      "e": "Amfibi Hücum Gemisi"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "KOÇ Topluluğu şirketlerinden RMK Marine, Sahil Güvenlik Komutanlığı için inşa ettiği Sahil Güvenlik Arama Kurtarma Korvetleri ile gündeme gelmiş...",
+    "aclama": "Sahil Güvenlik Komutanlığı için inşa ettiği Sahil Güvenlik Arama Kurtarma Korvetleri ile gündeme gelmiş..."
+  },
+  {
+    "soru_id": "10",
+    "konu": "MKE – Polonya 155 mm Üretim Hattı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "MKE, 155 mm obüs mühimmatı üretim hattını hangi ülkede kurmaya çok yakındır?",
+    "secenekler": {
+      "a": "Polonya",
+      "b": "Macaristan",
+      "c": "Romanya",
+      "d": "Slovakya",
+      "e": "Ukraina"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Polonya’nın açtığı “155 mm Obüs Mühimmatı Üretim Hattı” kurulmasına yönelik ihalede Makine ve Kimya Endüstrisi AŞ (MKE) ihaleyi kazanmaya çok yakın.",
+    "aclama": "Polonya’nın açtığı “155 mm Obüs Mühimmatı Üretim Hattı”... MKE ihaleyi kazanmaya çok yakın."
+  },
+  {
+    "soru_id": "11",
+    "konu": "Türkiye–Pakistan Savunma Ortaklığı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Türk heyeti Pakistan’da hangi etkinliğe katılmıştır?",
+    "secenekler": {
+      "a": "Savunma ve Şehitler Günü resepsiyonu",
+      "b": "Hava Kuvvetleri Kuruluş Yıldönümü",
+      "c": "Denizcilik Fuarı Açılışı",
+      "d": "Savunma Sanayi Forumu",
+      "e": "Bağımsızlık Günü Askerî Geçidi"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Pakistan’ın Savunma ve Şehitler Günü dolayısıyla düzenlenen resepsiyona katıldı.",
+    "aclama": "Pakistan’ın Savunma ve Şehitler Günü dolayısıyla düzenlenen resepsiyona katıldı."
+  },
+  {
+    "soru_id": "12",
+    "konu": "Hava Savunma Eğitim ve Simülasyon Merkezi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Açılışı yapılan merkezin tam adı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "Şehit Hava Savunma Üsteğmen Emre Kargın Müşterek Hava Savunma Eğitim ve Simülasyon Merkezi",
+      "b": "Millî Hava Savunma Eğitim Kampüsü",
+      "c": "Konya Hava Savunma Simülasyon Enstitüsü",
+      "d": "Hava Savunma Strateji ve Eğitim Merkezi",
+      "e": "TSK Entegre Hava Savunma Eğitim Üssü"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "“Şehit Hava Savunma Üsteğmen Emre Kargın Müşterek Hava Savunma Eğitim ve Simülasyon Merkezi”nin açılışını gerçekleştirdi.",
+    "aclama": "“Şehit Hava Savunma Üsteğmen Emre Kargın Müşterek Hava Savunma Eğitim ve Simülasyon Merkezi”nin açılışını gerçekleştirdi."
+  },
+  {
+    "soru_id": "13",
+    "konu": "Anıtkabir 30 Ağustos İddiaları",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Metinde TSK’ya yönelik dezenformasyon çabalarının özellikle hangi dönemde arttığı vurgulanmaktadır?",
+    "secenekler": {
+      "a": "Zafer Haftası’nda",
+      "b": "Cumhuriyet Bayramı’nda",
+      "c": "30 Ağustos öncesi bir ay boyunca",
+      "d": "Yılbaşı haftasında",
+      "e": "Seçim döneminde"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "ZAFER HAFTASI’NDA TSK’YA YÖNELİK DEZENFORMASYON ÇABALARI",
+    "aclama": "ZAFER HAFTASI’NDA TSK’YA YÖNELİK DEZENFORMASYON ÇABALARI"
+  },
+  {
+    "soru_id": "14",
+    "konu": "Roketsan – MSPO 2025 Katılımı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Roketsan, Avrupa’da hangi fuara sahada başarı kanıtlanmış ürünleriyle katılmıştır?",
+    "secenekler": {
+      "a": "MSPO 2025 (Polonya)",
+      "b": "Eurosatory 2024",
+      "c": "IDEF 2025",
+      "d": "DSEI 2023",
+      "e": "AUSA 2025"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Polonya’da 2-5 Eylül tarihleri arasında düzenlenen Uluslararası Savunma Sanayii Fuarı MSPO’ya da sahada başarı kanıtlanmış geniş ürün yelpazesi ile katılan Roketsan...",
+    "aclama": "Polonya’da 2-5 Eylül tarihleri arasında düzenlenen MSPO’ya sahada başarı kanıtlanmış geniş ürün yelpazesi ile katılan Roketsan..."
+  },
+  {
+    "soru_id": "15",
+    "konu": "CANiK – TTI COMBAT SMOKE",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "CANiK’in TTI COMBAT SMOKE modeli Türkiye’de ne zaman satışa sunulacaktır?",
+    "secenekler": {
+      "a": "5 Eylül",
+      "b": "10 Eylül",
+      "c": "1 Eylül",
+      "d": "15 Eylül",
+      "e": "20 Eylül"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "CANiK, “Yılın Tabancası” ödüllü serisinin yeni versiyonu TTI COMBAT SMOKE’u 5 Eylül’de Türkiye’de satışa sunacak.",
+    "aclama": "TTI COMBAT SMOKE’u 5 Eylül’de Türkiye’de satışa sunacak."
+  },
+  {
+    "soru_id": "16",
+    "konu": "DefenseNews Top 100 – Türk Firmaları",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "DefenseNews TOP 100 listesinde bu yıl kaç Türk firması yer almıştır?",
+    "secenekler": {
+      "a": "5",
+      "b": "3",
+      "c": "7",
+      "d": "4",
+      "e": "6"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "bu yıl 5 Türk firması, ASELSAN, Türk Havacılık ve Uzay Sanayii TUSAŞ, ROKETSAN, Askeri Fabrika ve Tersane İşletme Anonim Şirketi (ASFAT) ve Makine ve Kimya Endüstrisi...",
+    "aclama": "Bu yıl 5 Türk firması... listede yer aldı."
+  },
+  {
+    "soru_id": "17",
+    "konu": "Genelkurmay Başkanı’nın İlk Yurtdışı Ziyareti",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Orgeneral Selçuk Bayraktaroğlu ilk yurt dışı ziyaretini nereye gerçekleştirmiştir?",
+    "secenekler": {
+      "a": "Kuzey Kıbrıs Türk Cumhuriyeti",
+      "b": "Azerbaycan",
+      "c": "Katar",
+      "d": "Pakistan",
+      "e": "ABD"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Genelkurmay Başkanı Orgeneral Selçuk Bayraktaroğlu, İlk Yurt Dışı Ziyaretini Kuzey Kıbrıs Türk Cumhuriyeti’ne Gerçekleştirdi",
+    "aclama": "İlk Yurt Dışı Ziyaretini Kuzey Kıbrıs Türk Cumhuriyeti’ne gerçekleştirdi."
+  },
+  {
+    "soru_id": "18",
+    "konu": "MİLGEM İstif – İÇEL’in Denize İndirilmesi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "MİLGEM İstif Sınıfı Fırkateyn Projesinde denize indirilen 8’inci geminin adı nedir?",
+    "secenekler": {
+      "a": "İÇEL",
+      "b": "İZMİR",
+      "c": "İSTANBUL",
+      "d": "İZMİT",
+      "e": "İNEBOLU"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "MİLGEM İstif Sınıfı Fırkateyn Projesinde 8’inci Gemi İÇEL Denize İndirildi",
+    "aclama": "8’inci gemi İÇEL denize indirildi."
+  },
+  {
+    "soru_id": "19",
+    "konu": "ALTAY Tankı Silah Sistemleri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "ALTAY ana muharebe tankının ana silahının kalibresi nedir?",
+    "secenekler": {
+      "a": "120 mm 55 kalibre",
+      "b": "105 mm 52 kalibre",
+      "c": "125 mm 48 kalibre",
+      "d": "130 mm 51 kalibre",
+      "e": "115 mm 46 kalibre"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Tankın 120 mm 55 kalibrelik ana silah sistemi ile kuleye eş eksen 7.62 mm makineli tüfek PMT-76/57A ... Makine ve Kimya Endüstrisi (MKE) tarafından...",
+    "aclama": "Tankın 120 mm 55 kalibrelik ana silah sistemi ... MKE tarafından..."
+  },
+  {
+    "soru_id": "20",
+    "konu": "Hava Savunma Birlikleri – Gökyüzünün Taranması",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Metne göre hava savunma birlikleri gökyüzünü nasıl taramaktadır?",
+    "secenekler": {
+      "a": "Gelişmiş radar ağlarıyla 7/24",
+      "b": "Gündüzleri optik sistemlerle",
+      "c": "Uydu görüntüleriyle haftalık",
+      "d": "Sadece yüksek irtifa radarlarıyla",
+      "e": "İnsansız hava araçlarıyla 12/24"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Hava Savunma Birliklerimiz Artık Gelişmiş Radar Ağlarıyla Gökyüzünü 7/24 Taramakta...",
+    "aclama": "Hava Savunma Birliklerimiz ... Gelişmiş Radar Ağlarıyla Gökyüzünü 7/24 Taramakta..."
+  },
+  {
+    "soru_id": "21",
+    "konu": "SYS Grup – DSEI 2025’te Rol",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "SYS Grup’un DSEI 2025’teki konumu başlıkta nasıl ifade edilmiştir?",
+    "secenekler": {
+      "a": "Hem misafir hem ev sahibi",
+      "b": "Sadece ziyaretçi",
+      "c": "Alt yüklenici",
+      "d": "Basın sponsoru",
+      "e": "Teknik danışman"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Savunmanın Bütünleşik Gücü SYS Grup Birleşik Krallık’taki DSEI’da Hem Misafir Hem Ev Sahibi",
+    "aclama": "DSEI’da Hem Misafir Hem Ev Sahibi"
+  },
+  {
+    "soru_id": "22",
+    "konu": "Roketsan – Ürün Yelpazesi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Roketsan’ın DSEI 2025’te sergilediği ürünler arasında aşağıdakilerden hangisi metinde açıkça yer almaktadır?",
+    "secenekler": {
+      "a": "SİHA mühimmatları ve tanksavar sistemleri",
+      "b": "Denizaltı tahrik sistemleri",
+      "c": "Uydu fırlatma araçları",
+      "d": "Savaş uçağı gövde parçaları",
+      "e": "Robotik mayın temizleme araçları"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Roketsan, DSEI 2025’te SİHA mühimmatlarından tanksavar sistemlerine, hava savunma füzelerinden...",
+    "aclama": "SİHA mühimmatlarından tanksavar sistemlerine, hava savunma füzelerinden..."
+  },
+  {
+    "soru_id": "23",
+    "konu": "Anıtkabir 30 Ağustos İddialarının Yeri",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Metindeki iddialara göre hangi törenlerde generallerin üzerinin arandığı öne sürülmüştür?",
+    "secenekler": {
+      "a": "Anıtkabir’deki 30 Ağustos törenleri",
+      "b": "29 Ekim Cumhuriyet Bayramı törenleri",
+      "c": "23 Nisan Ulusal Egmenlik törenleri",
+      "d": "19 Mayıs Gençlik ve Spor Bayramı törenleri",
+      "e": "18 Mart Çanakkale Zaferi törenleri"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Anıtkabir’deki 30 Ağustos Törenlerinde Generallerin Üzerinin Arandığı ve Aileleriyle Gelen Askerî Personelin İçeri Alınmadığı İddiaları",
+    "aclama": "Anıtkabir’deki 30 Ağustos Törenlerinde ... iddiaları"
+  },
+  {
+    "soru_id": "24",
+    "konu": "Roketsan Genel Müdürü’nün Mesajı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Roketsan Genel Müdürü Murat İkinci’ye göre şirket, hangi tür sistemlerle birçok ordunun ihtiyaçlarını karşılamaktadır?",
+    "secenekler": {
+      "a": "Başarısı sahada kanıtlanmış sistemlerle",
+      "b": "Tamamen yeni konsept prototiplerle",
+      "c": "Sadece hava-yer mühimmatlarıyla",
+      "d": "İHA platformlarıyla",
+      "e": "Elektronik harp podlarıyla"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Roketsan Genel Müdürü İkinci: Başarısı Sahada Kanıtlanmış Sistemlerimizle Birçok Ordunun İhtiyaçlarını Karşılıyoruz",
+    "aclama": "Başarısı sahada kanıtlanmış sistemlerimizle birçok ordunun ihtiyaçlarını karşılıyoruz."
+  },
+  {
+    "soru_id": "25",
+    "konu": "Savunma Sanayii - Tedarik Sözleşmeleri",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "SavunmaSanayiST.com'da yer alan habere göre, ASELSAN'ın Savunma Sanayii Başkanlığı ile imzaladığı 1.65 milyar avroluk rekor sözleşmenin konusu ve ilk teslimat için planlanan yıl aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "Denizaltı savunma sistemleri - 2026",
+      "b": "Hava savunma sistemleri - 2027",
+      "c": "Zırhlı kara aracı modernizasyonu - 2025",
+      "d": "Milli savaş uçağı aviyonikleri - 2028",
+      "e": "Uydu haberleşme sistemleri - 2027"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "ASELSAN ile Savunma Sanayii Başkanlığı arasında hava savunma sistemleri tedarikine yönelik 1.65 milyar avro değerinde bir sözleşme imzalandı. Teslimatların 2027'de başlaması planlanıyor.",
+    "aclama": "ASELSAN ile Savunma Sanayii Başkanlığı arasında hava savunma sistemleri tedarikine yönelik 1.65 milyar avro değerinde bir sözleşme imzalandı. Teslimatların 2027'de başlaması planlanıyor."
+  },
+  {
+    "soru_id": "26",
+    "konu": "Uluslararası Güvenlik - Orta Doğu Gelişmeleri",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "9 Eylül 2025 tarihli habere göre, İsrail'in Katar'ın başkenti Doha'da gerçekleştirdiği saldırının hedefi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "Katar Emirlik Sarayı",
+      "b": "Hamas Siyasi Bürosu üyelerinin yaşadığı bir konut",
+      "c": "El Cezire televizyonu merkez binası",
+      "d": "Katar Milli Savunma Bakanlığı",
+      "e": "Doha'daki bir askeri üs"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Saldırının, Hamas Siyasi Bürosu üyelerinin yaşadığı bir konutu hedef aldığı belirtildi.",
+    "aclama": "İsrail, Katar'ın başkenti Doha'da Hamas liderlerine yönelik bir saldırı düzenledi. Saldırının, Hamas Siyasi Bürosu üyelerinin yaşadığı bir konutu hedef aldığı belirtildi."
+  },
+  {
+    "soru_id": "27",
+    "konu": "Uluslararası Savunma Sanayii - Hava Savunma Sistemleri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Hindistan ve Rusya arasında yapılan kritik görüşmelerin ana gündem maddesi hangi savunma sisteminin teslimat sürecini hızlandırmak ve genişletmektir?",
+    "secenekler": {
+      "a": "SU-57 Savaş Uçağı",
+      "b": "T-14 Armata Tankı",
+      "c": "S-400 Triumf Hava Savunma Sistemi",
+      "d": "BrahMos Süpersonik Füzesi",
+      "e": "Kilo Sınıfı Denizaltı"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Moskova ve Yeni Delhi, Rus yapımı S-400 Triumf hava savunma sistemlerinin teslimatlarını hızlandırmak ve genişletmek için kritik görüşmeler yapıyor.",
+    "aclama": "Moskova ve Yeni Delhi, Rus yapımı S-400 Triumf hava savunma sistemlerinin teslimatlarını hızlandırmak ve genişletmek için kritik görüşmeler yapıyor."
+  },
+  {
+    "soru_id": "28",
+    "konu": "Uluslararası İlişkiler - NATO ve Rusya",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Rusya Güvenlik Konseyi Başkan Yardımcısı Dmitry Medvedev, Finlandiya'yı NATO üyeliği sonrasında hangi eylemde bulunmakla suçlamıştır?",
+    "secenekler": {
+      "a": "Rusya'ya ekonomik ambargo uygulamakla",
+      "b": "Sınırda askeri tatbikat yapmakla",
+      "c": "Rusya'ya yönelik saldırı hazırlıkları yapmakla",
+      "d": "Rus diplomatları sınır dışı etmekle",
+      "e": "Arktik bölgesinde hak iddia etmekle"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Rusya Güvenlik Konseyi Başkan Yardımcısı Dmitry Medvedev, Finlandiya'yı NATO üyeliği sonrası Rusya'ya yönelik saldırı hazırlıkları yapmakla suçladı.",
+    "aclama": "Rusya Güvenlik Konseyi Başkan Yardımcısı Dmitry Medvedev, Finlandiya'yı NATO üyeliği sonrası Rusya'ya yönelik saldırı hazırlıkları yapmakla suçladı."
+  },
+  {
+    "soru_id": "29",
+    "konu": "Savunma Sanayii - ABD Silah Sistemleri",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "ABD Donanması'nın Raytheon firması ile imzaladığı 205 milyon dolarlık anlaşma, hangi Yakın Hava Savunma Sistemi'nin üretiminin devamını kapsamaktadır?",
+    "secenekler": {
+      "a": "Patriot",
+      "b": "THAAD",
+      "c": "Sea Sparrow",
+      "d": "Phalanx",
+      "e": "AEGIS"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "ABD Donanması, Raytheon ile Phalanx Yakın Hava Savunma Sistemi'nin üretiminin devamı için 205 milyon dolarlık bir sözleşme imzaladı.",
+    "aclama": "ABD Donanması, Raytheon ile Phalanx Yakın Hava Savunma Sistemi'nin üretiminin devamı için 205 milyon dolarlık bir sözleşme imzaladı."
+  },
+  {
+    "soru_id": "30",
+    "konu": "Savunma Sanayii - Gemi Yakın Hava Savunma Sistemleri",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Phalanx CIWS'in Blok 1A ve 1B modelleri, Blok 0 ve Blok 1 modellerine kıyasla hem mühimmat kapasitesi hem de atış hızı bakımından önemli bir artış sunmaktadır. Bu bilgilere göre, Blok 1B modelinin, Blok 0 modeline kıyasla dakikadaki teorik atış hızı ve mühimmat kapasitesindeki net artış oranları sırasıyla yaklaşık olarak ne kadardır?",
+    "secenekler": {
+      "a": "%33 artış (atış hızı), %57 artış (kapasite)",
+      "b": "%50 artış (atış hızı), %57 artış (kapasite)",
+      "c": "%50 artış (atış hızı), %36 artış (kapasite)",
+      "d": "%33 artış (atış hızı), %36 artış (kapasite)",
+      "e": "%66 artış (atış hızı), %66 artış (kapasite)"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Atışa hazır 990 mühimmat yüklü Blok 0 ve 1550 mühimmat yüklü Blok 1 model Phalanx dakikada 3000 atış hızındadır. Atışa hazır 1550 mühimmat yüklü Blok 1A ve 1B modellerinde ise atış hızı dakikada 4500 adede yükselmiştir.",
+    "aclama": "Phalanx'ın Blok 0 modeli dakikada 3000 atış hızına ve 990 mühimmat kapasitesine sahipken, Blok 1B modeli dakikada 4500 atış hızına ve 1550 mühimmat kapasitesine sahiptir. Atış hızı artışı 1500 (4500-3000) olup, bu %50'lik bir artışa (1500/3000) tekabül eder. Mühimmat kapasitesi artışı ise 560 (1550-990) olup, bu da yaklaşık %57'lik bir artışa (560/990) denk gelmektedir."
+  },
+  {
+    "soru_id": "31",
+    "konu": "Savunma Sanayii - Hava Savunma Mimarisi",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "ASELSAN tarafından geliştirilen GÜRZ Hava ve Füze Savunma Sistemi, değişen savaş koşullarına uygun olarak tasarlanmıştır. Sistemin mimarisi ve yetenekleri göz önüne alındığında, GÜRZ'ün en temel tasarım felsefesi ve bunu sağlayan kritik özelliği aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "Sadece sabit tesisleri korumak için geliştirilmiş, uzun menzilli bir alan savunma sistemi olması.",
+      "b": "Farklı tehditlere karşı maliyet etkin bir çözüm sunması ve bu amaçla gelişmiş tehdit değerlendirme ve silah tahsis algoritmalarını kullanması.",
+      "c": "Sadece İHA'lara karşı etkili olan, özelleşmiş bir anti-drone sistemi olması.",
+      "d": "Yalnızca ROKETSAN üretimi füzeleri kullanabilen, kapalı bir mimariye sahip olması.",
+      "e": "Hareket kabiliyetinden yoksun, ancak çok yüksek imha gücüne sahip statik bir yapı olması."
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Sistemin üstün hedef tespit, teşhis ve takip yetenekleri, sahip olduğu önleyici seti, gelişmiş tehdit değerlendirme ve silah tahsis çözümleri sayesinde tehditlere karşı yüksek imha gücünü maliyet etkin bir mimaride sunuyor.",
+    "aclama": "GÜRZ sistemi, hareket kabiliyeti yüksek bir sistem olup, İHA'lar, helikopterler, savaş uçakları ve seyir füzeleri gibi çok çeşitli hedeflere karşı görev yapacak şekilde tasarlanmıştır. Metinde vurgulanan en önemli özellik, sistemin gelişmiş tehdit değerlendirme ve silah tahsis çözümleriyle tehditlere karşı yüksek imha gücünü 'maliyet etkin bir mimaride' sunmasıdır. Bu, sistemin temel tasarım felsefesini yansıtır."
+  },
+  {
+    "soru_id": "32",
+    "konu": "Savunma Sanayii - Hava Savunma Sistemleri Karşılaştırması",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "ASELSAN'ın hava savunma ürün ailesi olan KORKUT ve GÖKDENİZ sistemleri, 35mm top kullanmaları bakımından benzerlik gösterse de temel görev ve platformları açısından farklılaşırlar. GÖKDENİZ sistemini KORKUT'tan ayıran en temel yapısal ve işlevsel fark aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "GÖKDENİZ'in arama radarı, takip radarı ve elektro-optik algılayıcıları tek bir platformda birleştirmesi ve deniz platformları için tasarlanmış olması.",
+      "b": "KORKUT'un GÖKDENİZ'den daha yüksek bir atış hızına (dakikada 1100 atım) sahip olması.",
+      "c": "GÖKDENİZ'in ROKETSAN, KORKUT'un ise ASELSAN tarafından geliştirilmiş olması.",
+      "d": "KORKUT'un gemisavar füzelerine karşı etkili olması, GÖKDENİZ'in ise bu yeteneğe sahip olmaması.",
+      "e": "GÖKDENİZ'in kara platformları için, KORKUT'un ise deniz platformları için geliştirilmiş olması."
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "GÖKDENİZ sisteminde, 35mm çift namlulu MKE üretimi top, arama radarı, takip radarı ve elektro-optik (E/O) algılayıcılar aynı platformda yer alıyor. Bu sayede hedef tespiti, tehdit önceliklendirmesi ve imhası otomatik olarak gerçekleştirilebiliyor.",
+    "aclama": "Her iki sistem de 35mm top kullansa da, GÖKDENİZ bir deniz platformu yakın hava savunma sistemidir (CIWS) ve en ayırt edici özelliği, tüm sensörlerini (arama radarı, takip radarı, E/O) ve silahını tek bir taret üzerinde toplamasıdır. Bu yapı, otonom görev icrası sağlar. KORKUT ise kara platformları için geliştirilmiş, komuta-kontrol ve silah sistemi araçları ayrı olan bir sistemdir. HİSAR projeleri ise Aselsan ve Roketsan işbirliğidir."
+  },
+  {
+    "soru_id": "33",
+    "konu": "Uluslararası Savunma Sanayii - Radar Teknolojileri",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "S-400 hava savunma sisteminin radarı ile bir savaş uçağının (örneğin EF-2000) radarı arasında, algılama performansı açısından coğrafi koşullara bağlı olarak ortaya çıkan temel bir dezavantaj bulunmaktadır. S-400 gibi bir kara radarının, yüksek irtifadaki bir hava radarına göre yaşadığı bu performans kaybının ana fiziksel sebebi nedir?",
+    "secenekler": {
+      "a": "Kara radarlarının atmosferik bozulmalardan daha fazla etkilenmesi.",
+      "b": "Hava radarlarının daha yüksek frekansta çalışarak daha iyi çözünürlük elde etmesi.",
+      "c": "Dünyanın yuvarlaklığından ötürü kara radarının ufuk hattı sınırlamasına maruz kalması.",
+      "d": "Kara radarlarının enerji ihtiyacının daha fazla olması ve bu durumun sinyal gücünü zayıflatması.",
+      "e": "Savaş uçağı radarlarının Doppler teknolojisini daha etkin kullanması."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Kara radarları dünyanın yuvarlaklığından ötürü bir hava radarına göre performans kaybı yaşar. Bir hava radarı ise yerden yüksekte olduğu için avantajlı durumdadır. Bu da daha yüksek performans sergilemesini sağlar.",
+    "aclama": "Metinde açıklandığı gibi, bir kara radarı yer seviyesinde olduğu için dünyanın eğriliği nedeniyle alçak irtifadaki hedefleri görmekte zorlanır (radar ufku). Buna karşın, bir savaş uçağı gibi yüksek irtifadaki bir platformda bulunan hava radarı, 'aşağı bakma' yeteneği sayesinde bu fiziksel engelden daha az etkilenir ve daha geniş bir alanı tarayabilir. Bu, kara radarları için temel bir performans sınırlamasıdır."
+  },
+  {
+    "soru_id": "34",
+    "konu": "Savunma Sanayii - Gemi Savunma Felsefesi",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Modern gemi savunma mimarisinde, RAM gibi füze tabanlı sistemler dış savunma kalkanını oluştururken, Phalanx gibi top tabanlı sistemler genellikle son bir sigorta görevi görür. RAM sisteminin sağlayacağı koruma kalkanından sızabilecek bir gemisavar füzesine karşı Phalanx gibi bir CIWS'in varlığı, savunma konseptinde hangi amaca hizmet eder?",
+    "secenekler": {
+      "a": "Saldırıya aynı anda hem füze hem de topla karşılık vererek hedefi şaşırtma.",
+      "b": "RAM füzeleri tükendiğinde ana saldırı silahı olarak kullanılma.",
+      "c": "Geminin 'soft-kill' (elektronik karıştırma vb.) sistemlerine zaman kazandırma.",
+      "d": "Dış savunma katmanını aşan tehditlere karşı son bir 'hard-kill' (fiziksel imha) şansı yaratarak katmanlı savunmayı tamamlama.",
+      "e": "Su üstü hedeflerine karşı taarruz amaçlı ateş gücü sağlama."
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "İlave bir CIWS Sistemi RAM Sisteminin sağladığı dış savunma kalkanından sızabilecek gemisavar füzelere karşı ilave sigorta görevi yapabilir.",
+    "aclama": "Metinde Phalanx gibi bir CIWS'in, RAM gibi sistemlerden sızan tehditlere karşı 'ilave sigorta' görevi gördüğü belirtilmektedir. Bu, modern donanmalardaki 'katmanlı hava savunması' felsefesini yansıtır. Her savunma katmanı, bir öncekinden sızan tehdidi engellemek için tasarlanmıştır. Phalanx, bu katmanın en iç halkasıdır ve fiziksel imha (hard-kill) sağlayarak gemiyi koruyan son savunma hattıdır."
+  },
+  {
+    "soru_id": "35",
+    "konu": "ALTAY tankı seri üretim",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "ALTAY tankının seri üretimine hangi şirket başladı?",
+    "secenekler": {
+      "a": "BMC",
+      "b": "MKE",
+      "c": "TUSAŞ",
+      "d": "FNSS",
+      "e": "OTOKAR"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "BMC, geçen sene Ankara'da temelleri atılan fabrikada ALTAY tankının seri üretimine başladı.",
+    "aclama": "BMC"
+  },
+  {
+    "soru_id": "36",
+    "konu": "Ağustos ihracatı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Savunma ve havacılık sanayisinin ağustos ayı ihracatı kaç milyon dolara ulaştı?",
+    "secenekler": {
+      "a": "834",
+      "b": "650",
+      "c": "920",
+      "d": "710",
+      "e": "500"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Savunma ve havacılık sanayisi, ağustos ayında ihracatta yüzde 97,3 artışla 834 milyon dolara ulaştı.",
+    "aclama": "834 milyon dolar"
+  },
+  {
+    "soru_id": "37",
+    "konu": "Ocak-Ağustos toplam ihracat",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Ocak-ağustos döneminde toplam ihracat hangi eşiği geçti?",
+    "secenekler": {
+      "a": "5,4 milyar dolar",
+      "b": "4,0 milyar dolar",
+      "c": "6,2 milyar dolar",
+      "d": "3,8 milyar dolar",
+      "e": "7,1 milyar dolar"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Ocak-ağustos döneminde toplam ihracat 5,4 milyar doları geçti.",
+    "aclama": "5,4 milyar dolar"
+  },
+  {
+    "soru_id": "38",
+    "konu": "DF-5C ICBM menzili",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Çin’in DF-5C kıtalararası balistik füzesinin menzili aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "20 bin km’yi aşan",
+      "b": "10 bin km",
+      "c": "8 bin km",
+      "d": "15 bin km",
+      "e": "5 bin km"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Çin’in tanıttığı DF-5C kıtalararası balistik füze, 20 bin km’yi aşan menzili, çoklu başlık kapasitesi ve yüksek hassasiyet özellikleriyle dünyanın her noktasını vurabilecek güce sahip.",
+    "aclama": "20 bin km’yi aşan"
+  },
+  {
+    "soru_id": "39",
+    "konu": "TCG İçel sınıfı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "TCG İçel (F-518) hangi sınıf fırkateyndir?",
+    "secenekler": {
+      "a": "İstif sınıfı",
+      "b": "Ada sınıfı",
+      "c": "Barbaros sınıfı",
+      "d": "Gabya sınıfı",
+      "e": "TF-2000 sınıfı"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Türk Deniz Kuvvetleri’nin gücünü artıracak İstif sınıfı fırkateynlerden TCG İçel (F-518) denize indirildi.",
+    "aclama": "İstif sınıfı"
+  },
+  {
+    "soru_id": "40",
+    "konu": "Defense News Top 100",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Defense News Top 100 listesinde kaç Türk şirketi yer aldı?",
+    "secenekler": {
+      "a": "5",
+      "b": "3",
+      "c": "4",
+      "d": "6",
+      "e": "2"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Geçen sene olduğu gibi bu sene de ilk 100'de 5 Türk şirketi yer aldı.",
+    "aclama": "5"
+  },
+  {
+    "soru_id": "41",
+    "konu": "YFQ-42A ilk uçuş",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "YFQ-42A insansız savaş uçağını hangi firma geliştirdi?",
+    "secenekler": {
+      "a": "General Atomics",
+      "b": "Lockheed Martin",
+      "c": "Boeing",
+      "d": "Northrop Grumman",
+      "e": "Raytheon"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "ABD Hava Kuvvetleri için General Atomics’in geliştirdiği YFQ-42A insansız savaş uçağının ilk uçuşu gerçekleştirildi.",
+    "aclama": "General Atomics"
+  },
+  {
+    "soru_id": "42",
+    "konu": "Japonya ve Türk İHA’ları",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Türk yapımı İHA’ların alımı hangi ülkenin gündemindedir?",
+    "secenekler": {
+      "a": "Japonya",
+      "b": "İspanya",
+      "c": "Almanya",
+      "d": "İtalya",
+      "e": "Fransa"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Türk yapımı İHA’ların alımı da gündemde.",
+    "aclama": "Japonya"
+  },
+  {
+    "soru_id": "43",
+    "konu": "Baykar fabrikasına saldırı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Rusya, Baykar’ın hangi ülkedeki İHA fabrikasını füze saldırısıyla hedef aldı?",
+    "secenekler": {
+      "a": "Ukrayna",
+      "b": "Polonya",
+      "c": "Türkiye",
+      "d": "Katar",
+      "e": "Azerbaycan"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Rusya, Baykar'ın Ukrayna'da Bayraktar TB2 ve AKINCI SİHA üretecek fabrikasını hedef aldı.",
+    "aclama": "Ukrayna"
+  },
+  {
+    "soru_id": "44",
+    "konu": "HAVELSAN-Mısır iş birliği",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "HAVELSAN’ın Mısır’da ortak üretim için iş birliği yaptığı kurum hangisidir?",
+    "secenekler": {
+      "a": "AOI",
+      "b": "TAI",
+      "c": "AOA",
+      "d": "NRO",
+      "e": "DRDO"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "HAVELSAN, Mısır'da bulut altı İHA'ların ortak üretimi için AOI ile iş birliği yaptı.",
+    "aclama": "AOI"
+  },
+  {
+    "soru_id": "45",
+    "konu": "ASELSAN Çelik Kubbe teslimatı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "ASELSAN’ın teslim ettiği hava savunma sistemleri kaç araçtan oluşmaktadır?",
+    "secenekler": {
+      "a": "47",
+      "b": "30",
+      "c": "60",
+      "d": "25",
+      "e": "52"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "ASELSAN, Çelik Kubbe için geliştirilen 47 araçtan oluşan hava savunma sistemlerini teslim etti.",
+    "aclama": "47"
+  },
+  {
+    "soru_id": "46",
+    "konu": "Milli Uçak Gemisi takvimi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Milli Uçak Gemisi’nin denize indirilmesi için belirtilen zaman aralığı nedir?",
+    "secenekler": {
+      "a": "2027-2028",
+      "b": "2025-2026",
+      "c": "2029-2030",
+      "d": "2026-2027",
+      "e": "2028-2029"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Milli Uçak Gemisi’nin (MUGEM) inşaatının sürdüğünü ve 2027-2028 yılında deniz indirileceğini duyurdu.",
+    "aclama": "2027-2028"
+  },
+  {
+    "soru_id": "47",
+    "konu": "IDEF 2025 – 30x113 sistemler",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "30x113 kalibre sistemleriyle ilgili özel röportaj hangi fuarda çekilmiştir?",
+    "secenekler": {
+      "a": "IDEF 2025",
+      "b": "DSEI 2025",
+      "c": "MSPO 2025",
+      "d": "Eurosatory 2024",
+      "e": "AUSA 2025"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "IDEF 2025'de Unirobotics standından özel röportaj!",
+    "aclama": "IDEF 2025"
+  },
+  {
+    "soru_id": "48",
+    "konu": "Pentagon REGAL programı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Pentagon, uzaydan kargo taşımacılığı için hangi iki şirketle anlaştı?",
+    "secenekler": {
+      "a": "Blue Origin ve Anduril",
+      "b": "SpaceX ve Boeing",
+      "c": "ULA ve Palantir",
+      "d": "Sierra Space ve Lockheed",
+      "e": "Rocket Lab ve Raytheon"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Pentagon, uzaydan kargo taşımacılığı için Blue Origin ve Anduril ile anlaştı.",
+    "aclama": "Blue Origin ve Anduril"
+  },
+  {
+    "soru_id": "49",
+    "konu": "Admiral Nakhimov dönüşü",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "28 yıl sonra geri dönen nükleer tahrikli savaş gemisinin adı nedir?",
+    "secenekler": {
+      "a": "Admiral Nakhimov",
+      "b": "Kuznetsov",
+      "c": "Peter the Great",
+      "d": "Severodvinsk",
+      "e": "Admiral Lazarev"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Rusya'nın Soğuk Savaş döneminden kalma devam nükleer tahrikli savaş gemisi Admiral Nakhimov, 28 yıl sonra geri dönüyor.",
+    "aclama": "Admiral Nakhimov"
+  },
+  {
+    "soru_id": "50",
+    "konu": "Japonya’nın değerlendirdiği SİHA’lar",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Japonya’nın değerlendirdiği Türk SİHA platformları hangileridir?",
+    "secenekler": {
+      "a": "Bayraktar TB2/TB3 ve ANKA",
+      "b": "Kızılelma ve Aksungur",
+      "c": "ANKA-3 ve Kızılelma",
+      "d": "TB2 ve Akıncı",
+      "e": "Karayel ve Şimşek"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Aktarılanlara göre Baykar’ın Bayraktar TB2/TB3 SİHA’ları ve TUSAŞ’ın Anka platformu değerlendiriliyor.",
+    "aclama": "Bayraktar TB2/TB3 ve ANKA"
+  },
+  {
+    "soru_id": "51",
+    "konu": "CobraJet özelliği",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "SkyDefense’in CobraJet dronu aşağıdaki hangi kabiliyete sahiptir?",
+    "secenekler": {
+      "a": "Dikey kalkış ve iniş",
+      "b": "Nükleer tahrik",
+      "c": "Denizaltı konuşlu kullanım",
+      "d": "İnsanlı uçuş",
+      "e": "Yalnızca kablolu kontrol"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Ayrıca dikey kalkış ve iniş de yapabiliyor.",
+    "aclama": "Dikey kalkış ve iniş"
+  },
+  {
+    "soru_id": "52",
+    "konu": "F/A-XX konsepti",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "F/A-XX altıncı nesil savaş uçağı konseptini görsel olarak ilk kez kim paylaştı?",
+    "secenekler": {
+      "a": "Northrop Grumman",
+      "b": "Lockheed Martin",
+      "c": "Boeing",
+      "d": "General Dynamics",
+      "e": "Textron"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "F/A-XX, Northrop Grumman’ın paylaştığı yeni konsept görseliyle ilk kez ortaya çıktı.",
+    "aclama": "Northrop Grumman"
+  },
+  {
+    "soru_id": "53",
+    "konu": "Jet motorlu VTOL İHA",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Gemilerden dikey kalkış yapabilen jet motorlu İHA’yı tanıtan ülke hangisidir?",
+    "secenekler": {
+      "a": "Çin",
+      "b": "ABD",
+      "c": "Rusya",
+      "d": "Fransa",
+      "e": "İngiltere"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Çin, ... dikey iniş ve kalkış yapabilen jet motorlu insansız hava aracını tanıttı.",
+    "aclama": "Çin"
+  },
+  {
+    "soru_id": "54",
+    "konu": "PARS İzci 6x6 sensör sayısı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "PARS İzci 6x6 üzerinde kaçtan fazla sensör bulunmaktadır?",
+    "secenekler": {
+      "a": "500+",
+      "b": "200+",
+      "c": "100+",
+      "d": "50+",
+      "e": "800+"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "500'den fazla sensörüyle gelişmiş yapay zeka özelliklerini üzerinde barındıran Pars İzci 6x6...",
+    "aclama": "500’den fazla"
+  },
+  {
+    "soru_id": "55",
+    "konu": "İHA 300 ER menzili",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "ROKETSAN’ın İHA 300 ER füzesinin menzili hangi seçenekte doğru verilmiştir?",
+    "secenekler": {
+      "a": "500 km+",
+      "b": "150 km",
+      "c": "250 km",
+      "d": "800 km",
+      "e": "60 km"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "5 metre uzunluğundaki bu aerobalistik füze 500 km+ menziliyle düşmanları uzaktan vuruyor.",
+    "aclama": "500 km+"
+  },
+  {
+    "soru_id": "56",
+    "konu": "ADVENT’e yapay zeka",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "MAIN yapay zekası hangi savaş yönetim sistemine entegre ediliyor?",
+    "secenekler": {
+      "a": "ADVENT",
+      "b": "GENESIS",
+      "c": "Aegis",
+      "d": "Tacticos",
+      "e": "Panthera"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "HAVELSAN'ın ... ADVENT'e MAIN yapay zekası entegre ediliyor.",
+    "aclama": "ADVENT"
+  },
+  {
+    "soru_id": "57",
+    "konu": "Baykar Samsun yatırımı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Baykar’ın Anadolu’daki ilk üretim üssü hangi ile kuruluyor?",
+    "secenekler": {
+      "a": "Samsun",
+      "b": "Konya",
+      "c": "Kayseri",
+      "d": "Eskişehir",
+      "e": "Gaziantep"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Baykar, Anadolu’daki ilk yatırımını Samsun’a yapacak.",
+    "aclama": "Samsun"
+  },
+  {
+    "soru_id": "58",
+    "konu": "AKINCI atış testi mühimmatları",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Bayraktar AKINCI’nın son atış testinde kullanılan iki mühimmat hangileridir?",
+    "secenekler": {
+      "a": "ALPAGUT ve EREN",
+      "b": "MAM-L ve MAM-T",
+      "c": "SOM ve HGK",
+      "d": "Teber ve Bozok",
+      "e": "KUZGUN ve TRG-230"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Bayraktar AKINCI, STM tarafından geliştirilen ALPAGUT ve ROKETSAN'ın ... EREN mühimmatlarıyla atış testi gerçekleştirdi.",
+    "aclama": "ALPAGUT ve EREN"
+  },
+  {
+    "soru_id": "59",
+    "konu": "Cybertruck alımı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "ABD Hava Kuvvetleri füze hedefi olarak hangi aracı satın alıyor?",
+    "secenekler": {
+      "a": "Tesla Cybertruck",
+      "b": "Hummer EV",
+      "c": "Ford F-150 Lightning",
+      "d": "Rivian R1T",
+      "e": "GMC Sierra"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "ABD Hava Kuvvetleri, iki adet Tesla Cybertruck’ı füze hedefi olarak kullanmak üzere satın alıyor.",
+    "aclama": "Tesla Cybertruck"
+  },
+  {
+    "soru_id": "60",
+    "konu": "İspanya F-35 kararı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Hangi ülke F-35 savaş uçağı alım planını iptal etti?",
+    "secenekler": {
+      "a": "İspanya",
+      "b": "Japonya",
+      "c": "Polonya",
+      "d": "İtalya",
+      "e": "Norveç"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "İspanya, F-35 savaş uçaklarını alma planını iptal etti.",
+    "aclama": "İspanya"
+  },
+  {
+    "soru_id": "61",
+    "konu": "Elektrikli zırhlı araç menzili",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Nurol Makina’nın yüzde 100 elektrikli zırhlı aracının menzili kaç kilometredir?",
+    "secenekler": {
+      "a": "400",
+      "b": "250",
+      "c": "600",
+      "d": "150",
+      "e": "480"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "400 km menzil ve teknolojileiryle geleceğin savunma sistemlerine ışık tutuyor.",
+    "aclama": "400 km"
+  },
+  {
+    "soru_id": "62",
+    "konu": "BMC yeni araçlar – fuar",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "BMC ZEYBEK Araç Ailesi ve ALTUĞ Tank Avcısı hangi fuarda sergilendi?",
+    "secenekler": {
+      "a": "IDEF 2025",
+      "b": "DSEI 2025",
+      "c": "MSPO 2025",
+      "d": "AUSA 2025",
+      "e": "Eurosatory 2024"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Türkiye'nin savunma devlerinden BMC, IDEF 2025 fuarında üç yeni aracını sergiledi.",
+    "aclama": "IDEF 2025"
+  },
+  {
+    "soru_id": "63",
+    "konu": "Polonya K2 alımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Polonya yeni sözleşmeyle kaç adet K2 tankı daha alıyor?",
+    "secenekler": {
+      "a": "180",
+      "b": "120",
+      "c": "90",
+      "d": "220",
+      "e": "60"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Polonya yeni sözleşme ile 180 adet K2 tankı daha alarak envanterini 2030’a kadar 1.100 tanka çıkarıyor.",
+    "aclama": "180"
+  },
+  {
+    "soru_id": "64",
+    "konu": "Temmuz 2025 ihracat rekoru",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Temmuz 2025’te savunma ve havacılık ihracatı kaç milyon dolar ile rekor kırdı?",
+    "secenekler": {
+      "a": "989,6",
+      "b": "834",
+      "c": "750,2",
+      "d": "1.050,0",
+      "e": "920,5"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Temmuz 2025’te 989,6 milyon dolar ile rekor ihracat gerçekleştirildiğini açıkladı.",
+    "aclama": "989,6 milyon dolar"
+  },
+  {
+    "soru_id": "65",
+    "konu": "Joby–L3Harris proje tipi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Joby Aviation ve L3Harris’in geliştireceği hava aracının tipi nedir?",
+    "secenekler": {
+      "a": "Otonom hibrit VTOL",
+      "b": "Süpersonik yolcu uçağı",
+      "c": "Kargo zeplini",
+      "d": "Denizaltı İHA",
+      "e": "Helyum balon platformu"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Joby Aviation ve L3Harris, otonom uçabilen hibrit VTOL hava aracı geliştirmek için güçlerini birleştirdi.",
+    "aclama": "Otonom hibrit VTOL"
+  },
+  {
+    "soru_id": "66",
+    "konu": "SİPER Ürün-1",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Seri imalat kabul testleri başarıyla tamamlanan füze hangisidir?",
+    "secenekler": {
+      "a": "SİPER Ürün-1",
+      "b": "HİSAR-O",
+      "c": "GÖKDEMİR",
+      "d": "SOM",
+      "e": "ATMACA"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "SİPER Ürün-1 füzesinin seri imalat kabul testleri başarıyla tamamlandı.",
+    "aclama": "SİPER Ürün-1"
+  },
+  {
+    "soru_id": "67",
+    "konu": "Roket atabilen robot köpek",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Dünyanın ilk roket atabilen robot köpeğinin adı nedir?",
+    "secenekler": {
+      "a": "KOZ",
+      "b": "BOZ",
+      "c": "ALP",
+      "d": "METE",
+      "e": "TUNÇ"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Dünyanın ilk roket atabilen robot köpeği KOZ ile tanışın!",
+    "aclama": "KOZ"
+  },
+  {
+    "soru_id": "68",
+    "konu": "OTOKAR Romanya projesi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "OTOKAR’ın Romanya’ya yapacağı ihracat projesi kaç adet araç içermektedir?",
+    "secenekler": {
+      "a": "1.059",
+      "b": "500",
+      "c": "750",
+      "d": "1.200",
+      "e": "900"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Cobra 2 serisi, Romanya'ya 1.059 adetlik ihracat projesi...",
+    "aclama": "1.059"
+  },
+  {
+    "soru_id": "69",
+    "konu": "KAAN uçuş takvimi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "KAAN’ın yeni prototipinin planlanan ilk uçuş tarihi nedir?",
+    "secenekler": {
+      "a": "Nisan 2026",
+      "b": "Aralık 2025",
+      "c": "Temmuz 2026",
+      "d": "Ocak 2027",
+      "e": "Ekim 2025"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "KAAN’ın yeni prototipin 2026 yılının Nisan ayında uçacağını duyurdu.",
+    "aclama": "Nisan 2026"
+  },
+  {
+    "soru_id": "70",
+    "konu": "Endonezya alımı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Endonezya ile imzalanan anlaşmaya göre kaç adet KAAN satışı öngörülüyor?",
+    "secenekler": {
+      "a": "48",
+      "b": "24",
+      "c": "36",
+      "d": "12",
+      "e": "60"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Endonezya ile Türkiye arasında 48 adet KAAN için satış sözleşmesi imzalandı.",
+    "aclama": "48"
+  }
+]
