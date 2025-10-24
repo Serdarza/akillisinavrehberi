@@ -26,28 +26,8 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding-top: 0; /* Geri sayım fixed olacağı için body padding'i kaldırıldı */
+    padding-top: 20px; /* Sayaç artık fixed değil, normal padding geri geldi */
     flex-direction: column; 
-}
-
-/* --- Geri Sayım Sayacı Stilleri: SABİT ÜST BAR --- */
-.countdown-container {
-    /* Sabitleme */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; /* Her şeyin üzerinde kalmasını sağla */
-    margin: 0 auto;
-    max-width: 450px; /* Mobil görünüm genişliğini koru */
-
-    /* Stil */
-    background-color: var(--purple-dark); 
-    color: var(--white);
-    padding: 15px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    border-radius: 0 0 12px 12px; /* Sadece alt köşeler yuvarlak */
 }
 
 /* Uygulama İçerik Sınırlayıcısı */
@@ -57,12 +37,10 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* Kritik: İçeriği geri sayımın altına itmek için üst boşluk ekle */
-    padding-top: 130px; /* Geri sayım yüksekliğine göre ayarlandı */
+    padding-top: 0; /* Artık üst boşluğa gerek yok */
     padding-bottom: 70px; /* Footer (alt menü) yüksekliği kadar boşluk */
     flex-grow: 1; 
 }
-
 
 .container {
     width: 100%;
@@ -78,6 +56,21 @@ body {
 
 .hidden {
     display: none !important;
+}
+
+/* --- Geri Sayım Sayacı Stilleri: Normal Akışta --- */
+.countdown-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 10px auto 20px auto; /* Normal akışta üstte, ortada ve altında boşluk */
+    
+    /* Stil */
+    background-color: var(--purple-dark); 
+    color: var(--white);
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 12px; /* Köşeler normalleşti */
 }
 
 /* Geri Sayım İç stilleri (Öncekiyle aynı) */
@@ -309,7 +302,7 @@ body {
     padding: 10px 0;
     border-top: 1px solid var(--gray-light);
     background-color: var(--white);
-    position: fixed; /* Footer da sabitlensin */
+    position: fixed; 
     bottom: 0;
     left: 0;
     right: 0;
@@ -332,16 +325,19 @@ body {
 /* Mobil için düzeltmeler */
 @media (max-width: 600px) {
     body {
+        padding-top: 0;
         align-items: stretch;
     }
     
     .countdown-container {
         border-radius: 0;
         max-width: none;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .app-content-wrapper {
-        padding-top: 130px; /* Geri sayım yüksekliği */
+        padding-top: 0; /* Artık fixed sayaç yok */
         margin: 0;
         max-width: none;
     }
