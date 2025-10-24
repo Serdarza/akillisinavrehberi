@@ -25,25 +25,34 @@
 
         <div id="screen-quiz" class="screen">
             <div id="quiz-header">
-                <button id="btn-back-to-subject" class="menu-button-secondary small">Derse Dön</button>
+                <button id="btn-back-to-subject" class="menu-button-secondary small">Sınavdan Çık</button>
                 <div id="question-counter">Soru: 1/20</div>
             </div>
-            
             <div id="quiz-container">
                 <div id="question-text">Soru metni buraya gelecek...</div>
-                
-                <div id="options-container">
-                    </div>
-                
+                <div id="options-container"></div>
                 <div id="explanation-box" style="display: none;">
                     <p id="explanation-text"></p>
                 </div>
-                
                 <div id="quiz-nav-buttons">
                     <button id="btn-prev" class="menu-button-secondary">Geri</button>
                     <button id="btn-next" class="menu-button-secondary">İleri</button>
                 </div>
             </div>
+        </div>
+
+        <div id="screen-results" class="screen">
+            <h1>Sınav Sonucu</h1>
+            <div id="results-summary">
+                <p id="results-score">20 sorudan 15 doğru, 5 yanlış yaptınız.</p>
+            </div>
+            <div id="wrong-answers-container">
+                <h2>Yanlış Cevaplar</h2>
+                <ul id="wrong-answers-list">
+                    </ul>
+            </div>
+            <button id="btn-restart-quiz" class="menu-button">Sınavı Tekrarla</button>
+            <button id="btn-results-to-menu" class="menu-button-secondary">Ders Menüsüne Dön</button>
         </div>
 
     </div>
