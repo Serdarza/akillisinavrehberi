@@ -72,6 +72,7 @@ body {
     border-radius: 12px; 
 }
 
+/* Geri Sayım İç stilleri (Öncekiyle aynı) */
 .countdown-header {
     font-size: 16px;
     font-weight: 500;
@@ -190,7 +191,6 @@ body {
 }
 
 #soruNumarasi {
-    /* Genel stil (Soru Numarası alanının tıklanabilirliği kaldırıldığında da bu stil kalır) */
     font-size: 14px;
     color: var(--text-light);
     background-color: var(--gray-light);
@@ -199,7 +199,6 @@ body {
 }
 
 .clickable-soru-numarasi {
-    /* Öğrenme modunda tıklanabilirliği görselleştir */
     cursor: pointer;
     text-decoration: underline;
     text-underline-offset: 3px;
@@ -291,8 +290,6 @@ body {
 }
 
 .nav-buttons .nav-button {
-    /* Anasayfa butonu için özel stil (yerleştirme) */
-    flex-grow: 0;
     width: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -362,6 +359,33 @@ body {
     text-align: center;
     position: relative;
     border-top: 5px solid var(--purple-button);
+}
+
+/* Soru Listesi Modal'ı İçin Scroll Yapısı */
+.question-list-content {
+    max-height: 80vh; /* Ekran yüksekliğinin %80'i */
+    max-width: 400px;
+}
+
+.question-list-container {
+    max-height: calc(80vh - 100px); /* Başlık ve boşluk payı çıkarıldı */
+    overflow-y: auto;
+    padding-right: 5px;
+    text-align: left;
+}
+
+.question-list-item {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid var(--gray-light);
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    line-height: 1.4;
+}
+
+.question-list-item:hover {
+    background-color: var(--purple-light);
 }
 
 .close-button {
