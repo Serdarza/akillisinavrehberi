@@ -58,7 +58,7 @@ body {
     display: none !important;
 }
 
-/* --- Geri Sayım Sayacı Stilleri: Normal Akışta --- */
+/* --- Geri Sayım Sayacı Stilleri --- */
 .countdown-container {
     width: 100%;
     max-width: 450px;
@@ -280,19 +280,40 @@ body {
     margin-bottom: 10px;
 }
 
-/* Navigasyon Butonları */
+/* --- NAVİGASYON BUTONLARI (ESTETİK DÜZENLEME) --- */
 .nav-buttons {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 10px; /* Butonlar arası boşluk azaltıldı */
     padding: 0 20px;
     margin-top: 15px;
 }
 
-.nav-buttons .nav-button {
-    width: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+.nav-button {
+    width: 100%;
+    padding: 12px 10px; /* Düğme dolgusu azaltıldı */
+    border: none;
+    border-radius: 8px; /* Köşeler yumuşatıldı */
+    background-color: var(--white); /* Varsayılan beyaz zemin */
+    color: var(--purple-dark); /* Koyu mor yazı */
+    font-size: 15px;
+    font-weight: 600; /* Daha kalın yazı */
+    cursor: pointer;
+    transition: all 0.2s;
+    
+    /* Estetik: Daha belirgin gölge */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), 0 0 0 1px var(--gray-light); 
+}
+
+/* Anasayfa butonu için özel stil */
+#anaSayfaButton {
+    background-color: var(--purple-button);
+    color: var(--white);
+    box-shadow: 0 3px 6px rgba(124, 77, 255, 0.3);
+}
+
+#anaSayfaButton:hover {
+    background-color: #6200ea;
 }
 
 /* Geri ve İleri butonlarının yan yana olması için */
@@ -334,6 +355,7 @@ body {
 }
 
 /* --- Pop-up (Modal) Stilleri --- */
+/* ... [Modal stilleri önceki yanıttan korunur] ... */
 .modal {
     position: fixed;
     z-index: 10000; 
@@ -361,14 +383,13 @@ body {
     border-top: 5px solid var(--purple-button);
 }
 
-/* Soru Listesi Modal'ı İçin Scroll Yapısı */
 .question-list-content {
-    max-height: 80vh; /* Ekran yüksekliğinin %80'i */
+    max-height: 80vh; 
     max-width: 400px;
 }
 
 .question-list-container {
-    max-height: calc(80vh - 100px); /* Başlık ve boşluk payı çıkarıldı */
+    max-height: calc(80vh - 100px); 
     overflow-y: auto;
     padding-right: 5px;
     text-align: left;
