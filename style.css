@@ -17,8 +17,14 @@ body {
     margin: 0 auto;
 }
 
-.screen { display: none; }
-.screen.active { display: block; }
+/* --- EKRAN YÖNETİMİNİN ANAHTARI BURASI --- */
+.screen { 
+    display: none; /* Varsayılan olarak tüm ekranları gizle */
+}
+.screen.active { 
+    display: block; /* Sadece "active" sınıfına sahip olanı göster */
+}
+/* ------------------------------------ */
 
 h1 { text-align: center; color: #4a4a4a; font-size: 24px; margin-bottom: 20px; }
 h2 { text-align: center; color: #555; font-size: 20px; margin-top: 30px; }
@@ -65,7 +71,7 @@ h2 { text-align: center; color: #555; font-size: 20px; margin-top: 30px; }
 
 .option-btn:not(:disabled):hover { background-color: #e9e9e9; }
 .option-btn:disabled { cursor: not-allowed; }
-.option-btn.correct { background-color: #d4edda !important; border-color: #34a853 !important; color: #155724; font-weight: bold; }
+.option-btn.correct { background-color: #d4edda !important; border-color: #34a53 !important; color: #155724; font-weight: bold; }
 .option-btn.incorrect { background-color: #f8d7da !important; border-color: #ea4335 !important; color: #721c24; font-weight: bold; }
 
 #explanation-box { margin-top: 20px; padding: 15px; background-color: #fefbec; border: 1px solid #ffeeba; border-radius: 8px; font-size: 15px; line-height: 1.6; }
