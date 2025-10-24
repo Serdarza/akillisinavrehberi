@@ -1,4 +1,4 @@
-/* Genel Stil ve Değişkenler (Öncekiyle Aynı) */
+/* Genel Stil ve Değişkenler */
 :root {
     --purple-light: #f8f6fb;
     --purple-dark: #673ab7; 
@@ -51,18 +51,19 @@ body {
     margin: 10px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 15px; /* Konu butonları arasındaki boşluk */
 }
 
 .hidden {
     display: none !important;
 }
 
-/* --- Geri Sayım Sayacı Stilleri --- */
+/* --- Geri Sayım Sayacı Stilleri: Normal Akışta --- */
 .countdown-container {
     width: 100%;
     max-width: 450px;
     margin: 10px auto 20px auto; 
+    
     background-color: var(--purple-dark); 
     color: var(--white);
     padding: 15px 20px;
@@ -71,6 +72,7 @@ body {
     border-radius: 12px; 
 }
 
+/* Geri Sayım İç stilleri (Öncekiyle aynı) */
 .countdown-header {
     font-size: 16px;
     font-weight: 500;
@@ -117,9 +119,215 @@ body {
 }
 
 
+/* Başlıklar */
+.header-title {
+    color: var(--purple-dark);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* --- Konu ve Menü Butonları --- */
+/* BUTONLARIN YAN YANA GELMESİNİ ENGELLEMEK İÇİN display: flex VE flex-direction: column YAPIYI KORU */
+#konuButonlari {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Düğmeler arası boşluğu ayarla */
+}
+
+.menu-button {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#konuButonlari .menu-button {
+    background-color: var(--white);
+    color: var(--text-dark);
+    border: 1px solid var(--gray-light);
+    display: block; /* Butonların satır bazında yer kaplamasını sağla */
+}
+
+#konuButonlari .menu-button:hover {
+    background-color: var(--gray-light);
+}
+
+.purple-button {
+    background-color: var(--purple-button);
+    color: var(--white);
+    box-shadow: 0 4px 8px rgba(124, 77, 255, 0.4);
+}
+
+.purple-button:hover {
+    background-color: #6200ea; 
+    transform: translateY(-1px);
+}
+
+.back-button {
+    background-color: var(--gray-light);
+    color: var(--text-dark);
+    margin-top: 10px;
+}
+
+/* Soru Ekranı Stilleri (Öncekiyle aynı) */
+#soruEkrani {
+    padding: 20px 0; 
+    gap: 0;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+#soruNumarasi {
+    font-size: 14px;
+    color: var(--text-light);
+    background-color: var(--gray-light);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.header-icons i {
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: var(--text-light);
+}
+
+.question-area {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.soru-metni {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--purple-light);
+    border-radius: 10px;
+}
+
+/* Seçenek Butonları */
+.option-button {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid var(--gray-light);
+    border-radius: 12px;
+    background-color: var(--white);
+    color: var(--text-dark);
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    line-height: 1.4;
+    display: block; /* Düğmeleri düzeltmek için eklendi */
+}
+
+/* Cevap Renklendirmeleri */
+.option-button.dogru {
+    background-color: var(--green-correct);
+    color: var(--white);
+    border-color: var(--green-correct);
+    font-weight: 500;
+}
+
+.option-button.yanlis {
+    background-color: var(--red-wrong);
+    color: var(--white);
+    border-color: var(--red-wrong);
+    font-weight: 500;
+}
+
+/* Açıklama Kutusu */
+.aciklama-kutusu {
+    background-color: #e8f5e9; 
+    border: 1px solid #c8e6c9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.aciklama-baslik, .kanit-baslik {
+    font-weight: 600;
+    color: var(--green-correct);
+    margin-bottom: 5px;
+}
+
+#aciklamaMetni, #kanitMetni {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+/* Navigasyon Butonları */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 0 20px;
+    margin-top: 15px;
+}
+
+.nav-button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--purple-button);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Alt Gezinme Çubuğu (Footer Nav) */
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid var(--gray-light);
+    background-color: var(--white);
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    z-index: 10; 
+}
+
+.footer-nav i {
+    font-size: 24px;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+.footer-nav i:hover {
+    color: var(--purple-button);
+}
+
 /* --- Pop-up (Modal) Stilleri --- */
 .modal {
-    /* Tüm ekranı kaplayan arka plan */
     position: fixed;
     z-index: 10000; 
     left: 0;
@@ -127,7 +335,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.6); /* Yarı saydam siyah */
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,38 +393,36 @@ body {
     font-weight: 600;
     margin-top: 10px;
 }
+/* --- Pop-up (Modal) Stilleri SON --- */
 
-/* --- Genel Uygulama Stilleri (Öncekiyle aynı) --- */
-.header-title {
-    color: var(--purple-dark);
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: 600;
-}
 
-/* [Diğer tüm stiller (menu-button, soru-ekrani, aciklama-kutusu, footer-nav) önceki yanıttaki gibi devam eder.] */
-.option-button {
-    /* ... önceki stil ... */
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 10px;
-    border: 2px solid var(--gray-light);
-    border-radius: 12px;
-    /* ... diğer stiller ... */
-}
-/* ... */
-.footer-nav {
-    /* ... önceki stil ... */
-    position: fixed; 
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* ... diğer stiller ... */
-}
-/* ... */
-
-/* Mobil için düzeltmeler (Öncekiyle aynı) */
+/* Mobil için düzeltmeler */
 @media (max-width: 600px) {
-    /* ... önceki stiller ... */
+    body {
+        padding-top: 0;
+        align-items: stretch;
+    }
+    
+    .countdown-container {
+        border-radius: 0;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .app-content-wrapper {
+        padding-top: 0; 
+        margin: 0;
+        max-width: none;
+    }
+
+    .container {
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .footer-nav {
+        max-width: none;
+    }
 }
