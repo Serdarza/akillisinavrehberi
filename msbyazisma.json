@@ -1,0 +1,3869 @@
+[
+  {
+    "soru_id": "ANYS_431",
+    "konu": "Olgunlaşmış Karargâh Çalışması – Tanım",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Olgunlaşmış karargâh çalışmasının temel özelliği aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "Komutana çok sayıda alternatif sunar ve kararını erteler",
+      "b": "Komutana onama veya reddetmekten başka iş bırakmayacak şekilde hazırlanır",
+      "c": "Sadece sözlü bilgi notlarından oluşur",
+      "d": "Yalnızca kriz anlarında uygulanır",
+      "e": "Detayların tamamı komutana danışılarak yapılır"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Olgunlaşmış karargâh çalışması: İlgili Komutana veya amire, onama veya reddetmekten başka bir iş bırakmayacak biçimde yapılmış çalışma.",
+    "aclama": "Karargâh ayrıntıları çalışır; komutana yalnız nihai karar kalır."
+  },
+  {
+    "soru_id": "ANYS_432",
+    "konu": "Olgunlaşmış Karargâh Çalışması – İlke",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Aşağıdakilerden hangisi olgunlaşmış karargâh çalışmasına ilişkin doğru bir ilkedir?",
+    "secenekler": {
+      "a": "Ayrıntıların hepsi komutan tarafından yürütülmelidir",
+      "b": "Sorun ne kadar güç olursa olsun ayrıntılar için komutana sık sık başvurulmalıdır",
+      "c": "Ayrıntılar karargâh personelinin görevidir ve mecbur kalınmadıkça komutana gidilmez",
+      "d": "Projenin sonunda komutanın direktifleri alınır",
+      "e": "Komutanın direktif ve emirleri ilk aşamada alınmaz"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Ayrıntılar üzerinde çalışmak karargâh personelinin görevidir… mecbur kalınmadıkça ayrıntılar için komutana başvurmaktan sakınılmalıdır.",
+    "aclama": "Komutanın rolü yön vermek ve onamaktır; ayrıntı sahada çözülür."
+  },
+  {
+    "soru_id": "ANYS_433",
+    "konu": "Koordinasyon – Tanım",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Koordinasyon (eş güdüm) hangi amaçla yürütülen iş uyumu ve bilgi alışverişidir?",
+    "secenekler": {
+      "a": "Sadece birlik içi moral için",
+      "b": "Verimli çalışma yapmak amacıyla birimler ve personel arasında",
+      "c": "Yalnız üst karargâh için",
+      "d": "Sadece yazışma yapmak için",
+      "e": "Yalnız denetleme için"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Koordinasyon-eş güdüm: Birimlerin ve personelin verimli bir çalışma yapmak amacıyla aralarında yürüttükleri iş uyumu ve karşılıklı bilgi alışverişidir.",
+    "aclama": "Amaç verimlilik ve ortak anlayıştır."
+  },
+  {
+    "soru_id": "ANYS_434",
+    "konu": "Koordinasyon Usulleri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Aşağıdakilerden hangisi metinde sayılan koordinasyon usullerinden DEĞİLDİR?",
+    "secenekler": {
+      "a": "Kişisel yüz yüze koordinasyon",
+      "b": "İletişim araçlarıyla yapılan koordinasyon",
+      "c": "Toplantı ve ziyaret koordinasyonu",
+      "d": "Brifing verilerek kurulan koordinasyon",
+      "e": "Sosyal medya üzerinden anonim koordinasyon"
+    },
+    "dogru_secenek": "e",
+    "kanit_cumlesi": "Koordinasyon usulleri: Kişisel yüz yüze… iletişim araçlarıyla… toplantı ve ziyaret… brifing… yazışmalarla yapılan koordinasyon.",
+    "aclama": "Metinde sosyal medya/anonim yöntem yer almamaktadır."
+  },
+  {
+    "soru_id": "ANYS_435",
+    "konu": "Formlar – Ziyaret/Davet ve Detay Arz",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Ziyaret için onay/izinde hangi form; ziyaret sonucu komutana bilgi için hangi form kullanılır?",
+    "secenekler": {
+      "a": "Toplantı Tutanığı – Katılım Listesi",
+      "b": "Davet veya Ziyaret Tetkik Formu – Detay Arz Formu",
+      "c": "Karar Brifingi – Planlama Brifingi",
+      "d": "Toplantı Sonuç Raporu – Toplantı Gündemi",
+      "e": "Vardiya Devir Formu – Detay Arz Formu"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Ziyaretler gerekli onayın alınmasında Davet veya Ziyaret Tetkik Formu…; sonuçta komutana bilgi vermek amacıyla Detay Arz Formu kullanılabilir.",
+    "aclama": "İlk form izin/onay, ikinci form bilgilendirme amaçlıdır."
+  },
+  {
+    "soru_id": "ANYS_436",
+    "konu": "Toplantı Evrakı – İçerik",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Toplantı evrakının zorunlu içeriği arasında AŞAĞIDAKİLERDEN hangisi yer almaz?",
+    "secenekler": {
+      "a": "Toplantının konusu ve amacı",
+      "b": "Koordinatör makam ve başkan",
+      "c": "Katılacak makam ve kişiler",
+      "d": "Yer, tarih, saat ve tahmini süre",
+      "e": "Katılımcıların kişisel performans puanları"
+    },
+    "dogru_secenek": "e",
+    "kanit_cumlesi": "Toplantı evrakı; toplantının konusunu ve amacını… kimin başkanlığında… kimlerin iştirak edeceğini… yerini, tarihini, saatini ve tahmini süreyi… gündemini ihtiva etmelidir.",
+    "aclama": "Performans puanı toplantı evrakı unsuru değildir."
+  },
+  {
+    "soru_id": "ANYS_437",
+    "konu": "Toplantı Kayıt Dokümanları",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Toplantı tutanağı ve sonuç raporu hangi sıralama ile hazırlanır?",
+    "secenekler": {
+      "a": "Önce sonuç raporu, sonra tutanak",
+      "b": "Sadece katılım listesi yeterlidir",
+      "c": "Yazmanın notları temize çekilerek toplantı tutanağı düzenlenir; bu tutanak, Toplantı Sonuç Raporu’na esas olur",
+      "d": "Doğrudan karar brifingi yayımlanır",
+      "e": "Sadece gündem duyurusu kullanılır"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Bir personel yazman… not eder… notlar temize çekilerek Toplantı Tutanığı düzenlenir. Bu tutanak Toplantı Sonuç Raporunun düzenlenmesinde esas alınır.",
+    "aclama": "Tutanak, sonuç raporunun temelidir."
+  },
+  {
+    "soru_id": "ANYS_438",
+    "konu": "Yurt Dışı Toplantı Planlaması",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Yurt dışında yapılacak toplantılar için ana plan ne kadar önce hazırlanır ve kimin onayıyla yürürlüğe girer?",
+    "secenekler": {
+      "a": "6 ay önce; Genelkurmay Başkanı",
+      "b": "1 yıl önce; Bakan onayı",
+      "c": "3 ay önce; Kuvvet Komutanı onayı",
+      "d": "2 yıl önce; Milli Savunma Komisyonu",
+      "e": "1 yıl önce; İçişleri Bakanı onayı"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Yurt dışında yapılacak toplantılar: Planı 1 yıl öncesinden… Bakanın onayı ile yürürlüğe girer.",
+    "aclama": "Koordinatör birimler konuya göre belirlenir."
+  },
+  {
+    "soru_id": "ANYS_439",
+    "konu": "Toplantı Ön Hazırlıkları – Süreler",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Planlanmış bir toplantıda gündem evrakı ne zaman temin edilir ve yurtdışı temsilciliklere emirler en az kaç gün önce gönderilir?",
+    "secenekler": {
+      "a": "2 hafta – 7 gün",
+      "b": "4 hafta – 15 gün",
+      "c": "6 hafta – 21 gün",
+      "d": "8 hafta – 30 gün",
+      "e": "1 hafta – 10 gün"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Planlanmış bir toplantı için… 4 hafta önce gündemle ilgili evrak temin edilir… temsilciliğe toplantı tarihinden en az 15 gün önce gönderilir.",
+    "aclama": "Süre disiplinine vurgu yapılır."
+  },
+  {
+    "soru_id": "ANYS_440",
+    "konu": "Konuşma Notu – İçerik",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Konuşma notunda aşağıdakilerden hangisi özellikle yer alır?",
+    "secenekler": {
+      "a": "Yalnız grafikler; kaynak belirtilmez",
+      "b": "Konuşma dili, kaynaklar, özlü deyimler ve olası sorulara cevaplar",
+      "c": "Sadece resmi yazışma üslubu",
+      "d": "Sadece katılımcı listesi",
+      "e": "Sadece gizlilik derecesi"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Konuşma Notu… Metinde konuşma dili kullanılır. Konuyla ilgili kaynaklar belirtilir… deyimler, olası sorulara verilecek cevaplar belirtilir.",
+    "aclama": "Konuşmacıya pratik rehberlik sağlar."
+  },
+  {
+    "soru_id": "ANYS_441",
+    "konu": "Brifing – Tanım ve Yetki Düzeyi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Brifingin amacı ve kapsamı hangi seçenekte doğru verilmiştir?",
+    "secenekler": {
+      "a": "Sadece sivil misafirlere sunulan tören konuşmasıdır",
+      "b": "Yetki düzeyi esas alınarak gerekli konularda bilgi verilmesi veya alınmasıdır",
+      "c": "Yalnız planlama personeline hitap eder",
+      "d": "Sadece yazılı raporların adıdır",
+      "e": "Sadece denetlemelerde yapılır"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Brifing-Bilgilendirme: … gerekli görülen ya da emredilen konularda yetki düzeyi esas alınarak bilgi verilmesi veya alınmasıdır.",
+    "aclama": "Hedef kitle ve içerik yetki seviyesine göre uyarlanır."
+  },
+  {
+    "soru_id": "ANYS_442",
+    "konu": "Komutanlara Brifing – Süreler",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Aşağıdakilerden hangisi komutanlara verilecek brifing türü ve süresiyle DOĞRU eşleştirilmiştir?",
+    "secenekler": {
+      "a": "Kısa brifing: 15 dk",
+      "b": "Normal brifing: 60 dk",
+      "c": "Uzun brifing: 15 dk",
+      "d": "Kısa brifing: 30 dk",
+      "e": "Uzun brifing: 10 dk"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Uzun Brifing (60 dk.)… Normal Brifing (30 dk.)… Kısa Brifing (15 dk.).",
+    "aclama": "Süreler 60-30-15 dakikadır."
+  },
+  {
+    "soru_id": "ANYS_443",
+    "konu": "Brifing Türü Varsayılanı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Brifing çeşidi emredilmemişse hangi tür brifing hazırlanıp arz edilir?",
+    "secenekler": {
+      "a": "Uzun brifing",
+      "b": "Normal brifing",
+      "c": "Kısa brifing",
+      "d": "Özel brifing",
+      "e": "Denetleme brifingi"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "NOT: Brifing çeşidinin emredilmediği durumlarda, kısa brifing hazırlanır ve arz edilir.",
+    "aclama": "Varsayılan format kısadır."
+  },
+  {
+    "soru_id": "ANYS_444",
+    "konu": "Personele Brifing – Özel Türler",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Aşağıdaki eşleştirmelerden hangisi DOĞRUDUR?",
+    "secenekler": {
+      "a": "Vardiya devir brifingi: Vardiya bitiminden 1 saat sonra verilir",
+      "b": "Karar brifingi: Harekât merkezlerinde yapılır",
+      "c": "Planlama brifingi: Sadece haftada bir kere icra edilir",
+      "d": "Özel brifing: Her zaman gizlilik dışıdır",
+      "e": "Plansız brifing: Önceden belirlenmiş planlara göre yapılır"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Karar brifingi: … Harekat Merkezlerinde yapılır. Vardiya devir brifingi: vardiya bitiminden 1 saat önce… Planlama brifingi: Harekât merkezlerinde günün belirli saatlerinde yapılır.",
+    "aclama": "Karar brifingi yer olarak Harekât Merkezlerine özgüdür."
+  },
+  {
+    "soru_id": "ANYS_445",
+    "konu": "Ziyaretçilere Standart Brifingler (A–B–C–D)",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Aşağıdaki gizlilik derecesi–brifing tipi eşleştirmelerinden hangisi DOĞRUDUR?",
+    "secenekler": {
+      "a": "A tipi: Hizmete Özel",
+      "b": "B tipi: Çok Gizli",
+      "c": "C tipi: Hizmete Özel",
+      "d": "D tipi: Gizli",
+      "e": "A tipi: Gizlilik derecesiz genel konular"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "A tipi… “Çok gizli” bilgilere; B tipi… “Gizli/Özel” bilgilere; C tipi… “Hizmete Özel” bilgilere nüfuz edebilecek ziyaretçilere verilir. D tipi… gizlilik derecesi bulunmayan genel konuları kapsar.",
+    "aclama": "C tipi Hizmete Özel, D tipi derecesiz genel konular içindir."
+  },
+
+  {
+    "soru_id": "ANYS_446",
+    "konu": "Brifing Yansıları – Biçim İlkesi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Brifing yansıları genel olarak nasıl hazırlanmalıdır?",
+    "secenekler": {
+      "a": "Ayrıntılı metinler ve yoğun animasyonlarla",
+      "b": "Basit, sade ve özet bilgileri kapsayacak biçimde",
+      "c": "Sadece görsellerle, metin olmadan",
+      "d": "Tam metin kanun maddeleriyle",
+      "e": "Renkli arka plan ve hareketli çerçevelerle"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Yansılar; basit, sâde ve özet bilgileri kapsayacak biçimde hazırlanır.",
+    "aclama": "Brifing yansılarında yalın ve öz sunum esastır."
+  },
+  {
+    "soru_id": "ANYS_447",
+    "konu": "Brifing Sunucusunun Tanıtımı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Brifingi sunan personel kendini nasıl tanıtmalıdır?",
+    "secenekler": {
+      "a": "Sadece adı",
+      "b": "Sadece rütbesi",
+      "c": "Unvan/rütbe, ad-soyad ve görev",
+      "d": "Sadece görev",
+      "e": "Sadece akademik unvan"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Brifingi arz edecek olan personel kendisini unvan/rütbe, adı-soyadı ve görevini de söyleyerek tanıtır.",
+    "aclama": "Konu akademik unvanla ilgiliyse bu unvan da eklenir."
+  },
+  {
+    "soru_id": "ANYS_448",
+    "konu": "Yansı Gizlilik Derecesi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Bir sunumdaki yansılar farklı gizlilik derecelerindeyse ilk yansıya nasıl gizlilik verilir?",
+    "secenekler": {
+      "a": "En düşük olan",
+      "b": "Rastgele seçilen",
+      "c": "Ortalaması alınan",
+      "d": "En yüksek olan",
+      "e": "Gizlilik verilmez"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Yansılar… farklı olduğunda… takdimin ilk yansısına gizlilik derecelerinden en yüksek olanı verilir.",
+    "aclama": "İlk yansıda en sıkı gizlilik uygulanır."
+  },
+  {
+    "soru_id": "ANYS_449",
+    "konu": "7x7 Kuralı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Brifing yansılarında önerilen 7x7 kuralı neyi ifade eder?",
+    "secenekler": {
+      "a": "7 renk, 7 şekil",
+      "b": "Her yansıda 7 görsel",
+      "c": "En çok 7 satır ve satır başına en çok 7 sözcük",
+      "d": "7 dakika, 7 konu",
+      "e": "7 alıntı, 7 kaynak"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Yansılar genel olarak yedi satır ve her satırda en fazla yedi sözcük sığacak biçimde yazılır. 7x7 kuralı.",
+    "aclama": "Okunabilirliği artırmak için metin kısaltılır."
+  },
+  {
+    "soru_id": "ANYS_450",
+    "konu": "Analitik Araştırma – Tanım",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Analitik (çözümlemeli) araştırmanın temel amacı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "Sadece istatistik üretmek",
+      "b": "Komutanın karar vermesine yardımcı olmak ve seçeneklerin fayda–sakıncalarını belirlemek",
+      "c": "Yalnız geçmişi raporlamak",
+      "d": "Sadece maliyetleri toplamak",
+      "e": "Sadece nitel görüş almak"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "…komutanın karar vermesine yardımcı olmak, karar seçeneklerinin fayda ve sakıncalarını belirterek sıralamak… için yapılan bilimsel çalışmadır.",
+    "aclama": "Karmaşık sorunlarda bilimsel analiz uygulanır."
+  },
+  {
+    "soru_id": "ANYS_451",
+    "konu": "Analitik Araştırma – Kapsam Örnekleri",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Aşağıdakilerden hangisi analitik araştırmalar kapsamında sayılmıştır?",
+    "secenekler": {
+      "a": "Harp oyunu senaryosu",
+      "b": "Yöneylem araştırması",
+      "c": "Günlük emre yazımı",
+      "d": "Nöbet çizelgesi",
+      "e": "Brifing tutanağı"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Analitik Araştırmalar kapsamında; yöneylem araştırması, sistem analizi, maliyet-etkinlik analizi…",
+    "aclama": "Bu yöntemler bilimsel değerlendirme araçlarıdır."
+  },
+  {
+    "soru_id": "ANYS_452",
+    "konu": "Etüt Formu – Özellik",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Etüt Formu hakkında aşağıdakilerden hangisi DOĞRUDUR?",
+    "secenekler": {
+      "a": "Karargâh içine ve dışına yayımlanır",
+      "b": "İkincil evrak yapılması esastır",
+      "c": "Tek nüsha hazırlanır ve başlık–metin–son bölümlerinden oluşur",
+      "d": "Yetki satırı mutlaka kullanılır",
+      "e": "Sadece gizlilik derecesiz düzenlenir"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Etüt Formu tek nüsha olarak hazırlanır. Etüt Formu; başlık, metin ve son bölümden oluşur. … Etüt formunda yetki satırı kullanılmaz.",
+    "aclama": "Dağıtımı kısıtlıdır; standart başlıklar kullanılır."
+  },
+  {
+    "soru_id": "ANYS_453",
+    "konu": "Detay Arz Formu – Kullanım Yeri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Detay Arz Formu hangi düzeyde kullanılmalıdır?",
+    "secenekler": {
+      "a": "Birimler, başkanlıklar ve daireler arası genel yazışmalarda",
+      "b": "Bölük seviyesinde rutin bildirimlerde",
+      "c": "Ordu karargâhları ve eşiti düzeyinde",
+      "d": "Müttefik karargâhlara bilgi paylaşımında",
+      "e": "Sadece gizlilik derecesiz konularda"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Detay Arz Formu… Ordu karargahları ve eşiti düzeyinde kullanılır.",
+    "aclama": "Amaç komutana detaylı, açık bilgi sunmaktır."
+  },
+  {
+    "soru_id": "ANYS_454",
+    "konu": "Bilgi Notu ve Bilgi Kartı – Fark",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Bilgi kartı ile bilgi notu arasındaki temel fark aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "Bilgi kartı gizlilik gerektirmez",
+      "b": "Bilgi kartı doğrudan ve ivedilikle kısa bilgi için; bilgi notu genel amaçlıdır",
+      "c": "Bilgi notu çok nüsha, bilgi kartı tek nüsha hazırlanır",
+      "d": "Bilgi kartı dış makamlara gönderilir",
+      "e": "Bilgi notu karargâh dışına yayılır"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Bilgi kartı… doğrudan ve ivedilikle, kısa bilgi arz edilmesi gereken konular için kullanılabilir. Bilgi notu ve bilgi kartı… karargâh içine ve dışına yayımlanmaz.",
+    "aclama": "Her ikisi de iç kullanım içindir; kart acil kısadır."
+  },
+  {
+    "soru_id": "ANYS_455",
+    "konu": "Evrak – Öncelik Dereceleri",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Aşağıdaki ifadelerden hangisi evrakın öncelik dereceleri için YANLIŞTIR?",
+    "secenekler": {
+      "a": "ACELE ve GÜNLÜ aynı anda verilemez",
+      "b": "7 iş günden uzun sürecek işler ACELE olamaz",
+      "c": "ACELE veya GÜNLÜ ibaresi kırmızı renkle belirtilir",
+      "d": "GÜNLÜ evrakta süre/tarih metinde belirtilir",
+      "e": "ACELE evrakta mutlaka gizlilik derecesi en yüksektir"
+    },
+    "dogru_secenek": "e",
+    "kanit_cumlesi": "Evrak, aynı anda hem GÜNLÜ, hem de ACELE olarak belirlenemez… 7 iş gününden daha uzun süre alacaksa… ACELE evrak olarak nitelendirilemez… öncelik derecesi… kırmızı renkte… yazılır.",
+    "aclama": "ACELE olma şartı gizlilikle ilgili değildir."
+  },
+  {
+    "soru_id": "ANYS_456",
+    "konu": "Genel Evrak Birimi – Görevler",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Genel evrak biriminin AŞAĞIDAKİ görevlerinden hangisi metinde sayılmamıştır?",
+    "secenekler": {
+      "a": "Evrak istatistik bilgilerini tutmak",
+      "b": "Merkezi arşiv faaliyetlerini yürütmek",
+      "c": "Kurye işlemlerini planlamak ve yürütmek",
+      "d": "Personel atama onaylarını hazırlamak",
+      "e": "Merkezi çoğaltma hizmetlerini yapmak"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Genel evrak birimi; evrak istatistik bilgilerini tutmaktan… merkezi arşiv… kurye işlemlerini planlamak ve yürütmekten, merkezi çoğaltma hizmetlerini yapmaktan sorumludur.",
+    "aclama": "Personel atama onayı genel evrak biriminin görevi değildir."
+  },
+  {
+    "soru_id": "ANYS_457",
+    "konu": "Evrak Teslim Alma – Özel Durumlar",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Aşağıdaki uygulamalardan hangisi doğrudur?",
+    "secenekler": {
+      "a": "Kişiye Özel ibareli evrak görevli tarafından elden teslim alınır",
+      "b": "Muhatabı belirsiz gelen fiziksel evrak, anlaşılmıyorsa gönderene iade edilir",
+      "c": "Kapalı evrakta eksiklik varsa tutanak düzenlenmeden iade edilir",
+      "d": "Genel evrak birimi sadece mesai dışında evrak kabul eder",
+      "e": "Evrakın ilk kaydı ilgili şubelerce yapılır, genel evrak sorumlu değildir"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "İdareye muhatabı olmadığı halde fiziksel ortamda gelen belge… asıl muhatabı anlaşılmıyorsa gönderene iade edilir. Kişiye Özel ibareli… elden teslim alınmaz.",
+    "aclama": "Kişiye özel evrak elden alınmaz; kapalı evrak eksikse tutanakla işlem yapılır."
+  },
+
+  {
+    "soru_id": "ANYS_458",
+    "konu": "Tutanak Nüsha Dağıtımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Kapalı gelen evrakta eksiklik tespit edilmesi halinde düzenlenen tutanağın 2. nüshası ne yapılır?",
+    "secenekler": {
+      "a": "Evrak biriminde arşivlenir",
+      "b": "Üst yazı ekinde iade edilir",
+      "c": "Evrakın çoğaltılan nüshasına eklenerek ilgili makama dağıtılır",
+      "d": "Yok edilir",
+      "e": "Kurye dosyasına konur"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "2. nüshası evrakın çoğaltılan nüshasına eklenerek ilgili makama dağıtımı yapılır.",
+    "aclama": "Tutanak üç nüsha düzenlenir; 2. nüsha dağıtım nüshasına eklenir."
+  },
+  {
+    "soru_id": "ANYS_459",
+    "konu": "Tutanak İadesi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Tutanağın 3. nüshası nasıl kullanılır?",
+    "secenekler": {
+      "a": "Genel evrakta kalır",
+      "b": "Kurye zimmet dosyasına konur",
+      "c": "Eksik asıl evrak ile birlikte üst yazı ekinde iade edilir",
+      "d": "Elektronik arşive yüklenir",
+      "e": "İmha edilir"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "3. nüshası eksik olan asıl evrak ile birlikte üst yazı ekinde evrakın teslim alındığı makama iade edilir.",
+    "aclama": "Eksik evrakın kaynağı bilgilendirilir ve iade yapılır."
+  },
+  {
+    "soru_id": "ANYS_460",
+    "konu": "Mesai Dışı Evrak Teslimi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Çalışma saatleri dışında gelen evrakı teslim alma yetkisi kime aittir?",
+    "secenekler": {
+      "a": "Genel evrak birimi",
+      "b": "Herhangi bir nöbetçi er",
+      "c": "Nöbetçi amir",
+      "d": "Brifing subayı",
+      "e": "Kurye"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Gelen evrakı teslim alma yetkisi nöbetçi amirinindir.",
+    "aclama": "Büyük karargâhlarda ayrıca birim/personel görevlendirilebilir."
+  },
+  {
+    "soru_id": "ANYS_461",
+    "konu": "Kişiye Özel İbareli Evrak (Mesai Dışı)",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Mesai dışında üzerinde Kişiye Özel veya özel ulaştıma talimatı bulunan evrakla ne yapılır?",
+    "secenekler": {
+      "a": "Açılır ve kayda alınır",
+      "b": "Nöbetçi amir odasında bekletilir",
+      "c": "Açmadan SKKHM/harekât merkezi/vardiya amirliğine teslim edilir",
+      "d": "Kurye ile geri gönderilir",
+      "e": "Genel evraka bırakılır"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "…evrakı açmadan varsa SKKHM, harekat merkezi, veya vardiya amirliğine teslim eder.",
+    "aclama": "Özel ibareli evrak mesai dışında yetkili merkezlere kapalı teslim edilir."
+  },
+  {
+    "soru_id": "ANYS_462",
+    "konu": "Nöbetçi Amirliği Evrak Defteri",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Nöbetçi amirliğinde hangi tek defter bulunur?",
+    "secenekler": {
+      "a": "Gelen–giden defteri",
+      "b": "Evrak zimmet defteri",
+      "c": "Arşiv defteri",
+      "d": "Kurye defteri",
+      "e": "Gizlilik defteri"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Nöbetçi amirliklerinde sadece Evrak Zimmet Defteri bulunur.",
+    "aclama": "Mesai dışı evraklar bu defterle genel evrağa devredilir."
+  },
+  {
+    "soru_id": "ANYS_463",
+    "konu": "Kayıtların Muhafazası",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Evrakla ilgili elektronik kayıtlar, çıktılar, defter ve formlar kaç yıl muhafaza edilir?",
+    "secenekler": {
+      "a": "5 yıl",
+      "b": "10 yıl",
+      "c": "20 yıl",
+      "d": "30 yıl",
+      "e": "Süresiz"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Kayıtla ilgili elektronik ortam kayıtları, çıktılar, defter ve formlar 30 yıl süreyle muhafaza edilir.",
+    "aclama": "Zimmet kayıtları için de aynı süre geçerlidir."
+  },
+  {
+    "soru_id": "ANYS_464",
+    "konu": "Zimmet Esası",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Hangi kural evrakın el değiştirmesinde esastır?",
+    "secenekler": {
+      "a": "Sözlü teslim",
+      "b": "E-posta onayı",
+      "c": "Zimmetle teslim",
+      "d": "Telefon teyidi",
+      "e": "Listeye yazma"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Her ne amaçla olursa olsun her türlü evrakın el değiştirmesi zimmetle yapılır.",
+    "aclama": "Zimmet yoksa son kayıt kimdeyse evrak onda kabul edilir."
+  },
+  {
+    "soru_id": "ANYS_465",
+    "konu": "Zimmet Bilgileri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Zimmet kaydında aşağıdakilerden hangisi zorunlu değildir?",
+    "secenekler": {
+      "a": "Teslim alanın unvanı/sınıf–rütbesi ve adı–soyadı",
+      "b": "Teslim tarihi ve saati",
+      "c": "Kurye tanıtım kartı numarası (varsa)",
+      "d": "Teslim alanın telefon numarası",
+      "e": "İmza"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "…unvanı/sınıf-rütbesi, adı-soyadı, evrakın teslim alındığı tarih ve saat… varsa kurye tanıtım kartı numarası ve imza bilgiler bulunur…",
+    "aclama": "Telefon numarası metinde zorunlu unsur değildir."
+  },
+  {
+    "soru_id": "ANYS_466",
+    "konu": "Kontrollü–Kontrolsüz Evrak",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Aşağıdakilerden hangisi DOĞRUDUR?",
+    "secenekler": {
+      "a": "Gizli evrak kontrollüdür",
+      "b": "Çok Gizli evrak kontrollüdür",
+      "c": "Kontrollü evrak kontrolsüz senetle el değiştirir",
+      "d": "Kontrolsüz evrak sadece elektronik ortamda el değiştirir",
+      "e": "Hizmete Özel evrak kontrollüdür"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Kontrollü evrak: Çok Gizli gizlilik derecesini taşıyan evraktır.",
+    "aclama": "Gizli/Özel/Hizmete Özel kontrolsüz sayılır; kontrollü evrak ‘kontrollü evrak senedi’ ile devredilir."
+  },
+  {
+    "soru_id": "ANYS_467",
+    "konu": "Kontrollü Evrakın Devri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Kontrollü evrak nasıl el değiştirir?",
+    "secenekler": {
+      "a": "Evrak zimmet defteriyle",
+      "b": "E-posta teyidiyle",
+      "c": "Kontrollü evrak senedi ile",
+      "d": "Sözlü teslimle",
+      "e": "Kurye listesiyle"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Kontrollü evrak ise; kontrollü evrak senedi ile el değiştirir.",
+    "aclama": "Kontrolsüz evrakta farklı araçlar kullanılabilir."
+  },
+  {
+    "soru_id": "ANYS_468",
+    "konu": "Zarfı Açılmayacak Evrak",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Aşağıdakilerden hangisi zarfı açılmayacak evrak kapsamındadır?",
+    "secenekler": {
+      "a": "Her ACELE evrak",
+      "b": "Özlük dosyası/sicil içeren evrak",
+      "c": "Günlü evrak",
+      "d": "Dağıtım listeli yazı",
+      "e": "Standart form"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "…özlük dosyası, sicil veya nitelik belgesi içeren… [zarfı açılmayan evrak arasında sayılır].",
+    "aclama": "Kişiye yazılan, Çok gizli Kişiye Özel/kripto/özel ulaştırma talimatlı olanlar da açılmaz."
+  },
+  {
+    "soru_id": "ANYS_469",
+    "konu": "Fiziksel Belge Etiketi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Zarfı açılacak evrakta ilk sayfanın neresine hangi damga vurulur?",
+    "secenekler": {
+      "a": "Ön sağ üst – Elektronik Belge",
+      "b": "Arka sol üst – Fiziksel Ortamda Gelen Belgenin Etiket örneği",
+      "c": "Ön sol alt – Gizlilik",
+      "d": "Arka sağ üst – Kabul",
+      "e": "Ön orta – Zimmet"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Evrakın ilk sayfasının arka sol üst kısmına Fiziksel Ortamda Gelen Belgenin Etiket örneği damgalanır.",
+    "aclama": "Bu damga fiziksel gelen belgelerin standart etiketidir."
+  },
+  {
+    "soru_id": "ANYS_470",
+    "konu": "Yazı Prensipleri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Etkili yazı için aşağıdakilerden hangisi metinde yer alan prensiplerden değildir?",
+    "secenekler": {
+      "a": "Fikir birliği",
+      "b": "Doğruluk",
+      "c": "Açıklık",
+      "d": "Süslü anlatım",
+      "e": "Koordinasyon"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Yazılarda karmaşık ve süslü ifadelere… yer verilmez. Etkili bir yazı şu prensiplere göre yazılır: • Fikir birliği • Doğruluk • Açıklık…",
+    "aclama": "Sadelik ve netlik esastır; süsleme istenmez."
+  },
+  {
+    "soru_id": "ANYS_471",
+    "konu": "Dipnot İşaretleme",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Metinde dipnot işaretlemesine ilişkin doğru çift hangisidir?",
+    "secenekler": {
+      "a": "Tek dipnot: (1) — Çoklu: * * *",
+      "b": "Tek dipnot:   — Çoklu: italik",
+      "c": "Tek dipnot: * — Çoklu: ardışık rakamlar (1), (2)…",
+      "d": "Tek dipnot: alt çizgi — Çoklu: tire",
+      "e": "Tek dipnot: italik — Çoklu: kalın"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Tek dipnot olduğunda  * işareti, birden fazla dipnot olduğunda ise ardışık rakamların (1)… biçiminde yazılmasıyla belirtilir.",
+    "aclama": "Dipnot metni sayfanın altında 8 punto yazılır."
+  },
+  {
+    "soru_id": "ANYS_472",
+    "konu": "Alıntıların Yazımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Başka kaynaktan alınan ifadeler nasıl yazılmalıdır?",
+    "secenekler": {
+      "a": "Özetlenerek ve düzeltilerek",
+      "b": "Tırnak içinde ve/veya italik; aslı yanlış olsa bile değiştirilmeden",
+      "c": "Kalın ve renkli",
+      "d": "Sadece kaynak adı vererek",
+      "e": "Sadece dipnotta"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Metinde başka bir yerden alınan ifadeler tırnak ( ) işareti içinde ve/veya eğik (italik) gösterilir… Aslı yanlış bile olsa olduğu gibi alınır, düzeltme dipnotta gösterilir.",
+    "aclama": "Metnin bütünlüğü için alıntı değiştirilmez."
+  },
+  {
+    "soru_id": "ANYS_473",
+    "konu": "Maddelendirme – Alfabe",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Milli yazışmalarda maddelendirme hangi alfabe esas alınarak yapılır?",
+    "secenekler": {
+      "a": "İngiliz alfabesi",
+      "b": "Arap alfabesi",
+      "c": "Türk alfabesindeki 29 harf",
+      "d": "Roma rakamları",
+      "e": "Sadece rakamlar"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Milli yazışmalarda maddelendirme Türk alfabesindeki 29 harf kullanılarak yapılır.",
+    "aclama": "İngilizce yazışmalarda İngiliz alfabesi kullanılır."
+  },
+  {
+    "soru_id": "ANYS_474",
+    "konu": "Yazı Tipi ve Boyutu",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Bilgisayarla hazırlanan evrakta (mesaj hariç) varsayılan yazı tipi ve boyutu nedir?",
+    "secenekler": {
+      "a": "Arial 11, sola yaslı",
+      "b": "Calibri 12, ortalı",
+      "c": "Times New Roman 12, her iki yana yaslı",
+      "d": "Times New Roman 10, sağa yaslı",
+      "e": "Courier New 12, sola yaslı"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "…yazı tipi Times New Roman, yazı stili Normal, Her iki yana yaslı yazı boyutu 12 punto, yazı rengi Siyah",
+    "aclama": "Gerekli hallerde 9/8 puntoya düşürülebilir."
+  },
+  {
+    "soru_id": "ANYS_475",
+    "konu": "Prensip Emri – Tanım ve Yetki",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Prensip emri için hangisi DOĞRUDUR?",
+    "secenekler": {
+      "a": "Her birim verebilir; mevzuata dayanmaz",
+      "b": "Mevzuatta bulunmayan konularda uygulama esaslarını belirler; Bakanlık kadro ve kuruluşundaki kurumlar (Harita Gn. Md. hariç) verir",
+      "c": "Sadece talimnameyi tekrar eder",
+      "d": "Geçici talimattır",
+      "e": "Sadece Harita Genel Müdürlüğü verir"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Prensip emri: …mevzuat maddelerine dayanarak uygulamanın nasıl yapılacağıyla ilgili esasların belirlendiği emirlerdir… kurumlar (Harita Genel Müdürlüğü hariç) tarafından verilir.",
+    "aclama": "Prensip emirleri mevzuat boşluklarını uygulama esaslarıyla doldurur."
+  },
+  {
+    "soru_id": "ANYS_476",
+    "konu": "Devamlı Emir – Tanım",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Devamlı emir neyi düzenler?",
+    "secenekler": {
+      "a": "Mevzuatta açıkça yer alan konuların tekrarını",
+      "b": "Sadece taktik hizmetleri",
+      "c": "Devamlılık arz eden, mevzuat/yönerge/prensip emirlerinde açıkça belirtilmeyen konuların yöntem ve kurallarını",
+      "d": "Geçici uygulamaları",
+      "e": "Sadece idari yazışmayı"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Devamlılık arz eden ancak mevzuat, yönerge ve prensip emirlerinde açıkça belirtilmeyen konuların yöntem ve kurallarının belirlendiği emirlerdir.",
+    "aclama": "Yetkili makamlarca verilir ve sürekli uygulanır."
+  },
+  {
+    "soru_id": "ANYS_477",
+    "konu": "Devamlı Talimat – İşlev",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Devamlı talimatın amacı nedir?",
+    "secenekler": {
+      "a": "Sadece eğitim programını belirlemek",
+      "b": "Müktesebatı iptal etmek",
+      "c": "Taktik ve idari hizmetlerde mevzuatın ayrıntılandırmadığı konularda uygulamanın nasıl yapılacağını önceden ayrıntılı belirlemek",
+      "d": "Geçici görevlendirme yapmak",
+      "e": "Sadece mali usulleri belirlemek"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "…taktik ve idari hizmetlerden… mevzuat, prensip emri, devamlı emir ile talimnamelerde ayrıntıları bulunmayan konularda uygulamanın nasıl yapılacağının ayrıntılı olarak belirlenmesi için önceden hazırlanan sürekli düzenlemelerdir.",
+    "aclama": "Süreklidir ve yeni personel katılışında tebliğ edilir."
+  },
+  {
+    "soru_id": "ANYS_478",
+    "konu": "Kırmızı Damga ve Konum",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Prensip emri/devamlı emir/devamlı talimat ibareleri nasıl ve nereye yazılır?",
+    "secenekler": {
+      "a": "Siyah, 12 punto; ilk sayfa altına",
+      "b": "Mavi, 10 punto; kapak üstüne",
+      "c": "Kırmızı, Times New Roman; ilk sayfa ve tarih kısmının altına gelecek biçimde",
+      "d": "Yeşil, 14 punto; son sayfaya",
+      "e": "Kırmızı, italik; dağıtım listesine"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "…ilk sayfalarına ve tarih kısmının altına gelecek biçimde prensip emri, devamlı emir veya devamlı talimat… kırmızı renkte damgalanır veya… 14 punto boyutunda yazılır.",
+    "aclama": "Amaç diğer emirlerden kolay ayrılmasını sağlamaktır."
+  },
+
+  {
+    "soru_id": "RMY_501",
+    "konu": "Gizlilik Sorumluluğu",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Resmî yazıda gizlilik derecesini belirleme sorumluluğu kimdedir?",
+    "secenekler": {
+      "a": "Genel evrak birimi",
+      "b": "Belgenin hazırlayıcısı",
+      "c": "Belgenin imzacısı olan yetkili makam",
+      "d": "Arşiv birimi",
+      "e": "Üst komutanlık"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Gizlilik derecelerini belirleme sorumluluğu, belgenin imzacısı olan yetkili makama aittir.",
+    "aclama": "Gizlilik kararı imza yetkisi olan makamda toplanır."
+  },
+  {
+    "soru_id": "RMY_502",
+    "konu": "Gizlilik İbareleri",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Millî evrakta kullanılabilecek gizlilik ibarelerinin doğru sıralaması hangisidir?",
+    "secenekler": {
+      "a": "GİZLİ, ÇOK GİZLİ, HİZMETE ÖZEL, ÖZEL",
+      "b": "ÇOK GİZLİ, GİZLİ, ÖZEL, HİZMETE ÖZEL",
+      "c": "HİZMETE ÖZEL, ÖZEL, GİZLİ",
+      "d": "ÖZEL, GİZLİ, ÇOK GİZLİ",
+      "e": "GİZLİ, HİZMETE ÖZEL, ÇOK GİZLİ"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Millî evrakın gizlilik derecesi taşıması halinde yazılara: ÇOK GİZLİ, GİZLİ, ÖZEL ve HİZMETE ÖZEL ibarelerinden uygun olanı verilir.",
+    "aclama": "Dört seviyeden uygun olanı seçilir."
+  },
+  {
+    "soru_id": "RMY_503",
+    "konu": "Kurumsal Logolar",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Kurumsal logolar resmî yazıda nasıl yerleştirilir?",
+    "secenekler": {
+      "a": "3x3 cm, sağ üstte üst kurum",
+      "b": "2,5x2,5 cm, üst kurum sağda",
+      "c": "2,5x2,5 cm, üst kurum solda",
+      "d": "2x2 cm, ortada tek logo",
+      "e": "Serbest ölçü, sağ altta"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Kurumsal Logolar: 2,5 cm x 2,5 cm olacak şekilde ve üst olan kurum solda olacak şekilde yerleştirilir.",
+    "aclama": "Ölçü ve yerleşim standarttır."
+  },
+  {
+    "soru_id": "RMY_504",
+    "konu": "Başlık Yazımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Başlık kısmında birlik isimleri nasıl yazılır?",
+    "secenekler": {
+      "a": "Kısaltma ile",
+      "b": "Tam yazılır, MEBS, TCG gibi yerleşik kısaltmalar hariç",
+      "c": "Sadece ilk kelime tam, diğerleri kısaltma",
+      "d": "Tamamı kısaltma",
+      "e": "Sadece şehir adı yazılır"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Başlık Kısmı Birlik isimleri kısaltma yapılmadan yazılır. Ancak birlik isimlerinde yer alan MEBS, TCG vb. kısaltmalar kullanılır.",
+    "aclama": "Genel kural tam yazım, istisna yerleşik kısaltmalardır."
+  },
+  {
+    "soru_id": "RMY_505",
+    "konu": "Sayı ve Tarih Tekrarı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Birden fazla sayfa tutan yazılarda hangi bilgiler her sayfaya yazılır?",
+    "secenekler": {
+      "a": "Sadece sayı",
+      "b": "Sadece tarih",
+      "c": "Hem sayı hem tarih",
+      "d": "Sadece dağıtım",
+      "e": "Sadece gizlilik"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Sayı Kısmı: Birden fazla sayfa tutan yazıların her sayfasına yazılır sayı. ... Birden fazla sayfa tutan yazıların her sayfasına tarih yazılır.",
+    "aclama": "Süreklilik ve izlenebilirlik için tekrarlanır."
+  },
+  {
+    "soru_id": "RMY_506",
+    "konu": "Tarih Biçimi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Resmî yazıdaki tarih nasıl yazılır?",
+    "secenekler": {
+      "a": "GG/AA/YYYY",
+      "b": "12-02-24",
+      "c": "Gün Ay(baş harf büyük) Yıl (dört hane)",
+      "d": "YYYY.AA.GG",
+      "e": "Sadece ay ve yıl"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Belgenin tarih kısmı; günü, ayı (yazıyla, ilk harfi büyük, diğerleri küçük harflerle) ve yılı (dört hane) kapsar.",
+    "aclama": "Örnek: 12 Şubat 2024."
+  },
+  {
+    "soru_id": "RMY_507",
+    "konu": "Yazışma Kanalı",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Kamu kurum ve kuruluşlarına gönderilecek yazılar hangi kanal üzerinden gönderilir?",
+    "secenekler": {
+      "a": "Teknik kanal",
+      "b": "Komuta kanalı",
+      "c": "Doğrudan alt birim kanalı",
+      "d": "E-posta kanalı",
+      "e": "Kurye kanalı"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Kamu kurum ve kuruluşlarına gönderilecek yazılar... sadece komuta kanal kullanılarak gönderilir.",
+    "aclama": "Teknik kanal kurum içi teknik yazışmalar içindir."
+  },
+  {
+    "soru_id": "RMY_508",
+    "konu": "Alt Birimler Arası Yazışma",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Bakanlık kadro ve kuruluşundaki alt birimlerin birbirleriyle doğrudan yazışması konusunda hangisi doğrudur?",
+    "secenekler": {
+      "a": "Doğrudan yazışabilirler",
+      "b": "Sadece teknik konularda yazışabilirler",
+      "c": "Doğrudan yazışamazlar",
+      "d": "Sadece acil konularda yazışırlar",
+      "e": "Onay almadan yazışabilirler"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Kurumların her birinin alt birimleri birbirleri ile doğrudan yazışma yapamaz.",
+    "aclama": "Yazışma hiyerarşik kanalla yürür."
+  },
+  {
+    "soru_id": "RMY_509",
+    "konu": "Muhatap Yazımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Komuta kanalından gönderilecek yazının muhatap kısmı nasıl yazılır?",
+    "secenekler": {
+      "a": "Sadece alt birim adı",
+      "b": "Kurum adı, alt birim varsa parantez içinde küçük harflerle",
+      "c": "Sadece kişi adı",
+      "d": "Kısaltma ile kurum adı",
+      "e": "Sadece şehir adı"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Komuta kanalından gönderilecek yazının muhatap kısmına kamu kurum veya kuruluşunun adı yazılır. ... alt birimler ... kurum adının altına yay ayraç içinde küçük harflerle yazılarak belirtilir.",
+    "aclama": "Örnek: DIŞİŞLERİ BAKANLIĞINA (Konsolosluk işleri genel müdürlüğü)."
+  },
+  {
+    "soru_id": "RMY_510",
+    "konu": "Makam Sahibi Adına Yazı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Makam sahibi adına yazılan yazılarda ilk ve ikinci satıra ne yazılır?",
+    "secenekler": {
+      "a": "1. Satır makam, 2. Satır kişi",
+      "b": "1. Satır kişi unvan/rütbe ve adı-soyadı, 2. Satır temsil ettiği makam",
+      "c": "Tek satırda kişi ve makam",
+      "d": "Sadece makam",
+      "e": "Sadece kişi adı"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "İlk satıra Sayın ibaresinden sonra o şahsın unvan/sınıfı-rütbesi ve adı-soyadı, ikinci satıra temsil ettiği makam yazılır.",
+    "aclama": "Hitapta iki satır kuralı uygulanır."
+  },
+  {
+    "soru_id": "RMY_511",
+    "konu": "İlgilerin Sıralanması",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Yazıda 29 harf tükendiğinde ilgiler nasıl devam ettirilir?",
+    "secenekler": {
+      "a": "A1, A2, A3",
+      "b": "aa), bb), cc)...",
+      "c": "I, II, III",
+      "d": "01, 02, 03",
+      "e": "*, **, ***"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "29 harfin tamamı kullanıldığında sonraki ilgiler aa), bb), cc).... zz) biçiminde sıralanır.",
+    "aclama": "Önce a)–z), sonra çift harfli dizin."
+  },
+  {
+    "soru_id": "RMY_512",
+    "konu": "İlginin Metinde Gösterimi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Metin içinde ilgiye atıf yapılırken doğru yazım hangisidir?",
+    "secenekler": {
+      "a": "İlgi A",
+      "b": "İLGİ (A)",
+      "c": "ilgi (a)",
+      "d": "Ilgi-a",
+      "e": "Ref: a"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Metin içinde evrakın ilgilerinden bahsedilmesi durumunda ilgi küçük harflerle ve varsa ilgi adı (harf) ile birlikte ilgi (a) biçiminde yazılır.",
+    "aclama": "Küçük harf ve parantez kullanılır."
+  },
+  {
+    "soru_id": "RMY_513",
+    "konu": "Eklerin Gösterimi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Metinde ekler nasıl gösterilir?",
+    "secenekler": {
+      "a": "ek-1, ek-2 küçük harf",
+      "b": "EK-1, EK-2 büyük harf",
+      "c": "Ek-1, Ek-2 biçiminde",
+      "d": "E-1, E-2",
+      "e": "Sadece numara"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Ek, ilk harfi büyük ve ek adı rakamla birlikte Ek-1, Ek-2, Ek-1 ve 2, Ek-1,2 ve 3 biçiminde yazılır.",
+    "aclama": "Baş harf büyük, tire ve rakamla gösterilir."
+  },
+  {
+    "soru_id": "RMY_514",
+    "konu": "Maddelendirme Esası",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Metin bölümünde maddelendirme ile ilgili temel ilke nedir?",
+    "secenekler": {
+      "a": "Zorunlu",
+      "b": "Esastır",
+      "c": "Kullanılmaması esastır, gerekirse belirli biçimde yapılır",
+      "d": "Sadece sayılarla yapılır",
+      "e": "Sadece harflerle yapılır"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Metin bölümünde maddelendirme kullanılmaması esastır. Ancak konu gereği maddelendirme zaruri ise satır başı, bir tab verilerek... yapılır.",
+    "aclama": "Zorunlu olmadıkça maddelemeyin."
+  },
+  {
+    "soru_id": "RMY_515",
+    "konu": "Maddelendirme Hiyerarşisi",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Zaruri maddelendirmede fıkra, bent ve alt bentler nereye hizalanır?",
+    "secenekler": {
+      "a": "Bir tab içeri",
+      "b": "Sağa yaslı",
+      "c": "Madde numarası ile aynı hizada başlar",
+      "d": "Ortalanır",
+      "e": "Serbest hizalı"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "İhtiyaç olması hâlinde fıkra, bent ve alt bentler madde numarası ile aynı hizada başlar.",
+    "aclama": "Hiyerarşi hizası korunur."
+  },
+  {
+    "soru_id": "RMY_516",
+    "konu": "İmza Bloku Yazımı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "İmza blokunda ad ve soyad nasıl yazılır?",
+    "secenekler": {
+      "a": "Ad-soyad tamamen büyük",
+      "b": "Ad-soyad tamamen küçük",
+      "c": "Ad baş harf büyük, soyad tamamen büyük",
+      "d": "Ad italik, soyad kalın",
+      "e": "Sadece soyad"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Belgeyi imzalayanın adı, ilk harfi büyük diğerleri küçük olacak, soyadı ise büyük harflerle yazılır.",
+    "aclama": "Standart imza blok formatı."
+  },
+  {
+    "soru_id": "RMY_517",
+    "konu": "Başlık Örneği",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "T. C. / MİLLÎ SAVUNMA BAKANLIĞI / Askeralma Genel Müdürlüğü / Kayseri Askeralma Bölge Başkanlığı düzeni hangi bölüme aittir?",
+    "secenekler": {
+      "a": "Metin",
+      "b": "İlgi",
+      "c": "Başlık",
+      "d": "Dağıtım",
+      "e": "Ekler"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "ÖRNEK: T. C. / MİLLÎ SAVUNMA BAKANLIĞI / Askeralma Genel Müdürlüğü / Kayseri Askeralma Bölge Başkanlığı",
+    "aclama": "Kurumsal hiyerarşi başlıkta yazılır."
+  },
+  {
+    "soru_id": "RMY_518",
+    "konu": "İlgiler Fazla İse",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Yazıda ilgiler sayfa düzenini bozacak kadar fazlaysa nasıl gösterilmelidir?",
+    "secenekler": {
+      "a": "Metin içine yayılır",
+      "b": "Dipnota taşınır",
+      "c": "Liste biçiminde hazırlanır",
+      "d": "Sadece ilk üçü yazılır",
+      "e": "İptal edilir"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Yazıda belirtilmesi gereken ilgiler, sayfa düzenini bozacak biçimde fazla sayıda ise liste biçiminde hazırlanır.",
+    "aclama": "Düzen ve okunabilirlik korunur."
+  },
+  {
+    "soru_id": "RMY_519",
+    "konu": "Kanal Seçimi",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Yazılar hangi kanallar kullanılarak gönderilebilir?",
+    "secenekler": {
+      "a": "Sadece komuta kanalı",
+      "b": "Sadece teknik kanal",
+      "c": "Komuta kanalı veya teknik kanal",
+      "d": "Sadece e-devlet kanalı",
+      "e": "Sadece diplomatik kanal"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Yazılar, Komuta kanalı veya Teknik Kanal kullanılarak gönderilir.",
+    "aclama": "Kamu kurumlarına gidişte kural: komuta kanalı."
+  },
+  {
+    "soru_id": "RMY_520",
+    "konu": "Muhatap Biçim Örneği",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Aşağıdaki muhatap yazımlarından hangisi kurala uygundur?",
+    "secenekler": {
+      "a": "Dışişleri Bakanlığına (Konsolosluk İşleri Genel Müdürlüğü)",
+      "b": "DIŞİŞLERİ BAKANLIĞINA (Konsolosluk işleri Genel Müdürlüğü)",
+      "c": "Dışişleri Bakanlığı (Konsolosluk İşleri GM)",
+      "d": "DIŞİŞLERİ BAKANLIĞI",
+      "e": "Konsolosluk işleri Genel Müdürlüğüne"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "ÖRNEK: DIŞİŞLERİ BAKANLIĞINA (Konsolosluk işleri Genel Müdürlüğü)",
+    "aclama": "Kurum adı büyük, alt birim parantez içinde küçük harflerle."
+  },
+
+  {
+    "soru_id": "RMY_601",
+    "konu": "İmza Bloku Yerleşimi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Metin kısmının devamı olmayan bir sayfaya tek başına imza bloku konulabilir mi?",
+    "secenekler": {
+      "a": "Evet, her zaman",
+      "b": "Hayır, imza bloku tek başına sayfaya yazılmaz",
+      "c": "Sadece gizli yazılarda",
+      "d": "Sadece son sayfada",
+      "e": "Sadece acele yazılarda"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Metin Kısmının devamı bulunmayan sayfaya tek başına imza bloku yazılmaz.",
+    "aclama": "İmza için metnin son kısmı diğer sayfaya taşınır."
+  },
+  {
+    "soru_id": "RMY_602",
+    "konu": "Mühür Rengi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Evrakın mühürlenmesi gerekiyorsa, aksi belirtilmedikçe hangi renkte damgalanır?",
+    "secenekler": {
+      "a": "Mavi",
+      "b": "Siyah",
+      "c": "Kırmızı",
+      "d": "Yeşil",
+      "e": "Mor"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Evrakın mühürlenmesi gerekiyorsa... kırmızı renkte damgalanır.",
+    "aclama": "Varsayılan mühür rengi kırmızıdır."
+  },
+  {
+    "soru_id": "RMY_603",
+    "konu": "Paraf Bilgileri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Paraf bölümünde hangi bilgiler yer alır?",
+    "secenekler": {
+      "a": "Sadece ad-soyad",
+      "b": "Tarih, unvan, sınıf, rütbe, ad ve soyad",
+      "c": "Sadece rütbe ve tarih",
+      "d": "Sadece unvan",
+      "e": "Sadece paraf ve unvan"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Parafta tarih, unvan, sınıf, rütbe ad ve soyad belirtilir.",
+    "aclama": "Tam kimlik ve tarih bilgisi gerekir."
+  },
+  {
+    "soru_id": "RMY_604",
+    "konu": "Yan Paraf",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Yan parafta hangi iki unsur bulunur?",
+    "secenekler": {
+      "a": "Unvan ve paraf",
+      "b": "Paraf ve tarih",
+      "c": "Rütbe ve ad-soyad",
+      "d": "Mühür ve tarih",
+      "e": "İmza ve paraf"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Yan parafta ise sadece paraf sahibinin parafi ve tarih bulunur.",
+    "aclama": "Yan paraf kısaltılmış bilgidir."
+  },
+  {
+    "soru_id": "RMY_605",
+    "konu": "İmza Yetki Düzeyi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Belge asgari hangi düzeyde imzalanır?",
+    "secenekler": {
+      "a": "Memur",
+      "b": "Uzman",
+      "c": "Şube müdürü",
+      "d": "Daire başkanı",
+      "e": "Genel sekreter"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Belge en az şube müdürü düzeyinde imzalanır.",
+    "aclama": "Asgari imza otoritesi şube müdürüdür."
+  },
+  {
+    "soru_id": "RMY_606",
+    "konu": "İkincil Evrak Türleri",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "İkincil evrakın doğru kısaltması hangisidir?",
+    "secenekler": {
+      "a": "E-L-Ç-İ",
+      "b": "E-L-C-İ",
+      "c": "E-C-L-İ",
+      "d": "L-E-C-İ",
+      "e": "E-İ-C-L"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "İkincil evrak: ek, lahika, cetvel ve ilişikten oluşur. E-L-C-İ",
+    "aclama": "Sıra: Ek, Lahika, Cetvel, İlişik."
+  },
+  {
+    "soru_id": "RMY_607",
+    "konu": "Lahika Tanımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Lahika neyi ifade eder?",
+    "secenekler": {
+      "a": "Asıl yazının özeti",
+      "b": "Ekleri genişleten veya açıklayan tamamlayıcı evrak/araç-gereç",
+      "c": "İmza yetkisi listesi",
+      "d": "Dağıtım planı",
+      "e": "Arşiv fişi"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Lahika: Ekleri genişleten veya açıklayan tamamlayıcı nitelikte olan evrak ile araç ve gereçlerdir.",
+    "aclama": "Lahika, ekin tamamlayıcısıdır."
+  },
+  {
+    "soru_id": "RMY_608",
+    "konu": "Cetvel ve İlişik",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Cetvel ve ilişik arasındaki ilişki doğru olarak hangisidir?",
+    "secenekler": {
+      "a": "İlişik cetveli açıklar",
+      "b": "Cetvel lahikayı açıklar, ilişik cetveli açıklar",
+      "c": "Lahika cetveli açıklar",
+      "d": "İlişik lahikayı açıklar",
+      "e": "Bağımsızdırlar"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Cetvel: Lahikaları... açıklar... İlişik: Cetvelleri... açıklar.",
+    "aclama": "Hiyerarşi: Lahika → Cetvel → İlişik."
+  },
+  {
+    "soru_id": "RMY_609",
+    "konu": "Dağıtım Hiyerarşisi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Dağıtım kısmında karargâh içi makamlar nereye yazılır?",
+    "secenekler": {
+      "a": "İlk sıraya",
+      "b": "Alfabetik sırada ilk",
+      "c": "Karargâh dışı makamlardan sonra",
+      "d": "Parantez içinde",
+      "e": "Dipnota"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Dağıtım kısmında yazılacak karargah içi makamlar, karargah dışı makamlardan sonra yazılır.",
+    "aclama": "Önce dış, sonra iç makamlar."
+  },
+  {
+    "soru_id": "RMY_610",
+    "konu": "Dağıtımda Sıralama",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Dağıtım listesinde eşit makamlar nasıl sıralanır?",
+    "secenekler": {
+      "a": "Kıdemine göre",
+      "b": "Coğrafyaya göre",
+      "c": "Alfabetik sırayla",
+      "d": "Öncelik derecesine göre",
+      "e": "Tarihe göre"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Dağıtım listesinde eşit makamlar Alfabetik sıraya göre yazılır.",
+    "aclama": "Standart sıralama kuralı."
+  },
+  {
+    "soru_id": "RMY_611",
+    "konu": "Belge Doğrulama",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Elektronik imzalı belgede hangi ifade bulunur?",
+    "secenekler": {
+      "a": "Bu belge e-posta ile gönderilmiştir.",
+      "b": "Bu belge kurye ile iletilmiştir.",
+      "c": "Bu belge güvenli elektronik imza ile imzalanmıştır.",
+      "d": "Bu belge mühürlüdür.",
+      "e": "Bu belge taslaktır."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Bu belge güvenli elektronik imza ile imzalanmıştır. ibaresi bulunur.",
+    "aclama": "Altında doğrulama kodu ve kare kod yer alır."
+  },
+  {
+    "soru_id": "RMY_612",
+    "konu": "Yönetici Özeti",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Yönetici özeti hangi düzey için ve nasıl hazırlanır?",
+    "secenekler": {
+      "a": "Şube için, iki sayfa",
+      "b": "Daire için, eklerle birlikte",
+      "c": "En az birim amirliği/başkanlık düzeyinde, bir sayfayı geçmeyecek şekilde",
+      "d": "Tüm personele, sınırsız uzunlukta",
+      "e": "Sadece kanunlar için"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Yönetici özeti... bir sayfayı geçmeyecek biçimde... hazırlanır.",
+    "aclama": "Üst makama hızlı arz içindir."
+  },
+  {
+    "soru_id": "RMY_613",
+    "konu": "Dosya Özeti Kullanımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Dosya özeti hangi tür yazılar için kullanılmaz?",
+    "secenekler": {
+      "a": "Kısa yazılar",
+      "b": "Gizli yazılar",
+      "c": "Özel yazılar",
+      "d": "Acele yazılar",
+      "e": "Günlü yazılar"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Kısa olan yazılar için Dosya Özeti kullanılmaz.",
+    "aclama": "Kısa yazılar doğrudan imzaya gider."
+  },
+  {
+    "soru_id": "RMY_614",
+    "konu": "Gizli/Özel Dosya Özeti",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "GİZLİ/ÖZEL yazılarda dosya özeti nereye iliştirilir?",
+    "secenekler": {
+      "a": "Belgenin ilk sayfasına",
+      "b": "Dağıtım kısmına",
+      "c": "İmza dosyasının üst kapağına, dosya zarf içine konur",
+      "d": "Ekler bölümüne",
+      "e": "Paraf bölümüne"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "GİZLİ ve ÖZEL... yazıların imza dosyalarının üst kapağına Dosya özeti iliştirilir. Dosya zarf içine konur.",
+    "aclama": "Gizlilik tedbiri korunur."
+  },
+  {
+    "soru_id": "RMY_615",
+    "konu": "İmza Dosyası Üzerinde Bilgiler",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "İmza dosyası üzerinde aşağıdakilerden hangisi bulunmaz?",
+    "secenekler": {
+      "a": "Gizlilik derecesi",
+      "b": "Gönderen makam kısmı",
+      "c": "Proje sorumlusunun telefon numarası",
+      "d": "Belge doğrulama kodu",
+      "e": "Birim amirliği ve şube isimleri"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Dosya üzerinde; gizlilik derecesi... proje sorumlusunun... telefon numarası bulunur.",
+    "aclama": "Doğrulama kodu belgenin üzerinde yer alır, dosya üzerinde değil."
+  },
+  {
+    "soru_id": "RMY_616",
+    "konu": "Hacimli İlgi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "İlgi çok hacimli olup dosyaya konulamıyorsa ne yapılır?",
+    "secenekler": {
+      "a": "İlgi kaldırılır",
+      "b": "Özetlenir",
+      "c": "Yerine standart ibare yazılı A4 kağıt konur",
+      "d": "Ayrı zarfla gönderilir ve belirtilmez",
+      "e": "Sadece kodu yazılır"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Hacimli olduğundan konulamamıştır... emredildiğinde arz edilecektir. ibaresi A4’e yazılarak ilginin yerine konur.",
+    "aclama": "Standart ibare 16 punto ve ortalıdır."
+  },
+  {
+    "soru_id": "RMY_617",
+    "konu": "Koordinasyon Formu Kullanımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Koordinasyon formu hangi birimler arasında kullanılır?",
+    "secenekler": {
+      "a": "Kamu kurumlarıyla",
+      "b": "Müttefik makamlarla",
+      "c": "Birim amirliği/başkanlık ve daire başkanlıkları ile aynı daire içindeki şubeler arasında",
+      "d": "Gerçek kişilerle",
+      "e": "Yabancı misyonlarla"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Bu form, birim amirliği/başkanlık ve daire başkanlıkları ile aynı daire başkanlığının kendi şubeleri arasında kullanılır.",
+    "aclama": "Kurum içi koordinasyon aracıdır."
+  },
+  {
+    "soru_id": "RMY_618",
+    "konu": "Gönderim Kanalı Önceliği",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Yazıların gönderiminde öncelik sırası hangisidir?",
+    "secenekler": {
+      "a": "Gönderi usulü → belgegeçer → elektronik ortam",
+      "b": "Belgegeçer → MEBS → gönderi usulü",
+      "c": "Elektronik ortam → MEBS → zorunlu hallerde gönderi usulü/belgegeçer",
+      "d": "MEBS → elektronik ortam → gönderi usulü",
+      "e": "Her zaman gönderi usulü"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Öncelikle elektronik ortam, MEBS vasıtaları, zorunlu haller... gönderi usulü veya belgegeçer kullanılır.",
+    "aclama": "Dijital kanallar önceliklidir."
+  },
+  {
+    "soru_id": "RMY_619",
+    "konu": "Çok Gizli ve Müttefik Yazılar",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Aşağıdakilerden hangisi elektronik ortam/MEBS üzerinden gönderilmez?",
+    "secenekler": {
+      "a": "Günlü yazılar",
+      "b": "Acele yazılar",
+      "c": "Çok Gizli yazılar ve müttefik makamlara yazılar",
+      "d": "Teknik yazışmalar",
+      "e": "Bilgi notları"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Çok Gizli... yazılar ile müttefik makamlara gönderilecek yazılar elektronik ortamdan ve MEBS vasıtalarından gönderilmez.",
+    "aclama": "Bu tür yazılar alternatif kanallarla gönderilir."
+  },
+  {
+    "soru_id": "RMY_620",
+    "konu": "Komuta Kanalı Kuralı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Komuta kanalıyla yapılan yazışmalarda hangi unsur zorunludur?",
+    "secenekler": {
+      "a": "İmza yetki satırı",
+      "b": "Kare kod",
+      "c": "Belgegeçer numarası",
+      "d": "Lahika",
+      "e": "Koordinasyon formu"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Usulüne uygun imza yetki satırı mutlaka kullanılır.",
+    "aclama": "Komuta kanalı resmi yetkiyle yürür."
+  },
+  {
+    "soru_id": "RMY_621",
+    "konu": "Teknik Kanal Kısıtı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Teknik kanal hangi yazışmalar için kullanılmaz?",
+    "secenekler": {
+      "a": "Karargâh içi",
+      "b": "Gerçek ve özel hukuk tüzel kişileriyle",
+      "c": "Kamu kurum ve kuruluşlarıyla",
+      "d": "Şubeler arası",
+      "e": "Daire içi"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Kamu kurum ve kuruluşları ile bu kanal kullanılarak yazışma yapılmaz.",
+    "aclama": "Kamu yazışmaları komuta kanalıyla yapılır."
+  },
+  {
+    "soru_id": "RMY_622",
+    "konu": "Elektronik Ortamda Zamanlama",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Çalışma saatleri dışında ACELE/GÜNLÜ yazılar elektronik ortamdan nasıl gönderilir?",
+    "secenekler": {
+      "a": "Her zaman doğrudan",
+      "b": "Sadece mesai içinde",
+      "c": "Karşılıklı mutabakat sağlandıktan sonra",
+      "d": "Belgegeçer ile",
+      "e": "Gönderi usulü ile"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Çalışma saatleri dışında ACELE veya GÜNLÜ yazılar, karşılıklı mutabakat sağlandıktan sonra gönderilir.",
+    "aclama": "Alıcı teyidi aranır."
+  },
+  {
+    "soru_id": "RMY_623",
+    "konu": "MEBS Teslim İşareti",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "MEBS vasıtasıyla istek formu ile teslim alınan yazılara hangi kırmızı ibare damgalanır?",
+    "secenekler": {
+      "a": "TESLİM EDİLDİ",
+      "b": "GÖNDERİLDİ",
+      "c": "ÇEKİLMİŞTİR",
+      "d": "ONAYLANDI",
+      "e": "ARŞİVLENDİ"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Formun... sol üst köşesine kırmızı renkte ÇEKİLMİŞTİR ibaresi damgalanır.",
+    "aclama": "MEBS çekimi işaretlenir."
+  },
+  {
+    "soru_id": "RMY_624",
+    "konu": "Belgegeçer Kuralı",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Belgegeçer hangi koşulda kullanılmalıdır?",
+    "secenekler": {
+      "a": "Her yazıda",
+      "b": "Elektronik/MEBS mümkün ama tercih edilmediğinde",
+      "c": "Elektronik/MEBS/gönderi usulü kullanılamıyor veya zamanında ulaşmayacak ACELE/GÜNLÜ yazılarda",
+      "d": "Sadece gizlilik yoksa",
+      "e": "Sadece müttefik yazılarda"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Bu yöntemlerin kullanılamaması... zamanında... ulaşamayacağı değerlendirilen ACELE veya GÜNLÜ yazılar, belgegeçer ile gönderilir.",
+    "aclama": "Belgegeçer istisnai ve zaman kritik durum içindir."
+  },
+  {
+    "soru_id": "RMY_625",
+    "konu": "Belgegeçer Sonrası İşlem",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Belgegeçer ile gönderilen yazılar kaç gün içinde usulüne uygun tekrar gönderilir?",
+    "secenekler": {
+      "a": "3 gün",
+      "b": "5 gün",
+      "c": "7 gün",
+      "d": "10 gün",
+      "e": "15 gün"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Belgegeçer ile gönderilen yazılar... 5 gün içinde... tekrar gönderilir.",
+    "aclama": "Belgegeçer geçici bildirimdir."
+  },
+  {
+    "soru_id": "RMY_626",
+    "konu": "Zarf Güvenliği",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Gizli/Özel yazı içeren birinci zarf nasıl kapatılır?",
+    "secenekler": {
+      "a": "Sadece yapıştırılır",
+      "b": "Mühürlenir, imzalanır ve saydam bantla yapıştırılır",
+      "c": "Zımbalanır",
+      "d": "Zincirle mühürlenir",
+      "e": "Sadece imzalanır"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Zarfın birleşme yeri kapatılır; sırasıyla imzalanır, mühürlenir ve saydam bantla yapıştırılır.",
+    "aclama": "Fiziksel güvenlik tedbiri uygulanır."
+  },
+
+  {
+    "soru_id": "RMY_627",
+    "konu": "İkinci Zarf Üzerindeki Bilgiler",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "İkinci zarfın üzerine hangi bilgiler yazılır?",
+    "secenekler": {
+      "a": "Gizlilik derecesi, sayı ve tarih",
+      "b": "Sadece gönderen ve gönderilen makamın adı ve adresi",
+      "c": "Sadece gizlilik derecesi",
+      "d": "Gönderi usulü ve APS ibaresi",
+      "e": "Karekod ve doğrulama kodu"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "İkinci zarfın üzerine sadece gönderen makamın adı ve gönderilen makamın adı ve adresi yazılır.",
+    "aclama": "İkinci zarf minimum bilgi içerir."
+  },
+  {
+    "soru_id": "RMY_628",
+    "konu": "İkinci Zarfı Kapatma",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "İkinci zarfı kim ve ne zaman kapatır?",
+    "secenekler": {
+      "a": "Aracı evrak birimleri, her zaman",
+      "b": "Gönderen şube, kayıt öncesi",
+      "c": "Genel evrak birimi veya muhabere merkezi, kayıt işlemlerinden sonra",
+      "d": "Kurye, teslimde",
+      "e": "Nöbetçi amiri, vardiya sonunda"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "İkinci zarf... genel evrak birimi veya muhabere merkezi tarafından evrakın kayıt işlemleri yapıldıktan sonra kapatılır.",
+    "aclama": "Kayıt sonrası kapatma esastır."
+  },
+  {
+    "soru_id": "RMY_629",
+    "konu": "Kurye/Haberci İbresi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Kurye veya haberci ile gönderilecek yazıda birinci zarfın neresine hangi ibare yazılır?",
+    "secenekler": {
+      "a": "Sağ üst köşe, mavi 'KURYE'",
+      "b": "Sol alt köşe, kırmızı 'KURYE' veya 'HABERCİ'",
+      "c": "Orta kısım, siyah 'KURYE'",
+      "d": "Arka yüz, yeşil 'HABERCİ'",
+      "e": "Sol üst köşe, kırmızı 'ACELE'"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Birinci zarfın sol alt köşesine... 'KURYE' veya 'HABERCİ'... kırmızı renkte yazılır/damgalanır.",
+    "aclama": "Yer ve renk standardize edilmiştir."
+  },
+  {
+    "soru_id": "RMY_630",
+    "konu": "Zarf Üzerine Yazım",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Zarf bilgilerinin yazımında hangi yazı tipi ve aralık kullanılır?",
+    "secenekler": {
+      "a": "Calibri, 10",
+      "b": "Arial, 12",
+      "c": "Times New Roman, 11-14",
+      "d": "Courier New, 12",
+      "e": "Verdana, 11"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Zarf... bilgisayarla (Times New Roman, 11-14 boyutunda)... yazılır.",
+    "aclama": "Okunaklılık için aralık belirtilmiştir."
+  },
+  {
+    "soru_id": "RMY_631",
+    "konu": "Askerî Posta Kodu",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Askerî Posta Kod Numarası ne zaman kullanılır ve kim yayımlar?",
+    "secenekler": {
+      "a": "Barış zamanı; MSB",
+      "b": "Seferberlik ve savaş; Genelkurmay Başkanlığı",
+      "c": "Tatbikatlarda; Kuvvet Komutanlıkları",
+      "d": "Her zaman; PTT",
+      "e": "Sadece yurt dışı; Dışişleri"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Seferberlik ve savaş hallerinde 'Askeri Posta Kod Numarası' kullanılır... Genelkurmay Başkanlığı tarafından yayımlanır.",
+    "aclama": "Özel durum kodlamasıdır."
+  },
+  {
+    "soru_id": "RMY_632",
+    "konu": "Paket Ağırlık Sınırı (Yurt İçi)",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Zarfla gönderilemeyen yurt içi evrak için paket üst sınırı kaç kg'dır?",
+    "secenekler": {
+      "a": "2 kg",
+      "b": "5 kg",
+      "c": "10 kg",
+      "d": "20 kg",
+      "e": "30 kg"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Yurt içi için 5 kg... paket olarak hazırlanır.",
+    "aclama": "5 kg üstü için koli uygulanır."
+  },
+  {
+    "soru_id": "RMY_633",
+    "konu": "Paket Ağırlık Sınırı (Yurt Dışı)",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Zarfla gönderilemeyen yurt dışı evrak için paket üst sınırı kaç kg'dır?",
+    "secenekler": {
+      "a": "1 kg",
+      "b": "2 kg",
+      "c": "5 kg",
+      "d": "10 kg",
+      "e": "30 kg"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Yurt dışı için 2 kg geçmeyecek biçimde paket olarak hazırlanır.",
+    "aclama": "2 kg üstü için koli düzenlenir."
+  },
+  {
+    "soru_id": "RMY_634",
+    "konu": "Koli Üst Sınırı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Koli olarak gönderilebilecek azami ağırlık kaç kg'dır?",
+    "secenekler": {
+      "a": "10",
+      "b": "20",
+      "c": "25",
+      "d": "30",
+      "e": "50"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Koli biçiminde 30 kg'a kadar hazırlanır.",
+    "aclama": "30 kg üstü özel koordinasyon gerektirir."
+  },
+  {
+    "soru_id": "RMY_635",
+    "konu": "30 kg Üstü Gönderiler",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "30 kg'dan fazla ve parçalara ayrılamayan gönderiler nasıl işlem görür?",
+    "secenekler": {
+      "a": "Normal posta",
+      "b": "APS",
+      "c": "Genel evrak birimi ile koordine edilerek gönderilir",
+      "d": "Belgegeçer",
+      "e": "Kurye doğrudan alır"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "30 kg'dan fazla... genel evrak birimi ile koordine edilerek gönderilmesi sağlanır.",
+    "aclama": "Ağırlık nedeniyle özel süreç gerekir."
+  },
+  {
+    "soru_id": "RMY_636",
+    "konu": "Garnizon İçi Gönderim",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Garnizon içine yazılar hangi yöntemle gönderilir?",
+    "secenekler": {
+      "a": "Sadece posta",
+      "b": "Kurye veya haberci sistemi ya da gönderi usulü",
+      "c": "Sadece MEBS",
+      "d": "Sadece belgegeçer",
+      "e": "Sadece e-posta"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Garnizon içerisine kurye veya haberci sisteminden ya da gönderi usulünden uygun olanı ile gönderilir.",
+    "aclama": "Üç yöntemden uygunu seçilir."
+  },
+  {
+    "soru_id": "RMY_637",
+    "konu": "Yurt İçi Gönderi Usulü",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Yurt içine 'GİZLİ/ÖZEL' yazılar gönderi usulüyle nasıl postalanır?",
+    "secenekler": {
+      "a": "Normal (adi) posta",
+      "b": "Resmi taahhütlü posta",
+      "c": "Belgegeçer",
+      "d": "APS zorunlu",
+      "e": "Kargo"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Gönderi usulüyle gönderilecek 'GİZLİ' ve 'ÖZEL'... resmi taahhütlü olarak... gönderilir.",
+    "aclama": "Diğerleri normal posta ile gider."
+  },
+  {
+    "soru_id": "RMY_638",
+    "konu": "Acele/Günlü Posta Yöntemi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Derhal gönderilmesi gereken ACELE/GÜNLÜ yazılarda posta yöntemi kim tarafından belirlenir?",
+    "secenekler": {
+      "a": "Gönderen şube",
+      "b": "Kurye",
+      "c": "Genel evrak birimi",
+      "d": "Nöbetçi amiri",
+      "e": "PTT"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Derhâl gönderilmesi gerekenler için farklı posta yöntemi (APS vb.) genel evrak birimi tarafından belirlenir.",
+    "aclama": "Operasyonel karar evrak birimindedir."
+  },
+  {
+    "soru_id": "RMY_639",
+    "konu": "Yurt Dışı Gizli Gönderim",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Yurt dışına 'GİZLİ/ÖZEL' yazılar hangi kanalla gönderilir?",
+    "secenekler": {
+      "a": "Uluslararası posta",
+      "b": "Belgegeçer",
+      "c": "Dışişleri Bakanlığı Kurye Şubesi",
+      "d": "E-posta",
+      "e": "MEBS"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "'Gizli' ve 'ÖZEL'... yazılar yurt dışına posta ile gönderilmez... Dışişleri Bakanlığı Kurye Şubesi ile gönderilir.",
+    "aclama": "Gizlilik gereği özel kurye kullanılır."
+  },
+  {
+    "soru_id": "RMY_640",
+    "konu": "Yurt Dışı Hizmete Özel",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Yurt dışına 'HİZMETE ÖZEL' ve gizlilik taşımayan yazılar nasıl gönderilir?",
+    "secenekler": {
+      "a": "Sadece posta",
+      "b": "Sadece kurye",
+      "c": "Gönderi usulüyle veya kurye ile",
+      "d": "Belgegeçer zorunlu",
+      "e": "MEBS üzerinden"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "'HİZMETE ÖZEL'... ve gizlilik derecesi taşımayan yazılar gönderi usulüyle veya kurye ile gönderilir.",
+    "aclama": "İki yöntem de uygundur."
+  },
+  {
+    "soru_id": "RMY_641",
+    "konu": "Mesai Dışı Fiziksel Yazı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Çalışma saatleri dışında fiziksel yazılar hangi yöntemle gönderilmez?",
+    "secenekler": {
+      "a": "Gönderi usulü",
+      "b": "MEBS",
+      "c": "Garnizon içi haberci",
+      "d": "Kurye",
+      "e": "Belgegeçer"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Çalışma saatleri dışında, fiziksel ortamda hazırlanan yazılar gönderi usulüyle gönderilmez.",
+    "aclama": "Öncelik MEBS, olmazsa haberci/kurye, en son belgegeçer."
+  },
+  {
+    "soru_id": "RMY_642",
+    "konu": "Mesaj Tanımı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Mesaj hangi amaçla ve nasıl hazırlanır?",
+    "secenekler": {
+      "a": "Uzun rapor; posta ile",
+      "b": "Kısa ve öz emir/arz; MEBS ile",
+      "c": "Sözlü talimat; telefonla",
+      "d": "Gizli yazı; kurye ile",
+      "e": "Evrak özeti; e-posta ile"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "MEBS vasıtaları ile gönderilmek üzere açık bir dille, kısa ve öz olarak hazırlanmış...",
+    "aclama": "Mesaj MEBS içindir."
+  },
+  {
+    "soru_id": "RMY_643",
+    "konu": "Mesaj Yetkesi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesajlar kimin adına çekilmiş sayılır?",
+    "secenekler": {
+      "a": "Gönderen şube müdürü",
+      "b": "Genel evrak birimi",
+      "c": "Bakan; diğer idarelerde amir/komutan",
+      "d": "Nöbetçi amiri",
+      "e": "Kurye"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Bakanlık için Bakan, diğer idareler için amir/komutan adına çekildiği kabul edilir.",
+    "aclama": "Kurumsal sorumluluk."
+  },
+  {
+    "soru_id": "RMY_644",
+    "konu": "Mesaj Adresleme Kısıtı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Sadece karargâh içine adresli mesaj hazırlanabilir mi?",
+    "secenekler": {
+      "a": "Evet",
+      "b": "Hayır",
+      "c": "Sadece gizli ise",
+      "d": "Sadece acele ise",
+      "e": "Sadece onayla"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Sadece karargah içine adresli mesaj hazırlanmaz ve gönderilmez.",
+    "aclama": "Mesajlar kurumlararası/karşılıklı mutabakatlıdır."
+  },
+  {
+    "soru_id": "RMY_645",
+    "konu": "Mesaj vs Resmi Yazı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Zamanında ulaşabilecek konularda mesaj yerine ne hazırlanır?",
+    "secenekler": {
+      "a": "Bilgi kartı",
+      "b": "Resmi yazı",
+      "c": "Brifing",
+      "d": "Etüt formu",
+      "e": "Not"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "İçerini bakımından resmi yazı... zamanında geçebilecek konularda mesaj hazırlanmaz; mesaj yerine resmi yazı hazırlanır.",
+    "aclama": "Mesaj acil/MEBS içindir."
+  },
+  {
+    "soru_id": "RMY_646",
+    "konu": "Tebrik/Kutlama Mesajı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Ast birliklerin üst birliklere tebrik ve kutlamaları MEBS ile gönderilir mi?",
+    "secenekler": {
+      "a": "Evet",
+      "b": "Hayır, yerel ağ/yazılımlar kullanılır",
+      "c": "Sadece gizli ise",
+      "d": "Sadece acele ise",
+      "e": "Sadece hafta içi"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Ast birlikler... tebrik ve kutlamalar MEBS vasıtalarından gönderilmez... yerel alan ağı veya... yazılımlar kullanılır.",
+    "aclama": "MEBS altyapısı meşgul edilmez."
+  },
+  {
+    "soru_id": "RMY_647",
+    "konu": "Mesaja Ek",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesajlara ikincil evrak ne zaman eklenebilir?",
+    "secenekler": {
+      "a": "Her zaman",
+      "b": "Asla",
+      "c": "MEBS ekli gönderime uygunsa",
+      "d": "Sadece gizlilik yoksa",
+      "e": "Sadece yurt içi ise"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Mesaj... ikincil evrakıyla beraber gönderme ve alma yeteneğine sahip MEBS vasıtaları bulunduğunda... eklenmek... suretiyle gönderilebilir.",
+    "aclama": "Teknik kabiliyet şarttır."
+  },
+  {
+    "soru_id": "RMY_648",
+    "konu": "Mesajda Ek İfadesi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesajla ek gönderildiğini belirtmek için metinde nasıl ifade kullanılır?",
+    "secenekler": {
+      "a": "Ek-1 listelenir",
+      "b": "İkincil evrak kısmı eklenir",
+      "c": "Metin içinde 'EK LİSTEDE GÖNDERİLMİŞTİR' gibi ibare",
+      "d": "Paraf bölümünde belirtilir",
+      "e": "Dağıtımda yazılır"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Mesaj metninin uygun bir yerinde... ('MÜHİMMAT LİSTESİ EKTEDİR' veya 'EK LİSTEDE GÖNDERİLMİŞTİR' gibi) bahsedilir.",
+    "aclama": "Resmi yazıdaki ek formatı kullanılmaz."
+  },
+  {
+    "soru_id": "RMY_649",
+    "konu": "Mesaj Çekme Yetkisi",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Mesaj çekme yetkileri nasıl ve ne zaman genel evrak birimine bildirilir?",
+    "secenekler": {
+      "a": "Her Mart ayında",
+      "b": "Yılda bir Aralık’ta",
+      "c": "Her yıl Ekim içinde ve personel değişikliğinde zaman gözetmeksizin",
+      "d": "Sadece talep edilince",
+      "e": "Sadece yeni atamalarda"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "'Mesaj Çekme Yetki Listesi' her yıl Ekim ayı içinde (personel değişikliğinde ise zaman gözetmeksizin)... genel evrak birimine gönderilir.",
+    "aclama": "Periyodik ve değişiklik bazlı bildirim vardır."
+  },
+  {
+    "soru_id": "RMY_650",
+    "konu": "Nöbetçi Amir Mesaj Yetkisi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Nöbetçi amirinin hangi konularda mesaj imzalayacağı nasıl belirlenir?",
+    "secenekler": {
+      "a": "Kişisel takdiriyle",
+      "b": "Evrak birimi talimatıyla",
+      "c": "İlgili mevzuat veya devamlı emirlerle",
+      "d": "Kurye talimatıyla",
+      "e": "Sadece sözlü talimatla"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Nöbetçi amirinin hangi konulara ait mesajları imzalayabileceği... ilgili mevzuatta veya devamlı emirlerle belirlenir.",
+    "aclama": "Yetki kapsamı önceden yazılıdır."
+  },
+
+  {
+    "soru_id": "MSG_701",
+    "konu": "Dil Seçimi - Milli/Müttefik",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Milli ve müttefik makamlara birlikte gönderilecek bir mesaj hangi dillerde hazırlanır?",
+    "secenekler": {
+      "a": "Sadece Türkçe",
+      "b": "Sadece İngilizce",
+      "c": "Milli için Türkçe, müttefik için İngilizce veya kendi dili",
+      "d": "Her iki taraf için de iki dilde (çift dilli aynı metin)",
+      "e": "Gönderenin tercih ettiği dil"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Hem milli hem de müttefik makamlara gönderilecek mesajlar, milli makamlar için Türkçe; müttefik makamlar için İngilizce veya kendi dillerinde hazırlanır.",
+    "aclama": "Adres grubuna göre dil belirlenir."
+  },
+  {
+    "soru_id": "MSG_702",
+    "konu": "Yabancı Dil Kontrolü",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Yabancı dilde hazırlanan mesajın dil doğruluğunu kim kontrol eder ve nasıl işaretlenir?",
+    "secenekler": {
+      "a": "Gönderen subay kontrol eder; paraf atar",
+      "b": "Çeviri ile görevlendirilen makam doğrular; ilk sayfanın arkasına KONTROL EDİLMİŞTİR yazıp imzalar",
+      "c": "Genel evrak birimi damgalar",
+      "d": "Kurye teslimde onaylar",
+      "e": "Denetleme heyeti onaylar"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Mesajın yabancı dilde doğru yazıldığı... kontrol edilir... ilk sayfasının arkasına... KONTROL EDİLMİŞTİR ibaresi yazılır ve imzalanır.",
+    "aclama": "Kontrol ibaresi büyük harf ve imzalıdır."
+  },
+  {
+    "soru_id": "MSG_703",
+    "konu": "Ayların Yazımı (TSG)",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "TSG kısmında aylar nasıl yazılır?",
+    "secenekler": {
+      "a": "Tam yazıyla",
+      "b": "Rakamla (01-12)",
+      "c": "İlgili dilde ilk üç harf kısaltma",
+      "d": "Türkçe ilk üç harf",
+      "e": "İngilizce ilk üç harf"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Aylarda kısaltma, ait oldukları dildeki isimlerinin ilk üç (3) harfi alınarak yazılır. Bu durum TSG kısmı için geçerlidir.",
+    "aclama": "Metin içinde ay tam yazılabilir."
+  },
+  {
+    "soru_id": "MSG_704",
+    "konu": "Kişiye Özel Kullanımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Kişiye Özel ibaresi hangi gizlilik derecelerinde kullanılabilir?",
+    "secenekler": {
+      "a": "Sadece Çok Gizli",
+      "b": "Çok Gizli ve Gizli",
+      "c": "Çok Gizli, Gizli ve Özel",
+      "d": "Tüm gizlilik dereceleri",
+      "e": "Sadece Hizmete Özel"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Kişiye Özel ibaresi Çok Gizli, Gizli ve Özel gizlilik derecesindeki mesajlarda kullanılır.",
+    "aclama": "Hizmete Özel için kullanılmaz."
+  },
+  {
+    "soru_id": "MSG_705",
+    "konu": "Kişiye Özel Damgalama",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Kişiye Özel mesajlarda bu ibare nereye ve nasıl yazılır?",
+    "secenekler": {
+      "a": "Metin başına siyah yazı",
+      "b": "Adres kısmına mavi yazı",
+      "c": "Mesaj talimatı kısmına kırmızı damga/yazı",
+      "d": "Dağıtım listesine siyah",
+      "e": "TSG satırına kırmızı"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Adres kısmında yazılan makamlara KİŞİYE ÖZEL gönderilecek mesajın mesaj talimatı kısmına Kişiye Özel ibaresi kırmızı renkte damgalanır/yazılır.",
+    "aclama": "İşlem yetkisi sınırlıdır."
+  },
+  {
+    "soru_id": "MSG_706",
+    "konu": "Tatbikat Mesajı Biçimi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Milli bir tatbikat mesajında metin başında hangi ibare, hangi yerleşimle yazılır?",
+    "secenekler": {
+      "a": "EXERCISE üç kez sola",
+      "b": "TATBİKAT üç kez (sol-orta-sağ)",
+      "c": "EXERCISE tek kez orta",
+      "d": "TATBİKAT tek kez sol",
+      "e": "EĞİTİM üç kez"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Milli tatbikatlarda, TATBİKAT ibaresi... aynı satır üzerine sola yanaşık, ortada ve sağa yanaşık olmak üzere üç defa yazılır.",
+    "aclama": "NATO tatbikatında EXERCISE kullanılır."
+  },
+  {
+    "soru_id": "MSG_707",
+    "konu": "Eğitim Mesajı Biçimi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Eğitim mesajında metnin başında ve sonunda hangi ibareler yer alır?",
+    "secenekler": {
+      "a": "Başta EĞİTİM, sonda yok",
+      "b": "Başta BU BİR EĞİTİM MESAJIDIR, sonda üç kez EĞİTİM",
+      "c": "Başta ve sonda TATBİKAT",
+      "d": "Sadece sonda EĞİTİM",
+      "e": "Sadece başta EĞİTİM"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Mesaj metninin başında BU BİR EĞİTİM MESAJIDIR... metnin sonundan 1 satır boşluk altında 3 defa EĞİTİM ibaresi yazılır.",
+    "aclama": "Biçim standardı belirlenmiştir."
+  },
+  {
+    "soru_id": "MSG_708",
+    "konu": "Sınır İhlali Mesaj Önceliği",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Sınır ihlali mesajlarının önceliği nedir?",
+    "secenekler": {
+      "a": "Rutin",
+      "b": "Acele",
+      "c": "Harekat Yıldırım",
+      "d": "Öncelik yok",
+      "e": "APS"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Mesajın önceliği HAREKAT YILDIRIM",
+    "aclama": "Acil işlem gerektirir."
+  },
+  {
+    "soru_id": "MSG_709",
+    "konu": "Sınır İhlali Konu Satırı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Sınır ihlali mesajının konu kısmına hangi kısaltmalar yazılır?",
+    "secenekler": {
+      "a": "İHLAL ÖN veya TAM RAPOR (İHÖNRAP-/İHTAMRAP- KARA/DENİZ/HAVA)",
+      "b": "SINIR RAPORU",
+      "c": "İHLAL RAPORU",
+      "d": "HAREKAT RAPORU",
+      "e": "ACELE RAPOR"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Mesajın konu kısmına İHLAL ÖN, TAM RAPOR oluşu (İHÖNRAP-KARA, DENİZ veya HAVA, İHTAMRAP-KARA, DENİZ veya HAVA) yazılır.",
+    "aclama": "Standart kısaltmalar kullanılır."
+  },
+  {
+    "soru_id": "MSG_710",
+    "konu": "Açık (CLEAR) Gönderim",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Hangi gizlilik dereceli mesajlar, hangi koşulda açık (CLEAR) çekilebilir?",
+    "secenekler": {
+      "a": "Tümü, her koşulda",
+      "b": "Çok Gizli hariç tümü, her koşulda",
+      "c": "Özel ve Hizmete Özel, taktik harekatta kriptolama zamanı yoksa ve etkisi yoksa",
+      "d": "Sadece gizlilik yoksa",
+      "e": "Gizli ve Özel"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "ÇOK GİZLİ ve GİZLİ hariç ÖZEL ve HİZMETE ÖZEL... Açık (CLEAR) olarak gönderilebilir.",
+    "aclama": "Şart: zaman yok + etkisiz bilgi."
+  },
+  {
+    "soru_id": "MSG_711",
+    "konu": "Açık Çekilecek İbaresi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Açık gönderilecek mesajda talimat kısmına hangi ibare yazılır?",
+    "secenekler": {
+      "a": "CLEAR",
+      "b": "AÇIK ÇEKİLECEKTİR",
+      "c": "ŞİFRESİZ",
+      "d": "KRİPTOSUZ",
+      "e": "RAPOR"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Bu durumda AÇIK ÇEKİLECEKTİR ibaresi mesaj talimatı kısmına yazılır.",
+    "aclama": "Talimat sahasında belirtilir."
+  },
+  {
+    "soru_id": "MSG_712",
+    "konu": "Alındı/Anlaşıldı Teyidi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Alınış ve anlaşılış teyidi istenen bir mesajda, teyit için metne ne yazılır?",
+    "secenekler": {
+      "a": "OK",
+      "b": "ALINDI",
+      "c": "MESAJIN ALINIP ANLAŞILDIĞININ BİLDİRİLMESİ",
+      "d": "TEYİT",
+      "e": "RECEIVED"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Mesaj metninin sonuna MESAJIN ALINIP ANLAŞILDIĞININ BİLDİRİLMESİ ibaresi yazılır.",
+    "aclama": "Teyit mesajı içerik cevabıyla karıştırılmamalıdır."
+  },
+  {
+    "soru_id": "MSG_713",
+    "konu": "Teyit Mesajı Örneği",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Aşağıdakilerden hangisi teyit mesajı formatına uygundur?",
+    "secenekler": {
+      "a": "MESAJINIZ ALINMIŞTIR",
+      "b": "KARKOM 301620C AGU 08 TSG'LI ... SAYILI MESAJ ALINDI, ANLAŞILDI.",
+      "c": "OK RECEIVED",
+      "d": "TEYİT EDERİM",
+      "e": "ANLAŞILDI"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "ÖRNEK: KARKOM 301620C AGU 08 TSG'LI ... SAYILI MESAJ ALINDI, ANLAŞILDI.",
+    "aclama": "TSG ve sayı referansı içerir."
+  },
+  {
+    "soru_id": "MSG_714",
+    "konu": "Mesaj İptali",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Gönderilmiş bir mesaj nasıl iptal edilir?",
+    "secenekler": {
+      "a": "Telefonla sözlü emir",
+      "b": "Aynı gizlilikte yeni mesaj; konuya İPTAL MESAJIDIR yazılır",
+      "c": "E-posta ile bildirim",
+      "d": "Evrak birimi şerhi",
+      "e": "Kurye notu"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "İptal edilecek mesaj, aynı gizlilik derecesini taşıyan başka bir mesaj ile iptal edilir. Yeni mesajın konu kısmına İPTAL MESAJIDIR yazılır.",
+    "aclama": "Sözlü iptal geçersizdir."
+  },
+  {
+    "soru_id": "MSG_715",
+    "konu": "Değişiklik Mesajı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Bir mesajda değişiklik yapılacaksa konu kısmına ne yazılır?",
+    "secenekler": {
+      "a": "REVİZE",
+      "b": "DÜZELTME",
+      "c": "DEĞİŞİKLİK MESAJI",
+      "d": "EK MESAJ",
+      "e": "TASHİH"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Değişiklik mesajında ise konu kısmına DEĞİŞİKLİK MESAJI yazılır.",
+    "aclama": "Başlık standardı sabittir."
+  },
+  {
+    "soru_id": "MSG_716",
+    "konu": "Adres Türleri",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Mesajlar adres sayısına göre nasıl sınıflanır?",
+    "secenekler": {
+      "a": "Rutin/Acele",
+      "b": "Milli/Müttefik",
+      "c": "Tek adresli/Çok adresli/Dağıtım planlı",
+      "d": "Garnizon içi/Dışı",
+      "e": "Gizli/Açık"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Mesajlar... tek adresli, çok adresli ve dağıtım planlı olmak üzere üçe ayrılır.",
+    "aclama": "Dağıtım planlı: MAGG/AIG kullanır."
+  },
+  {
+    "soru_id": "MSG_717",
+    "konu": "MAGG ve AIG",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Dağıtım planlı mesajlarda milli ve NATO için hangi grup numaraları kullanılır?",
+    "secenekler": {
+      "a": "MAGG milli, AIG NATO",
+      "b": "AIG milli, MAGG NATO",
+      "c": "Her ikisi milli",
+      "d": "Her ikisi NATO",
+      "e": "Kullanılmaz"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Milli makama... Milli Adres Gösterge Grupları (MAGG); NATO makamlarına... Address Indicating Groups (AIG) numaraları verilir.",
+    "aclama": "Kısa adlar mali ve emniyet gerekçesiyle kullanılır."
+  },
+  {
+    "soru_id": "MSG_718",
+    "konu": "FROM/TO/INFO",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Mesajın KİMDEN/KİME/BİLGİ alanlarında ne yer alır?",
+    "secenekler": {
+      "a": "FROM: kurye, TO: muhabere, INFO: nöbetçi",
+      "b": "FROM: hazırlayan idare; TO: gereği için; INFO: bilgi için alacak makamlar",
+      "c": "FROM: komutan, TO: personel, INFO: herkes",
+      "d": "FROM: şube, TO: kişi, INFO: kişi",
+      "e": "FROM: evrak, TO: evrak, INFO: evrak"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Gönderen makam (KİMDEN/FROM)... Gereği için alacak makamlar (KİME/TO)... Bilgi için alacak makamlar (BİLGİ/INFO)...",
+    "aclama": "Kişi isimleri adres kısmına yazılmaz."
+  },
+  {
+    "soru_id": "MSG_719",
+    "konu": "Kişi İsmi Yasağı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Mesajın adres kısmına kişi isimleri yazılabilir mi?",
+    "secenekler": {
+      "a": "Evet",
+      "b": "Sadece Kişiye Özel ise",
+      "c": "Hayır",
+      "d": "Sadece teyit için",
+      "e": "Sadece eğitim mesajında"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Adres kısmına mesajların gönderileceği makamlar dışında kişi isimleri yazılmaz.",
+    "aclama": "Kişi hedefli adresleme yapılmaz."
+  },
+  {
+    "soru_id": "MSG_720",
+    "konu": "İvedilikle Ast Birliklere Adresleme",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Acil durumda görevi yürütecek ast birliğe doğrudan adresleme yapılırsa adresin yanına ne yazılır ve üst birlik adreslenir mi?",
+    "secenekler": {
+      "a": "Hiçbir şey yazılmaz; üst adreslenmez",
+      "b": "(ACİL) yazılır; üste bilgi gerekmez",
+      "c": "(İVEDİLİĞİNDEN) yazılır; üst birliğe gereği/bilgi olarak da adreslenir",
+      "d": "(ACELE) yazılır; üst atlanır",
+      "e": "(APS) yazılır; üst gerekmez"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Adres... ilave edilir ve karşısına yay ayraç içinde (İVEDİLİĞİNDEN) ibaresi yazılır... Mesaj bu birliğin bir üst birliğine aynı zamanda gereği veya bilgi olarak mutlaka adreslenir.",
+    "aclama": "Komuta kanalı bilgilendirilir."
+  },
+  {
+    "soru_id": "MSG_721",
+    "konu": "Denize İbaresi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Karada konuşlu birlik komutanı denizdeyken ona adresli mesajlarda ad sonuna hangi ibare eklenir?",
+    "secenekler": {
+      "a": ".../SEYİR",
+      "b": ".../DENİZDE",
+      "c": ".../DENİZE",
+      "d": ".../GÖREV",
+      "e": ".../SEFER"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Denizde bulunan birlik komutanlarına adresli mesajlarda, mesaj adlarının sonuna .../DENİZE ibaresi yazılır.",
+    "aclama": "Gecikmeleri önlemeye yöneliktir."
+  },
+  {
+    "soru_id": "MSG_722",
+    "konu": "Sınır İhlali Talimat Satırı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Sınır ihlali mesajlarında talimat kısmına hangi ifade yazılır?",
+    "secenekler": {
+      "a": "SINIR",
+      "b": "ACİL",
+      "c": "SINIRI İHLALİ (kara/deniz/hava uygun olanı)",
+      "d": "HAREKAT",
+      "e": "TEYİT"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Mesaj talimatı kısmına; kara, deniz ve hava sınır ihlallerinden uygun olanı SINIRI İHLALİ biçiminde yazılır.",
+    "aclama": "Hızlı ayırt etme içindir."
+  },
+  {
+    "soru_id": "MSG_723",
+    "konu": "Tatbikat Mesaj Başlığı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Tatbikat mesajında metin bölümünün ilk satırına ne yazılır?",
+    "secenekler": {
+      "a": "Tatbikat tarihi",
+      "b": "Tatbikatın adı",
+      "c": "Tatbikat yeri",
+      "d": "Tatbikat safhası",
+      "e": "Tatbikat komutanı"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Tatbikatla ilgili her mesajın metin bölümünün ilk satırına tatbikatın adı yazılır.",
+    "aclama": "Kimliklendirme için zorunludur."
+  },
+  {
+    "soru_id": "MSG_724",
+    "konu": "Kişiye Özel İşlem Sınırı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Kişiye Özel ibareli mesajlarda işlem yapabilecek personel sayısı nasıl olmalıdır?",
+    "secenekler": {
+      "a": "Sınırsız",
+      "b": "Birime göre değişir",
+      "c": "Sınırlı sayıda yetkili kişi",
+      "d": "Sadece komutan",
+      "e": "Sadece nöbetçi"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Kişiye Özel ibareli mesajlara sınırlı sayıda yetkili kişi tarafından işlem yapılır.",
+    "aclama": "Gizlilik kontrolü için."
+  },
+
+  {
+    "soru_id": "MSG_801",
+    "konu": "Adres Kısaltmaları - Genel Kural",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Mesaj adresleri yazılırken genel kural nedir?",
+    "secenekler": {
+      "a": "Tüm adresler tam ve açık yazılır",
+      "b": "Tüm adresler kısaltılır",
+      "c": "Mesajın adresleri kısaltma yapılarak yazılır",
+      "d": "Sadece ilk adres kısaltılır",
+      "e": "Kamu adresleri kısaltılır, askerîler tam yazılır"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Adres kısaltmaları: Mesajın adresleri kısaltma yapılarak yazılır.",
+    "aclama": "Askerî standartta kısa adlar tercih edilir."
+  },
+  {
+    "soru_id": "MSG_802",
+    "konu": "Adres Kısaltmaları - İstisna",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesaj adresinde kamu kurum ve kuruluşları bulunduğunda nasıl yazılır?",
+    "secenekler": {
+      "a": "Sadece kamu adresleri kısaltılır",
+      "b": "Askerî kısaltmalar kullanılır",
+      "c": "Bütün adresler tam ve açık yazılır",
+      "d": "Sadece ilk satır tam, kalanı kısaltılır",
+      "e": "Kamu adresleri İngilizce yazılır"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Kamu kurum ve kuruluşlarının adresleri de olduğunda... bütün adresler tam ve açık olarak yazılır.",
+    "aclama": "Kamu ile yazışmada kısa ad kullanılmaz."
+  },
+  {
+    "soru_id": "MSG_803",
+    "konu": "Öncelik Derecesi Tanımı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Mesajlarda öncelik dereceleri neyi belirler?",
+    "secenekler": {
+      "a": "Gönderi ücretini",
+      "b": "Mesajın gizlilik derecesini",
+      "c": "Ulaştırmadaki işlem zamanını",
+      "d": "Adresleme biçimini",
+      "e": "Kripto anahtarını"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Öncelik dereceleri, mesajların ulaştırılmasındaki işlem zamanını belirler.",
+    "aclama": "İşlem zamanı = teslim alma ile varış arasındaki toplam süre."
+  },
+  {
+    "soru_id": "MSG_804",
+    "konu": "İşlem Zamanı Tanımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "İşlem zamanı hangi iki an arasındaki süredir?",
+    "secenekler": {
+      "a": "Hazırlık başlangıcı ile imza",
+      "b": "Gönderenin kaydı ile kripto",
+      "c": "Gönderen muhabere merkezinin teslim alması ile varış muhabere merkezine ulaştırılması",
+      "d": "Gönderi ile alıcı açması",
+      "e": "İmza ile dağıtım"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Mesajın hazırlandığı yerdeki muhabere merkezi tarafından teslim alındığı zaman ile varış yerindeki muhabere merkezine ulaştırılıncaya kadar geçen süre toplamıdır.",
+    "aclama": "Merkezden merkeze ölçülür."
+  },
+  {
+    "soru_id": "MSG_805",
+    "konu": "Öncelik Belirlerken Dikkat",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Mesaj gönderen makam, öncelik belirlerken neyi göz önünde bulundurmalıdır?",
+    "secenekler": {
+      "a": "Sadece kripto durumu",
+      "b": "Sadece adres sayısı",
+      "c": "İşlem zamanına etki edecek etkenleri",
+      "d": "Yalnız trafik yükünü",
+      "e": "Yalnız mesaj hacmini"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Mesaj gönderen makamlar, bir mesajın işlem zamanına etki edecek etkenleri göz önünde bulundurmalıdır.",
+    "aclama": "Birden çok faktör birlikte değerlendirilir."
+  },
+  {
+    "soru_id": "MSG_806",
+    "konu": "Öncelik Etkenleri - Hacim",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Aşağıdakilerden hangisi öncelik derecesine etki eden etkenlerdendir?",
+    "secenekler": {
+      "a": "Mesajın hacmi",
+      "b": "Belgenin rengi",
+      "c": "Komutanın rütbesi",
+      "d": "Kâğıt ebadı",
+      "e": "Toplantı sayısı"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Bu etkenler; a) mesajın hacmi, ...",
+    "aclama": "Büyük hacim aktarım süresini etkiler."
+  },
+  {
+    "soru_id": "MSG_807",
+    "konu": "Öncelik Etkenleri - Trafik",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Hangi etken, muhabere merkezlerinin anlık yükünü ifade eder ve önceliği etkiler?",
+    "secenekler": {
+      "a": "Adresleme biçimi",
+      "b": "Mesaj trafik yükü",
+      "c": "Gizlilik derecesi",
+      "d": "Personel kıyafeti",
+      "e": "Coğrafi mesafe"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "b) muhabere merkezlerinin mesaj trafik yükü,",
+    "aclama": "Yoğunluk sürelere yansır."
+  },
+  {
+    "soru_id": "MSG_808",
+    "konu": "Öncelik Etkenleri - Kripto",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Kripto süreçleri öncelik belirlemede hangi başlık altında dikkate alınır?",
+    "secenekler": {
+      "a": "Adres grupları",
+      "b": "Kripto ve dekripto ihtiyaçları",
+      "c": "Yazıcı kapasitesi",
+      "d": "Arşiv düzeni",
+      "e": "Protokol sırası"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "c) kripto ve dekripto ihtiyaçları,",
+    "aclama": "Şifreleme/çözme zaman alır."
+  },
+  {
+    "soru_id": "MSG_809",
+    "konu": "Öncelik Etkenleri - MEBS",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "MEBS ile ilgili hangi unsur önceliği etkiler?",
+    "secenekler": {
+      "a": "MEBS kullanıcı sayısı",
+      "b": "MEBS vasıtalarının özelliği",
+      "c": "MEBS logoları",
+      "d": "MEBS yazı tipi",
+      "e": "MEBS eğitim slaytları"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "d) MEBS vasıtalarının özelliği,",
+    "aclama": "Kapasite ve hat türü süreyi değiştirir."
+  },
+  {
+    "soru_id": "MSG_810",
+    "konu": "Öncelik Etkenleri - Gönderme Yeteneği",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Aşağıdaki seçeneklerden hangisi doğrudan öncelik etkenleri arasında sayılmıştır?",
+    "secenekler": {
+      "a": "Gönderme yeteneği",
+      "b": "Belge gizlilik damgasının rengi",
+      "c": "Kurye güzergâhı",
+      "d": "İmza sayısı",
+      "e": "Toplantı sıklığı"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "e) mesaj gönderme yeteneği,",
+    "aclama": "Teknik/organizasyonel kapasiteyi ifade eder."
+  },
+  {
+    "soru_id": "MSG_811",
+    "konu": "Öncelik Etkenleri - Aktarma Merkezleri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Aktarma zinciriyle ilgili hangi kombinasyon öncelik belirlemede dikkate alınır?",
+    "secenekler": {
+      "a": "Merkez mimarisi ve duvar rengi",
+      "b": "Aktarma merkezlerinin sayısı, personel sayısı ve eğitimi",
+      "c": "Merkezlerin kıdem ortalaması",
+      "d": "Bina yaşı",
+      "e": "İl/ilçe konumu"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "f) aradaki aktarma merkezlerinin miktarı, personel sayısı ve eğitimi.",
+    "aclama": "Çok merkez + yetersiz personel süreyi uzatır."
+  },
+  {
+    "soru_id": "MSG_812",
+    "konu": "Gereği/Bilgi Öncelik Oranı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Gereği ve bilgi için alacak makamlara ayrı öncelik verilecekse hangi kural zorunludur?",
+    "secenekler": {
+      "a": "Bilgi için her zaman daha yüksek verilir",
+      "b": "Gereği için daha düşük olmalıdır",
+      "c": "Bilgi için olanın önceliği, gereğiden daha yüksek olamaz",
+      "d": "Eşit olmak zorundadır",
+      "e": "Tamamen serbesttir"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Bilgi için alacakların öncelik derecesi, gereği için alacaklardan daha yüksek olamaz.",
+    "aclama": "İcra makamının önceliği korunur."
+  },
+
+  {
+    "soru_id": "ONC_901",
+    "konu": "Öncelik Dereceleri - Genel",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Hangi öncelik derecesi normal karargâh çalışmalarında kullanılmaz?",
+    "secenekler": {
+      "a": "Normal",
+      "b": "Acele",
+      "c": "Çok Acele",
+      "d": "Harekât Yıldırım",
+      "e": "Hepsi kullanılabilir"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Harekât Yıldırım... Normal karargâh çalışmalarında kullanılmaz.",
+    "aclama": "ZZ (Flash) seviyesi yalnızca olağanüstü, en kritik durumlar içindir."
+  },
+  {
+    "soru_id": "ONC_902",
+    "konu": "Türkçe-İngilizce Karşılık",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "“Harekât Yıldırım” önceliğinin İngilizce karşılığı nedir?",
+    "secenekler": {
+      "a": "Priority",
+      "b": "Routine",
+      "c": "Flash",
+      "d": "Operational Immediate",
+      "e": "Immediate"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Harekât Yıldırım → Flash.",
+    "aclama": "Tabloda Türkçe-İngilizce eşleştirme veriliyor."
+  },
+  {
+    "soru_id": "ONC_903",
+    "konu": "Müşterek Kısaltma",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "“Harekât Yıldırım” için müşterek kısaltma hangisidir?",
+    "secenekler": {
+      "a": "RR",
+      "b": "PP",
+      "c": "OO",
+      "d": "ZZ",
+      "e": "FF"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Müşterek Kısaltma sütununda Harekât Yıldırım için ZZ.",
+    "aclama": "ZZ, en yüksek önceliği temsil eder."
+  },
+  {
+    "soru_id": "ONC_904",
+    "konu": "Zaman Hedefi - Harekât Yıldırım",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Harekât Yıldırım önceliğinin ulaştırma zaman hedefi nedir?",
+    "secenekler": {
+      "a": "10 dk’dan daha az",
+      "b": "30 dk – 1 saat",
+      "c": "1 – 6 saat",
+      "d": "6 saat – ertesi gün",
+      "e": "24 saat"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Harekât Yıldırım... 10 dk’dan daha az.",
+    "aclama": "En acil haberleşme için hedef 10 dakikanın altıdır."
+  },
+  {
+    "soru_id": "ONC_905",
+    "konu": "Türkçe-İngilizce Karşılık",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "“Çok Acele” önceliğinin İngilizce karşılığı hangisidir?",
+    "secenekler": {
+      "a": "Immediate",
+      "b": "Operational Immediate",
+      "c": "Flash",
+      "d": "Priority",
+      "e": "Urgent"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Çok Acele → Operational Immediate.",
+    "aclama": "OO kısaltmasıyla kullanılır."
+  },
+  {
+    "soru_id": "ONC_906",
+    "konu": "Zaman Hedefi - Çok Acele",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "“Çok Acele (OO)” önceliğinin ulaştırma zaman hedefi aralığı nedir?",
+    "secenekler": {
+      "a": "10 dk’dan az",
+      "b": "30 dk – 1 saat",
+      "c": "1 – 6 saat",
+      "d": "6 saat – ertesi gün",
+      "e": "2 – 4 gün"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Çok Acele... 30 dk-1 saat.",
+    "aclama": "Kritik ama ‘Flash’ olmayan durumlar içindir."
+  },
+  {
+    "soru_id": "ONC_907",
+    "konu": "Acele - İngilizce",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "“Acele” önceliğinin İngilizce karşılığı ve kısaltması nedir?",
+    "secenekler": {
+      "a": "Immediate / II",
+      "b": "Priority / PP",
+      "c": "Routine / RR",
+      "d": "Flash / ZZ",
+      "e": "Operational Immediate / OO"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Acele → Priority, müşterek kısaltma PP.",
+    "aclama": "Zaman hedefi 1–6 saattir."
+  },
+  {
+    "soru_id": "ONC_908",
+    "konu": "Acele - Zaman Hedefi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "“Acele (PP)” önceliğinde ulaştırma hedef süresi nedir?",
+    "secenekler": {
+      "a": "10 dk’dan az",
+      "b": "30 dk – 1 saat",
+      "c": "1 – 6 saat",
+      "d": "6 saat – ertesi gün",
+      "e": "3 gün"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Acele... 1-6 saat.",
+    "aclama": "Operatif aciliyet taşır."
+  },
+  {
+    "soru_id": "ONC_909",
+    "konu": "Normal - İngilizce ve Kısaltma",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "“Normal” önceliğinin İngilizce karşılığı ve müşterek kısaltması hangisidir?",
+    "secenekler": {
+      "a": "Routine / RR",
+      "b": "Priority / PP",
+      "c": "Operational Immediate / OO",
+      "d": "Flash / ZZ",
+      "e": "Immediate / II"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Normal → Routine, kısaltma RR.",
+    "aclama": "Zaman hedefi 6 saat – ertesi gün aralığıdır."
+  },
+  {
+    "soru_id": "ONC_910",
+    "konu": "Normal - Zaman Hedefi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "“Normal (RR)” önceliği için hedef ulaştırma süresi hangisidir?",
+    "secenekler": {
+      "a": "10 dk’dan az",
+      "b": "30 dk – 1 saat",
+      "c": "1 – 6 saat",
+      "d": "6 saat – ertesi gün",
+      "e": "2 – 3 gün"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Normal... 6 saat-Ertesi gün.",
+    "aclama": "Rutin trafik için standart hedeftir."
+  },
+  {
+    "soru_id": "ONC_911",
+    "konu": "Sınıflandırma Karşılaştırma",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Aşağıdakilerden hangisi öncelikten düşüğe doğru doğru sıralamadır?",
+    "secenekler": {
+      "a": "RR → PP → OO → ZZ",
+      "b": "PP → RR → OO → ZZ",
+      "c": "ZZ → OO → PP → RR",
+      "d": "OO → ZZ → RR → PP",
+      "e": "RR → OO → PP → ZZ"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Flash(ZZ) en yüksek, sonra Operational Immediate(OO), Priority(PP), Routine(RR).",
+    "aclama": "Zaman hedefleriyle de uyumludur."
+  },
+  {
+    "soru_id": "ONC_912",
+    "konu": "Kullanım Senaryosu",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Bir mesajın 45 dakika içinde varış merkezine ulaşması hedefleniyorsa uygun öncelik hangisidir?",
+    "secenekler": {
+      "a": "Normal (RR)",
+      "b": "Acele (PP)",
+      "c": "Çok Acele (OO)",
+      "d": "Harekât Yıldırım (ZZ)",
+      "e": "Hiçbiri"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Çok Acele... 30 dk-1 saat.",
+    "aclama": "45 dakika, OO aralığının içindedir."
+  },
+
+  {
+    "soru_id": "MSG_1001",
+    "konu": "MINIMIZE",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Haberleşme trafiğinin sınırlandırılması için kullanılan emir hangi ibare ile ifade edilir?",
+    "secenekler": {
+      "a": "RESTRICT",
+      "b": "LIMIT",
+      "c": "MINIMIZE",
+      "d": "SUSPEND",
+      "e": "HOLD"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Haberleşme trafiğinin sınırlandırılması: MINIMIZE",
+    "aclama": "Tüm idarelere trafiği kısma talimatıdır."
+  },
+  {
+    "soru_id": "MSG_1002",
+    "konu": "MINIMIZE Etkisi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "MINIMIZE yürürlükteyken MEBS vasıtalarından hangi tür gönderime izin verilir?",
+    "secenekler": {
+      "a": "Her türlü evrak",
+      "b": "Sadece mesaj",
+      "c": "Sadece ACELE yazılar",
+      "d": "Sadece GÜNLÜ yazılar",
+      "e": "Hiçbiri"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Minimize durumunda MEBS vasıtalarından sadece mesaj gönderilir.",
+    "aclama": "Acele veya süreli olmayan diğer evrak gönderilmez."
+  },
+  {
+    "soru_id": "MSG_1003",
+    "konu": "MINIMIZE Bildirimi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "MINIMIZE emri alındığında muhabere merkezleri ilk olarak ne yapar?",
+    "secenekler": {
+      "a": "Yeni kripto anahtarı dağıtır",
+      "b": "Sadece üst makama rapor eder",
+      "c": "Sorumluluk bölgesindeki tüm mesaj çıkaran makamlara bildirir",
+      "d": "MEBS’i kapatır",
+      "e": "Tüm mesajları iptal eder"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "…emrin alınması üzerine derhal… bütün makamlara Minimize'nin yürürlükte olduğunu bildirir.",
+    "aclama": "Uygulama alanının genişletilmesi sağlanır."
+  },
+  {
+    "soru_id": "MSG_1004",
+    "konu": "Mesaj Formu Türü",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Millî makamlara gönderilecek mesajlarda sayfa sayısına göre hangi form seçilir?",
+    "secenekler": {
+      "a": "Sadece tek sayfalı form",
+      "b": "Sadece müttefik formu",
+      "c": "Tek sayfalı veya birden fazla sayfalı millî mesaj formu",
+      "d": "Serbest biçim",
+      "e": "Sadece kripto formu"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "…Tek sayfalı veya Birden Fazla Sayfalı Millî Mesaj Formundan uygun olanı kullanılır.",
+    "aclama": "Millî muhataplar için iki seçenek bulunur."
+  },
+  {
+    "soru_id": "MSG_1005",
+    "konu": "Tek Sayfalı Kullanım İstisnası",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Hangi durumlarda sayfa sayısı dikkate alınmadan tek sayfalı mesaj formu kullanılabilir?",
+    "secenekler": {
+      "a": "Sadece eğitim",
+      "b": "Sefer, olağanüstü hâl, tatbikatlar ve Harekât Yıldırım öncelikli mesajlar",
+      "c": "Rutin yazışmalar",
+      "d": "Kutlama mesajları",
+      "e": "Hiçbiri"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "…sefer, olağanüstü hâl ve tatbikatlar ile HAREKÂT YILDIRIM… tek sayfalı mesaj formunda hazırlanabilir.",
+    "aclama": "Acil/özel durum istisnasıdır."
+  },
+  {
+    "soru_id": "MSG_1006",
+    "konu": "Müttefik Mesaj Formu",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Müttefik makamlara hazırlanacak mesajlarda hangi form kullanılır?",
+    "secenekler": {
+      "a": "Millî tek sayfa formu",
+      "b": "Millî çok sayfa formu",
+      "c": "Sadece Müttefik Mesaj Formu",
+      "d": "Serbest metin",
+      "e": "Kripto eki"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Müttefik makamlar için… sadece Müttefik Mesaj Formu kullanılır.",
+    "aclama": "Sayfa sayısı gözetilmez."
+  },
+  {
+    "soru_id": "MSG_1007",
+    "konu": "Yazı Tipi ve Boyutu",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Bilgisayarda hazırlanan Mesaj Formu için zorunlu yazı tipi ve boyutu nedir?",
+    "secenekler": {
+      "a": "Times New Roman - 12",
+      "b": "Arial - 11",
+      "c": "Courier New - 10",
+      "d": "Calibri - 10",
+      "e": "Consolas - 10"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Courier New yazı tipi ve 10 yazı boyutu kullanılır.",
+    "aclama": "Alanlar büyük harf ve kalın yazılır."
+  },
+  {
+    "soru_id": "MSG_1008",
+    "konu": "Form Bölümleri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesaj formunun üç ana bölümü aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "Kapak, Metin, Ekler",
+      "b": "Başlık, Metin, Son",
+      "c": "Giriş, Gelişme, Sonuç",
+      "d": "Plan, Uygulama, Değerlendirme",
+      "e": "Özet, Gövde, Ek"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Mesaj Formu üç bölümden oluşur: 1-Başlık… 2-Metin… 3-Son Bölüm…",
+    "aclama": "Her bölümün alt alanları vardır."
+  },
+  {
+    "soru_id": "MSG_1009",
+    "konu": "Başlık Alanları",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Aşağıdakilerden hangisi mesaj formu BAŞLIK bölümüne ait değildir?",
+    "secenekler": {
+      "a": "Mesaj talimatı",
+      "b": "Öncelik derecesi",
+      "c": "Gizlilik derecesi",
+      "d": "KONU",
+      "e": "TSG"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Başlık… genel evrak birimi, mesaj talimatı, grup-ön ek, öncelik, tarih saat, gizlilik, sayı…",
+    "aclama": "KONU Metin bölümündedir."
+  },
+  {
+    "soru_id": "MSG_1010",
+    "konu": "Metin Alanları",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesaj formunun METİN bölümünde yer alan alanlardan biri hangisidir?",
+    "secenekler": {
+      "a": "İşletmen",
+      "b": "Paraf ve koordinasyon",
+      "c": "Gösterge kodu",
+      "d": "Grup-ön ek",
+      "e": "Sayı"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Metin Bölümü: Kimden, Kime, Bilgi, KONU GÖSTERGE KODU, Konu, İlgi, Metin…",
+    "aclama": "İşletmen ve paraf son bölümde yer alır."
+  },
+  {
+    "soru_id": "MSG_1011",
+    "konu": "Son Bölüm Alanı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Aşağıdakilerden hangisi mesaj formu SON bölümüne aittir?",
+    "secenekler": {
+      "a": "Kimden",
+      "b": "Konu",
+      "c": "Paraf ve koordinasyon",
+      "d": "Mesaj talimatı",
+      "e": "Gizlilik derecesi"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Son Bölüm: Paraf ve koordinasyon, kaleme alan, müsaade eden, sayfa ve işletmen…",
+    "aclama": "Onay ve kayıt alanları bu bölümde toparlanır."
+  },
+  {
+    "soru_id": "MSG_1012",
+    "konu": "TSG Biçimi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Mesajlarda Tarih Saat Grubu (TSG) kaç haneli olarak gösterilir?",
+    "secenekler": {
+      "a": "8",
+      "b": "10",
+      "c": "12",
+      "d": "14",
+      "e": "16"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Mesajlarda TSG… 12 haneli olarak gösterilir.",
+    "aclama": "TSG; gün, saat, ay kısaltması ve yıl bileşenlerinden oluşur."
+  },
+
+  {
+    "soru_id": "TSG_2001",
+    "konu": "TSG Tanımı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "TSG nedir?",
+    "secenekler": {
+      "a": "Mesajın hazırlandığı saat",
+      "b": "Mesajın çekilmesine müsaade eden personelin imzaladığı tarih ve saat",
+      "c": "Mesajın varış saati",
+      "d": "Kripto çözüm saati",
+      "e": "Muhabere merkezinin kayıt saati"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "TSG, mesajın çekilmesine müsade eden personel tarafından imzalandığı tarih ve saattir.",
+    "aclama": "TSG yetkili imza anını gösterir."
+  },
+  {
+    "soru_id": "TSG_2002",
+    "konu": "TSG Aralık",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Aynı anda farklı konularda imzalanan mesajların TSG saatleri arasında en az kaç dakika olmalıdır?",
+    "secenekler": {
+      "a": "1",
+      "b": "2",
+      "c": "3",
+      "d": "5",
+      "e": "10"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "TSG'de bulunan saat en az iki dakika ara ile verilir.",
+    "aclama": "Çakışmayı önlemek için zaman ayrımı şarttır."
+  },
+  {
+    "soru_id": "TSG_2003",
+    "konu": "Zaman Dilimi Harfleri",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Millî mesajlarda hangi zaman dilimi harfleri kullanılabilir?",
+    "secenekler": {
+      "a": "Yalnız Z",
+      "b": "B, C veya Z",
+      "c": "A veya Z",
+      "d": "C yalnız",
+      "e": "B yalnız"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Millî mesajlarda ... B ... C ... gerekiyorsa ... Z harfi kullanılır.",
+    "aclama": "B yerel, C ileri yerel, Z UTC’yi gösterir."
+  },
+  {
+    "soru_id": "TSG_2004",
+    "konu": "Müttefik Saat Gösterimi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Müttefik mesajlarda saatler nasıl gösterilir?",
+    "secenekler": {
+      "a": "B",
+      "b": "C",
+      "c": "Z",
+      "d": "Yerel saat",
+      "e": "Sadece tarih"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Müttefik mesajlarda saatler daima Z olarak gösterilir.",
+    "aclama": "Z, Greenwich (UTC) zamanıdır."
+  },
+  {
+    "soru_id": "TSG_2005",
+    "konu": "Gece Yarısı Yazımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Gece yarısı saatleri TSG’de hangi biçimlerle yazılır?",
+    "secenekler": {
+      "a": "0000 veya 2400",
+      "b": "2359 veya 0001",
+      "c": "0000 veya 0001",
+      "d": "2400 veya 2359",
+      "e": "Yazılmaz"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Tam gece yarısını ... 2359 veya 0001 biçiminde yazılır.",
+    "aclama": "Tarih buna göre belirlenir."
+  },
+  {
+    "soru_id": "TSG_2006",
+    "konu": "KGK",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Konu Gösterge Kodu (KGK) neyi ifade eder?",
+    "secenekler": {
+      "a": "Mesajın gizlilik derecesini",
+      "b": "Mesajın öncelik derecesini",
+      "c": "Mesaj ana konusu ve dağıtımını kodlayan sistemi",
+      "d": "Kripto anahtarını",
+      "e": "Mesajı yazan kişiyi"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "KGK: Mesajların ana konusunu ve dağıtımını kodlar ile ifade eden bir sistemdir.",
+    "aclama": "Konu sınıflaması ve yönlendirme sağlar."
+  },
+  {
+    "soru_id": "TSG_2007",
+    "konu": "İlgi Kısaltmaları",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesajdaki ilgi adreslerde yoksa millî ve müttefik mesajlarda sırasıyla hangi kısaltmalar kullanılır?",
+    "secenekler": {
+      "a": "HAY ve NOTAL",
+      "b": "NOTAL ve HAY",
+      "c": "KGK ve HAY",
+      "d": "RR ve PP",
+      "e": "MAGG ve AIG"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Millî mesajlarda ... HAY; müttefik mesajlarda ... NOTAL ... yazılır.",
+    "aclama": "“Her adrese yollanmamıştır” bildirimi."
+  },
+  {
+    "soru_id": "TSG_2008",
+    "konu": "İlgi Sıralaması",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Birden fazla ilgi nasıl sıralanır ve hangi Türkçe harfler kullanılmaz?",
+    "secenekler": {
+      "a": "a, b, c; ş, ğ kullanılmaz",
+      "b": "A, B, C; Ç, Ğ, İ, Ö, Ş, Ü kullanılmaz",
+      "c": "1, 2, 3; hepsi kullanılabilir",
+      "d": "aa, bb; kısıtlama yok",
+      "e": "Romen rakamları; I, V, X"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Birden fazla ilgi ... A, B, C ... İlgilerde Ç,Ğ,İ,Ö,Ş ve Ü kullanılmaz.",
+    "aclama": "Büyük harf sıralaması ve harf istisnaları vardır."
+  },
+  {
+    "soru_id": "TSG_2009",
+    "konu": "Metin Dili ve Sonlandırma",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesajlarda hangi ifade ve satırlar kullanılmaz ve metin nasıl sonlandırılır?",
+    "secenekler": {
+      "a": "Arz/rica ve yetki satırı kullanılır; nokta ile biter",
+      "b": "Arz/rica ve yetki satırı kullanılmaz; ...MASINI / ...MESİNİ gibi takılarla biter",
+      "c": "Sadece rica kullanılır; virgül ile biter",
+      "d": "Yetki satırı zorunlu; biterken arz ederim yazılır",
+      "e": "Serbesttir"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Arz ve rica ... ve yetki satırı kullanılmaz... en son satırı ...MASINI, ...MESİNİ gibi takılı sözcüklerle bitirilir.",
+    "aclama": "Mesaj dili emredici ve kısadır."
+  },
+  {
+    "soru_id": "TSG_2010",
+    "konu": "Maddelendirme Kuralları",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesaj metninde hangi maddelendirme kuralları geçerlidir?",
+    "secenekler": {
+      "a": "Madde, fıkra, bent, alt bent hepsi",
+      "b": "Sadece madde numarası ve fıkra; fıkralarda Ç,Ğ,İ,Ö,Ş,Ü kullanılmaz",
+      "c": "Romen rakamlı maddeler",
+      "d": "Sadece paragraflar",
+      "e": "Sadece bentler"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Maddelendirilmesinde sadece madde numarası ve fıkra kullanılır... fıkraların yazılmasında Ç,Ğ,İ,Ö,Ş ve Ü harfleri kullanılmaz.",
+    "aclama": "Detaylandırma sınırlandırılmıştır."
+  },
+  {
+    "soru_id": "TSG_2011",
+    "konu": "Sayıların Yazımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesaj metninde 500 sayısı nasıl yazılır?",
+    "secenekler": {
+      "a": "BEŞYÜZ",
+      "b": "BEŞ YÜZ",
+      "c": "500",
+      "d": "FIVE HUNDRED",
+      "e": "D-L"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "500 → BEŞ YÜZ (FIVE HUNDRED)",
+    "aclama": "Yüz, bin, milyon kelimeleri açık yazılır."
+  },
+  {
+    "soru_id": "TSG_2012",
+    "konu": "1 ve 0 Yazımı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Metin içinde “bir” ve “sıfır” rakamları hangi biçimde yazılır?",
+    "secenekler": {
+      "a": "I ve O",
+      "b": "Bir ve Sıfır",
+      "c": "1 ve 0",
+      "d": "Romen rakamı I ve 0",
+      "e": "Hece kodu ile"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "bir veya sıfır ... 1 veya 0 biçiminde yazılır.",
+    "aclama": "I ve O harfleriyle karışmaması için."
+  },
+  {
+    "soru_id": "TSG_2013",
+    "konu": "Romen Rakamı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Mesaj metninde Romen rakamları kullanılabilir mi?",
+    "secenekler": {
+      "a": "Evet, başlıklarda",
+      "b": "Evet, tarihlerde",
+      "c": "Hayır, kullanılmaz",
+      "d": "Sadece ilgi kısmında",
+      "e": "Sadece KGK’da"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Romen rakamları kullanılmaz.",
+    "aclama": "Standartlaştırma gereği yasaktır."
+  },
+  {
+    "soru_id": "TSG_2014",
+    "konu": "Tarih Yazımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesaj metninde tarih yazımına uygun örnek aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "13/11/2009",
+      "b": "13 KAS 09",
+      "c": "13-KASIM-2009",
+      "d": "2009 KAS 13",
+      "e": "XIII NOV IX"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "13 KAS 09 13 NOV 09 şeklinde yazılır.",
+    "aclama": "Gün + ayın üç harf kısaltması + yıl iki hane."
+  },
+  {
+    "soru_id": "TSG_2015",
+    "konu": "Gece Yarısı Metin",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Metinde gece yarısını belirtmek için doğru ifade hangisidir?",
+    "secenekler": {
+      "a": "31 AUG 08 NIGHT",
+      "b": "30-31 AUG 08",
+      "c": "30/31 AGU 08 GECESİ",
+      "d": "0000 AUG 31",
+      "e": "31/30 AUG 08"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "30/31 AGU 08 GECESİ, NIGHT 30/31 AUG 08",
+    "aclama": "İki tarih birlikte kullanılır."
+  },
+  {
+    "soru_id": "TSG_2016",
+    "konu": "Tek Harf Kullanımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Metinde tek harf kullanıldığında nasıl yazılır?",
+    "secenekler": {
+      "a": "Sadece harf",
+      "b": "Harf ve KGK",
+      "c": "Harf ve heceleme alfabesindeki karşılığı parantez içinde",
+      "d": "Harf ve sayı",
+      "e": "Romen rakamı karşılığı"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Tek harfler, heceleme alfabesindeki karşılığı ... kendisinden sonra yay ayraç içinde yazılır. Örn: A (AHMET).",
+    "aclama": "Okunurluk ve yanlış anlamayı önler."
+  },
+
+  {
+    "soru_id": "MSG_3001",
+    "konu": "Heceleme Alfabesi Kullanılmaması",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Karışıklığa neden olabilecek sözcüklerde heceleme alfabesi yerine ne kullanılmalıdır?",
+    "secenekler": {
+      "a": "Romen rakamları",
+      "b": "Orijinal sözcüğün kendisi",
+      "c": "Kısaltma",
+      "d": "Sadece ilk harf",
+      "e": "Sayı kodu"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Karışıklığa neden olan sözcüklerde heceleme alfabesi kullanılmaz. Bunun yerine orijinal sözcüğün kendisi kullanılır."
+  },
+  {
+    "soru_id": "MSG_3002",
+    "konu": "Heceleme Alfabesi Örneği",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Aşağıdakilerden hangisi doğru kullanımdır?",
+    "secenekler": {
+      "a": "26 derece DAVUT",
+      "b": "26 derece DOĞU",
+      "c": "26 DAVUT derece",
+      "d": "26° DAVUT",
+      "e": "26 derece D"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "26 derece DAVUT yerine, 26 derece DOĞU."
+  },
+  {
+    "soru_id": "MSG_3003",
+    "konu": "Resmi Kısa Adlar",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Resmi kısa adlar kolayca tanınıyorsa hangi yöntem kullanılmaz?",
+    "secenekler": {
+      "a": "Heceleme alfabesi",
+      "b": "Kısa adın kendisi",
+      "c": "Tam yazım",
+      "d": "Kod numarası",
+      "e": "KGK"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Resmi kısa adlar kolayca tanınıyorsa heceleme alfabesi kullanılmaz."
+  },
+  {
+    "soru_id": "MSG_3004",
+    "konu": "İsim Yazımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "İsimlerin gönderilmesinde heceleme alfabesi kullanılmalı mıdır?",
+    "secenekler": {
+      "a": "Evet, her zaman",
+      "b": "Hayır, isimler açık yazılır",
+      "c": "Sadece soyad için",
+      "d": "Sadece unvan için",
+      "e": "Sadece yabancı isimler için"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "İsimlerin gönderilmesinde heceleme alfabesi kullanılmaz, isimler açık yazılır."
+  },
+  {
+    "soru_id": "MSG_3005",
+    "konu": "MEBS ile İletilemeyen İşaretler",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "MEBS vasıtalarından iletilemeyen işaretler nasıl yazılmalıdır?",
+    "secenekler": {
+      "a": "Heceleme ile",
+      "b": "Açık yazıyla",
+      "c": "Romen rakamıyla",
+      "d": "Kısaltma ile",
+      "e": "Hiç yazılmaz"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "MEBS vasıtalarından iletilemeyen işaretler açık yazılır."
+  },
+  {
+    "soru_id": "MSG_3006",
+    "konu": "Sembol Yazımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Aşağıdakilerden hangisi doğru dönüştürmedir?",
+    "secenekler": {
+      "a": "516 $",
+      "b": "%25",
+      "c": "5000 £",
+      "d": "26°",
+      "e": "5000 POUND"
+    },
+    "dogru_secenek": "e",
+    "kanit_cumlesi": "5000 £ yerine; 5000 POUND."
+  },
+  {
+    "soru_id": "MSG_3007",
+    "konu": "Satır Karakter Sınırı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Mesajların hazırlanmasında bir satırda noktalama ve boşluklar dahil en fazla kaç karakter kullanılabilir?",
+    "secenekler": {
+      "a": "60",
+      "b": "65",
+      "c": "69",
+      "d": "72",
+      "e": "80"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Bir satırda en fazla 69 karakter kullanılır."
+  },
+  {
+    "soru_id": "MSG_3008",
+    "konu": "Sekme Kullanımı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Bilgisayarla mesaj metni hazırlanırken sekme (tab) tuşu yerine ne kullanılmalıdır?",
+    "secenekler": {
+      "a": "Hiçbir şey",
+      "b": "Boşluk (ara) tuşu",
+      "c": "Enter",
+      "d": "Tire",
+      "e": "Nokta"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Tab (sekme) tuşu kullanılmaz. Tab yerine ara tuşu kullanılır."
+  },
+  {
+    "soru_id": "MSG_3009",
+    "konu": "Kısaltma Kaynakları",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Kısaltmaların yazımında öncelikle hangi kaynaklardan yararlanılır?",
+    "secenekler": {
+      "a": "İnternet forumları",
+      "b": "TDK sözlükleri yalnız",
+      "c": "Hazırlanan kısaltma sözlüğü ve bulunmayanlar için TDK Yazım Kılavuzu",
+      "d": "Sözlü talimatlar",
+      "e": "Yabancı kılavuzlar"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Kısaltmaların yazımında... kısaltmalara ilişkin hazırlanan sözlükten, bu sözlükte bulunmayanlar için TDK Yazım Kılavuzundan yararlanılır."
+  },
+  {
+    "soru_id": "MSG_3010",
+    "konu": "Yanlış Anlaşılma Durumu",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesajda yanlış anlaşılma olasılığı olan bir sözcük nasıl yazılır?",
+    "secenekler": {
+      "a": "Kalın",
+      "b": "İki defa yazılır ve araya TEKRAR/REPEAT konur",
+      "c": "Tırnak içinde",
+      "d": "İtalik",
+      "e": "Altı çizili"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Yanlış anlaşılma olasılığı olduğunda sözcük iki defa yazılır. Arasına milli mesajda TEKRAR, müttefik mesajda REPEAT yazılır."
+  },
+  {
+    "soru_id": "MSG_3011",
+    "konu": "Olumlu-Olumsuz Notu",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Gerekli görüldüğünde bir maddenin sonuna ne eklenebilir?",
+    "secenekler": {
+      "a": "Rica ederim",
+      "b": "Saygılarımla",
+      "c": "OLUMLU veya OLUMSUZ",
+      "d": "KGK",
+      "e": "TSG"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Farklı anlamlara gelebileceği değerlendirilen madde... sonuna olumsuz veya olumlu yazılır."
+  },
+  {
+    "soru_id": "MSG_3012",
+    "konu": "Koordinasyon Satırı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesajlarda koordinasyon satırı genel olarak nasıl ele alınır?",
+    "secenekler": {
+      "a": "Zorunlu olarak kullanılır",
+      "b": "Hiç kullanılamaz",
+      "c": "Genel olarak kullanılmaz, gerekirse paraflardan sonra ibaresiz eklenir",
+      "d": "Sadece müttefik mesajlarda kullanılır",
+      "e": "Sadece gizli mesajlarda kullanılır"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Mesajlarda genel olarak koordinasyon satırı kullanılmaz... gerektiğinde paraf satırlarından sonra koordinasyon ibaresi yazılmadan yazılır."
+  },
+  {
+    "soru_id": "MSG_3013",
+    "konu": "Çok Sayfalı Mesaj İmzaları",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Birden fazla sayfalı mesajda imza düzeni nasıldır?",
+    "secenekler": {
+      "a": "Her sayfayı müsaade eden imzalar",
+      "b": "Sadece ilk sayfayı kaleme alan imzalar",
+      "c": "Her sayfayı kaleme alan, yalnız son sayfayı müsaade eden imzalar",
+      "d": "Hiçbir sayfa imzalanmaz",
+      "e": "Sadece son sayfayı kaleme alan imzalar"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Her sayfa kaleme alan tarafından, sadece son sayfa ise müsaade eden tarafından imzalanır."
+  },
+  {
+    "soru_id": "MSG_3014",
+    "konu": "Mesaj Aktarımı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Mesaj değişiklik yapılmadan aktarılacaksa hangi form kullanılır?",
+    "secenekler": {
+      "a": "Mesaj Formu",
+      "b": "Mesaj Aktarım Formu",
+      "c": "Koordinasyon Formu",
+      "d": "Bilgi Kartı",
+      "e": "Etüt Formu"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Mesaj... doğrudan gönderilecek ise Mesaj Aktarım Formu hazırlanır."
+  },
+  {
+    "soru_id": "MSG_3015",
+    "konu": "Mesajı Değiştirerek Gönderme",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Değişikliğe uğrayarak yeniden gönderilecek mesaj için hangi işlem yapılır?",
+    "secenekler": {
+      "a": "Aktarım formu düzenlenir",
+      "b": "Yeni Mesaj Formu hazırlanır",
+      "c": "Sözlü bildirim yapılır",
+      "d": "Sadece paraf alınır",
+      "e": "İptal edilir"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Değişikliğe uğrayarak gönderilecek mesajlar için yeniden “Mesaj Formu” hazırlanır."
+  },
+
+  {
+    "soru_id": "MSG_4001",
+    "konu": "Özel İşlem Gerektiren Mesajlar",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Aşağıdakilerden hangisi özel işlem yapılması gereken mesaj türlerinden biridir?",
+    "secenekler": {
+      "a": "Normal mesaj",
+      "b": "Kontrollü mesaj",
+      "c": "Rutin bildirim",
+      "d": "Tebrik mesajı",
+      "e": "Plan duyurusu"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Özel işlem yapılması gereken mesajlar arasında kontrollü mesaj, kripto işaretli mesaj, atomal işaretli mesaj, 'KİŞİYE ÖZEL' ibareli mesaj ve özel kodları kapsayan mesaj bulunur."
+  },
+  {
+    "soru_id": "MSG_4002",
+    "konu": "Özel Mesajların Teslimi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Özel işlem gerektiren mesajlar nereye doğrudan teslim edilir?",
+    "secenekler": {
+      "a": "Genel evrak birimine",
+      "b": "Muhasebe birimine",
+      "c": "Muhabere merkezine",
+      "d": "Arşiv birimine",
+      "e": "Komutan sekreterliğine"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Bu biçimdeki mesajlar, işlem makamı tarafından genel evrak birimine uğramadan doğrudan muhabere merkezine teslim edilir."
+  },
+  {
+    "soru_id": "MSG_4003",
+    "konu": "Mesaj Damgalarının Biçimi",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Fiziksel ortamda hazırlanan mesajlarda damgalar hangi renkte ve hangi yazı tipinde uygulanır?",
+    "secenekler": {
+      "a": "Mavi, Arial",
+      "b": "Siyah, Calibri",
+      "c": "Kırmızı, Times New Roman",
+      "d": "Yeşil, Courier New",
+      "e": "Siyah, Times New Roman"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Kırmızı renkte, 'Times New Roman' yazı tipinde, 6 mm büyüklüğünde ve çerçevesiz damgalama yapılır."
+  },
+  {
+    "soru_id": "MSG_4004",
+    "konu": "Gelen Mesaj Damgaları",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Gelen mesajlarda 'MESAJ TANITMA İŞARETİ' damgası nereye uygulanır?",
+    "secenekler": {
+      "a": "Sol alt köşe",
+      "b": "Orta alt",
+      "c": "Sağ üst köşe",
+      "d": "Sol üst köşe",
+      "e": "Arka sayfa"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "'MESAJ TANITMA İŞARETİ' muhabere merkezi tarafından Mesaj Formu'nun sağ üst köşesine damgalanır."
+  },
+  {
+    "soru_id": "MSG_4005",
+    "konu": "Giden Mesaj Damgaları",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "'ÇEKİLMİŞTİR' veya 'ÇEKİLEMEMİŞTİR' damgası giden mesajlarda nereye basılır?",
+    "secenekler": {
+      "a": "Sağ alt köşe",
+      "b": "Sol üst köşe",
+      "c": "Orta üst",
+      "d": "Arka sayfa",
+      "e": "Sol alt köşe"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "'ÇEKİLMİŞTİR' veya 'ÇEKİLEMEMİŞTİR' damgası Mesaj Formu'nun sol üst köşesine muhabere merkezi tarafından damgalanır."
+  },
+  {
+    "soru_id": "MSG_4006",
+    "konu": "Genel Evrak Biriminin Sorumluluğu",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Mesajların muhabere merkezine teslimi ve dağıtımında hangi birim sorumludur?",
+    "secenekler": {
+      "a": "İstihbarat şubesi",
+      "b": "Lojistik başkanlığı",
+      "c": "Genel evrak birimi",
+      "d": "Plan prensipler",
+      "e": "Denetleme ekibi"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Mesajların teslim alınarak muhabere merkezine teslim edilmesi ve gelen mesajların dağıtımı genel evrak biriminin sorumluluğundadır."
+  },
+  {
+    "soru_id": "MSG_4007",
+    "konu": "Dağıtım Zamanı—Harekât Yıldırım",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Harekât Yıldırım öncelikli mesaj çalışma saatlerinde nasıl dağıtılır?",
+    "secenekler": {
+      "a": "Bir sonraki dağıtımda",
+      "b": "Gün sonunda topluca",
+      "c": "Alınır alınmaz yerinde teslim",
+      "d": "Saat başı dağıtımda",
+      "e": "Sadece elektronik kopya"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Harekât Yıldırım mesaj, alınır alınmaz genel evrak personeli tarafından derhal yerinde teslim edilir."
+  },
+  {
+    "soru_id": "MSG_4008",
+    "konu": "Dağıtım Zamanı—Çok Acele/Acele",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Çok Acele ve Acele mesajlar çalışma saatlerinde nasıl teslim alınır?",
+    "secenekler": {
+      "a": "Derhal yerinde teslim",
+      "b": "İlk dağıtım zamanında, geçmişse koordine edilerek",
+      "c": "Sadece ertesi gün",
+      "d": "Sadece muhabere merkezi alır",
+      "e": "Haftalık dağıtımda"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Çok Acele ve Acele mesajlar, ilk dağıtım zamanında (geçtiyse koordine edilerek) ilgili evrak birimlerince alınır."
+  },
+  {
+    "soru_id": "MSG_4009",
+    "konu": "Dağıtım Zamanı—Normal",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Normal öncelikli mesajlar çalışma saatlerinde ne zaman teslim alınır?",
+    "secenekler": {
+      "a": "Derhal",
+      "b": "Saat başı",
+      "c": "Günün ilk veya bir sonraki dağıtımında",
+      "d": "Sadece mesai bitiminde",
+      "e": "Haftalık"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Normal mesaj, günün ilk dağıtımında; zaman geçmişse sonraki dağıtımda alınır."
+  },
+  {
+    "soru_id": "MSG_4010",
+    "konu": "Mesai Dışı Teslim",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Çalışma saatleri dışında genel evrak birimine gelen mesajların bir nüshası nereye verilir?",
+    "secenekler": {
+      "a": "Arşive",
+      "b": "İstihbarata",
+      "c": "SKKHM/harekât merkezi/vardiya amirliği",
+      "d": "Plan şubesine",
+      "e": "Personel şubesine"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Mesai dışında bir nüsha öncelik gözetmeksizin SKKHM, harekât merkezi veya vardiya amirliğine, yoksa nöbetçi amirliğine teslim edilir."
+  },
+  {
+    "soru_id": "MSG_4011",
+    "konu": "Mesajların Muhafazası",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Gelen ve giden mesajların bir nüshası kaç ay saklanır?",
+    "secenekler": {
+      "a": "3 ay",
+      "b": "6 ay",
+      "c": "12 ay",
+      "d": "24 ay",
+      "e": "36 ay"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Gelen ve giden mesajların bir nüshası altı (6) ay süre ile muhafaza edilir."
+  },
+  {
+    "soru_id": "MSG_4012",
+    "konu": "Tatbikat Mesaj Arşivleme",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Tatbikat mesajları ile ilgili evrak teslim edilemezse kaç ay sonra imha edilir?",
+    "secenekler": {
+      "a": "1 ay",
+      "b": "2 ay",
+      "c": "3 ay",
+      "d": "6 ay",
+      "e": "12 ay"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Teslim edilemeyen durumlarda üç (3) ay sonunda imha edilir."
+  },
+  {
+    "soru_id": "MSG_4013",
+    "konu": "İstatistik Tutma",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Genel evrak birimi mesajlarla ilgili hangi periyotlarda istatistik tutar?",
+    "secenekler": {
+      "a": "Sadece yıllık",
+      "b": "Günlük ve yıllık",
+      "c": "Günlük, aylık ve yıllık",
+      "d": "Aylık ve üç aylık",
+      "e": "Sadece aylık"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Günlük, aylık ve yıllık istatistik bilgileri tutulur."
+  },
+  {
+    "soru_id": "MSG_4014",
+    "konu": "24 Saat Çalışma",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Hangi seviyelerde genel evrak birimleri mesaj işleri için 24 saat esasıyla çalışır?",
+    "secenekler": {
+      "a": "Tugay ve Tabur",
+      "b": "Kolordu ve Tugay",
+      "c": "Genelkurmay, Kuvvet Komutanlıkları ve Ordu (eşidi)",
+      "d": "Alay ve Tabur",
+      "e": "Tümen ve Tugay"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Genelkurmay Başkanlığı, Kuvvet Komutanlıkları ile Ordu Komutanlığı (eşidi) düzeyinde 24 saat esasıyla çalışır."
+  },
+  {
+    "soru_id": "MSG_4015",
+    "konu": "Evrak Güvenliği",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Güvenlik usulüne uygun hazırlanan resmi evrak üzerinde aşağıdakilerden hangisi YASAKTIR?",
+    "secenekler": {
+      "a": "İzinsiz çoğaltmak",
+      "b": "Kayıt altına almak",
+      "c": "Yetkiliye teslim etmek",
+      "d": "Arşivlemek",
+      "e": "İstatistik oluşturmak"
+    },
+    "dogru_secenek": "a",
+    "kanit_cumlesi": "Resmi evraklar izinsiz olarak alınamaz, aktarılamaz, çoğaltılamaz, açıklanamaz, hizmet alanları dışına çıkarılamaz."
+  },
+
+  {
+    "soru_id": "GIZ_5001",
+    "konu": "Milli Evrak Gizlilik Dereceleri",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Milli evrakta kullanılan gizlilik derecelerinin doğru sıralaması aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "a": "Gizli, Çok Gizli, Özel, Hizmete Özel",
+      "b": "Çok Gizli, Gizli, Özel, Hizmete Özel",
+      "c": "Özel, Gizli, Hizmete Özel, Çok Gizli",
+      "d": "Hizmete Özel, Özel, Gizli, Çok Gizli",
+      "e": "Gizli, Özel, Hizmete Özel, Çok Gizli"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Milli evrak için gizlilik dereceleri: Çok Gizli, Gizli, Özel, Hizmete Özel."
+  },
+  {
+    "soru_id": "GIZ_5002",
+    "konu": "Kısaltmaların Kullanımı",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Ç.GZ., GZ., ÖZ., HZ.ÖZ. kısaltmaları hangi işlemlerde kullanılır?",
+    "secenekler": {
+      "a": "Sadece yazı metninde",
+      "b": "Sadece başlık kısmında",
+      "c": "Evrakın kayıt ve zimmet işlerinde",
+      "d": "Mühürleme işlemlerinde",
+      "e": "Zarf adreslemede"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Kısaltmalar sadece evrakın kayıt ve zimmet işlerinde kullanılır."
+  },
+  {
+    "soru_id": "GIZ_5003",
+    "konu": "İngilizce Gizlilik Karşılıkları",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Aşağıdakilerden hangisi doğru eşleştirmedir?",
+    "secenekler": {
+      "a": "Çok Gizli → SECRET",
+      "b": "Gizli → CONFIDENTIAL",
+      "c": "Özel → TOP SECRET",
+      "d": "Hizmete Özel → RESTRICTED",
+      "e": "Özel → RESTRICTED"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Müttefik evrakta karşılıklar: TOP SECRET, SECRET, CONFIDENTIAL, RESTRICTED."
+  },
+  {
+    "soru_id": "GIZ_5004",
+    "konu": "Gizlilik Belirleme Yetkisi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Bir evraka gizlilik derecesini belirleme sorumluluğu kimdedir?",
+    "secenekler": {
+      "a": "Genel evrak birimi",
+      "b": "Evrakı çıkaran makam (imzalayacak ve ara makamları da kapsar)",
+      "c": "Muhasebe birimi",
+      "d": "Arşiv birimi",
+      "e": "Zarfı hazırlayan personel"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Sorumluluk evrakı çıkaran makama aittir; imzalayacak makamı ve ara makamları da kapsar."
+  },
+  {
+    "soru_id": "GIZ_5005",
+    "konu": "Çok Gizli Yetkilendirme",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Bir evraka 'ÇOK GİZLİ' derecesi verebilecek asgari kademe hangisidir?",
+    "secenekler": {
+      "a": "Şef",
+      "b": "Uzman",
+      "c": "Şube Müdürü",
+      "d": "Memur",
+      "e": "Evrak kayıt görevlisi"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "'ÇOK GİZLİ' derecesini belirlemeye en az şube müdürü düzeyindeki personel yetkilidir."
+  },
+  {
+    "soru_id": "GIZ_5006",
+    "konu": "Gizlilik Tanımı—Çok Gizli",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Aşağıdakilerden hangisi 'ÇOK GİZLİ' derecesinin kapsamını en iyi açıklar?",
+    "secenekler": {
+      "a": "Açıklanırsa kurum içi küçük aksaklık yaratır",
+      "b": "Açıklanırsa hayati bakımdan son derece büyük zarar verir",
+      "c": "Açıklanırsa kişisel mağduriyete yol açar",
+      "d": "Açıklanırsa sadece idari tedbir gerektirir",
+      "e": "Açıklanırsa hiçbir etki yaratmaz"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "ÇOK GİZLİ: Açıklandığında millet ve müttefiklere hayati bakımdan son derece büyük zarar verir."
+  },
+  {
+    "soru_id": "GIZ_5007",
+    "konu": "Gizlilik Tanımı—Gizli",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "'GİZLİ' derecesi için hangi ifade doğrudur?",
+    "secenekler": {
+      "a": "Sadece kişisel yarar sağlar",
+      "b": "Açıklanırsa milli güvenliği ciddi biçimde sarsar",
+      "c": "Sadece lojistik gecikme yaratır",
+      "d": "Sadece eğitim planlarını etkiler",
+      "e": "Her zaman hayati zarar verir"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "GİZLİ: Açıklandığında milli güvenlik, saygınlık ve çıkarları ciddi biçimde sarsar; yabancı devlete yarar sağlar."
+  },
+  {
+    "soru_id": "GIZ_5008",
+    "konu": "Gizlilik Tanımı—Özel",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "'ÖZEL' gizlilik derecesi hangi durumları kapsar?",
+    "secenekler": {
+      "a": "Hayati tehdit",
+      "b": "Sadece kurumsal prosedür",
+      "c": "Çıkar ve prestiji sarsma veya şahsa zarar",
+      "d": "Hiçbir risk yok",
+      "e": "Sadece finansal veri"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "ÖZEL: Açıklanırsa milletin çıkar ve prestijini sarsar, şahsa zarar doğurabilir veya yabancı devlete yarar sağlar."
+  },
+  {
+    "soru_id": "GIZ_5009",
+    "konu": "Gizlilik Tanımı—Hizmete Özel",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Hangi ifade 'HİZMETE ÖZEL' için uygundur?",
+    "secenekler": {
+      "a": "'ÇOK GİZLİ' ile aynı seviyedir",
+      "b": "Gizlilik işlemi gerektirmez",
+      "c": "Diğer üç derecenin dışında, güvenlik işlemi gerektiren konular",
+      "d": "Sadece açık kaynak bilgiler",
+      "e": "Kişiye özel evraktır"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "HİZMETE ÖZEL: Diğer dereceler dışındaki, güvenlik işlemine ihtiyaç gösteren evrak ve gereçlerdir."
+  },
+  {
+    "soru_id": "GIZ_5010",
+    "konu": "Gizlilik İşaretleme Biçimi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Gizlilik derecesi yazılarda nereye ve nasıl işaretlenir?",
+    "secenekler": {
+      "a": "Sadece ilk sayfa sol alt köşe, siyah 12p",
+      "b": "Her sayfanın üst-alt bilgisine ortalanmış, kırmızı, büyük harf",
+      "c": "Sadece son sayfa sağ üst, mavi 10p",
+      "d": "Zarf üzerine, siyah 14p",
+      "e": "Metin içine parantezle"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Yazıların her sayfasının üst ve alt bilgisine ortalanmış, büyük harf ve kırmızı renkle yazılır/damgalanır."
+  },
+  {
+    "soru_id": "GIZ_5011",
+    "konu": "Damga ve Çıktı Standartları",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Gizlilik damgası ile çıktıda kullanılacak yazı tipi ve boyutu hangi seçenekte doğru verilmiştir?",
+    "secenekler": {
+      "a": "Damga Arial 8 mm, Çıktı Calibri 12p",
+      "b": "Damga TNR 6 mm, Çıktı TNR 14p, kırmızı",
+      "c": "Damga Courier 6 mm, Çıktı TNR 12p",
+      "d": "Damga TNR 14p, Çıktı TNR 6 mm",
+      "e": "Damga Calibri 6 mm, Çıktı siyah 12p"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Damga: Times New Roman 6 mm büyük harf kırmızı; çıktı: Times New Roman 14 punto büyük harf kırmızı."
+  },
+  {
+    "soru_id": "GIZ_5012",
+    "konu": "Güvenlik Numarası—Kapsam",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Güvenlik numarası hangi gizlilik derecelerine verilen evrakta uygulanır?",
+    "secenekler": {
+      "a": "Çok Gizli ve Gizli",
+      "b": "Gizli (NATO Gizli hariç) ve Özel",
+      "c": "Hizmete Özel ve Özel",
+      "d": "Tüm dereceler",
+      "e": "Sadece NATO evrakı"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Güvenlik numarası; GİZLİ (NATO Gizli hariç) ve ÖZEL evrak için uygulanır."
+  },
+  {
+    "soru_id": "GIZ_5013",
+    "konu": "Güvenlik Numarası—Verilmesi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Güvenlik numarası nasıl ve ne zaman verilir?",
+    "secenekler": {
+      "a": "Rastgele, yıl sonunda",
+      "b": "İlk kayıt öncesi, sabit numara",
+      "c": "Giden evrak defterinden, her yıl ocakta 0001'den, ardışık ve yıl son iki hanesiyle",
+      "d": "Sadece elektronik sistem otomatik verir",
+      "e": "Sadece imzadan önce kullanıcı belirler"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Giden evrak kayıt defterinin güvenlik numarası hanesinden ocak ayında 0001'den ardışık verilir; yılın son iki rakamı eklenir."
+  },
+  {
+    "soru_id": "GIZ_5014",
+    "konu": "Güvenlik Numarası—Uygulanmaz Durum",
+    "zorluk_seviyesi": "Kolay",
+    "soru_metni": "Hangi durumda evraka güvenlik numarası verilmez?",
+    "secenekler": {
+      "a": "Fiziksel gönderimde",
+      "b": "MEBS veya elektronik ortamdan gönderilecek evrakta",
+      "c": "Kurye ile gönderimde",
+      "d": "Zarflı gönderimde",
+      "e": "Taahhütlü postada"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Elektronik ortamdan veya MEBS vasıtalarından gönderilmek üzere hazırlanan evraka güvenlik numarası verilmez."
+  },
+  {
+    "soru_id": "GIZ_5015",
+    "konu": "Tasnif Dışı İbaresi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "'TASNİF DIŞI' ibaresi hakkında hangisi doğrudur?",
+    "secenekler": {
+      "a": "Bir gizlilik derecesidir",
+      "b": "Milli yazışmalarda rutin olarak kullanılır",
+      "c": "Gizlilik derecesi olmayıp NATO yazışmalarında 'NATO UNCLASSIFIED' karşılığı vardır",
+      "d": "Her evraka eklenir",
+      "e": "Sadece ÇOK GİZLİ için kullanılır"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "'TASNİF DIŞI' gizlilik derecesi değildir; NATO karşılığı 'NATO UNCLASSIFIED'dır."
+  },
+  {
+    "soru_id": "GIZ_5016",
+    "konu": "Kişiye Özel—Kapsam",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "'KİŞİYE ÖZEL' ibaresi hangi evraklara verilebilir?",
+    "secenekler": {
+      "a": "Her türlü evraka",
+      "b": "Sadece Hizmete Özel",
+      "c": "Sadece Çok Gizli",
+      "d": "Çok Gizli, Gizli ve Özel",
+      "e": "Sadece NATO evrağı"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "'KİŞİYE ÖZEL' ibaresi sadece 'ÇOK GİZLİ', 'GİZLİ' ve 'ÖZEL' dereceli evraka verilir."
+  },
+  {
+    "soru_id": "GIZ_5017",
+    "konu": "Kişiye Özel—Konum ve Gönderim",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "'KİŞİYE ÖZEL' ibaresi yazıda nereye yazılır ve hangi gönderim kuralı geçerlidir?",
+    "secenekler": {
+      "a": "Başlığa; her zaman MEBS ile",
+      "b": "Tarih kısmının altına; MEBS ile gönderilmez, çok ivedi hâlde kriptolu MEBS olabilir",
+      "c": "İmza blok üstüne; sadece belgegeçer",
+      "d": "Dağıtıma; sadece kurye",
+      "e": "Ekler kısmına; sadece posta"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "'KİŞİYE ÖZEL' ibaresi tarih kısmının altına yazılır; MEBS ile gönderilmez, ivedi ve zorunlu hâlde imzalayanın müsaadesiyle kriptolu MEBS kullanılabilir."
+  },
+  {
+    "soru_id": "GIZ_5018",
+    "konu": "Kişiye Özel—Zarf ve Vekâlet",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "'KİŞİYE ÖZEL' ibareli evraka ilişkin aşağıdakilerden hangisi doğrudur?",
+    "secenekler": {
+      "a": "İkinci zarf mutlaka hazırlanır",
+      "b": "Vekâlet varsa vekâlet eden kişi açabilir",
+      "c": "İkinci zarf hazırlanmaz ve vekâlet eden kişi dahi açamaz",
+      "d": "Kontrollü evrak bürosunda açılır",
+      "e": "MEBS çıktısı zorunludur"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "'KİŞİYE ÖZEL' evrakta ikinci zarf hazırlanmaz; özel ulaştırma talimatında vekâlet varsa dahi vekâlet eden kişi açamaz."
+  },
+  {
+    "soru_id": "GIZ_5019",
+    "konu": "Kişiye Özel—Muhafaza ve Çoğaltma",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "'KİŞİYE ÖZEL' ibareli evrakın muhafaza ve çoğaltma onayı için doğru seçenek hangisidir?",
+    "secenekler": {
+      "a": "Genel evrakta açık dosyada tutulur; çoğaltmayı şef onaylar",
+      "b": "Gizlilikten bağımsız ayrı dosyada muhafaza edilir; çoğaltma onayı en az daire başkanı/birim amiri",
+      "c": "Arşive hemen devredilir; çoğaltma yasaktır",
+      "d": "Kontrolsüz evrakla birlikte saklanır; çoğaltma sınırsızdır",
+      "e": "Sadece elektronik ortamda saklanır"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "'KİŞİYE ÖZEL' evrak gizlilik derecesi dikkate alınmadan ayrı dosyada muhafaza edilir; çoğaltma istek formu en az daire başkanı veya birim amiri tarafından imzalanır."
+  },
+  {
+    "soru_id": "GIZ_5020",
+    "konu": "Güvenlik Numarası—Damgalama",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Güvenlik numarası imzalanmış yazıya nasıl uygulanır?",
+    "secenekler": {
+      "a": "İlk sayfada sağ alt köşeye bir kez",
+      "b": "Her sayfada başlığa bir kez",
+      "c": "Her sayfada sol üstten sağ alta çapraz en az üç yere damgalanır",
+      "d": "Sadece son sayfaya iki kez",
+      "e": "Sadece zarf üzerine"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "İmzalanan yazının güvenlik numarası her sayfa için sol üstten sağ alt köşeye çapraz gelecek şekilde en az üç yerine damgalanır."
+  }
+]
