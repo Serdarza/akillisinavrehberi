@@ -72,7 +72,6 @@ body {
     border-radius: 12px; 
 }
 
-/* Geri Sayım İç stilleri (Öncekiyle aynı) */
 .countdown-header {
     font-size: 16px;
     font-weight: 500;
@@ -132,7 +131,7 @@ body {
 #konuButonlari {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Düğmeler arası boşluğu ayarla */
+    gap: 10px; 
 }
 
 .menu-button {
@@ -152,7 +151,7 @@ body {
     background-color: var(--white);
     color: var(--text-dark);
     border: 1px solid var(--gray-light);
-    display: block; /* Butonların dikey sıralanmasını sağlar */
+    display: block; 
 }
 
 #konuButonlari .menu-button:hover {
@@ -191,11 +190,19 @@ body {
 }
 
 #soruNumarasi {
+    /* Genel stil (Soru Numarası alanının tıklanabilirliği kaldırıldığında da bu stil kalır) */
     font-size: 14px;
     color: var(--text-light);
     background-color: var(--gray-light);
     padding: 5px 10px;
     border-radius: 8px;
+}
+
+.clickable-soru-numarasi {
+    /* Öğrenme modunda tıklanabilirliği görselleştir */
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .header-icons i {
@@ -235,7 +242,7 @@ body {
     cursor: pointer;
     transition: background-color 0.2s, border-color 0.2s;
     line-height: 1.4;
-    display: block; /* Düğmeleri dikey sıralanmasını sağlar */
+    display: block; 
 }
 
 .option-button.dogru {
@@ -283,17 +290,22 @@ body {
     margin-top: 15px;
 }
 
-.nav-button {
+.nav-buttons .nav-button {
+    /* Anasayfa butonu için özel stil (yerleştirme) */
+    flex-grow: 0;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Geri ve İleri butonlarının yan yana olması için */
+.nav-buttons #geriButton, 
+.nav-buttons #ileriButton {
     flex: 1;
-    padding: 12px;
-    border: none;
-    border-radius: 12px;
-    background-color: var(--purple-button);
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.2s;
+}
+
+.nav-buttons .hidden-nav-button {
+    display: none !important;
 }
 
 /* Alt Gezinme Çubuğu (Footer Nav) */
