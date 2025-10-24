@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- DOM Elementleri ---
     const konuSecimEkrani = document.getElementById('konuSecimEkrani');
-    const altMenu = document.getElementById('altMenu'); // Alt menü artık tek ve genel
+    const altMenu = document.getElementById('altMenu'); 
     const soruEkrani = document.getElementById('soruEkrani');
     const altMenuBaslik = document.getElementById('altMenuBaslik');
 
@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Geri Sayım Fonksiyonu ---
     const startCountdown = () => {
-        // Sınav Tarihi: 20 Aralık 2025
         const sinavTarihi = new Date('2025-12-20T00:00:00'); 
         
         const updateCountdown = () => {
@@ -220,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error('Sorular yüklenirken genel hata oluştu:', error);
             alert(`Sorular yüklenemedi. JSON dosya yapısını kontrol edin. Hata: ${error.message}`);
-            gosterEkrani(konuSecimEkrani);
+            gosterEkrani(altMenu); // Hata durumunda alt menüye geri dön
         }
     };
 
@@ -265,7 +264,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Yanlışları Gözden Geçirme Modunda Açıklamayı Hemen Göster (Renklendirme ve Açıklama)
         if (aktifMod === 'ogrenme' && soru.kullanici_cevabi) {
-             cevapKontrol(null, soru); // Sınavdan gelen yanlışsa cevabını renklendir ve açıklamayı göster
+             // Sınavdan gelen yanlışsa cevabını renklendir ve açıklamayı göster
+             cevapKontrol(null, soru); 
         }
     };
 
@@ -274,11 +274,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const cevapKontrol = (tiklananButton, soru) => {
         const isAlreadyAnswered = seceneklerContainer.classList.contains('cevaplandi');
         
-        // Öğrenme modunda ilk tıklama beklenir. Sınav sonrası ise butona tıklama gereksiz.
+        // Yanlışları gözden geçirme modundan gelmiyorsa (tiklananButton === null) ve zaten cevaplanmışsa çık
         if (tiklananButton && isAlreadyAnswered) return;
         seceneklerContainer.classList.add('cevaplandi');
 
-        let kullaniciOrijinalCevap = soru.kullanici_cevabi || (tiklananButton ? tiklananButton.getAttribute('data-orijinal-cevap') : null);
+        let kullaniciOrijinalCevap;
+        if (tiklananButton) {
+             kullaniciOrijinalCevap = tiklananButton.getAttribute('data-orijinal-cevap');
+        } else if (soru.kullanici_cevabi) {
+             kullaniciOrijinalCevap = soru.kullanici_cevabi; 
+        }
 
         if (aktifMod === 'sinav' && tiklananButton) {
             sinavCevaplari[soru.soru_id] = kullaniciOrijinalCevap;
@@ -288,13 +293,10 @@ document.addEventListener('DOMContentLoaded', () => {
         renklendirCevaplar(soru, kullaniciOrijinalCevap);
         
         // Açıklamayı sadece Öğrenme Modunda (veya sınav sonrası yanlışları incelerken) göster
-        if (aktifMod === 'ogrenme' || soru.kullanici_cevabi) {
-            // JSON'da alan adı kontrolü: "aclama" veya "aciklama" ve "kanit_cumlesi"
-            const aciklamaMetniContent = soru.aciklama || soru.aclama || 'Açıklama metni JSON verisinde bulunmamaktadır.';
-            const kanitMetniContent = soru.kanit_cumlesi || 'Kanıt cümlesi JSON verisinde bulunmamaktadır.';
-
-            aciklamaMetni.innerHTML = aciklamaMetniContent;
-            kanitMetni.innerHTML = kanitMetniContent;
+        if (aktifMod === 'ogrenme') {
+            // Açıklama ve Kanıt Cümlesi garantisi: Alanlar boş gelirse varsayılan metni yazdır.
+            aciklamaMetni.innerHTML = soru.aciklama || 'Açıklama metni JSON verisinde bulunmamaktadır.';
+            kanitMetni.innerHTML = soru.kanit_cumlesi || 'Kanıt cümlesi JSON verisinde bulunmamaktadır.';
             aciklamaKutusu.classList.remove('hidden');
         } else {
              // Sınav modu için açıklama kutusunu gizle
