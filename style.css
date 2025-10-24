@@ -17,17 +17,41 @@ body {
     margin: 0 auto;
 }
 
-/* --- EKRAN YÖNETİMİNİN ANAHTARI BURASI --- */
 .screen { 
     display: none; /* Varsayılan olarak tüm ekranları gizle */
 }
 .screen.active { 
     display: block; /* Sadece "active" sınıfına sahip olanı göster */
 }
-/* ------------------------------------ */
 
 h1 { text-align: center; color: #4a4a4a; font-size: 24px; margin-bottom: 20px; }
-h2 { text-align: center; color: #555; font-size: 20px; margin-top: 30px; }
+h1.main-title { margin-top: 30px; } /* Sayaçtan sonra boşluk bırakmak için */
+h2 { text-align: center; color: #555; font-size: 20px; margin-top: 0; margin-bottom: 15px; }
+
+/* Geri Sayım Sayacı Stilleri */
+#countdown-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #6a5acd;
+}
+.countdown-item span {
+    display: block;
+    font-size: 2em;
+    font-weight: 700;
+}
+.countdown-item {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #555;
+}
 
 #main-menu-buttons, #screen-subject-menu, #screen-results {
     display: flex;
@@ -36,21 +60,14 @@ h2 { text-align: center; color: #555; font-size: 20px; margin-top: 30px; }
 }
 
 .menu-button, .menu-button-secondary {
-    width: 100%;
-    padding: 16px;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    text-align: center;
+    width: 100%; padding: 16px; font-size: 16px; font-weight: 600;
+    border: none; border-radius: 12px; cursor: pointer; text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: all 0.2s ease;
 }
 
 .menu-button { background-color: #6a5acd; color: white; }
 .menu-button:hover { background-color: #5a4abf; transform: translateY(-2px); }
-
 .menu-button-secondary { background-color: #ffffff; color: #6a5acd; border: 1px solid #e0e0e0; }
 .menu-button-secondary:hover { background-color: #f9f9f9; }
 
@@ -68,19 +85,16 @@ h2 { text-align: center; color: #555; font-size: 20px; margin-top: 30px; }
     border: 2px solid #e0e0e0; border-radius: 10px; cursor: pointer;
     transition: all 0.2s ease;
 }
-
 .option-btn:not(:disabled):hover { background-color: #e9e9e9; }
 .option-btn:disabled { cursor: not-allowed; }
-.option-btn.correct { background-color: #d4edda !important; border-color: #34a53 !important; color: #155724; font-weight: bold; }
+.option-btn.correct { background-color: #d4edda !important; border-color: #34a853 !important; color: #155724; font-weight: bold; }
 .option-btn.incorrect { background-color: #f8d7da !important; border-color: #ea4335 !important; color: #721c24; font-weight: bold; }
 
 #explanation-box { margin-top: 20px; padding: 15px; background-color: #fefbec; border: 1px solid #ffeeba; border-radius: 8px; font-size: 15px; line-height: 1.6; }
-
 #quiz-nav-buttons { display: flex; justify-content: space-between; margin-top: 20px; }
 #quiz-nav-buttons button { width: 48%; }
 #btn-prev:disabled, #btn-next:disabled { opacity: 0.5; cursor: not-allowed; }
 
-/* Sonuç Ekranı Stilleri */
 #results-summary { background-color: #fff; padding: 20px; border-radius: 12px; text-align: center; }
 #results-score { font-size: 1.5em; font-weight: bold; color: #6a5acd; }
 #wrong-answers-container { margin-top: 10px; }
