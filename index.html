@@ -59,18 +59,26 @@
             <button class="menu-button purple-button" data-action="dersnotu">Ders Notu</button>
             <button class="menu-button back-button" data-action="geri">Geri Dön</button>
         </div>
-    <div class="container hidden" id="dersNotuEkrani">
-    <h1 class="header-title" id="dersNotuBaslik">Ders Notu</h1>
     
-    <div id="dersNotuIcerik" class="ders-notu-icerik" style="cursor: pointer;">
-        <p>Yükleniyor...</p>
-    </div>
-    
-    <div class="nav-buttons">
-        <button class="nav-button" id="notGeriButton">Geri Dön</button>
-        <button class="nav-button purple-button" id="sesliOkumayiDurdurButton">Sesli Okumayı Durdur</button>
-    </div>
-    </div>
+        <div class="container hidden" id="dersNotuEkrani">
+            <h1 class="header-title" id="dersNotuBaslik">Ders Notu</h1>
+            
+            <div class="speed-control-container">
+                <label for="readingSpeed">Okuma Hızı:</label>
+                <input type="range" id="readingSpeed" name="readingSpeed" min="0.5" max="2" value="1" step="0.1">
+                <span id="currentSpeed">1.0x</span>
+            </div>
+            
+            <div id="dersNotuIcerik" class="ders-notu-icerik" style="cursor: pointer;">
+                <p>Yükleniyor...</p>
+            </div>
+            
+            <div class="nav-buttons">
+                <button class="nav-button" id="notGeriButton">Geri Dön</button>
+                <button class="nav-button purple-button" id="sesliOkumayiDurdurButton">Sesli Okumayı Durdur</button>
+            </div>
+        </div>
+        
         <div class="container hidden" id="soruEkrani">
             <div class="question-header">
                 <span id="soruNumarasi" class="clickable-soru-numarasi">Soru: 1/1</span>
