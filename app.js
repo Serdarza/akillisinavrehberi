@@ -44,14 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const notGeriButton = document.getElementById('notGeriButton');
     const sesliOkumayiDurdurButton = document.getElementById('sesliOkumayiDurdurButton');
     
-    // YENİ HIZ KONTROL ELEMENTLERİ (index.html'e eklenmiştir)
+    // YENİ HIZ KONTROL ELEMENTLERİ
     const readingSpeedControl = document.getElementById('readingSpeed');
     const currentSpeedSpan = document.getElementById('currentSpeed');
     
     // YENİ: Web Speech API Servisi
     const synth = window.speechSynthesis;
     let currentUtterance = null;
-    let currentSpeed = 1.0; // Okuma hızı değişkeni
     
     // Motivasyon Sözleri Havuzu
     const quotes = [
@@ -207,21 +206,45 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- SESLİ OKUMA VE DERS NOTU YÖNETİMİ ---
     
     const durdurSesliOkuma = () => {
-        if (synth.speaking) {
+        if (synth.speaking || synth.paused) {
             synth.cancel();
             currentUtterance = null;
+            // Buton durumunu sıfırla
+            sesliOkumayiDurdurButton.textContent = 'Sesli Okumayı Başlat';
+            sesliOkumayiDurdurButton.classList.remove('back-button');
+            sesliOkumayiDurdurButton.classList.remove('red-wrong');
+            sesliOkumayiDurdurButton.classList.add('purple-button');
+        }
+    };
+
+    const pauseResumeSesliOkuma = () => {
+        if (synth.speaking) {
+            synth.pause();
+            sesliOkumayiDurdurButton.textContent = 'Devam Et';
+            sesliOkumayiDurdurButton.classList.remove('purple-button');
+            sesliOkumayiDurdurButton.classList.add('back-button');
+        } else if (synth.paused) {
+            synth.resume();
+            sesliOkumayiDurdurButton.textContent = 'Sesli Okumayı Durdur';
+            sesliOkumayiDurdurButton.classList.remove('back-button');
+            sesliOkumayiDurdurButton.classList.add('red-wrong'); // Durdurmak için kırmızı
         }
     };
 
     const baslatSesliOkuma = (metin, dil = 'tr-TR') => {
         durdurSesliOkuma(); 
+        
+        // Okuma başlayacak, butonu Durdur yap
+        sesliOkumayiDurdurButton.textContent = 'Sesli Okumayı Durdur';
+        sesliOkumayiDurdurButton.classList.remove('purple-button', 'back-button');
+        sesliOkumayiDurdurButton.classList.add('red-wrong'); 
 
         const utterance = new SpeechSynthesisUtterance(metin);
         utterance.lang = dil; 
         
-        // Okuma Hızını Ayarla (Yeni)
+        // Okuma Hızını Ayarla
         if(readingSpeedControl) {
-            currentSpeed = parseFloat(readingSpeedControl.value);
+            const currentSpeed = parseFloat(readingSpeedControl.value);
             utterance.rate = currentSpeed;
         } else {
             utterance.rate = 1.0;
@@ -229,9 +252,13 @@ document.addEventListener('DOMContentLoaded', () => {
         
         utterance.onend = () => {
             currentUtterance = null;
+            // Okuma bitince butonu Başlat olarak geri getir
+            sesliOkumayiDurdurButton.textContent = 'Sesli Okumayı Başlat'; 
+            sesliOkumayiDurdurButton.classList.remove('red-wrong', 'back-button');
+            sesliOkumayiDurdurButton.classList.add('purple-button');
         };
         
-        // Okuma sesini Türkçeye ayarla (tarayıcı desteğine göre en iyi sesi seçer)
+        // Ses seçimini yap
         const voices = synth.getVoices();
         const turkishVoice = voices.find(voice => voice.lang === 'tr-TR');
         if (turkishVoice) {
@@ -268,6 +295,11 @@ document.addEventListener('DOMContentLoaded', () => {
             dersNotuBaslik.textContent = `${konuAdi} Ders Notu`;
             gosterEkrani(dersNotuEkrani);
             
+            // Okuma ekranı açıldığında butonu Başlat konumuna ayarla
+            sesliOkumayiDurdurButton.textContent = 'Sesli Okumayı Başlat';
+            sesliOkumayiDurdurButton.classList.remove('red-wrong', 'back-button');
+            sesliOkumayiDurdurButton.classList.add('purple-button');
+            
         } catch (error) {
             console.error('Ders Notu yüklenirken hata oluştu:', error);
             dersNotuIcerik.innerHTML = `<p style="color: red;">Not yüklenemedi: ${error.message}</p>`;
@@ -278,8 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Tıklanan Yerden Okumayı Başlatma Dinleyicisi (DÜZELTİLMİŞ)
     if (dersNotuIcerik) {
         dersNotuIcerik.addEventListener('click', (e) => {
-            durdurSesliOkuma(); 
-
+            
             let metinParcasi;
             const selection = window.getSelection();
             
@@ -293,11 +324,10 @@ document.addEventListener('DOMContentLoaded', () => {
                  let tiklananMetin = '';
                  
                  // Tıklanan öğenin içeriğini almaya çalışıyoruz
-                 // Eğer element değilse (saf metin düğümü) veya ders notu div'i ise
-                 if(e.target.nodeType === 1 && e.target.tagName !== 'DIV') { 
-                    tiklananMetin = e.target.innerText;
-                 } else if (e.target.nodeType === 3) {
-                     tiklananMetin = e.target.textContent;
+                 // nodeType === 3: Metin düğümü (en ince metin parçası)
+                 if (e.target.nodeType === 3 || (e.target.nodeType === 1 && e.target.tagName !== 'DIV')) {
+                     // Tıklanan nokta saf metin düğümü ise veya içindeki element ise
+                     tiklananMetin = e.target.textContent || e.target.innerText;
                  } else {
                      // Tıklanan yer container div'in kendisiyse
                      tiklananMetin = tumMetin;
@@ -309,10 +339,10 @@ document.addEventListener('DOMContentLoaded', () => {
                  const startIndex = tumMetin.indexOf(tiklananMetin);
                  
                  // Başlangıç indexi bulunmuşsa, o noktadan itibaren oku
-                 if (startIndex !== -1 && tiklananMetin.length > 5) { // En az 5 karakterlik metin bulmuşsak devam et
+                 if (startIndex !== -1 && tiklananMetin.length > 5) { 
                     metinParcasi = tumMetin.substring(startIndex).trim();
                  } else {
-                    metinParcasi = tumMetin; // Bulunamazsa/çok kısaysa tümünü oku (Başlangıç davranışı)
+                    metinParcasi = tumMetin; // Bulunamazsa/çok kısaysa tümünü oku (Baştan başlat)
                  }
             }
             
@@ -325,25 +355,40 @@ document.addEventListener('DOMContentLoaded', () => {
     // YENİ: Okuma Hızı Kontrol Dinleyicisi
     if (readingSpeedControl) {
         readingSpeedControl.addEventListener('input', (e) => {
-            currentSpeed = parseFloat(e.target.value);
-            currentSpeedSpan.textContent = `${currentSpeed.toFixed(1)}x`;
+            const newSpeed = parseFloat(e.target.value);
+            currentSpeedSpan.textContent = `${newSpeed.toFixed(1)}x`;
             
-            // Eğer şu anda konuşma varsa, hızı uygulamak için durdurup yeniden başlat
-            if (synth.speaking && currentUtterance) {
+            // Eğer konuşma devam ediyorsa, hızı güncellemek için durdurup yeniden başlat
+            if ((synth.speaking || synth.paused) && currentUtterance) {
                 const metin = currentUtterance.text;
+                const isPaused = synth.paused;
                 durdurSesliOkuma();
-                // Not: Hız ayarı baslatSesliOkuma içinde zaten okunur.
+                // Not: baslatSesliOkuma otomatik olarak readingSpeedControl.value'yu kullanır.
                 baslatSesliOkuma(metin); 
+                if (isPaused) {
+                    synth.pause(); // Eğer duraklatılmışsa, yeniden duraklat
+                }
             }
         });
         // Başlangıç değerini ayarla
-        currentSpeedSpan.textContent = `${parseFloat(readingSpeedControl.value).toFixed(1)}x`;
+        if (currentSpeedSpan) {
+            currentSpeedSpan.textContent = `${parseFloat(readingSpeedControl.value).toFixed(1)}x`;
+        }
     }
 
-
-    // Sesli Okumayı Durdurma Butonu Dinleyicisi
+    // Ortak Okuma Butonu Dinleyicisi (Başlat/Durdur/Devam Et)
     if (sesliOkumayiDurdurButton) {
-        sesliOkumayiDurdurButton.addEventListener('click', durdurSesliOkuma);
+        sesliOkumayiDurdurButton.addEventListener('click', () => {
+            if (synth.speaking || synth.paused) {
+                 pauseResumeSesliOkuma();
+            } else {
+                 // Eğer durmuşsa, baştan başlat (veya sadece ilk metni oku)
+                 const metin = dersNotuIcerik.innerText;
+                 if(metin.trim().length > 0) {
+                     baslatSesliOkuma(metin);
+                 }
+            }
+        });
     }
     
     // Not Ekranından Geri Dön Butonu Dinleyicisi
