@@ -221,12 +221,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (synth.speaking) {
             synth.pause();
             sesliOkumayiDurdurButton.textContent = 'Devam Et';
-            sesliOkumayiDurdurButton.classList.remove('purple-button');
+            sesliOkumayiDurdurButton.classList.remove('purple-button', 'red-wrong');
             sesliOkumayiDurdurButton.classList.add('back-button');
         } else if (synth.paused) {
             synth.resume();
             sesliOkumayiDurdurButton.textContent = 'Sesli Okumayı Durdur';
-            sesliOkumayiDurdurButton.classList.remove('back-button');
+            sesliOkumayiDurdurButton.classList.remove('back-button', 'purple-button');
             sesliOkumayiDurdurButton.classList.add('red-wrong'); // Durdurmak için kırmızı
         }
     };
@@ -319,12 +319,12 @@ document.addEventListener('DOMContentLoaded', () => {
                  metinParcasi = selection.toString(); 
             } else {
                  // Durum 2: Kullanıcı metin seçmediyse, tıklanan yerden itibaren oku.
+                 // innerText, tüm görünür metni yeni satırlarla birlikte düz metin olarak verir.
                  const tumMetin = dersNotuIcerik.innerText;
                  
                  let tiklananMetin = '';
                  
                  // Tıklanan öğenin içeriğini almaya çalışıyoruz
-                 // nodeType === 3: Metin düğümü (en ince metin parçası)
                  if (e.target.nodeType === 3 || (e.target.nodeType === 1 && e.target.tagName !== 'DIV')) {
                      // Tıklanan nokta saf metin düğümü ise veya içindeki element ise
                      tiklananMetin = e.target.textContent || e.target.innerText;
@@ -382,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (synth.speaking || synth.paused) {
                  pauseResumeSesliOkuma();
             } else {
-                 // Eğer durmuşsa, baştan başlat (veya sadece ilk metni oku)
+                 // Eğer durmuşsa, tüm metni baştan başlat
                  const metin = dersNotuIcerik.innerText;
                  if(metin.trim().length > 0) {
                      baslatSesliOkuma(metin);
