@@ -57,6 +57,20 @@ document.addEventListener('DOMContentLoaded', () => {
     let ogrenmeModuSorulari = []; 
     const HARFLER = ['A', 'B', 'C', 'D', 'E'];
 
+    // --- DENEME TESTİ KOTALARI ---
+    const DENEME_KOTALARI = {
+        'anayasa': 3,
+        'guncelolaylar': 2,
+        'ichizmetyonetmeligi': 3,
+        'ichizmetkanunu': 5,
+        'disiplinkanunu': 5,
+        'siyasitarih': 9,
+        'tctarihi': 9,
+        'uluslararasihukuk': 5,
+        'idarehukuku': 3,
+        'msbyazisma': 6
+    };
+
     // --- Pop-up Yönetimi ---
     const showMotivationQuote = () => {
         const quotes = [
@@ -202,14 +216,13 @@ document.addEventListener('DOMContentLoaded', () => {
     paylasIcon.addEventListener('click', shareScreenshot);
 
 
-    // --- DERS NOTU YÖNETİMİ (SESLİ OKUMA KALDIRILDI) ---
+    // --- DERS NOTU YÖNETİMİ ---
     
     // Yeni: Arama ve Vurgulama Fonksiyonu
     const aramaVeVurgula = () => {
         const aramaTerimi = aramaInput.value.trim().toLowerCase();
         
         // Önce içeriği orijinal haline geri yükle
-        // Not: originalContent'in loadDersNotu içinde ayarlandığından emin olun.
         if (dersNotuIcerik.originalContent) {
              dersNotuIcerik.innerHTML = dersNotuIcerik.originalContent;
         } else {
@@ -328,6 +341,66 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    // --- DENEME TESTİ YÜKLEME LOGİĞİ (YENİ) ---
+    const loadDenemeTesti = async () => {
+        const dosyaListesi = Object.keys(DENEME_KOTALARI);
+        let tumDenemeSorulari = [];
+        let basariliYuklemeSayisi = 0;
+        const toplamSoruSayisi = Object.values(DENEME_KOTALARI).reduce((a, b) => a + b, 0);
+
+        const yukleme promises = dosyaListesi.map(async (dosyaAdi) => {
+            const kota = DENEME_KOTALARI[dosyaAdi];
+            try {
+                const response = await fetch(`${dosyaAdi}.json`);
+                if (!response.ok) {
+                    console.warn(`Uyarı: Deneme testi için dosya bulunamadı veya boş. ${dosyaAdi}.json`);
+                    return [];
+                }
+                let data = await response.json();
+                
+                if (!Array.isArray(data)) {
+                    data = [];
+                }
+                
+                // Toplam soru sayısından az soru varsa, tamamını al
+                const alinacakSoruSayisi = Math.min(kota, data.length);
+
+                // Soruları karıştır ve kotası kadarını al
+                const secilenSorular = shuffleArray(data).slice(0, alinacakSoruSayisi);
+                if (secilenSorular.length > 0) {
+                    basariliYuklemeSayisi++;
+                }
+                return secilenSorular;
+                
+            } catch (error) {
+                console.error(`Deneme testi için ${dosyaAdi}.json yüklenirken hata oluştu:`, error);
+                return [];
+            }
+        });
+
+        // Tüm dosyaların yüklenmesini bekle ve sonuçları birleştir
+        const tumSonuclar = await Promise.all(yukleme promises);
+        tumDenemeSorulari = tumSonuclar.flat();
+        
+        // Toplanan tüm soruları yeniden karıştır (konular karışsın)
+        tumSorular = shuffleArray(tumDenemeSorulari);
+
+        if (tumSorular.length > 0) {
+            aktifMod = 'sinav';
+            mevcutSoruIndex = 0;
+            sinavCevaplari = {}; 
+            
+            alert(`50 Soruluk Deneme Testi Başlatılıyor! Toplam ${tumSorular.length} soru yüklendi.`);
+            
+            gosterEkrani(soruEkrani);
+            renderSoru(mevcutSoruIndex);
+        } else {
+            alert(`Deneme Testi için yeterli soru toplanamadı. Lütfen JSON dosyalarınızı (${basariliYuklemeSayisi}/${dosyaListesi.length} dosya yüklendi) kontrol edin.`);
+            gosterEkrani(konuSecimEkrani);
+        }
+    };
+
+
     // --- Konu Seçimi ve Alt Menü İşlemleri ---
     document.querySelectorAll('#konuButonlari .menu-button').forEach(button => {
         button.addEventListener('click', (e) => {
@@ -336,7 +409,12 @@ document.addEventListener('DOMContentLoaded', () => {
             aktifKonuDosyasi = konuDosyasi;
             altMenuBaslik.textContent = konuAdi;
             
-            gosterEkrani(altMenu);
+            if (konuDosyasi === 'deneme') {
+                // Deneme testi için doğrudan yükleme fonksiyonunu çağır
+                loadDenemeTesti();
+            } else {
+                gosterEkrani(altMenu);
+            }
         });
     });
 
@@ -357,7 +435,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Soru Yükleme ve Yönlendirme (Kalan kodlar aynı kalıyor) ---
+    // --- Soru Yükleme ve Yönlendirme ---
     const loadQuestions = async (dosyaAdi, mod, konuAdi) => {
         try {
             const response = await fetch(`${dosyaAdi}.json`);
@@ -420,7 +498,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
-    // --- Soru Render Etme (Kalan fonksiyonlar aynı kalıyor) ---
+    // --- Soru Render Etme ---
     const renderSoru = (index) => {
         const soru = tumSorular[index];
         if (!soru) return;
@@ -463,7 +541,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // --- Cevap Kontrolü ve Renklendirme (Aynı Kalıyor) ---
+    // --- Cevap Kontrolü ve Renklendirme ---
     const cevapKontrol = (tiklananButton, soru) => {
         const isAlreadyAnswered = seceneklerContainer.classList.contains('cevaplandi');
         
@@ -524,7 +602,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
     
-    // --- Navigasyon ve Sınav Sonu (Aynı Kalıyor) ---
+    // --- Navigasyon ve Sınav Sonu ---
     const gosterSinavSonucu = () => {
         let dogruSayisi = 0;
         let yanlisSorular = [];
@@ -564,7 +642,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
     
-    // --- Başlangıç Fonksiyonları (Aynı Kalıyor) ---
+    // --- Başlangıç Fonksiyonları ---
     startCountdown(); 
     gosterEkrani(konuSecimEkrani);
     showMotivationQuote(); 
