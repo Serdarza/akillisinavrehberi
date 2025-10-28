@@ -1,5 +1,534 @@
 [
   {
+    "soru_id": "İDARE_001",
+    "konu": "İdare Kavramı ve Kamu-Özel İdare Ayrımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Genel anlamda idare olgusu hem kamu kesiminde hem de özel kesimde (şirket, vakıf, dernek vb.) görülür. İdare hukukunun konusu olan 'kamu idaresi' ile 'özel idareler' arasındaki temel amaç farkı nedir?",
+    "secenekler": {
+      "a": "Kamu idaresi sürekli olmayı hedefler, özel idareler geçici olmayı.",
+      "b": "Kamu idaresi kârı hedefler, özel idareler kamu yararını.",
+      "c": "Kamu idaresi 'kamu yararı'nı hedefler, özel idareler 'özel yarar'ı (kâr) hedefler.",
+      "d": "Kamu idaresi eşitlik ilkesine tabidir, özel idareler üstün konumdadır.",
+      "e": "Kamu idaresi özerkliği hedefler, özel idareler kanuna bağlıdır."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Amaç: Kamu idaresi 'kamu yararı'nı, özel idareler 'özel yarar'ı (kâr) hedefler.",
+    "aclama": "Amaç farkı, idarelerin temel varlık nedenini ve yürüttüğü faaliyetlerin niteliğini belirler."
+  },
+  {
+    "soru_id": "İDARE_002",
+    "konu": "İdare Kavramı ve Kamu-Özel İdare Ayrımı",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Kamu idaresi ile özel idareler arasındaki 'güç' ve 'konum' farkı nedir?",
+    "secenekler": {
+      "a": "Kamu idaresi eşit konumdadır, özel idareler kamu gücü kullanır.",
+      "b": "Kamu idaresi kamu gücü ayrıcalıklarıyla üstün konumdadır, özel idareler bu güce sahip değildir ve eşitlik ilkesine tabidir.",
+      "c": "Kamu idaresi serbestlik ilkesine tabidir, özel idareler kanuna bağlıdır.",
+      "d": "Kamu idaresi hiyerarşi denetimine tabidir, özel idareler vesayet denetimine tabidir.",
+      "e": "Kamu idaresi kârı hedefler, özel idareler zararı hedefler."
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Güç: Kamu idareleri 'kamu gücü' ayrıcalıklarıyla donatılmıştır; özel idareler bu güce sahip değildir. Konum: Kamu idareleri özel kişiler karşısında üstün konumdadır, özel idareler ise eşitlik ilkesine tabidir.",
+    "aclama": "Kamu gücü ayrıcalığı ve üstün konum, idare hukukunun özel hukuktan ayrılmasının temel nedenleridir."
+  },
+  {
+    "soru_id": "İDARE_003",
+    "konu": "Organik Anlamda İdare",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "İdare organının 'Yasama Organından' ayrılmasına yönelik temel ölçüt nedir?",
+    "secenekler": {
+      "a": "İdarenin kural koyucu olması.",
+      "b": "Yasama organının genel oyla seçilen 550 milletvekilinden oluşan TBMM olması.",
+      "c": "İdarenin hiyerarşi ve vesayet denetimine tabi olması.",
+      "d": "Yasama organının yürütme işlemlerini yapması.",
+      "e": "İdarenin özel hukuka tabi olması."
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Yasama Organından Ayrılması: Yasama organı, genel oyla seçilen 550 milletvekilinden oluşan Türkiye Büyük Millet Meclisi'dir (TBMM). İdare organı bu değildir.",
+    "aclama": "Yasama organı, anayasal tanım ve oluşum şekli (genel oyla seçilen milletvekilleri) itibarıyla idare organından ayrılır."
+  },
+  {
+    "soru_id": "İDARE_004",
+    "konu": "Organik Anlamda İdare",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "İdare organının 'Yargı Organından' ayrılmasına yönelik temel ölçüt nedir?",
+    "secenekler": {
+      "a": "Yargı organının hiyerarşi denetimine tabi olması.",
+      "b": "İdarenin üstün konumda olması.",
+      "c": "Yargı organının 'bağımsız mahkemeler' ve 'teminatlı hâkimler'den oluşması ve idarenin hiyerarşi veya vesayet denetimine tabi kamu görevlilerinden meydana gelmesi.",
+      "d": "İdarenin uyuşmazlıkları çözme yetkisine sahip olması.",
+      "e": "Yargı organının kural koyma yetkisine sahip olması."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Yargı Organından Ayrılması: Yargı organı, 'bağımsız mahkemeler'den ve 'teminatlı hâkimler'den oluşur. İdare ise hiyerarşi veya vesayet denetimine tabi kamu görevlilerinden meydana gelir.",
+    "aclama": "Yargının bağımsızlığı ve hâkimlerin teminatlı olması, idarenin hiyerarşik yapısı ve denetim biçiminden organik olarak ayrılmasını sağlar."
+  },
+  {
+    "soru_id": "İDARE_005",
+    "konu": "Organik Anlamda İdare",
+    "zorluk_seviyesi": "Çok Zor",
+    "soru_metni": "1982 Anayasası'nın 'Yürütme' bölümü hangi dört başlığı içermektedir? (Bu Anayasa'nın orijinal yapısındaki dört başlığı belirtiniz.)",
+    "secenekler": {
+      "a": "Cumhurbaşkanı, Yasama, Yargı, Milli Güvenlik Kurulu.",
+      "b": "Başbakan, Bakanlar Kurulu, Başkomutanlık, Genelkurmay Başkanlığı.",
+      "c": "I. Cumhurbaşkanı, II. Bakanlar Kurulu, III. Olağanüstü Yönetim Usûlleri ve IV. İdare.",
+      "d": "I. Yasama, II. Yürütme, III. Yargı, IV. İdare.",
+      "e": "I. TBMM, II. Cumhurbaşkanı, III. İdare, IV. Olağanüstü Haller."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "1982 Anayasası'nın 'Yürütme' bölümü şu dört başlığı içerir: I. Cumhurbaşkanı, II. Bakanlar Kurulu, III. Olağanüstü Yönetim Usûlleri ve IV. İdare.",
+    "aclama": "Bu madde, idarenin yürütme organının bütününü değil, özel bir kısmını oluşturduğunu gösteren organik bir ayrımdır."
+  },
+  {
+    "soru_id": "İDARE_006",
+    "konu": "Organik Anlamda İdare",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "İdare organının 'nihai organik tanımı'na göre, idare organı hangi iki ana kısımdan meydana gelir?",
+    "secenekler": {
+      "a": "Merkezî idare ile yerinden yönetim teşkilatları.",
+      "b": "Yürütme organının siyasi kısmı ile yargı organının idari kısmı.",
+      "c": "Yürütme organının Cumhurbaşkanı, Başbakan, Bakanlar Kurulu ve bakanlar dışında kalan kısmı İLE devlet dışındaki diğer kamu tüzel kişileri.",
+      "d": "TBMM ve Cumhurbaşkanlığı.",
+      "e": "Kanunla kurulan kamu kuruluşları ile özel hukuk tüzel kişileri."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Nihai Organik Tanım: İdare organı, (1) devletin yürütme organının Cumhurbaşkanı, Başbakan, Bakanlar Kurulu ve bakanlar dışında kalan kısmı İLE (2) devlet dışındaki diğer kamu tüzel kişileridir (örneğin il özel idaresi, belediye, köy, üniversite, KİT, TRT vb.).",
+    "aclama": "Bu tanım, idare organını hem Devlet teşkilatı içindeki alt birimlerden hem de kamu tüzel kişiliğine sahip diğer kurumlardan oluşacak şekilde genişletir."
+  },
+  {
+    "soru_id": "İDARE_007",
+    "konu": "İdarî Fonksiyon (Fonksiyonel Anlamda İdare)",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Bir idare organından çıkan 'yönetmelik, tüzük vb. işlemlerin' idarî fonksiyon sayılması ve yasama fonksiyonundan ayrılmasının temel kriteri nedir?",
+    "secenekler": {
+      "a": "İşlemin soyut kural koyması.",
+      "b": "İşlemin genel olması.",
+      "c": "Organ idare olduğu için işlemin idarî olması (organik kriter).",
+      "d": "İşlemin kanunlardan farklı olması.",
+      "e": "İşlemin yargı denetimine tabi olması."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "İdarenin yönetmelik gibi genel ve soyut kural koyması, bu işlemi bir yasama işlemi yapmaz; organ idare olduğu için işlem idarîdir.",
+    "aclama": "İdarî fonksiyonun tanımında 'organik kriter' esas alınır; yani işlemi yapan organ idare ise, işlem de idarî fonksiyondur."
+  },
+  {
+    "soru_id": "İDARE_008",
+    "konu": "İdarî Fonksiyon (Fonksiyonel Anlamda İdare)",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Bir fonksiyonun 'yargı fonksiyonu' sayılabilmesi için gerekli olan 'organik unsur' ve 'maddî unsur' nedir?",
+    "secenekler": {
+      "a": "Organik Unsur: İdareden çıkmalıdır / Maddî Unsur: Kamu yararını hedeflemelidir.",
+      "b": "Organik Unsur: Yargı organından (mahkemeden) çıkmalıdır / Maddî Unsur: Hukukî bir uyuşmazlığı çözmeye yönelik olmalıdır.",
+      "c": "Organik Unsur: Hükûmetten çıkmalıdır / Maddî Unsur: Siyasî nitelikte olmalıdır.",
+      "d": "Organik Unsur: TBMM'den çıkmalıdır / Maddî Unsur: Genel ve soyut kural koymalıdır.",
+      "e": "Organik Unsur: Kamu tüzel kişisinden çıkmalıdır / Maddî Unsur: Sürekli olmalıdır.",
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Bir fonksiyonun 'yargı fonksiyonu' sayılması için iki unsur gerekir: Organik Unsur: Yargı organından (mahkemeden) çıkmalıdır... Maddî Unsur: Hukukî bir uyuşmazlığı çözmeye yönelik olmalıdır.",
+    "aclama": "Örneğin, idarî makamların verdiği disiplin cezaları hukuki uyuşmazlığı çözse de, yargı organından çıkmadığı için yargı fonksiyonu değil, idarî fonksiyondur."
+  },
+  {
+    "soru_id": "İDARE_009",
+    "konu": "İdarî Fonksiyon (Fonksiyonel Anlamda İdare)",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Yürütme fonksiyonunun ayrıldığı 'idarî fonksiyon' ve 'hükûmet fonksiyonu'ndan, idare hukuku hangisiyle ilgilenir ve hükümet fonksiyonuna dahil olan işlemlerden *bir örnek* nedir?",
+    "secenekler": {
+      "a": "İdarî fonksiyonla ilgilenir / Örnek: Mahkemelerin yazı işlerine ilişkin aldığı idarî kararlar.",
+      "b": "Hükûmet fonksiyonuyla ilgilenir / Örnek: Kanunları veto etmek.",
+      "c": "İdarî fonksiyonla ilgilenir / Örnek: Bakanlar Kurulunun oluşturulması gibi siyasî nitelikteki işlemler.",
+      "d": "Hükûmet fonksiyonuyla ilgilenir / Örnek: Disiplin cezaları vermek.",
+      "e": "İdarî fonksiyonla ilgilenir / Örnek: Yönetmelik hazırlamak."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "İdare hukuku idarî fonksiyonla, anayasa hukuku ise hükûmet fonksiyonuyla ilgilenir. ... Hükûmet Fonksiyonuna Dahil Olan İşlemler: Bakanlar Kurulunun oluşturulması, Başbakan ve bakanların atanması gibi siyasî nitelikteki işlemler.",
+    "aclama": "Hükûmet fonksiyonu siyasî nitelikteki yürütme işlemlerini kapsar; idarî fonksiyon ise siyasî olmayan, kamu hizmetlerini yürütmeye yönelik faaliyetlerdir."
+  },
+  {
+    "soru_id": "İDARE_010",
+    "konu": "İdarî Fonksiyon (Fonksiyonel Anlamda İdare)",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "İdarî fonksiyonun 'nihai tanımına' göre, idarî fonksiyon hangi iki ana unsuru kapsar?",
+    "secenekler": {
+      "a": "Yasama ve yargı organlarının fonksiyonları.",
+      "b": "Devletin yürütme organının siyasî fonksiyonu ile diğer kamu tüzel kişilerinin fonksiyonu.",
+      "c": "Devletin yürütme organının siyasî olmayan fonksiyonu İLE diğer kamu tüzel kişilerinin fonksiyonu.",
+      "d": "Kamu gücü kullanılarak yürütülen özel hizmetler.",
+      "e": "Kamu yararı gütmeyen, sürekli faaliyetler."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Tanım 2 (Nihai): İdarî fonksiyon, (1) devletin yürütme organının siyasî olmayan fonksiyonu İLE (2) diğer kamu tüzel kişilerinin fonksiyonudur.",
+    "aclama": "Bu tanım, idarî fonksiyonun hem devletin siyasî olmayan icraatını hem de kamu tüzel kişilerinin tüm faaliyetlerini kapsadığını gösterir."
+  },
+  {
+    "soru_id": "İDARE_011",
+    "konu": "İdarî Fonksiyonun Özellikleri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "İdarî fonksiyonun 'amacı', 'konusu' ve 'yürütülme usulü' nedir?",
+    "secenekler": {
+      "a": "Amacı kâr, konusu siyasî işlemler, özel güç kullanılır.",
+      "b": "Amacı kamu yararı, konusu kamu hizmetleri, kamu gücü kullanılarak yürütülür.",
+      "c": "Amacı özel yarar, konusu kamu hizmetleri, özel hukuk usulleriyle yürütülür.",
+      "d": "Amacı siyasî istikrar, konusu kanun koymak, kanunla yürütülür.",
+      "e": "Amacı bağımsızlık, konusu yargı kararları, adlî yargıda çözülür."
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "İdarî Fonksiyonun Özellikleri: Amacı kamu yararıdır. Konusu kamu hizmetleridir. Kamu gücü kullanılarak yürütülür.",
+    "aclama": "Bu üç özellik, idarî fonksiyonun temel niteliklerini ve kamu hukuku kurallarına tabi olmasının nedenlerini açıklar."
+  },
+  {
+    "soru_id": "İDARE_012",
+    "konu": "İdare Hukukunun Tanımı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Türkiye'de ve Kara Avrupası'nda geçerli olan 'dar anlamda idare hukuku' tanımı nedir?",
+    "secenekler": {
+      "a": "İdarenin kuruluş ve işleyişine uygulanan tüm hukuk kurallarının bütünü.",
+      "b": "İdarenin kuruluş ve işleyişine uygulanan özel hukuku aşan (exorbitantes) kamu hukuku kurallarının bütünü.",
+      "c": "İdarenin sadece özel kişilerle olan ilişkilerini düzenleyen hukuk kuralları.",
+      "d": "İdarenin sadece yargı ile olan ilişkilerini düzenleyen hukuk kuralları.",
+      "e": "İdarenin siyasî işleyişini düzenleyen anayasa hukuku kuralları."
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Dar Anlamda: İdarenin kuruluş ve işleyişine uygulanan kamu hukuku kurallarının bütünüdür. Bu kurallar, özel hukuk kurallarından farklı, onları 'aşan (exorbitantes)' kurallardır.",
+    "aclama": "Dar anlamda tanım, idarenin özel hukuktan farklı ve üstün kurallara tabi olduğunu ve bu farkın idare hukukunu bağımsız kıldığını belirtir."
+  },
+  {
+    "soru_id": "İDARE_013",
+    "konu": "İdare Hukuku Sistemleri",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Anglo-Sakson Sistemi (Adlî İdare Sistemi) ile Kara Avrupası Sistemi (İdarî Rejim) arasındaki temel yargılama farkı nedir?",
+    "secenekler": {
+      "a": "Anglo-Sakson'da idareye özel hukuk kuralları uygulanmaz, Kara Avrupası'nda uygulanır.",
+      "b": "Anglo-Sakson'da idarî yargı düzeni vardır, Kara Avrupası'nda yoktur.",
+      "c": "Anglo-Sakson'da idare de 'genel hukuk'a tabidir ve uyuşmazlıklar 'adlî yargı'da çözülür; Kara Avrupası'nda ise 'idare hukuku' uygulanır ve uyuşmazlıklar 'idarî yargı'da çözülür.",
+      "d": "Anglo-Sakson'da idare hukuku içtihadîdir, Kara Avrupası'nda tedvin edilmiştir.",
+      "e": "Anglo-Sakson'da kamu gücü kullanılır, Kara Avrupası'nda kamu gücü kullanılmaz."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Anglo-Sakson Sistemi (Adlî İdare Sistemi): ... idareye özel kişilerden ayrı bir hukuk uygulanmaz ve ayrı bir idarî yargı düzeni yoktur. ... uyuşmazlıklar 'adlî yargı'da (genel mahkemeler) çözülür. Kara Avrupası Sistemi (İdarî Rejim): ... Uyuşmazlıklara 'idarî yargı'da bakılır.",
+    "aclama": "İdarî Rejim'in temel özelliği, idareye özel bir hukuk (idare hukuku) uygulanması ve uyuşmazlıkların bu özel yargı düzeninde (idarî yargı) çözülmesidir."
+  },
+  {
+    "soru_id": "İDARE_014",
+    "konu": "İdare Hukukunun Doğumu ve Gelişimi",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "İdare hukukunun 19. yüzyılda Fransa'da doğmasına yol açan ve 'kimse kendi davasında hâkim olamaz' ilkesine aykırılık teşkil eden durum nedir?",
+    "secenekler": {
+      "a": "Danıştay'ın kurulması.",
+      "b": "Adlî yargı hâkimlerinin idarî işlemlere karşı açılan davalara bakmasının yasaklanması.",
+      "c": "Fransız İhtilali'nin olması.",
+      "d": "İdarenin tek taraflı işlem yapması.",
+      "e": "Kamu hukuku kurallarının tedvin edilmesi."
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Fransız İhtilali sonrası çıkarılan kanunlar (1790 ve 1795), adlî yargı hâkimlerinin idarî işlemlere ve idareye karşı açılan davalara bakmasını yasakladı. Bu durumda vatandaşlar, idareye karşı olan şikayetlerini yine idareye yapmak zorunda kaldılar.",
+    "aclama": "Adlî yargının idare üzerindeki denetiminin yasaklanması, idareye karşı şikayetlerin çözümü için özel bir mekanizma (Danıştay) kurulması gerekliliğini doğurmuş ve idare hukuku bu içtihatlarla gelişmiştir."
+  },
+  {
+    "soru_id": "İDARE_015",
+    "konu": "İdare Hukukunun Özellikleri",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "İdare hukukunun 'içtihadî' ve 'tedvin edilmemiş' olması ne anlama gelir?",
+    "secenekler": {
+      "a": "Tek bir kanunda toplanmıştır (tedvin) ve sürekli değişmez (içtihadî).",
+      "b": "Mahkeme kararlarıyla (içtihadî) gelişmiştir ve tek bir kanunda toplanmamıştır (tedvin edilmemiş).",
+      "c": "Fransız İhtilali'nden önce doğmuştur ve tek taraflı değildir.",
+      "d": "Bağımsız değildir ve özel hukuka tabidir.",
+      "e": "Sadece kanunlarla düzenlenir ve Danıştay kararları geçerli değildir."
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "'Tedvin edilmemiş (codifié)'tir, yani Medeni Kanun gibi tek bir kanunda toplanmamıştır. Büyük ölçüde 'içtihadî'dir (jurisprudentielle), yani mahkeme kararlarıyla gelişmiştir.",
+    "aclama": "İdare hukuku, çoğu kez yasal düzenlemeler yerine Danıştay gibi idarî yargı organlarının kararlarıyla (içtihat) şekillenen, dinamik bir hukuk dalıdır."
+  },
+  {
+    "soru_id": "İDARE_016",
+    "konu": "İdare Hukukunun Özellikleri",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "İdare hukukunun 'statüsel' nitelikte olması ve işlemlerinin 'tek-taraflı' olması ne anlama gelir?",
+    "secenekler": {
+      "a": "İdarenin işlemleri sözleşmeyle düzenlenir ve çok taraflıdır.",
+      "b": "İdare ile kişiler arasındaki ilişkiler kanun ve nizamlarla (statü) düzenlenir ve idarenin işlemleri tek-taraflıdır (unilatérale).",
+      "c": "İdarenin işlemleri yargı denetimine tabidir ve çift taraflıdır.",
+      "d": "İdare ile kişiler arasındaki ilişkiler sözleşme serbestisine tabidir ve idarî yargıda çözülür.",
+      "e": "İdarenin işlemleri örf ve adet kurallarına tabidir ve özel hukuk kurallarıyla yürütülür."
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "'Statüsel (statutaire)' niteliktedir; yani idare ile kişiler arasındaki ilişkiler (örn. memuriyet) sözleşmeyle değil, kanun ve nizamlarla (statü) düzenlenir. İşlemleri 'tek-taraflı (unilatérale)'dır.",
+    "aclama": "Statüsel nitelik, idarenin işlemlerinde kamu gücünü kullanarak iradesini tek başına tesis etmesi (tek taraflılık) ve bu ilişkilerin kanunla belirlenmesi (statü) demektir."
+  },
+  {
+    "soru_id": "İDARE_017",
+    "konu": "İdare Hukukunun Kaynakları",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "İdare hukukunun 'yazılı asıl kaynakları'ndan dört tanesi nedir?",
+    "secenekler": {
+      "a": "Anayasa, İçtihat, Kanun, Doktrin.",
+      "b": "Yönetmelik, Tüzük, Örf ve Adet, İçtihat.",
+      "c": "Anayasa, Kanun, Yönetmelik, KHK, Milletlerarası Andlaşma, Tüzük.",
+      "d": "Kanun, Tüzük, Yönetmelik, KHK, Doktrin.",
+      "e": "Anayasa, Kanun, Yargı Kararları, Bilimsel Görüşler."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Asıl Kaynaklar: Yazılı: Anayasa, Kanun, KHK, Milletlerarası Andlaşma, Tüzük, Yönetmelik.",
+    "aclama": "Bu kaynaklar, idare hukukunun bağlayıcı ve hiyerarşik olarak üstün kurallarını oluşturur."
+  },
+  {
+    "soru_id": "İDARE_018",
+    "konu": "İdare Hukukunun Kaynakları",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "İdare hukukunun 'yardımcı kaynakları' nelerdir ve metne göre 'örf ve adet' bu kaynaklar arasında hangi konumda yer almaktadır?",
+    "secenekler": {
+      "a": "Yardımcı kaynaklar: Tüzük ve Yönetmelik / Örf ve Adet yazılı kaynaktır.",
+      "b": "Yardımcı kaynaklar: İçtihat ve Doktrin / Örf ve Adet kaynak değildir.",
+      "c": "Yardımcı kaynaklar: Kanun ve KHK / Örf ve Adet yazısız kaynaktır.",
+      "d": "Yardımcı kaynaklar: Yazılı ve Yazısız kaynaklar / Örf ve Adet asıl kaynaktır.",
+      "e": "Yardımcı kaynaklar: Yargı Kararları ve Kanunlar / Örf ve Adet yazılı kaynaktır."
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Yardımcı Kaynaklar: İçtihat (Yargı Kararları). Doktrin (Bilimsel Görüşler). Yazısız: Örf ve Adet (Kitapta kaynak olmadığı belirtilmiştir).",
+    "aclama": "Yardımcı kaynaklar yol göstericidir (bağlayıcı değildir). Örf ve Adet, genellikle idare hukuku için bir kaynak olarak kabul edilmez."
+  },
+
+  {
+    "soru_id": "İDARE_019",
+    "konu": "İdare Hukukunun Uygulama Alanı",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "İdarenin her faaliyeti idare hukukuna tabi değildir. İdare hukukunun uygulanıp uygulanmayacağını belirleyen temel ölçüt nedir?",
+    "secenekler": {
+      "a": "Sübjektif (Özel Hukuk) Ölçüt",
+      "b": "İdarî Yargı Ölçütü",
+      "c": "Kamu Gücü Ölçütü",
+      "d": "Amacın Kamu Yararı Olması Ölçütü",
+      "e": "Kanunîlik İlkesi Ölçütü"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Ölçüt: Kamu Gücü Ölçütü: İdare hukukunun uygulanıp uygulanmayacağını belirleyen ölçüt 'kamu gücü ölçütü'dür.",
+    "aclama": "İdare, 'kamu gücü' kullanarak yaptığı işlerde idare hukukuna tabidir; kamu gücü kullanmadığı, özel kişi gibi hareket ettiği durumlarda ise özel hukuka tabidir."
+  },
+  {
+    "soru_id": "İDARE_020",
+    "konu": "Kamu Gücü Ayrıcalıkları",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "İdarenin tek yanlı iradesiyle hukuki sonuç doğuran işlemler yapabilme yetkisi ve aldığı kararları mahkeme veya icra dairesine gitmeden bizzat kendi gücüyle uygulayabilme yetkisi sırasıyla hangi ayrıcalıklar olarak adlandırılır?",
+    "secenekler": {
+      "a": "Hukuka uygunluk karinesi ve Haczedilmezlik.",
+      "b": "Re'sen icra ve Tek yanlı işlemler yapma yetkisi.",
+      "c": "Tek yanlı işlemler yapma yetkisi ve Re'sen icra.",
+      "d": "Tahkim yasağı ve Sınav zorunluluğu.",
+      "e": "Haczedilmezlik ve Zorunlu üyelik."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Tek yanlı işlemler yapma yetkisi: İdare, ilgilinin rızası olmaksızın, tek yanlı iradesiyle hukukî sonuç doğuran işlemler... yapabilir. Re'sen icra: İdare, aldığı kararları mahkeme veya icra dairesine gitmeden, bizzat kendi gücüyle uygulayabilir.",
+    "aclama": "Bu iki ayrıcalık, idarenin özel kişilere göre üstün konumda olduğunu gösterir."
+  },
+  {
+    "soru_id": "İDARE_021",
+    "konu": "Kamu Gücü Ayrıcalıkları",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "İdarî kararların, mahkemece iptal edilene kadar hukuka uygun sayılması ve uygulanmaya devam etmesi ayrıcalığı ile, kamu tüzel kişilerinin borçları için özel hukuk icra yollarının uygulanamaması ayrıcalığı sırasıyla nedir?",
+    "secenekler": {
+      "a": "Tahkim yasağı ve İhale zorunluluğu.",
+      "b": "Tek yanlı işlem yetkisi ve Kamu yararı amacı.",
+      "c": "Hukuka uygunluk karinesi ve Haczedilmezlik.",
+      "d": "Re'sen icra ve Sınav zorunluluğu.",
+      "e": "Sınav zorunluluğu ve Hukuka uygunluk karinesi."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Hukuka uygunluk karinesi: İdarî kararlar, mahkemece iptal edilene kadar hukuka uygun sayılır ve uygulanmaya devam eder. Haczedilmezlik: Kamu tüzel kişilerinin borçları için özel hukuk icra yolları uygulanamaz, malları haczedilemez ve iflasları istenemez.",
+    "aclama": "Bu ayrıcalıklar, idarenin kamu hizmetlerinin kesintisiz devamını sağlayan hukuki güvencelerdir."
+  },
+  {
+    "soru_id": "İDARE_022",
+    "konu": "Kamu Gücü Yükümlülükleri",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "İdarenin, özel kişiler sözleşme yapacağı tarafı seçmekte serbestken, kendisinin 'kamu ihalesi' düzenlemek zorunda olması yükümlülüğü ile, kural olarak 'tahkim (arbitrage)' yoluna gidememesi yükümlülüğü sırasıyla nedir?",
+    "secenekler": {
+      "a": "Re'sen icra ve Kamu yararı amacı.",
+      "b": "Sınav zorunluluğu ve Hukuka uygunluk karinesi.",
+      "c": "İhale Zorunluluğu ve Tahkim Yasağı.",
+      "d": "Hukuka uygunluk karinesi ve Kamu Yararı Amacı.",
+      "e": "Haczedilmezlik ve Zorunlu üyelik."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "İhale Zorunluluğu: Özel kişiler sözleşme yapacağı tarafı seçmekte serbestken, idare 'kamu ihalesi' düzenlemek zorundadır. Tahkim Yasağı: İdare, kural olarak tahkim (arbitrage) yoluna gidemez.",
+    "aclama": "Bu yükümlülükler, idarenin kamu kaynaklarını şeffaflıkla kullanması ve uyuşmazlık çözümünde kamu yargısını esas alması gerekliliğini gösterir."
+  },
+  {
+    "soru_id": "İDARE_023",
+    "konu": "İdare Hukukunun Bölümleri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "İdarî faaliyetin bütün sahalarında ortak olan genel kavram, kurum ve kuralları inceleyen (örn. idarî teşkilât, idarî işlemler) idare hukuku bölümü nedir?",
+    "secenekler": {
+      "a": "Özel İdare Hukuku",
+      "b": "Genel İdare Hukuku",
+      "c": "İmar Hukuku",
+      "d": "İdarî Yargı Hukuku",
+      "e": "Anayasa Hukuku"
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Genel İdare Hukuku: İdarî faaliyetin bütün sahalarında ortak olan genel kavram, kurum ve kuralları inceler (örn. idarî teşkilât, idarî işlemler, kamu hizmeti, kolluk, kamu malları, idarenin sorumluluğu, idarî yargı).",
+    "aclama": "Genel İdare Hukuku, idarenin tüm faaliyet alanlarında geçerli olan temel prensipleri ve kurumları inceler."
+  },
+  {
+    "soru_id": "İDARE_024",
+    "konu": "Hukuk Devleti İlkesi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Hukuk Devleti'nin tanımı nedir?",
+    "secenekler": {
+      "a": "Faaliyetlerinde siyasi kararlara bağlı olan devlet.",
+      "b": "Faaliyetlerinde hukuk kurallarına bağlı olan, vatandaşlarına hukukî güvenlik sağlayan devlet.",
+      "c": "Kamunun refahı için her türlü önlemi alabilen devlet.",
+      "d": "Sadece kamu yararı amacıyla hareket eden devlet.",
+      "e": "Kanunları tek taraflı olarak uygulayan devlet."
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Tanım: Faaliyetlerinde hukuk kurallarına bağlı olan, vatandaşlarına hukukî güvenlik sağlayan devlet demektir.",
+    "aclama": "Hukuk devleti ilkesi, idare hukuku açısından temel bir ilkedir ve idarenin hukuka bağlı olmasını gerektirir."
+  },
+  {
+    "soru_id": "İDARE_025",
+    "konu": "Hukuk Devleti İlkesi (Tarihsel Gelişim)",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Hukuk devleti anlayışından önceki aşamalardan olan 'Polis Devleti'nin' temel özelliği nedir?",
+    "secenekler": {
+      "a": "Devletin kralın kişisel mülkü olarak görülmesi.",
+      "b": "Devletin (hükümdarın) kendisine karşı dava açılamaması.",
+      "c": "'Kamunun refahı' için her türlü önlemi alabilen, ancak bu eylemlerinde hukuka bağlı olmayan devlet anlayışı.",
+      "d": "İdarenin tüm eylem ve işlemlerinin yargı denetimine açık olması.",
+      "e": "Kişilerin kazanılmış haklarına saygı gösterilmesi."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Polis Devleti (17-18. Yüzyıl): 'Kamunun refahı' için her türlü önlemi alabilen, kişilerin hak ve özgürlüklerine müdahale edebilen, ancak bu eylemlerinde hukuka bağlı olmayan devlet anlayışıdır.",
+    "aclama": "Polis devleti, amacı kamu refahı olsa da, eylemlerinde hukuka bağlı olmamasıyla hukuk devletinden ayrılır."
+  },
+  {
+    "soru_id": "İDARE_026",
+    "konu": "Hukuk Devleti İlkesi (Tarihsel Gelişim)",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "'Hazine Teorisi'nin' (18. Yüzyıl Ortaları, Almanya) temel kabulü nedir?",
+    "secenekler": {
+      "a": "Kralın kişisel mülkiyetinin mutlak olması.",
+      "b": "İdarenin hukuka uygunluk karinesiyle korunması.",
+      "c": "Devletin (hükümdarın) kendisi hukuka tabi olmasa da, devletin 'hazine'sinin ayrı bir özel hukuk tüzel kişisi olarak kabul edilmesi ve zararlar için hazineye karşı dava açılabilmesi.",
+      "d": "Devletin sadece kanunla kurulması.",
+      "e": "Devletin eylemlerinden doğan zararların tazmin edilememesi."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Hazine Teorisi (18. Yüzyıl Ortaları, Almanya): Devletin (hükümdarın) kendisi hukuka tabi olmasa da, devletin 'hazine'si ayrı bir özel hukuk tüzel kişisi olarak kabul edilmiştir. Devletin hukuka aykırı eylemlerine karşı dava açılamasa da, bu eylemlerden doğan zararlar için hazineye karşı tazminat davası açılabilmiştir.",
+    "aclama": "Hazine Teorisi, devletin hukuka aykırı eylemlerinden doğan zararlar için tazminat davası açma yolunu açarak, devletin mali sorumluluğu ilkesine dolaylı olarak zemin hazırlamıştır."
+  },
+  {
+    "soru_id": "İDARE_027",
+    "konu": "Hukuk Devletinin Gerekleri (Yargısal Denetim)",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Anayasa'nın 125. Maddesi'ndeki 'idarenin her türlü eylem ve işlemlerine karşı yargı yolu açıktır' ilkesinin metinde belirtilen *dört istisnası* nedir?",
+    "secenekler": {
+      "a": "Sadece kanunla yapılan işlemler, yönetmelikler, tüzükler ve bütçe kanunları.",
+      "b": "Cumhurbaşkanının tek başına yapacağı işlemler, Yüksek Askerî Şûra'nın terfi/kadrosuzluktan emekliye ayırma işlemleri, HSYK'nın meslekten çıkarma dışındaki kararları ve sıkıyönetim komutanı işlemleri.",
+      "c": "Olağanüstü hâl kararnameleri, Sayıştay kararları, Yüksek Seçim Kurulu kararları ve TBMM İçtüzüğü.",
+      "d": "Bireysel başvurular, uluslararası anlaşmalar, tahkim kararları ve yargı kararları.",
+      "e": "Kanunlar, Cumhurbaşkanlığı kararnameleri, Yönetmelikler ve genelgeler."
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Yargısal Denetim: İdarenin tüm eylem ve işlemlerinin yargı denetimine açık olması gerekir. ... (Metin, Türkiye'de bu ilkenin 4 istisnası olduğunu belirtir: Cumhurbaşkanının tek başına yapacağı işlemler, Yüksek Askerî Şûra'nın terfi ve kadrosuzluktan emekliye ayırma işlemleri, HSYK'nın meslekten çıkarma dışındaki kararları ve sıkıyönetim komutanı işlemleri)",
+    "aclama": "Anayasa'nın yargı yolunun açıklığı ilkesi, bu dört durumda istisnai olarak sınırlandırılmıştır."
+  },
+  {
+    "soru_id": "İDARE_028",
+    "konu": "Hukuk Devletinin Gerekleri",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Hukuk Devleti'nin gereklerinden olan 'İdarî Faaliyetlerin Bilinebilir (Belirli) Olması' ilkesi ne anlama gelir?",
+    "secenekler": {
+      "a": "İdarenin tek taraflı işlem yapması.",
+      "b": "İdarenin mahkeme kararlarına uyması.",
+      "c": "İdare edilenlerin, idarenin eylem ve işlemlerini önceden tahmin edebilmesi (düzenli idare ilkesi) ve idarenin 'kazanılmış haklara' saygı göstermesi.",
+      "d": "İdarenin yargı denetimine tabi olması.",
+      "e": "İdarenin sadece kanunla kurulması."
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "İdarî Faaliyetlerin Bilinebilir (Belirli) Olması: İdare edilenler, idarenin eylem ve işlemlerini önceden tahmin edebilmelidir. Buna 'düzenli idare ilkesi' denir. İdare, kişilerin 'kazanılmış haklarına' saygı göstermelidir.",
+    "aclama": "Bu ilke, bireylerin hukuki güvenliklerini sağlamayı amaçlar."
+  },
+  {
+    "soru_id": "İDARE_029",
+    "konu": "Hukuk Devletinin Gerekleri (Malî Sorumluluk)",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Anayasa'nın 125. Maddesi'nin son fıkrasında yer alan 'İdarenin Malî Sorumluluğu' ilkesinin temel hükmü nedir?",
+    "secenekler": {
+      "a": "İdarenin sadece kusurlu eylemlerinden doğan zararları ödemesi.",
+      "b": "İdarenin eylem ve işlemlerinden doğan zararı ödemekle yükümlü olması.",
+      "c": "Devletin borçlarının haczedilememesi.",
+      "d": "İdarenin tahkim yoluna gidememesi.",
+      "e": "İdarenin malî denetiminin Sayıştay tarafından yapılması."
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "İdarenin Malî Sorumluluğu: İdarenin, eylem ve işlemleriyle verdiği zararları tazmin etmesi gerekir. Anayasa (m.125/son) 'İdare, kendi eylem ve işlemlerinden doğan zararı ödemekle yükümlüdür' hükmünü içerir.",
+    "aclama": "Bu hüküm, devletin eylemleri sonucu vatandaşın zarar görmesi durumunda tazminat ödemesi gerektiğini güvence altına alır."
+  },
+  {
+    "soru_id": "İDARE_030",
+    "konu": "Eşitlik İlkesi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "Anayasa m.10'daki 'dil, ırk, renk, cinsiyet...' gibi temellerde ayrım yasağını emreden ve kişisel durumlarına bakılmaksızın kanunların herkese eşit uygulanmasını öngören eşitlik türü nedir?",
+    "secenekler": {
+      "a": "Nispî Eşitlik",
+      "b": "Statüsel Eşitlik",
+      "c": "Pozitif Ayrımcılık",
+      "d": "Mutlak Eşitlik",
+      "e": "Fonksiyonel Eşitlik"
+    },
+    "dogru_secenek": "d",
+    "kanit_cumlesi": "Mutlak Eşitlik: Kanunların herkese, kişisel durumlarına bakılmaksızın eşit uygulanmasıdır. Anayasa m.10'daki 'dil, ırk, renk, cinsiyet, siyasî düşünce...' gibi temellerde ayrım yasağı, mutlak eşitliği emreder.",
+    "aclama": "Mutlak eşitlik, temel haklar ve özgürlükler alanında ayrımcılığın tamamen yasaklanmasını ifade eder."
+  },
+  {
+    "soru_id": "İDARE_031",
+    "konu": "Eşitlik İlkesi",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "Anayasa m.10'a 2004 ve 2010'da eklenen fıkralarla anayasal zemin hazırlanan ve kadınlar, çocuklar, yaşlılar, özürlüler gibi 'daha zayıf gruplara' öncelik verilmesini öngören eşitlik anlayışı nedir?",
+    "secenekler": {
+      "a": "Mutlak Eşitlik",
+      "b": "Nispî Eşitlik",
+      "c": "Pozitif Ayrımcılık",
+      "d": "Kanunî Eşitlik",
+      "e": "Siyasî Eşitlik"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Pozitif Ayrımcılık: Kadınlar, çocuklar, yaşlılar, özürlüler, harp ve vazife şehitlerinin dul ve yetimleri gibi 'daha zayıf gruplara' öncelik verilmesidir. Anayasa m.10'a 2004 ve 2010'da eklenen fıkralar, bu gruplar lehine alınacak tedbirlerin eşitlik ilkesine aykırı sayılamayacağını belirterek pozitif ayrımcılığa anayasal zemin hazırlamıştır.",
+    "aclama": "Pozitif ayrımcılık, fiili eşitsizlikleri gidermek amacıyla, kanunlar önünde eşitlik ilkesine istisna getirmeyen özel düzenlemelerdir."
+  },
+  {
+    "soru_id": "İDARE_032",
+    "konu": "İdarenin Kanunîliği İlkesi",
+    "zorluk_seviyesi": "Zor",
+    "soru_metni": "'Kanuna Dayanma İlkesi'nin (Secundum Legem) temel şartı nedir ve idarenin bu ilkesinin iki istisnası hangileridir?",
+    "secenekler": {
+      "a": "İdarenin eylemleri kanuna aykırı olmamalıdır / İstisnalar: Yönetmelik ve tüzük çıkarma.",
+      "b": "İdarenin faaliyette bulunabilmesi için mutlaka kanundan yetki alması gerekir / İstisnalar: Sıkıyönetim/Olağanüstü hâl KHK'ları ve Cumhurbaşkanlığı kararnamesi.",
+      "c": "İdarenin sadece kamu yararı amacıyla hareket etmesi / İstisnalar: Yargısal denetim ve mali sorumluluk.",
+      "d": "İdarenin tek taraflı işlem yapması / İstisnalar: Hukuka uygunluk karinesi ve re'sen icra.",
+      "e": "İdarenin sadece 'intra legem' sınırlar içinde kalması / İstisnalar: Genel ve özel af ilanı."
+    },
+    "dogru_secenek": "b",
+    "kanit_cumlesi": "Kanuna Dayanma İlkesi (Secundum Legem): ...İdarenin faaliyette bulunabilmesi için mutlaka kanundan yetki alması gerekir. (Bu ilkenin iki istisnası: Sıkıyönetim/Olağanüstü hâl KHK'ları ve Cumhurbaşkanlığı kararnamesi).",
+    "aclama": "Kanuna dayanma ilkesi, idarenin ancak kanunla yetkilendirildiği alanda faaliyet gösterebileceği anlamına gelir."
+  },
+  {
+    "soru_id": "İDARE_033",
+    "konu": "İdarenin Kanunîliği İlkesi",
+    "zorluk_seviyesi": "Orta",
+    "soru_metni": "İdarenin eylem ve işlemlerinin kanuna aykırı olmaması ve kanunun çizdiği sınırlar içinde (intra legem) kalması gerektiğini ifade eden ilke nedir?",
+    "secenekler": {
+      "a": "Secundum Legem İlkesi",
+      "b": "Ultra Vires İlkesi",
+      "c": "Intra Legem İlkesi",
+      "d": "Statüsel İlke",
+      "e": "İçtihadî İlke"
+    },
+    "dogru_secenek": "c",
+    "kanit_cumlesi": "Kanuna Aykırı Olmama İlkesi (Intra Legem): İdarenin eylem ve işlemleri kanuna aykırı olmamalıdır ve kanunun çizdiği sınırlar içinde (intra legem) kalmalıdır.",
+    "aclama": "Bu ilke, idarenin hukuka bağlılık yükümlülüğünün bir boyutudur."
+  },
+  {
     "soru_id": "IH_001",
     "konu": "İdare Kavramı",
     "zorluk_seviyesi": "Kolay",
