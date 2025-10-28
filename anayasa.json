@@ -13,7 +13,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Türkiye Cumhuriyeti, toplumun huzuru, millî dayanışma ve adalet anlayışı içinde, insan haklarına saygılı, Atatürk milliyetçiliğine bağlı, başlangıçta belirtilen temel ilkelere dayanan, demokratik, lâik ve sosyal bir hukuk Devletidir.",
-    "aclama": "Anayasa, Cumhuriyetin temel niteliklerini beş ana kavramla tanımlar: demokratik, laik, sosyal hukuk devleti, insan haklarına saygılı ve Atatürk milliyetçiliğine bağlıdır."
+    "aciklama": "Anayasa, Cumhuriyetin temel niteliklerini beş ana kavramla tanımlar: demokratik, laik, sosyal hukuk devleti, insan haklarına saygılı ve Atatürk milliyetçiliğine bağlıdır."
   },
   {
     "soru_id": "ANAYASA_002",
@@ -29,7 +29,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Dili Türkçedir. Bayrağı, şekli kanununda belirtilen, beyaz ay yıldızlı al bayraktır. Millî marşı 'İstiklal Marşı'dır. Başkenti Ankara'dır.",
-    "aclama": "Bu madde, Türkiye Cumhuriyeti Devleti'nin ülkesi ve milletiyle bölünmez bir bütün olduğu hükmünü pekiştirir."
+    "aciklama": "Bu madde, Türkiye Cumhuriyeti Devleti'nin ülkesi ve milletiyle bölünmez bir bütün olduğu hükmünü pekiştirir."
   },
   {
     "soru_id": "ANAYASA_003",
@@ -45,7 +45,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Anayasanın 1 inci maddesindeki Devletin şeklinin Cumhuriyet olduğu hakkındaki hüküm ile, 2 nci maddesindeki Cumhuriyetin nitelikleri ve 3 üncü maddesi hükümleri değiştirilemez ve değiştirilmesi teklif edilemez.",
-    "aclama": "Bu madde, Anayasa'nın en temel ve değiştirilemez hükümlerini bir güvence altına alarak, devletin rejimini ve kurucu ilkelerini korur."
+    "aciklama": "Bu madde, Anayasa'nın en temel ve değiştirilemez hükümlerini bir güvence altına alarak, devletin rejimini ve kurucu ilkelerini korur."
   },
   {
     "soru_id": "ANAYASA_004",
@@ -61,7 +61,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Devletin temel amaç ve görevleri... kişinin temel hak ve hürriyetlerini, sosyal hukuk devleti ve adalet ilkeleriyle bağdaşmayacak surette sınırlayan siyasî, ekonomik ve sosyal engelleri kaldırmaya... çalışmaktır.",
-    "aclama": "Bu madde, devletin sadece koruyucu değil, aynı zamanda bireyin gelişimini kısıtlayan yapısal engelleri ortadan kaldırıcı bir rol üstlendiğini gösterir."
+    "aciklama": "Bu madde, devletin sadece koruyucu değil, aynı zamanda bireyin gelişimini kısıtlayan yapısal engelleri ortadan kaldırıcı bir rol üstlendiğini gösterir."
   },
   {
     "soru_id": "ANAYASA_005",
@@ -77,7 +77,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Egemenlik, kayıtsız şartsız Milletindir. Türk Milleti, egemenliğini, Anayasanın koyduğu esaslara göre, yetkili organları eliyle kullanır. Egemenliğin kullanılması, hiçbir surette hiçbir kişiye, zümreye veya sınıfa bırakılamaz.",
-    "aclama": "Bu madde, milli egemenlik ilkesinin kayıtsız şartsız olduğunu ve yetkilerin kaynağının Anayasa ile belirlendiğini vurgular."
+    "aciklama": "Bu madde, milli egemenlik ilkesinin kayıtsız şartsız olduğunu ve yetkilerin kaynağının Anayasa ile belirlendiğini vurgular."
   },
   {
     "soru_id": "ANAYASA_006",
@@ -93,7 +93,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Yasama yetkisi Türk Milleti adına Türkiye Büyük Millet Meclisinindir. Bu yetki devredilemez.",
-    "aclama": "Yasama yetkisinin TBMM'ye ait olması ve devredilemez olması, kuvvetler ayrılığı ilkesinin yasama ayağını oluşturur."
+    "aciklama": "Yasama yetkisinin TBMM'ye ait olması ve devredilemez olması, kuvvetler ayrılığı ilkesinin yasama ayağını oluşturur."
   },
   {
     "soru_id": "ANAYASA_007",
@@ -109,7 +109,7 @@
     },
     "dogru_secenek": "d",
     "kanit_cumlesi": "Yürütme yetkisi ve görevi, Cumhurbaşkanı tarafından, Anayasaya ve kanunlara uygun olarak kullanılır ve yerine getirilir.",
-    "aclama": "Yürütme yetkisinin Cumhurbaşkanı'na ait olması ve Anayasa ile kanunlara uygunluk şartı, hukuk devleti ilkesini pekiştirir."
+    "aciklama": "Yürütme yetkisinin Cumhurbaşkanı'na ait olması ve Anayasa ile kanunlara uygunluk şartı, hukuk devleti ilkesini pekiştirir."
   },
   {
     "soru_id": "ANAYASA_008",
@@ -125,7 +125,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Yargı yetkisi, Türk Milleti adına bağımsız ve tarafsız mahkemelerce kullanılır.",
-    "aclama": "Yargının bağımsızlığı ve tarafsızlığı, hukuk devletinin vazgeçilmez temelidir."
+    "aciklama": "Yargının bağımsızlığı ve tarafsızlığı, hukuk devletinin vazgeçilmez temelidir."
   },
   {
     "soru_id": "ANAYASA_009",
@@ -141,7 +141,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Hiçbir kişiye, aileye, zümreye veya sınıfa imtiyaz tanınamaz.",
-    "aclama": "Kanun önünde eşitlik ilkesi, bireysel ve toplumsal ayrıcalıkları kesin olarak yasaklar."
+    "aciklama": "Kanun önünde eşitlik ilkesi, bireysel ve toplumsal ayrıcalıkları kesin olarak yasaklar."
   },
   {
     "soru_id": "ANAYASA_010",
@@ -157,7 +157,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Herkes, dil, ırk, renk, cinsiyet, siyasî düşünce, felsefî inanç, din, mezhep ve benzeri sebeplerle ayırım gözetilmeksizin kanun önünde eşittir.",
-    "aclama": "Bu madde, Anayasa'nın ayrımcılığı kesin olarak yasaklayan temel güvencelerindendir."
+    "aciklama": "Bu madde, Anayasa'nın ayrımcılığı kesin olarak yasaklayan temel güvencelerindendir."
   },
   {
     "soru_id": "ANAYASA_011",
@@ -173,7 +173,7 @@
     },
     "dogru_secenek": "d",
     "kanit_cumlesi": "Savaş, seferberlik veya olağanüstü hallerde, milletlerarası hukuktan doğan yükümlülükler ihlal edilmemek kaydıyla, durumun gerektirdiği ölçüde temel hak ve hürriyetlerin kullanılması kısmen veya tamamen durdurulabilir veya bunlar için Anayasada öngörülen güvencelere aykırı tedbirler alınabilir.",
-    "aclama": "Milletlerarası hukuka uygunluk şartı, bu tür istisnai durumlarda dahi temel insan hakları standartlarının korunması gerekliliğini gösterir."
+    "aciklama": "Milletlerarası hukuka uygunluk şartı, bu tür istisnai durumlarda dahi temel insan hakları standartlarının korunması gerekliliğini gösterir."
   },
   {
     "soru_id": "ANAYASA_012",
@@ -189,7 +189,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Yakalanan veya tutuklanan kişi, tutulma yerine en yakın mahkemeye gönderilmesi için gerekli süre hariç en geç 48 saat ve toplu olarak işlenen suçlarda en çok 4 gün içinde hâkim önüne çıkarılır.",
-    "aclama": "Bu süre, temel hak ve hürriyetlerin güvencesi kapsamında kişilerin özgürlüklerinin kısıtlanma süresini belirler."
+    "aciklama": "Bu süre, temel hak ve hürriyetlerin güvencesi kapsamında kişilerin özgürlüklerinin kısıtlanma süresini belirler."
   },
   {
     "soru_id": "ANAYASA_013",
@@ -205,7 +205,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Yakalanan veya tutuklanan kişi, tutulma yerine en yakın mahkemeye gönderilmesi için gerekli süre hariç en geç 48 saat ve toplu olarak işlenen suçlarda en çok 4 gün içinde hâkim önüne çıkarılır.",
-    "aclama": "Toplu suçlarda bu süre uzatılabilir, ancak bu süreler olağanüstü hal ve savaş hallerinde daha da uzatılabilir."
+    "aciklama": "Toplu suçlarda bu süre uzatılabilir, ancak bu süreler olağanüstü hal ve savaş hallerinde daha da uzatılabilir."
   },
   {
     "soru_id": "ANAYASA_014",
@@ -221,7 +221,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Kamulaştırma bedeli ile kesin hükme bağlanan artırım bedeli nakden ve peşin olarak ödenir.",
-    "aclama": "Bu, kamulaştırma bedelinin ödenmesindeki temel kural olup, mülkiyet hakkının güvencesini içerir."
+    "aciklama": "Bu, kamulaştırma bedelinin ödenmesindeki temel kural olup, mülkiyet hakkının güvencesini içerir."
   },
   {
     "soru_id": "ANAYASA_015",
@@ -237,7 +237,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Kanunun taksitle ödemeyi öngörebileceği bu hallerde, taksitlendirme süresi 5 yılı aşamaz; bu takdirde taksitler eşit olarak ödenir.",
-    "aclama": "Kamulaştırma bedelinin taksitle ödenmesindeki istisnai haller, tarım reformu, büyük enerji/sulama projeleri gibi kamu yararı yüksek projelerdir."
+    "aciklama": "Kamulaştırma bedelinin taksitle ödenmesindeki istisnai haller, tarım reformu, büyük enerji/sulama projeleri gibi kamu yararı yüksek projelerdir."
   },
   {
     "soru_id": "ANAYASA_016",
@@ -253,7 +253,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Toplu sözleşme yapılması sırasında uyuşmazlık çıkması halinde taraflar Kamu Görevlileri Hakem Kuruluna başvurabilir. Kamu Görevlileri Hakem Kurulu kararları kesindir ve toplu sözleşme hükmündedir.",
-    "aclama": "Bu kurulun kararları kesindir ve toplu sözleşme hükmünde sayılır."
+    "aciklama": "Bu kurulun kararları kesindir ve toplu sözleşme hükmünde sayılır."
   },
   {
     "soru_id": "ANAYASA_017",
@@ -269,7 +269,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Grev ve lokavtın yasaklandığı hallerde veya ertelendiği durumlarda ertelemenin sonunda, uyuşmazlık Yüksek Hakem Kurulunca çözülür. Yüksek Hakem Kurulunun kararları kesindir ve toplu iş sözleşmesi hükmündedir.",
-    "aclama": "Yüksek Hakem Kurulu, iş uyuşmazlıklarını nihai olarak çözen ve kararları toplu iş sözleşmesi hükmünde olan organdır."
+    "aciklama": "Yüksek Hakem Kurulu, iş uyuşmazlıklarını nihai olarak çözen ve kararları toplu iş sözleşmesi hükmünde olan organdır."
   },
   {
     "soru_id": "ANAYASA_018",
@@ -285,7 +285,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Hiçbir Türk, vatana bağlılıkla bağdaşmayan bir eylemde bulunmadıkça vatandaşlıktan çıkarılamaz.",
-    "aclama": "Bu, vatandaşlık hakkının güvencesini ve keyfi uygulamalara karşı korunmasını sağlar."
+    "aciklama": "Bu, vatandaşlık hakkının güvencesini ve keyfi uygulamalara karşı korunmasını sağlar."
   },
   {
     "soru_id": "ANAYASA_019",
@@ -301,7 +301,7 @@
     },
     "dogru_secenek": "d",
     "kanit_cumlesi": "18 yaşını dolduran her Türk vatandaşı seçme ve halkoylamasına katılma haklarına sahiptir.",
-    "aclama": "18 yaş, Türkiye'de seçme ve halkoylamasına katılma (seçim) hakkının kazanıldığı yaştır."
+    "aciklama": "18 yaş, Türkiye'de seçme ve halkoylamasına katılma (seçim) hakkının kazanıldığı yaştır."
   },
   {
     "soru_id": "ANAYASA_020",
@@ -317,7 +317,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Silah altında bulunan er ve erbaşlar ile askeri öğrenciler, taksirli suçlardan hüküm giyenler hariç ceza infaz kurumlarında bulunan hükümlüler oy kullanamazlar.",
-    "aclama": "Bu madde, Anayasa'nın askeri ve hükümlü statüsündeki kişilerin oy kullanma hakkına getirdiği sınırlamayı ifade eder."
+    "aciklama": "Bu madde, Anayasa'nın askeri ve hükümlü statüsündeki kişilerin oy kullanma hakkına getirdiği sınırlamayı ifade eder."
   },
   {
     "soru_id": "ANAYASA_021",
@@ -333,7 +333,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Seçim kanunlarında yapılan değişiklikler, yürürlüğe girdiği tarihten itibaren 1 yıl içinde yapılacak seçimlerde uygulanmaz.",
-    "aclama": "Bu kural, seçim kurallarının son anda, belli bir partinin lehine olacak şekilde keyfi değiştirilmesini (Seçim Kanunları Güvencesi) engeller."
+    "aciklama": "Bu kural, seçim kurallarının son anda, belli bir partinin lehine olacak şekilde keyfi değiştirilmesini (Seçim Kanunları Güvencesi) engeller."
   },
   {
     "soru_id": "ANAYASA_022",
@@ -349,7 +349,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "(Ek fıkra: 7/5/2004-5170/1 md.) Kadınlar ve erkekler eşit haklara sahiptir. Devlet, bu eşitliğin yaşama geçmesini sağlamakla yükümlüdür.",
-    "aclama": "Bu ek fıkra, Devletin kadın ve erkek arasındaki eşitliği sadece tanımakla kalmayıp, bunu fiilen sağlamakla da yükümlü olduğunu belirtir."
+    "aciklama": "Bu ek fıkra, Devletin kadın ve erkek arasındaki eşitliği sadece tanımakla kalmayıp, bunu fiilen sağlamakla da yükümlü olduğunu belirtir."
   },
   {
     "soru_id": "ANAYASA_023",
@@ -365,7 +365,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Temel hak ve hürriyetler, yabancılar için, milletlerarası hukuka uygun olarak kanunla sınırlanabilir.",
-    "aclama": "Yabancıların temel haklarının sınırlanmasında, milletlerarası hukuk (uluslararası hukuk) en üst sınırlayıcı kuraldır."
+    "aciklama": "Yabancıların temel haklarının sınırlanmasında, milletlerarası hukuk (uluslararası hukuk) en üst sınırlayıcı kuraldır."
   },
   {
     "soru_id": "ANAYASA_024",
@@ -381,7 +381,7 @@
     },
     "dogru_secenek": "a",
     "kanit_cumlesi": "Ancak, tarım reformunun uygulanması, büyük enerji ve sulama projeleri ile iskân projelerinin gerçekleştirilmesi, yeni ormanların yetiştirilmesi, kıyıların korunması ve turizm amacıyla kamulaştırılan toprakların bedellerinin ödenme şekli kanunla gösterilir.",
-    "aclama": "Bu istisnai hallerde, kanunla taksitle ödeme öngörülür ve taksitlendirme süresi 5 yılı aşamaz."
+    "aciklama": "Bu istisnai hallerde, kanunla taksitle ödeme öngörülür ve taksitlendirme süresi 5 yılı aşamaz."
   },
   {
     "soru_id": "ANAYASA_025",
@@ -397,7 +397,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Düzeltme ve cevap yayımlanmazsa, yayımlanmasının gerekip gerekmediğine hakim tarafından ilgilinin müracaat tarihinden itibaren en geç 7 gün içerisinde karar verilir.",
-    "aclama": "Bu süre, basın yoluyla işlenen haksızlıklara karşı hukuki yolla hızlı bir çözüm üretilmesi güvencesini sağlar."
+    "aciklama": "Bu süre, basın yoluyla işlenen haksızlıklara karşı hukuki yolla hızlı bir çözüm üretilmesi güvencesini sağlar."
   },
 
   {
@@ -414,7 +414,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Parti üyesi olabilmek için 18 yaşını doldurmuş olmak gerekir.",
-    "aclama": "Türkiye'de siyasi hakların kullanımında temel kabul edilen 18 yaş, parti üyeliği için de geçerlidir."
+    "aciklama": "Türkiye'de siyasi hakların kullanımında temel kabul edilen 18 yaş, parti üyeliği için de geçerlidir."
   },
   {
     "soru_id": "ANAYASA_027",
@@ -430,7 +430,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Hakimler ve savcılar, Sayıştay dahil yüksek yargı organları mensupları, yükseköğretim öncesi öğrencileri siyasi partilere üye olamazlar.",
-    "aclama": "Bu kısıtlamalar, devletin temel adalet ve denetim mekanizmalarının tarafsızlığını korumayı amaçlar."
+    "aciklama": "Bu kısıtlamalar, devletin temel adalet ve denetim mekanizmalarının tarafsızlığını korumayı amaçlar."
   },
   {
     "soru_id": "ANAYASA_028",
@@ -446,7 +446,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Siyasi partilerin kapatılması, Yargıtay Cumhuriyet Başsavcısının açacağı dava üzerine Anayasa Mahkemesince kesin olarak karara bağlanır.",
-    "aclama": "Siyasi partilerin kapatılması, Anayasa Mahkemesi'nin görev alanındaki en kritik siyasi yargılama süreçlerinden biridir."
+    "aciklama": "Siyasi partilerin kapatılması, Anayasa Mahkemesi'nin görev alanındaki en kritik siyasi yargılama süreçlerinden biridir."
   },
   {
     "soru_id": "ANAYASA_029",
@@ -462,7 +462,7 @@
     },
     "dogru_secenek": "d",
     "kanit_cumlesi": "Bir siyasi partinin temelli kapatılmasına beyan veya faaliyetleriyle sebep olan kurucuları dahil üyeleri, Anayasa Mahkemesinin temelli kapatmaya ilişkin kesin kararının Resmî Gazetede gerekçeli olarak yayımlanmasından başlayarak 5 yıl süreyle bir başka partinin kurucusu, üyesi, yöneticisi ve deneticisi olamazlar.",
-    "aclama": "Bu, partilerin kapatılmasının siyasi hayata yansıyan ve kişilerin siyaset yapma hakkına getirilen bir kısıtlamadır."
+    "aciklama": "Bu, partilerin kapatılmasının siyasi hayata yansıyan ve kişilerin siyaset yapma hakkına getirilen bir kısıtlamadır."
   },
   {
     "soru_id": "ANAYASA_030",
@@ -478,7 +478,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Türkiye Büyük Millet Meclisi Başkanlığına bağlı olarak kurulan Kamu Denetçiliği Kurumu idarenin işleyişiyle ilgili şikâyetleri inceler.",
-    "aclama": "Kamu Denetçiliği Kurumu (Ombudsmanlık), idarenin vatandaşa karşı hesap verebilirliğini ve şeffaflığını artırmayı amaçlar."
+    "aciklama": "Kamu Denetçiliği Kurumu (Ombudsmanlık), idarenin vatandaşa karşı hesap verebilirliğini ve şeffaflığını artırmayı amaçlar."
   },
   {
     "soru_id": "ANAYASA_031",
@@ -494,7 +494,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Kamu Başdenetçisi Türkiye Büyük Millet Meclisi tarafından gizli oyla 4 yıl için seçilir.",
-    "aclama": "Başdenetçi seçimi, gizli oyla yapılması nedeniyle siyasi etkilere karşı korunan bir süreçtir."
+    "aciklama": "Başdenetçi seçimi, gizli oyla yapılması nedeniyle siyasi etkilere karşı korunan bir süreçtir."
   },
   {
     "soru_id": "ANAYASA_032",
@@ -510,7 +510,7 @@
     },
     "dogru_secenek": "d",
     "kanit_cumlesi": "İlk iki oylamada üye tamsayısının $2/3$'ü... aranır.",
-    "aclama": "İlk iki oylamada aranan yüksek çoğunluk ($2/3$), seçilecek adayın Meclis'te geniş bir uzlaşıya sahip olmasını amaçlar."
+    "aciklama": "İlk iki oylamada aranan yüksek çoğunluk ($2/3$), seçilecek adayın Meclis'te geniş bir uzlaşıya sahip olmasını amaçlar."
   },
   {
     "soru_id": "ANAYASA_033",
@@ -526,7 +526,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Türkiye Büyük Millet Meclisi genel oyla seçilen 600 milletvekilinden oluşur.",
-    "aclama": "Milletvekili sayısı ve seçim usulü, TBMM'nin temsili gücünü belirleyen temel anayasal bilgidir."
+    "aciklama": "Milletvekili sayısı ve seçim usulü, TBMM'nin temsili gücünü belirleyen temel anayasal bilgidir."
   },
   {
     "soru_id": "ANAYASA_034",
@@ -542,7 +542,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Türkiye Büyük Millet Meclisi ve Cumhurbaşkanlığı seçimleri 5 yılda bir aynı günde yapılır.",
-    "aclama": "Bu düzenleme, iki temel yürütme ve yasama organının seçimlerinin eş zamanlı yapılmasını sağlar."
+    "aciklama": "Bu düzenleme, iki temel yürütme ve yasama organının seçimlerinin eş zamanlı yapılmasını sağlar."
   },
   {
     "soru_id": "ANAYASA_035",
@@ -558,7 +558,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Ara seçim, her seçim döneminde bir defa yapılır ve genel seçimden 30 ay geçmedikçe ara seçime gidilemez.",
-    "aclama": "Ara seçim yasağı ve kısıtlaması, seçim dönemlerinin istikrarını ve seçimin ana sonuçlarını korumayı amaçlar."
+    "aciklama": "Ara seçim yasağı ve kısıtlaması, seçim dönemlerinin istikrarını ve seçimin ana sonuçlarını korumayı amaçlar."
   },
   {
     "soru_id": "ANAYASA_036",
@@ -574,7 +574,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Ancak, boşalan üyeliklerin sayısı, üye tamsayısının %5'ini bulduğu hallerde, ara seçimlerinin 3 ay içinde yapılmasına karar verilir.",
-    "aclama": "Bu kural, Meclis'in temsil gücünün ciddi şekilde zayıflaması durumunda istisnai olarak ara seçime hemen gidilmesini sağlar."
+    "aciklama": "Bu kural, Meclis'in temsil gücünün ciddi şekilde zayıflaması durumunda istisnai olarak ara seçime hemen gidilmesini sağlar."
   },
   {
     "soru_id": "ANAYASA_037",
@@ -590,7 +590,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Genel seçimlere 1 yıl kala, ara seçimi yapılamaz.",
-    "aclama": "Bu kural, genel seçim öncesi seçim sistemindeki değişiklikleri önler ve seçim takvimini korur."
+    "aciklama": "Bu kural, genel seçim öncesi seçim sistemindeki değişiklikleri önler ve seçim takvimini korur."
   },
   {
     "soru_id": "ANAYASA_038",
@@ -606,7 +606,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Yüksek Seçim Kurulu 7 asıl ve 4 yedek üyeden oluşur.",
-    "aclama": "YSK'nın yapısı, seçimlerin tarafsız yürütülmesini sağlamak için tasarlanmıştır."
+    "aciklama": "YSK'nın yapısı, seçimlerin tarafsız yürütülmesini sağlamak için tasarlanmıştır."
   },
   {
     "soru_id": "ANAYASA_039",
@@ -622,7 +622,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Üyelerin 6'sı Yargıtay, 5'i Danıştay Genel Kurullarınca kendi üyeleri arasından üye tamsayılarının salt çoğunluğunun gizli oyu ile seçilir.",
-    "aclama": "YSK üyelerinin Yargıtay ve Danıştay'dan seçilmesi, kurulun bağımsızlığını pekiştirir."
+    "aciklama": "YSK üyelerinin Yargıtay ve Danıştay'dan seçilmesi, kurulun bağımsızlığını pekiştirir."
   },
   {
     "soru_id": "ANAYASA_040",
@@ -638,7 +638,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Meclis çalışmalarına özürsüz veya izinsiz olarak 1 ay içerisinde toplam 5 birleşim günü katılmayan milletvekilinin milletvekilliğinin düşmesine, durumun Meclis Başkanlık Divanınca tespit edilmesi üzerine, Genel Kurulca üye tamsayısının salt çoğunluğunun oyuyla karar verilebilir.",
-    "aclama": "Milletvekilliğinin düşmesi, bu şartların Meclis Genel Kurulu'nda üye tamsayısının salt çoğunluğunun oyuyla kabul edilmesiyle gerçekleşir."
+    "aciklama": "Milletvekilliğinin düşmesi, bu şartların Meclis Genel Kurulu'nda üye tamsayısının salt çoğunluğunun oyuyla kabul edilmesiyle gerçekleşir."
   },
   {
     "soru_id": "ANAYASA_041",
@@ -654,7 +654,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Meclis Genel Kurulu kararının alındığı tarihten başlayarak 7 gün içerisinde ilgili milletvekili veya bir diğer milletvekili, kararın, Anayasaya, kanuna veya İçtüzüğe aykırılığı iddiasıyla iptali için Anayasa Mahkemesine başvurabilir.",
-    "aclama": "Bu kısa süre, milletvekilinin hak arama yolunu güvence altına alır."
+    "aciklama": "Bu kısa süre, milletvekilinin hak arama yolunu güvence altına alır."
   },
   {
     "soru_id": "ANAYASA_042",
@@ -670,7 +670,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Anayasa Mahkemesi, iptal istemini 15 gün içerisinde kesin karara bağlar.",
-    "aclama": "Anayasa Mahkemesi'nin bu kararları kısa sürede vermesi, siyasi belirsizliği önlemeyi amaçlar."
+    "aciklama": "Anayasa Mahkemesi'nin bu kararları kısa sürede vermesi, siyasi belirsizliği önlemeyi amaçlar."
   },
   {
     "soru_id": "ANAYASA_043",
@@ -686,7 +686,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "TBMM üye tamsayısının $3/5$ çoğunluğunun kararı ile genel ve özel af ilânına karar vermek.",
-    "aclama": "Af ilanı, ceza hukukunda özel bir yetki olup, TBMM'de nitelikli çoğunlukla kabul edilmesini gerektirir."
+    "aciklama": "Af ilanı, ceza hukukunda özel bir yetki olup, TBMM'de nitelikli çoğunlukla kabul edilmesini gerektirir."
   },
   {
     "soru_id": "ANAYASA_044",
@@ -702,7 +702,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Cumhurbaşkanı, TBMM'ce kabul edilen kanunları 15 gün içinde yayımlar.",
-    "aclama": "Kanunların yayımlanma süresi, kanunların yürürlüğe girmesi açısından hukuki kesinliği sağlar."
+    "aciklama": "Kanunların yayımlanma süresi, kanunların yürürlüğe girmesi açısından hukuki kesinliği sağlar."
   },
   {
     "soru_id": "ANAYASA_045",
@@ -718,7 +718,7 @@
     },
     "dogru_secenek": "d",
     "kanit_cumlesi": "TBMM, geri gönderilen kanunu üye tamsayısının salt çoğunluğuyla aynen kabul ederse, kanun Cumhurbaşkanınca yayımlanır.",
-    "aclama": "Cumhurbaşkanı'nın veto yetkisine karşı Meclis'in direnmesi, üye tamsayısının salt çoğunluğunu gerektirir."
+    "aciklama": "Cumhurbaşkanı'nın veto yetkisine karşı Meclis'in direnmesi, üye tamsayısının salt çoğunluğunu gerektirir."
   },
   {
     "soru_id": "ANAYASA_046",
@@ -734,7 +734,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Usulüne göre yürürlüğe konulmuş temel hak ve özgürlüklere ilişkin milletlerarası andlaşmalarla kanunların aynı konuda farklı hükümler içermesi nedeniyle çıkabilecek uyuşmazlıklarda milletlerarası andlaşma hükümleri esas alınır.",
-    "aclama": "Bu kural, uluslararası insan hakları sözleşmelerinin, kanunlara göre üstün olduğunu belirtir."
+    "aciklama": "Bu kural, uluslararası insan hakları sözleşmelerinin, kanunlara göre üstün olduğunu belirtir."
   },
   {
     "soru_id": "ANAYASA_047",
@@ -750,7 +750,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Türk Silahlı Kuvvetlerinin yabancı ülkelere gönderilmesine veya yabancı silahlı kuvvetlerin Türkiye'de bulunmasına izin verme yetkisi TBMM'nindir.",
-    "aclama": "Savaş ilanı ve asker gönderme yetkisi, milli iradenin tecelligahı olan TBMM'nin en önemli yetkilerindendir."
+    "aciklama": "Savaş ilanı ve asker gönderme yetkisi, milli iradenin tecelligahı olan TBMM'nin en önemli yetkilerindendir."
   },
   {
     "soru_id": "ANAYASA_048",
@@ -766,7 +766,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Meclis Başkanı da doğrudan doğruya veya üyelerin $1/5$'inin yazılı istemi üzerine, Meclisi toplantıya çağırır.",
-    "aclama": "Bu kural, TBMM üyelerine (azınlık dâhil) Meclis'i olağanüstü durumlarda toplantıya çağırma yetkisi verir."
+    "aciklama": "Bu kural, TBMM üyelerine (azınlık dâhil) Meclis'i olağanüstü durumlarda toplantıya çağırma yetkisi verir."
   },
   {
     "soru_id": "ANAYASA_049",
@@ -782,7 +782,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "TBMM'nin Başkanlık Divanı, Meclis üyeleri arasından seçilen Meclis Başkanı, Başkanvekilleri, Katip üyeler ve İdare Amirlerinden oluşur... Siyasi parti grupları Başkanlık için aday gösteremezler.",
-    "aclama": "Başkanlık Divanı, Meclis'in yönetim organıdır; Meclis Başkanı'nın tarafsızlığını sağlamak için siyasi parti gruplarının aday gösteremeyeceği tek pozisyondur."
+    "aciklama": "Başkanlık Divanı, Meclis'in yönetim organıdır; Meclis Başkanı'nın tarafsızlığını sağlamak için siyasi parti gruplarının aday gösteremeyeceği tek pozisyondur."
   },
   {
     "soru_id": "ANAYASA_050",
@@ -798,7 +798,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Bir yasama döneminde 2 seçim yapılır. İlk seçilenlerin görev süresi 2 yıldır, ikinci devre için seçilenlerin görev süresi ise o yasama döneminin sonuna kadar devam eder.",
-    "aclama": "Başkanlık Divanı seçimleri, yasama döneminin başında ve ortasında olmak üzere iki defa yapılır."
+    "aciklama": "Başkanlık Divanı seçimleri, yasama döneminin başında ve ortasında olmak üzere iki defa yapılır."
   },
 
   {
@@ -815,7 +815,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "AYM 15 üyeden kurulur.",
-    "aclama": "Anayasa Mahkemesi, kanunların Anayasaya uygunluğunu denetleyen ve bireysel başvuruları karara bağlayan en yüksek mahkemedir."
+    "aciklama": "Anayasa Mahkemesi, kanunların Anayasaya uygunluğunu denetleyen ve bireysel başvuruları karara bağlayan en yüksek mahkemedir."
   },
   {
     "soru_id": "ANAYASA_052",
@@ -831,7 +831,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "AYM 15 üyeden kurulur. TBMM'nin Seçtiği Üyeler (3 Üye): 2 üyeyi Sayıştay Genel Kurulunun... 1 üyeyi baro başkanlarının serbest avukatlar arasından...",
-    "aclama": "AYM'nin 15 üyesinden 3'ü TBMM tarafından Sayıştay (2) ve Baro Başkanları (1) adayları arasından seçilir."
+    "aciklama": "AYM'nin 15 üyesinden 3'ü TBMM tarafından Sayıştay (2) ve Baro Başkanları (1) adayları arasından seçilir."
   },
   {
     "soru_id": "ANAYASA_053",
@@ -847,7 +847,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Seçimde ilk oylamada üye tam sayısının $2/3$'ü ve ikinci oylamada üye tam sayısının salt çoğunluğu aranır.",
-    "aclama": "TBMM'de AYM üyesi seçimi, en yüksek nitelikli çoğunluk gerektiren prosedürlerden biridir."
+    "aciklama": "TBMM'de AYM üyesi seçimi, en yüksek nitelikli çoğunluk gerektiren prosedürlerden biridir."
   },
   {
     "soru_id": "ANAYASA_054",
@@ -863,7 +863,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Cumhurbaşkanının Seçtiği Üyeler (12 Üye)... En az 2'si hukukçu olmak üzere 3 üyeyi Yükseköğretim Kurulunun... göstereceği üçer aday içinden seçer.",
-    "aclama": "Cumhurbaşkanı, toplam 12 AYM üyesi seçer. Bu üyeler arasında Yükseköğretim Kurulu adayları önemli bir akademik kontenjanı oluşturur."
+    "aciklama": "Cumhurbaşkanı, toplam 12 AYM üyesi seçer. Bu üyeler arasında Yükseköğretim Kurulu adayları önemli bir akademik kontenjanı oluşturur."
   },
   {
     "soru_id": "ANAYASA_055",
@@ -879,7 +879,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "3 üyeyi Yargıtay, 2 üyeyi Danıştay genel kurullarınca kendi başkan ve üyeleri arasından her boş yer için gösterecekleri üçer aday içinden seçer.",
-    "aclama": "Cumhurbaşkanı'nın Yüksek Mahkemelerden seçtiği üyeler, yargı organları arasında bir denge gözetilmesini amaçlar."
+    "aciklama": "Cumhurbaşkanı'nın Yüksek Mahkemelerden seçtiği üyeler, yargı organları arasında bir denge gözetilmesini amaçlar."
   },
   {
     "soru_id": "ANAYASA_056",
@@ -895,7 +895,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Avukatların en az 20 yıl fiilen avukatlık yapmış olması gerekir. Yükseköğretim kurumları öğretim üyelerinin profesör veya doçent unvanını kazanmış olması gerekir.",
-    "aclama": "AYM üyeliği için hukuk tecrübesi ve akademik nitelikler açısından yüksek standartlar belirlenmiştir."
+    "aciklama": "AYM üyeliği için hukuk tecrübesi ve akademik nitelikler açısından yüksek standartlar belirlenmiştir."
   },
   {
     "soru_id": "ANAYASA_057",
@@ -911,7 +911,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Üst kademe yöneticilerinin yükseköğrenim görmüş ve en az 20 yıl kamu hizmetinde fiilen çalışmış olması gerekir. Birinci sınıf hâkim ve savcıların adaylık dahil en az 20 yıl çalışmış olması şarttır.",
-    "aclama": "Bu görevler için adaylardan uzun süreli ve nitelikli mesleki tecrübe aranır."
+    "aciklama": "Bu görevler için adaylardan uzun süreli ve nitelikli mesleki tecrübe aranır."
   },
   {
     "soru_id": "ANAYASA_058",
@@ -927,7 +927,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Üyeler arasından gizli oyla ve üye tam sayısının salt çoğunluğu ile 4 yıl için bir Başkan ve iki başkanvekili seçilir. Süresi bitenler yeniden seçilebilirler.",
-    "aclama": "Başkanlık seçimi gizli oyla yapılır ve süresi bitenler yeniden seçilebilir."
+    "aciklama": "Başkanlık seçimi gizli oyla yapılır ve süresi bitenler yeniden seçilebilir."
   },
   {
     "soru_id": "ANAYASA_059",
@@ -943,7 +943,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Üyeler 12 yıl için seçilirler. Bir kimse iki defa AYM üyesi seçilemez. Üyeler 65 yaşını doldurunca emekliye ayrılırlar.",
-    "aclama": "AYM üyeliği tek dönemle (12 yıl) sınırlı bir görevdir ve 65 yaş sınırı uygulanır."
+    "aciklama": "AYM üyeliği tek dönemle (12 yıl) sınırlı bir görevdir ve 65 yaş sınırı uygulanır."
   },
   {
     "soru_id": "ANAYASA_060",
@@ -959,7 +959,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Üyelik, bir üyenin hakimlik mesleğinden çıkarılmayı gerektiren bir suçtan dolayı hüküm giymesi halinde kendiliğinden... sona erer.",
-    "aclama": "Bu, üyenin hukuki ve mesleki itibarını kaybetmesi durumunda üyeliğin otomatik olarak sona ermesi şartıdır."
+    "aciklama": "Bu, üyenin hukuki ve mesleki itibarını kaybetmesi durumunda üyeliğin otomatik olarak sona ermesi şartıdır."
   },
   {
     "soru_id": "ANAYASA_061",
@@ -975,7 +975,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Anayasa değişikliklerini ise sadece şekil bakımından inceler ve denetler.",
-    "aclama": "Anayasa değişikliklerinin sadece şekil (usul) yönünden denetlenmesi, Anayasa koyucu iradenin (TBMM) siyasi alanını korur."
+    "aciklama": "Anayasa değişikliklerinin sadece şekil (usul) yönünden denetlenmesi, Anayasa koyucu iradenin (TBMM) siyasi alanını korur."
   },
   {
     "soru_id": "ANAYASA_062",
@@ -991,7 +991,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Olağanüstü hallerde ve savaş hallerinde çıkarılan Cumhurbaşkanlığı kararnamelerinin şekil ve esas bakımından Anayasaya aykırılığı iddiasıyla, AYM'de dava açılamaz.",
-    "aclama": "Olağanüstü yönetim usullerinin gerektirdiği hız ve etkinlik nedeniyle bu kararnameler yargı denetimi dışı bırakılmıştır."
+    "aciklama": "Olağanüstü yönetim usullerinin gerektirdiği hız ve etkinlik nedeniyle bu kararnameler yargı denetimi dışı bırakılmıştır."
   },
   {
     "soru_id": "ANAYASA_063",
@@ -1007,7 +1007,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Şekil Bakımından Denetim: Cumhurbaşkanınca veya TBMM üyelerinin $1/5$'i tarafından istenebilir.",
-    "aclama": "Şekil denetiminde başvuru yetkisi, Cumhurbaşkanı ve TBMM'deki belirli bir azınlık grubuna verilmiştir."
+    "aciklama": "Şekil denetiminde başvuru yetkisi, Cumhurbaşkanı ve TBMM'deki belirli bir azınlık grubuna verilmiştir."
   },
   {
     "soru_id": "ANAYASA_064",
@@ -1023,7 +1023,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Kanunun yayımlandığı tarihten itibaren 10 gün geçtikten sonra, şekil bozukluğuna dayalı iptal davası açılamaz; def'i yoluyla da ileri sürülemez.",
-    "aclama": "Şekil bozukluğuna dayalı itirazlar, hukuki kesinliği sağlamak adına kısa bir süre ile sınırlandırılmıştır."
+    "aciklama": "Şekil bozukluğuna dayalı itirazlar, hukuki kesinliği sağlamak adına kısa bir süre ile sınırlandırılmıştır."
   },
   {
     "soru_id": "ANAYASA_065",
@@ -1039,7 +1039,7 @@
     },
     "dogru_secenek": "e",
     "kanit_cumlesi": "AYM, Cumhurbaşkanını, TBMM Başkanını, Cumhurbaşkanı yardımcılarını, bakanları, AYM, Yargıtay, Danıştay Başkan ve üyelerini, Başsavcılarını, Cumhuriyet Başsavcıvekilini, Hakimler ve Savcılar Kurulu ve Sayıştay Başkan ve üyelerini görevleriyle ilgili suçlardan dolayı Yüce Divan sıfatıyla yargılar. Genelkurmay Başkanı, Kara, Deniz ve Hava Kuvvetleri Komutanları da görevleriyle ilgili suçlardan dolayı Yüce Divanda yargılanırlar.",
-    "aclama": "Yüce Divan'da yargılananlar, devletin en üst düzey yürütme ve yargı organlarının yöneticileridir; milletvekilleri ise Yüce Divan'da yargılanmaz."
+    "aciklama": "Yüce Divan'da yargılananlar, devletin en üst düzey yürütme ve yargı organlarının yöneticileridir; milletvekilleri ise Yüce Divan'da yargılanmaz."
   },
   {
     "soru_id": "ANAYASA_066",
@@ -1055,7 +1055,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Yüce Divanda, savcılık görevini Cumhuriyet Başsavcısı veya Cumhuriyet Başsavcıvekili yapar.",
-    "aclama": "Yüce Divan yargılamaları, normal yargılama süreçlerine benzer şekilde, savcılık görevinin Yargıtay Cumhuriyet Başsavcılığı tarafından yürütülmesini gerektirir."
+    "aciklama": "Yüce Divan yargılamaları, normal yargılama süreçlerine benzer şekilde, savcılık görevinin Yargıtay Cumhuriyet Başsavcılığı tarafından yürütülmesini gerektirir."
   },
   {
     "soru_id": "ANAYASA_067",
@@ -1071,7 +1071,7 @@
     },
     "dogru_secenek": "d",
     "kanit_cumlesi": "Genel Kurul, Mahkeme Başkanının veya Başkanın belirleyeceği başkanvekilinin başkanlığında en az 10 üye ile toplanır.",
-    "aclama": "AYM Genel Kurulu, Mahkemenin en az $2/3$'ü (10 üye) ile toplanır."
+    "aciklama": "AYM Genel Kurulu, Mahkemenin en az $2/3$'ü (10 üye) ile toplanır."
   },
   {
     "soru_id": "ANAYASA_068",
@@ -1087,7 +1087,7 @@
     },
     "dogru_secenek": "d",
     "kanit_cumlesi": "Anayasa değişikliğinde iptale, siyasî partilerin kapatılmasına ya da Devlet yardımından yoksun bırakılmasına karar verilebilmesi için toplantıya katılan üyelerin $2/3$'ü oy çokluğu şarttır.",
-    "aclama": "Bu kararların alınması için yüksek bir çoğunluk aranması, siyasi hassasiyetleri ve Anayasa'nın temel hükümlerini güvence altına almayı amaçlar."
+    "aciklama": "Bu kararların alınması için yüksek bir çoğunluk aranması, siyasi hassasiyetleri ve Anayasa'nın temel hükümlerini güvence altına almayı amaçlar."
   },
   {
     "soru_id": "ANAYASA_069",
@@ -1103,7 +1103,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "AYM'de doğrudan doğruya iptal davası açabilme hakkı, Cumhurbaşkanına, TBMM'de en fazla üyeye sahip iki siyasi parti grubuna ve üye tamsayısının en az $1/5$ tutarındaki üyelere aittir.",
-    "aclama": "İptal davası açma hakkı, Cumhurbaşkanı ve TBMM'deki siyasi azınlıklar (en fazla üyeye sahip iki grup ve $1/5$ oranındaki milletvekili grubu) arasında dengelenmiştir."
+    "aciklama": "İptal davası açma hakkı, Cumhurbaşkanı ve TBMM'deki siyasi azınlıklar (en fazla üyeye sahip iki grup ve $1/5$ oranındaki milletvekili grubu) arasında dengelenmiştir."
   },
   {
     "soru_id": "ANAYASA_070",
@@ -1119,7 +1119,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Doğrudan doğruya iptal davası açma hakkı, iptali istenen kanun, Cumhurbaşkanlığı kararnamesi veya içtüzüğün Resmi Gazetede yayımlanmasından başlayarak 60 gün sonra düşer.",
-    "aclama": "İptal davası açma süresi, hukuki kesinliği sağlamak amacıyla 60 gün ile sınırlandırılmıştır."
+    "aciklama": "İptal davası açma süresi, hukuki kesinliği sağlamak amacıyla 60 gün ile sınırlandırılmıştır."
   },
   {
     "soru_id": "ANAYASA_071",
@@ -1135,7 +1135,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "AYM, işin kendisine gelişinden başlamak üzere 5 ay içinde kararını verir ve açıklar. AYM'nin işin esasına girerek verdiği red kararının Resmî Gazetede yayımlanmasından sonra 10 yıl geçmedikçe aynı kanun hükmünün Anayasaya aykırılığı iddiasıyla tekrar başvuruda bulunulamaz.",
-    "aclama": "Bu süreler, AYM'nin yargı süreçlerinin hızını ve kararlarının istikrarını (10 yıllık yasak) belirler."
+    "aciklama": "Bu süreler, AYM'nin yargı süreçlerinin hızını ve kararlarının istikrarını (10 yıllık yasak) belirler."
   },
   {
     "soru_id": "ANAYASA_072",
@@ -1151,7 +1151,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "Adliye mahkemelerince verilen ve kanunun başka bir adli yargı merciine bırakmadığı karar ve hükümlerin son inceleme merciidir. Üyeleri... Hakimler ve Savcılar Kurulunca üye tamsayısının salt çoğunluğu ile ve gizli oyla seçilir.",
-    "aclama": "Yargıtay, adli yargıdaki en yüksek mahkemedir ve üyeleri HSK tarafından gizli oyla seçilir."
+    "aciklama": "Yargıtay, adli yargıdaki en yüksek mahkemedir ve üyeleri HSK tarafından gizli oyla seçilir."
   },
   {
     "soru_id": "ANAYASA_073",
@@ -1167,7 +1167,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Yargıtay Cumhuriyet Başsavcısı ve Cumhuriyet Başsavcıvekili, Yargıtay Genel Kurulunun kendi üyeleri arasından gizli oyla belirleyeceği beşer aday arasından Cumhurbaşkanı tarafından 4 yıl için seçilirler.",
-    "aclama": "Bu makamlar, Cumhurbaşkanı tarafından atanır ve seçim, Yargıtay Genel Kurulu'nun aday belirleme süreciyle başlar."
+    "aciklama": "Bu makamlar, Cumhurbaşkanı tarafından atanır ve seçim, Yargıtay Genel Kurulu'nun aday belirleme süreciyle başlar."
   },
   {
     "soru_id": "ANAYASA_074",
@@ -1183,7 +1183,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "İdari mahkemelerce verilen ve kanunun başka bir idari yargı merciine bırakmadığı karar ve hükümlerin son inceleme merciidir. Üyelerinin $3/4$'ü, ... Hakimler ve Savcılar Kurulu...",
-    "aclama": "Danıştay, idari yargıdaki en yüksek mahkemedir ve üyelerinin büyük çoğunluğu HSK tarafından seçilir."
+    "aciklama": "Danıştay, idari yargıdaki en yüksek mahkemedir ve üyelerinin büyük çoğunluğu HSK tarafından seçilir."
   },
   {
     "soru_id": "ANAYASA_075",
@@ -1199,7 +1199,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Bu mahkemenin Başkanlığını Anayasa Mahkemesince, kendi üyeleri arasından görevlendirilen üye yapar.",
-    "aclama": "Uyuşmazlık Mahkemesi, adli ve idari yargı mercileri arasındaki görev ve hüküm uyuşmazlıklarını çözdüğü için, en yüksek yargı organı olan AYM'nin bir üyesi tarafından yönetilir."
+    "aciklama": "Uyuşmazlık Mahkemesi, adli ve idari yargı mercileri arasındaki görev ve hüküm uyuşmazlıklarını çözdüğü için, en yüksek yargı organı olan AYM'nin bir üyesi tarafından yönetilir."
   },
   {
     "soru_id": "ANAYASA_076",
@@ -1215,7 +1215,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "HSK 13 üyeden oluşur; iki daire halinde çalışır. Kurulun Başkanı Adalet Bakanıdır.",
-    "aclama": "HSK'nın Başkanı Adalet Bakanıdır ve Adalet Bakanlığı Müsteşarı (güncel Anayasa metnine göre Bakan Yardımcısı) Kurulun tabiî üyesidir."
+    "aciklama": "HSK'nın Başkanı Adalet Bakanıdır ve Adalet Bakanlığı Müsteşarı (güncel Anayasa metnine göre Bakan Yardımcısı) Kurulun tabiî üyesidir."
   },
   {
     "soru_id": "ANAYASA_077",
@@ -1231,7 +1231,7 @@
     },
     "dogru_secenek": "b",
     "kanit_cumlesi": "3 üyesi birinci sınıf olup... adlî yargı hâkim ve savcıları arasından, 1 üyesi birinci sınıf olup... idarî yargı hâkim ve savcıları arasından Cumhurbaşkanınca seçilir.",
-    "aclama": "Cumhurbaşkanı, yargı mensupları arasından toplam 4 HSK üyesi (3 adli, 1 idari) seçer."
+    "aciklama": "Cumhurbaşkanı, yargı mensupları arasından toplam 4 HSK üyesi (3 adli, 1 idari) seçer."
   },
   {
     "soru_id": "ANAYASA_078",
@@ -1247,7 +1247,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "3 üyesi nitelikleri kanunda belirtilen yükseköğretim kurumlarının hukuk dallarında görev yapan öğretim üyeleri ile avukatlar arasından Türkiye Büyük Millet Meclisi tarafından seçilir.",
-    "aclama": "TBMM, HSK'ya yasama temsiliyetini sağlamak amacıyla bu üyeleri seçer."
+    "aciklama": "TBMM, HSK'ya yasama temsiliyetini sağlamak amacıyla bu üyeleri seçer."
   },
   {
     "soru_id": "ANAYASA_079",
@@ -1263,7 +1263,7 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Sayıştay, merkezî yönetim bütçesi kapsamındaki kamu idareleri ile sosyal güvenlik kurumlarının bütün gelir ve giderleri ile mallarını Türkiye Büyük Millet Meclisi adına denetlemek ve sorumluların hesap ve işlemlerini kesin hükme bağlamak ve kanunlarla verilen inceleme, denetleme ve hükme bağlama işlerini yapmakla görevlidir.",
-    "aclama": "Sayıştay, TBMM adına mali denetimi gerçekleştiren en yüksek denetleme organıdır."
+    "aciklama": "Sayıştay, TBMM adına mali denetimi gerçekleştiren en yüksek denetleme organıdır."
   },
   {
     "soru_id": "ANAYASA_080",
@@ -1279,6 +1279,6 @@
     },
     "dogru_secenek": "c",
     "kanit_cumlesi": "Yargıtay Birinci Başkanı, birinci başkanvekilleri ve daire başkanları kendi üyeleri arasından Yargıtay Genel Kurulunca üye tamsayısının salt çoğunluğu ve gizli oyla 4 yıl için seçilirler. ... Danıştay Başkanı, Başsavcı, başkanvekilleri ve daire başkanları, kendi üyeleri arasından Danıştay Genel Kurulunca üye tamsayısının salt çoğunluğu ve gizli oyla 4 yıl için seçilirler.",
-    "aclama": "Yargıtay ve Danıştay'ın üst düzey yöneticileri, kendi genel kurulları tarafından seçilir ve süresi bitenler yeniden seçilebilirler."
+    "aciklama": "Yargıtay ve Danıştay'ın üst düzey yöneticileri, kendi genel kurulları tarafından seçilir ve süresi bitenler yeniden seçilebilirler."
   }
 ]
