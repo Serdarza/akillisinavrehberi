@@ -92,16 +92,16 @@ document.addEventListener('DOMContentLoaded', () => {
             { text: "Zorluklar, başarının değerini artıran süslerdir.", author: "Molière" },
             { text: "Başlamak için en mükemmel anı beklersen, hiçbir zaman başlayamazsın.", author: "John Wanamaker" },
             { text: "Zafer, ben yapabilirim diyebilenindir.", author: "Virgil" },
-            { text: "Hiç kimse asla elinin emeğinden daha hayırlı bir kazanç yemez.", author: "Hadis-i Şerif (Buhârî, Büyû: 15)" }
+            { text: "Hiç kimse asla elinin emeğinden daha hayırlı bir kazanç yemez.", author: "Hadis-i Şerif (Buhârî, Büyû: 15)" },
 
-{ text: "İlim Çin'de de olsa alınız. Zira ilim öğrenmek, kadın erkek her Müslümana farzdır.", author: "Hadis-i Şerif (Beyhâkî, Şu'abü'l-Îmân)" },
+            { text: "İlim Çin'de de olsa alınız. Zira ilim öğrenmek, kadın erkek her Müslümana farzdır.", author: "Hadis-i Şerif (Beyhâkî, Şu'abü'l-Îmân)" },
 
-{ text: "Bana bir harf öğretenin kırk yıl kölesi olurum.", author: "Hz. Ali (r.a.)" },
+            { text: "Bana bir harf öğretenin kırk yıl kölesi olurum.", author: "Hz. Ali (r.a.)" },
 
-{ text: "Başlamak, başarmanın yarısıdır.", author: "Yunus Emre" },
-{ text: "Âyinesi iştir kişinin lafa bakılmaz; Şahsın görünür rütbe-i aklı eserinde.", author: "Ziya Paşa" },
-{ text: "Sana fayda veren şeyleri elde etmeye gayret et. Allah'tan yardım dile ve acizlik gösterme. ", author: "Hadis-i Şerif (Müslim, Kader: 34)" },
- { text: "Büyük düşünürler fikirleri, ortalama insanlar olayları, küçük insanlar ise kişileri tartışır.", author: "Eleanor Roosevelt" }
+            { text: "Başlamak, başarmanın yarısıdır.", author: "Yunus Emre" },
+            { text: "Âyinesi iştir kişinin lafa bakılmaz; Şahsın görünür rütbe-i aklı eserinde.", author: "Ziya Paşa" },
+            { text: "Sana fayda veren şeyleri elde etmeye gayret et. Allah'tan yardım dile ve acizlik gösterme. ", author: "Hadis-i Şerif (Müslim, Kader: 34)" },
+            { text: "Büyük düşünürler fikirleri, ortalama insanlar olayları, küçük insanlar ise kişileri tartışır.", author: "Eleanor Roosevelt" }
         ];
         
         const isQuoteShown = sessionStorage.getItem('motivationQuoteShown');
@@ -156,8 +156,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Yardımcı Fonksiyonlar ---
     const gosterEkrani = (ekran) => {
-        [konuSecimEkrani, altMenu, soruEkrani, dersNotuEkrani].forEach(e => e.classList.add('hidden'));
-        ekran.classList.remove('hidden');
+        // Tüm ana ekranları gizle
+        [konuSecimEkrani, altMenu, soruEkrani, dersNotuEkrani].forEach(e => {
+            if (e) e.classList.add('hidden');
+        });
+        
+        // Sadece istenen ekranı göster
+        if (ekran) ekran.classList.remove('hidden');
 
         // Arama kutusunu her ekran değişiminde temizle
         if (aramaInput) aramaInput.value = '';
@@ -224,7 +229,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     // --- Paylaşma Fonksiyonu (Soru Ekranı İçin) ---
-    const shareScreenshot = async () => { /* ... fonksiyon içeriği önceki yanıttan korunur ... */ };
+    const shareScreenshot = async () => { 
+        alert("Paylaşım özelliği tarayıcı kısıtlamaları nedeniyle devre dışı bırakılmıştır.");
+    };
     paylasIcon.addEventListener('click', shareScreenshot);
 
 
@@ -423,6 +430,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const konuAdi = e.target.textContent;
             aktifKonuDosyasi = konuDosyasi;
             altMenuBaslik.textContent = konuAdi;
+            
+            console.log(`Ders Tıklandı: ${konuAdi} - Dosya: ${konuDosyasi}`); // Hata Ayıklama Logu
             
             if (konuDosyasi === 'deneme') {
                 // Deneme testi için doğrudan yükleme fonksiyonunu çağır
@@ -661,7 +670,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // --- Navigasyon Butonları Dinleyicileri ---
 
-    // ** BURADAKİ EKSİKLİK GİDERİLDİ **
     if (anaSayfaButton) {
         anaSayfaButton.addEventListener('click', () => {
             // Anasayfa'ya (Konu Seçim Ekranı) dön.
