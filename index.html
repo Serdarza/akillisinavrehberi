@@ -56,9 +56,21 @@
             <h1 class="header-title" id="altMenuBaslik">Ders Adı</h1>
             <button class="menu-button purple-button" data-action="ogrenme">Tüm Soruları Gözden Geçir (Öğrenme Modu)</button>
             <button class="menu-button purple-button" data-action="sinav">20 Soruluk Sınava Başla</button>
+            <button class="menu-button purple-button" data-action="dersnotu">Ders Notu</button>
             <button class="menu-button back-button" data-action="geri">Geri Dön</button>
         </div>
-
+    <div class="container hidden" id="dersNotuEkrani">
+    <h1 class="header-title" id="dersNotuBaslik">Ders Notu</h1>
+    
+    <div id="dersNotuIcerik" class="ders-notu-icerik" style="cursor: pointer;">
+        <p>Yükleniyor...</p>
+    </div>
+    
+    <div class="nav-buttons">
+        <button class="nav-button" id="notGeriButton">Geri Dön</button>
+        <button class="nav-button purple-button" id="sesliOkumayiDurdurButton">Sesli Okumayı Durdur</button>
+    </div>
+    </div>
         <div class="container hidden" id="soruEkrani">
             <div class="question-header">
                 <span id="soruNumarasi" class="clickable-soru-numarasi">Soru: 1/1</span>
