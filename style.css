@@ -30,10 +30,10 @@ body {
     flex-direction: column; 
 }
 
-/* Uygulama İçerik Sınırlayıcısı */
+/* Uygulama İçerik Sınırlayıcısı - Varsayılan (Mobil) */
 .app-content-wrapper {
     width: 100%;
-    max-width: 450px;
+    max-width: 450px; /* Mobil ve dar ekran kısıtlaması */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@ body {
     border-radius: 12px; 
 }
 
-/* Geri Sayım İç stilleri (Öncekiyle aynı) */
+/* Geri Sayım İç stilleri... (Aynı Kalıyor) */
 .countdown-header {
     font-size: 16px;
     font-weight: 500;
@@ -92,30 +92,7 @@ body {
     align-items: center;
     padding: 5px 0;
 }
-/* --- Ders Notu Ekranı Stilleri --- */
-#dersNotuEkrani {
-    padding: 20px;
-}
 
-.ders-notu-icerik {
-    background-color: var(--white);
-    padding: 15px;
-    border: 1px solid var(--gray-light);
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    height: calc(100vh - 250px); /* Ekran yüksekliğine göre ayarlandı */
-    overflow-y: auto;
-    line-height: 1.8;
-    font-size: 16px;
-    white-space: pre-wrap; /* Eğer notlar düz metin formatında ise yeni satırları korur */
-    text-align: justify;
-}
-
-/* Sesli Okuma Durdur Butonu için özel stil */
-#sesliOkumayiDurdurButton {
-    background-color: var(--red-wrong);
-    color: var(--white);
-}
 .time-box span:first-child {
     font-size: 32px;
     font-weight: 700;
@@ -307,24 +284,23 @@ body {
 .nav-buttons {
     display: flex;
     justify-content: space-between;
-    gap: 10px; /* Butonlar arası boşluk azaltıldı */
+    gap: 10px; 
     padding: 0 20px;
     margin-top: 15px;
 }
 
 .nav-button {
     width: 100%;
-    padding: 12px 10px; /* Düğme dolgusu azaltıldı */
+    padding: 12px 10px; 
     border: none;
-    border-radius: 8px; /* Köşeler yumuşatıldı */
-    background-color: var(--white); /* Varsayılan beyaz zemin */
-    color: var(--purple-dark); /* Koyu mor yazı */
+    border-radius: 8px; 
+    background-color: var(--white); 
+    color: var(--purple-dark); 
     font-size: 15px;
-    font-weight: 600; /* Daha kalın yazı */
+    font-weight: 600; 
     cursor: pointer;
     transition: all 0.2s;
     
-    /* Estetik: Daha belirgin gölge */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), 0 0 0 1px var(--gray-light); 
 }
 
@@ -362,7 +338,7 @@ body {
     left: 0;
     right: 0;
     width: 100%;
-    max-width: 450px;
+    max-width: 450px; /* Mobil kısıtlamayı koru */
     margin: 0 auto;
     z-index: 10; 
 }
@@ -377,8 +353,7 @@ body {
     color: var(--purple-button);
 }
 
-/* --- Pop-up (Modal) Stilleri --- */
-/* ... [Modal stilleri önceki yanıttan korunur] ... */
+/* --- Pop-up (Modal) Stilleri --- (Aynı Kalıyor) */
 .modal {
     position: fixed;
     z-index: 10000; 
@@ -471,10 +446,80 @@ body {
     font-weight: 600;
     margin-top: 10px;
 }
-/* --- Pop-up (Modal) Stilleri SON --- */
 
 
-/* Mobil için düzeltmeler */
+/* --- YENİ DERS NOTU STİLLERİ --- */
+#dersNotuEkrani {
+    padding: 20px 0; 
+    gap: 0;
+    /* Mobil/Tablet görünümünde ekranı mobil kısıtlamalarından çıkarıyoruz */
+    max-width: 90%; 
+    margin: 10px auto; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.ders-notu-icerik {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    height: calc(100vh - 250px); /* Mobil ekran yüksekliğine göre ayarlandı */
+    overflow-y: auto;
+    line-height: 1.8;
+    font-size: 16px;
+    white-space: pre-wrap; 
+    text-align: justify;
+    cursor: pointer; 
+}
+
+#sesliOkumayiDurdurButton {
+    background-color: var(--red-wrong);
+    color: var(--white);
+    box-shadow: 0 3px 6px rgba(244, 67, 54, 0.4);
+}
+
+
+/* --- RESPONSIVE DÜZENLEMELER (TABLET VE WEB İÇİN) --- */
+
+@media (min-width: 601px) {
+    /* Tablet (601px+) ve Masaüstü cihazlar için genel konteynır genişliğini artır */
+    .app-content-wrapper, 
+    .countdown-container {
+        max-width: 900px; /* Tablet ve web için yeni maksimum genişlik */
+    }
+
+    .container {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* DERS NOTU EKRANI için özel düzenleme */
+    /* Ders Notu ekranını görüntüleyen ana wrapper'ı genişletmek için */
+    body:has(#dersNotuEkrani:not(.hidden)) .app-content-wrapper {
+        max-width: 900px;
+    }
+
+    #dersNotuEkrani {
+        max-width: 900px; 
+        width: 95%; /* Tüm alanı kullan */
+        padding: 30px; 
+    }
+    
+    .ders-notu-icerik {
+        height: calc(100vh - 200px); /* Web'de daha fazla yükseklik kullan */
+        padding: 20px;
+        font-size: 17px;
+    }
+    
+    /* Footer Nav kısıtlamasını kaldır */
+    .footer-nav {
+        max-width: 900px;
+    }
+}
+
+
+/* Mobil için düzeltmeler (Mevcut haliniz korunmuştur) */
 @media (max-width: 600px) {
     body {
         padding-top: 0;
