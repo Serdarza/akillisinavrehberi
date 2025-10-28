@@ -28,18 +28,18 @@ body {
     min-height: 100vh;
     padding-top: 20px; 
     flex-direction: column; 
-    width: 100%; /* Sayfa genişliğini zorla */
+    width: 100%;
 }
 
 /* Uygulama İçerik Sınırlayıcısı - Varsayılan (Mobil) */
 .app-content-wrapper {
     width: 100%;
-    max-width: 450px; /* Mobil ve dar ekran kısıtlaması */
+    max-width: 450px; 
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     padding-top: 0; 
-    padding-bottom: 70px; /* Footer Nav için boşluk */
+    padding-bottom: 70px; 
     flex-grow: 1; 
 }
 
@@ -448,7 +448,7 @@ body {
 }
 
 
-/* --- DERS NOTU EKRANI STİLLERİ (BUTON GÖRÜNÜRLÜĞÜ DÜZELTİLDİ) --- */
+/* --- DERS NOTU EKRANI STİLLERİ (GÜNCELLENDİ) --- */
 #dersNotuEkrani {
     padding: 20px 0; 
     gap: 0;
@@ -459,103 +459,78 @@ body {
     padding-bottom: 0; 
 }
 
+/* ARAMA KUTUSU STİLLERİ */
+#dersNotuAramaKutusu {
+    padding: 0 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--gray-light);
+    background-color: var(--white);
+}
+
+#aramaInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--gray-light);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#aramaIcon {
+    font-size: 20px;
+    color: var(--purple-dark);
+    cursor: pointer;
+}
+
+/* İÇERİK BÖLÜMÜ */
 .ders-notu-icerik {
     padding: 15px 20px;
     margin-bottom: 0;
     background-color: var(--white);
-    border-radius: 10px 10px 0 0; /* Sadece üst köşeler yuvarlak kalsın */
+    border-radius: 0; 
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
-    /* YENİ HESAPLAMA: Mobil için içerik alanının yüksekliği ayarlandı */
+    /* Yükseklik hesaplaması: Mobil için butonların üstte kalmasını sağlar */
     height: calc(100vh - 250px); 
     overflow-y: auto;
     line-height: 1.8;
     font-size: 16px;
     white-space: pre-wrap; 
     text-align: justify;
-    cursor: pointer; 
+    cursor: default; 
 }
 
-#sesliOkumayiDurdurButton {
-    /* Başlat/Durdur/Devam et durumları için JS ile değişir */
-    background-color: var(--purple-button); 
-    color: var(--white);
-    box-shadow: 0 3px 6px rgba(124, 77, 255, 0.4);
-}
-
-/* --- Okuma Hızı Kontrol Stilleri --- */
+/* NOT NAVİGASYON KONTROLLERİ */
 .not-nav-controls {
     display: flex;
     gap: 10px; 
-    padding: 20px; /* Kontrol alanını çevreleyen padding */
+    padding: 15px 20px; /* Kontrol alanını çevreleyen padding */
     margin-top: 0;
     flex-wrap: wrap; 
     align-items: center;
     justify-content: space-between;
     background-color: var(--white); 
-    border-radius: 0 0 15px 15px; /* Alt köşeleri yuvarla */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05); /* Üstte hafif gölge */
+    border-radius: 0 0 15px 15px; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05); 
     border-top: 1px solid var(--gray-light);
 }
 
-.speed-control-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 10px 10px;
-    background-color: var(--purple-light);
-    border-radius: 8px;
-    margin: 0;
-    flex: 1 1 100%; /* Mobil cihazda tüm genişliği kapla */
+/* Paylaş butonu ve Geri Dön butonu yan yana */
+#paylasNotButton {
+    flex: 1 1 45%;
+}
+#notGeriButton {
+    flex: 1 1 45%;
 }
 
-.speed-control-container label {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--purple-dark);
-    white-space: nowrap;
+/* Arama sonuçlarını vurgulama stili */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
 }
 
-#readingSpeed {
-    flex-grow: 1;
-    -webkit-appearance: none;
-    appearance: none;
-    height: 8px;
-    background: var(--gray-light);
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-#readingSpeed::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: var(--purple-button);
-    cursor: pointer;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
-}
-
-#currentSpeed {
-    font-weight: 600;
-    color: var(--text-dark);
-    min-width: 30px;
-    text-align: right;
-    white-space: nowrap;
-}
-
-.nav-button-group {
-    display: flex;
-    gap: 10px;
-    flex: 1 1 100%; /* Mobil'de alt satırda tam genişlik */
-}
-/* Butonlar arası boşlukları ayarlamak için */
-.not-nav-controls .nav-button {
-    flex: 1 1 45%; 
-}
-
-/* --- RESPONSIVE DÜZENLEMELER (TAM EKRAN DÜZELTME) --- */
+/* --- RESPONSIVE DÜZENLEMELER (TABLET VE WEB İÇİN) --- */
 
 @media (min-width: 601px) {
     
@@ -577,6 +552,7 @@ body {
     }
     
     /* DERS NOTU EKRANI için KONTROLÜ ELE ALMA */
+    /* Ders Notu ekranı gösterildiğinde, ana sarmalayıcının kısıtlamasını kaldır */
     .app-content-wrapper:has(#dersNotuEkrani:not(.hidden)) {
         max-width: 1200px; 
         width: 90%;
@@ -591,28 +567,31 @@ body {
     }
     
     .ders-notu-icerik {
-        /* Web'de tam ekran yüksekliğinden sabit kontrol çubuklarını çıkar */
+        /* Web'de tam ekran yüksekliğinden sabit başlık/arama/navigasyon çıkar */
         height: calc(100vh - 280px); 
         padding: 20px;
         font-size: 17px;
     }
     
-    /* Geniş ekranda Ders Notu kontrollerini yatayda hizala */
+    /* Geniş ekranda Arama Alanı ve Butonları Ortala/Hizala */
+    #dersNotuAramaKutusu {
+        padding: 0 30px 10px 30px;
+    }
+    
     .not-nav-controls {
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: center;
         padding: 20px 30px; 
         align-items: center;
+        gap: 20px;
     }
-    
-    .speed-control-container {
-        max-width: 300px; 
-        flex: 0 0 auto; 
+
+    /* Butonları web'de yan yana ortala */
+    #paylasNotButton {
+        flex: 0 0 200px; 
     }
-    
-    .nav-button-group {
-        flex: 1 1 auto; 
-        max-width: 400px;
+    #notGeriButton {
+        flex: 0 0 200px;
     }
 
     .footer-nav {
