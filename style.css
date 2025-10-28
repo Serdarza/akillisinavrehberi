@@ -280,7 +280,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* --- NAVİGASYON BUTONLARI (ESTETİK DÜZENLEME) --- */
+/* --- NAVİGASYON BUTONLARI (GENEL) --- */
 .nav-buttons {
     display: flex;
     justify-content: space-between;
@@ -448,7 +448,7 @@ body {
 }
 
 
-/* --- DERS NOTU STİLLERİ --- */
+/* --- DERS NOTU EKRANI STİLLERİ (GÜNCELLENDİ) --- */
 #dersNotuEkrani {
     padding: 20px 0; 
     gap: 0;
@@ -456,15 +456,18 @@ body {
     margin: 10px auto; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    /* Butonlar sabit olduğu için padding/margin ayarları ile çakışmayı engelle */
+    padding-bottom: 0; 
 }
 
 .ders-notu-icerik {
     padding: 15px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0; /* Butonların üstüne yapışacak */
     background-color: var(--white);
     border-radius: 10px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
-    height: calc(100vh - 300px); /* Hız kontrolü için yükseklik ayarlandı */
+    /* Yükseklik hesaplaması: Başlık + Kontrol çubuğu + Alt boşluklar çıkarıldı */
+    height: calc(100vh - 250px); 
     overflow-y: auto;
     line-height: 1.8;
     font-size: 16px;
@@ -474,7 +477,7 @@ body {
 }
 
 #sesliOkumayiDurdurButton {
-    /* Başlangıçta purple-button olmalı, JS ile red-wrong veya back-button olur */
+    /* Başlat/Durdur/Devam et durumları için JS ile değişir */
     background-color: var(--purple-button); 
     color: var(--white);
     box-shadow: 0 3px 6px rgba(124, 77, 255, 0.4);
@@ -484,11 +487,15 @@ body {
 .not-nav-controls {
     display: flex;
     gap: 10px; 
-    padding: 0 20px;
-    margin-top: 15px;
+    padding: 20px; /* Kontrol alanını çevreleyen padding */
+    margin-top: 0;
     flex-wrap: wrap; 
     align-items: center;
     justify-content: space-between;
+    background-color: var(--white); /* Sabit duracak kontrol alanı */
+    border-radius: 0 0 15px 15px; /* Alt köşeleri yuvarla */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05); /* Üstte hafif gölge */
+    border-top: 1px solid var(--gray-light);
 }
 
 .speed-control-container {
@@ -499,8 +506,7 @@ body {
     padding: 10px 10px;
     background-color: var(--purple-light);
     border-radius: 8px;
-    margin-bottom: 10px;
-    margin-top: 5px;
+    margin: 0;
     flex: 1 1 100%; /* Mobil cihazda tüm genişliği kapla */
 }
 
@@ -559,10 +565,10 @@ body {
         align-items: center; 
     }
 
-    /* 2. Ana Uygulama Kabuğunu Merkeze al ve genişlet */
+    /* 2. Ana Uygulama Kabuğunu Merkeze al ve genişlet (Diğer ekranlar) */
     .app-content-wrapper, 
     .countdown-container {
-        max-width: 900px; /* Tablet ve web için yeni maksimum genişlik */
+        max-width: 900px; 
         width: 90%;
         margin: 0 auto;
     }
@@ -572,8 +578,7 @@ body {
     }
     
     /* DERS NOTU EKRANI için TAM EKRAN DÜZELTMESİ */
-    /* Ders Notu ekranı gösterildiğinde ana sarmalayıcıyı genişlet */
-    /* body:has() Selector, tarayıcı uyumluluğu nedeniyle direkt genişliği zorlar */
+    /* Ders Notu ekranı gösterildiğinde ana sarmalayıcıyı genişlet (Daha fazla alan ver) */
     body:has(#dersNotuEkrani:not(.hidden)) .app-content-wrapper {
         max-width: 1200px; 
         width: 90%;
@@ -584,19 +589,21 @@ body {
         width: 100%;
         padding: 30px; 
         margin: 20px 0; 
+        padding-bottom: 0; /* Butonların altını boş bırakma */
     }
     
     .ders-notu-icerik {
-        height: calc(100vh - 300px); /* Web'de daha fazla yükseklik kullan */
+        /* Web'de başlık, kontrol çubuğu ve alt kontrol alanının yüksekliğini çıkar */
+        height: calc(100vh - 280px); 
         padding: 20px;
         font-size: 17px;
     }
     
     /* Geniş ekranda Ders Notu kontrollerini yatayda hizala */
     .not-nav-controls {
-        flex-wrap: nowrap; /* Alt alta inmesin */
-        justify-content: flex-start;
-        gap: 20px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 20px 30px; /* Geniş ekran padding'i */
     }
     
     .speed-control-container {
