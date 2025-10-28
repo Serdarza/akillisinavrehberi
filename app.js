@@ -74,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Pop-up Yönetimi ---
     const showMotivationQuote = () => {
         const quotes = [
-            { text: "Çalışmadan, yorulmadan, üretmeden rahat yaşamak isteyen toplumlar; önce haysiyetlerini, sonra hürriyetlerini ve daha sonra da istikballerini kaybetmeye mahkumdurlar.", author: "Mustafa Kemal Atatürk" },
             { text: "Herkesin dehasına inandığı bir bilim dalı yoktur, herkesin dehasına inandığı tek şey çalışmadır.", author: "Louis Pasteur" },
             { text: "Büyük işleri başarmak sadece güç gerektirmez, azim de gerektirir.", author: "Samuel Johnson" },
             { text: "Kendime ait olan tek şey, azmimdir. Başarımın nedeni budur.", author: "Thomas Edison" },
@@ -93,7 +92,16 @@ document.addEventListener('DOMContentLoaded', () => {
             { text: "Zorluklar, başarının değerini artıran süslerdir.", author: "Molière" },
             { text: "Başlamak için en mükemmel anı beklersen, hiçbir zaman başlayamazsın.", author: "John Wanamaker" },
             { text: "Zafer, ben yapabilirim diyebilenindir.", author: "Virgil" },
-            { text: "Büyük düşünürler fikirleri, ortalama insanlar olayları, küçük insanlar ise kişileri tartışır.", author: "Eleanor Roosevelt" }
+            { text: "Hiç kimse asla elinin emeğinden daha hayırlı bir kazanç yemez.", author: "Hadis-i Şerif (Buhârî, Büyû: 15)" }
+
+{ text: "İlim Çin'de de olsa alınız. Zira ilim öğrenmek, kadın erkek her Müslümana farzdır.", author: "Hadis-i Şerif (Beyhâkî, Şu'abü'l-Îmân)" },
+
+{ text: "Bana bir harf öğretenin kırk yıl kölesi olurum.", author: "Hz. Ali (r.a.)" },
+
+{ text: "Başlamak, başarmanın yarısıdır.", author: "Yunus Emre" },
+{ text: "Âyinesi iştir kişinin lafa bakılmaz; Şahsın görünür rütbe-i aklı eserinde.", author: "Ziya Paşa" },
+{ text: "Sana fayda veren şeyleri elde etmeye gayret et. Allah'tan yardım dile ve acizlik gösterme. ", author: "Hadis-i Şerif (Müslim, Kader: 34)" },
+ { text: "Büyük düşünürler fikirleri, ortalama insanlar olayları, küçük insanlar ise kişileri tartışır.", author: "Eleanor Roosevelt" }
         ];
         
         const isQuoteShown = sessionStorage.getItem('motivationQuoteShown');
@@ -649,7 +657,41 @@ document.addEventListener('DOMContentLoaded', () => {
             gosterEkrani(altMenu);
         }
     };
+
     
+    // --- Navigasyon Butonları Dinleyicileri ---
+
+    // ** BURADAKİ EKSİKLİK GİDERİLDİ **
+    if (anaSayfaButton) {
+        anaSayfaButton.addEventListener('click', () => {
+            // Anasayfa'ya (Konu Seçim Ekranı) dön.
+            gosterEkrani(konuSecimEkrani);
+        });
+    }
+
+    if (geriButton) {
+        geriButton.addEventListener('click', () => {
+            // Sadece Öğrenme Modunda ve Gözden Geçirme modunda çalışır.
+            if (aktifMod === 'ogrenme' && mevcutSoruIndex > 0) {
+                mevcutSoruIndex--;
+                saveLastIndex(aktifKonuDosyasi, mevcutSoruIndex);
+                renderSoru(mevcutSoruIndex);
+            }
+        });
+    }
+
+    if (ileriButton) {
+        ileriButton.addEventListener('click', () => {
+            // Sadece Öğrenme Modunda ve Gözden Geçirme modunda çalışır.
+            if (aktifMod === 'ogrenme' && mevcutSoruIndex < tumSorular.length - 1) {
+                mevcutSoruIndex++;
+                saveLastIndex(aktifKonuDosyasi, mevcutSoruIndex);
+                renderSoru(mevcutSoruIndex);
+            }
+        });
+    }
+
+
     // --- Başlangıç Fonksiyonları ---
     startCountdown(); 
     gosterEkrani(konuSecimEkrani);
