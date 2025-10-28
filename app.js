@@ -37,6 +37,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeQuestionListModal = document.getElementById('closeQuestionListModal');
     const questionListContainer = document.getElementById('questionList');
     
+    // YENİ DERS NOTU ELEMENTLERİ (Önceki yanıtta HTML'e eklendiği varsayılmıştır)
+    const dersNotuEkrani = document.getElementById('dersNotuEkrani');
+    const dersNotuBaslik = document.getElementById('dersNotuBaslik');
+    const dersNotuIcerik = document.getElementById('dersNotuIcerik');
+    const notGeriButton = document.getElementById('notGeriButton');
+    const sesliOkumayiDurdurButton = document.getElementById('sesliOkumayiDurdurButton');
+    
+    // YENİ: Web Speech API Servisi
+    const synth = window.speechSynthesis;
+    let currentUtterance = null;
+    
     // Motivasyon Sözleri Havuzu
     const quotes = [
         { text: "Çalışmadan, yorulmadan, üretmeden rahat yaşamak isteyen toplumlar; önce haysiyetlerini, sonra hürriyetlerini ve daha sonra da istikballerini kaybetmeye mahkumdurlar.", author: "Mustafa Kemal Atatürk" },
@@ -89,9 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
         motivationModal.classList.add('hidden');
     });
 
-    // --- Geri Sayım Fonksiyonu ---
+    // --- Geri Sayım Fonksiyonu (28 Aralık olarak güncellendi) ---
     const startCountdown = () => {
-        const sinavTarihi = new Date('2025-12-28T00:00:00'); 
+        const sinavTarihi = new Date('2025-12-28T00:00:00'); // Sınav tarihi 28 Aralık olarak ayarlandı
         
         const updateCountdown = () => {
             const now = new Date();
@@ -121,7 +132,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Yardımcı Fonksiyonlar ---
     const gosterEkrani = (ekran) => {
-        [konuSecimEkrani, altMenu, soruEkrani].forEach(e => e.classList.add('hidden'));
+        // YENİ: dersNotuEkrani'ni de gizle/göster listesine ekle
+        [konuSecimEkrani, altMenu, soruEkrani, dersNotuEkrani].forEach(e => e.classList.add('hidden'));
         ekran.classList.remove('hidden');
 
         // Sayaç Yönetimi: Sadece Ana Sayfada göster
@@ -187,6 +199,89 @@ document.addEventListener('DOMContentLoaded', () => {
     paylasIcon.addEventListener('click', shareScreenshot);
 
 
+    // --- SESLİ OKUMA VE DERS NOTU YÖNETİMİ (YENİ EKLEME) ---
+    
+    const durdurSesliOkuma = () => {
+        if (synth.speaking) {
+            synth.cancel();
+            currentUtterance = null;
+        }
+    };
+
+    const baslatSesliOkuma = (metin, dil = 'tr-TR') => {
+        durdurSesliOkuma(); 
+
+        const utterance = new SpeechSynthesisUtterance(metin);
+        utterance.lang = dil; 
+        
+        utterance.onend = () => {
+            currentUtterance = null;
+        };
+
+        synth.speak(utterance);
+        currentUtterance = utterance;
+    };
+    
+    const loadDersNotu = async (dosyaAdi, konuAdi) => {
+        try {
+            // Notlarınızı 'konuadi.txt' dosyasında arar
+            const response = await fetch(`${dosyaAdi}.txt`); 
+            
+            if (!response.ok) {
+                dersNotuIcerik.innerHTML = `<p style="color: red;">'${konuAdi}' dersi için not dosyası (${dosyaAdi}.txt) bulunamadı!</p>`;
+                gosterEkrani(dersNotuEkrani);
+                return;
+            }
+            
+            const notIcerigi = await response.text();
+            
+            dersNotuBaslik.textContent = `${konuAdi} Ders Notu`;
+            // Yeni satırları HTML <br> etiketine çevirir
+            dersNotuIcerik.innerHTML = notIcerigi.replace(/\n/g, '<br>'); 
+            
+            gosterEkrani(dersNotuEkrani);
+            
+        } catch (error) {
+            console.error('Ders Notu yüklenirken hata oluştu:', error);
+            dersNotuIcerik.innerHTML = `<p style="color: red;">Not yüklenemedi: ${error.message}</p>`;
+            gosterEkrani(dersNotuEkrani);
+        }
+    };
+    
+    // Tıklanan Yerden Okumayı Başlatma Dinleyicisi
+    if (dersNotuIcerik) {
+        dersNotuIcerik.addEventListener('click', (e) => {
+            // Metin seçimi var mı kontrol et
+            let selection = window.getSelection();
+            let metinParcasi;
+    
+            if (selection.toString().length > 0) {
+                metinParcasi = selection.toString();
+            } else {
+                // Seçim yoksa, tüm metni okumak için
+                metinParcasi = dersNotuIcerik.innerText;
+            }
+            
+            if (metinParcasi && metinParcasi.trim().length > 0) {
+                baslatSesliOkuma(metinParcasi);
+            }
+        });
+    }
+
+    // Sesli Okumayı Durdurma Butonu Dinleyicisi
+    if (sesliOkumayiDurdurButton) {
+        sesliOkumayiDurdurButton.addEventListener('click', durdurSesliOkuma);
+    }
+    
+    // Not Ekranından Geri Dön Butonu Dinleyicisi
+    if (notGeriButton) {
+        notGeriButton.addEventListener('click', () => {
+            durdurSesliOkuma(); 
+            gosterEkrani(altMenu);
+        });
+    }
+
+
     // --- Konu Seçimi ve Alt Menü İşlemleri ---
     document.querySelectorAll('#konuButonlari .menu-button').forEach(button => {
         button.addEventListener('click', (e) => {
@@ -203,10 +298,14 @@ document.addEventListener('DOMContentLoaded', () => {
     altMenu.querySelectorAll('.menu-button').forEach(button => {
         button.addEventListener('click', (e) => {
             const action = e.target.getAttribute('data-action');
+            const konuAdi = altMenuBaslik.textContent; // Konu adını burada yakala
+            
             if (action === 'geri') {
                 gosterEkrani(konuSecimEkrani);
+            } else if (action === 'dersnotu') { // YENİ AKSİYON
+                loadDersNotu(aktifKonuDosyasi, konuAdi);
             } else {
-                const konuAdi = altMenuBaslik.textContent;
+                // SINAV veya ÖĞRENME MODU
                 loadQuestions(aktifKonuDosyasi, action, konuAdi);
             }
         });
