@@ -176,6 +176,19 @@ body {
     margin-top: 10px;
 }
 
+/* YENİ: DENEME TESTİ BUTON STİLİ */
+.deneme-button {
+    background-color: var(--red-wrong);
+    color: var(--white);
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(244, 67, 54, 0.4);
+}
+
+.deneme-button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-1px);
+}
+
 /* Soru Ekranı Stilleri */
 #soruEkrani {
     padding: 20px 0; 
@@ -448,7 +461,7 @@ body {
 }
 
 
-/* --- DERS NOTU EKRANI STİLLERİ (GÜNCELLENDİ) --- */
+/* --- DERS NOTU EKRANI STİLLERİ --- */
 #dersNotuEkrani {
     padding: 20px 0; 
     gap: 0;
@@ -515,6 +528,11 @@ body {
     border-top: 1px solid var(--gray-light);
 }
 
+.nav-button-group {
+    display: flex;
+    gap: 10px;
+    flex: 1 1 100%; /* Mobil'de alt satırda tam genişlik */
+}
 /* Paylaş butonu ve Geri Dön butonu yan yana */
 #paylasNotButton {
     flex: 1 1 45%;
@@ -552,7 +570,6 @@ body {
     }
     
     /* DERS NOTU EKRANI için KONTROLÜ ELE ALMA */
-    /* Ders Notu ekranı gösterildiğinde, ana sarmalayıcının kısıtlamasını kaldır */
     .app-content-wrapper:has(#dersNotuEkrani:not(.hidden)) {
         max-width: 1200px; 
         width: 90%;
@@ -592,6 +609,11 @@ body {
     }
     #notGeriButton {
         flex: 0 0 200px;
+    }
+    .nav-button-group {
+        flex: 1 1 auto; 
+        max-width: 450px;
+        justify-content: space-between;
     }
 
     .footer-nav {
