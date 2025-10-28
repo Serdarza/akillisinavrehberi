@@ -28,6 +28,7 @@ body {
     min-height: 100vh;
     padding-top: 20px; 
     flex-direction: column; 
+    width: 100%; /* Sayfa genişliğini zorla */
 }
 
 /* Uygulama İçerik Sınırlayıcısı - Varsayılan (Mobil) */
@@ -72,7 +73,6 @@ body {
     border-radius: 12px; 
 }
 
-/* Geri Sayım İç stilleri... (Aynı Kalıyor) */
 .countdown-header {
     font-size: 16px;
     font-weight: 500;
@@ -353,7 +353,7 @@ body {
     color: var(--purple-button);
 }
 
-/* --- Pop-up (Modal) Stilleri --- (Aynı Kalıyor) */
+/* --- Pop-up (Modal) Stilleri --- */
 .modal {
     position: fixed;
     z-index: 10000; 
@@ -452,7 +452,6 @@ body {
 #dersNotuEkrani {
     padding: 20px 0; 
     gap: 0;
-    /* Mobil/Tablet görünümünde ekranı mobil kısıtlamalarından çıkarıyoruz */
     max-width: 90%; 
     margin: 10px auto; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -475,28 +474,41 @@ body {
 }
 
 #sesliOkumayiDurdurButton {
-    background-color: var(--red-wrong);
+    /* Başlangıçta purple-button olmalı, JS ile red-wrong veya back-button olur */
+    background-color: var(--purple-button); 
     color: var(--white);
-    box-shadow: 0 3px 6px rgba(244, 67, 54, 0.4);
+    box-shadow: 0 3px 6px rgba(124, 77, 255, 0.4);
 }
 
 /* --- Okuma Hızı Kontrol Stilleri (YENİ) --- */
+.not-nav-controls {
+    display: flex;
+    gap: 10px; 
+    padding: 0 20px;
+    margin-top: 15px;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+}
+
 .speed-control-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: var(--purple-light);
     border-radius: 8px;
     margin-bottom: 10px;
     margin-top: 5px;
+    flex: 1 1 100%; /* Mobil cihazda tüm genişliği kapla */
 }
 
 .speed-control-container label {
     font-size: 14px;
     font-weight: 500;
     color: var(--purple-dark);
+    white-space: nowrap;
 }
 
 #readingSpeed {
@@ -525,41 +537,78 @@ body {
     color: var(--text-dark);
     min-width: 30px;
     text-align: right;
+    white-space: nowrap;
 }
 
+.nav-button-group {
+    display: flex;
+    gap: 10px;
+    flex: 1 1 100%; /* Mobil'de alt satırda tam genişlik */
+}
+/* Butonlar arası boşlukları ayarlamak için */
+.not-nav-controls button {
+    flex: 1 1 45%; 
+}
 
-/* --- RESPONSIVE DÜZENLEMELER (TABLET VE WEB İÇİN) --- */
+/* --- RESPONSIVE DÜZENLEMELER (TAM EKRAN DÜZELTME) --- */
 
 @media (min-width: 601px) {
-    /* Tablet (601px+) ve Masaüstü cihazlar için genel konteynır genişliğini artır */
+    /* 1. Body'yi tam genişliğe zorla */
+    body {
+        width: 100%;
+        align-items: center; 
+    }
+
+    /* 2. Ana Uygulama Kabuğunu Merkeze al ve genişlet */
     .app-content-wrapper, 
     .countdown-container {
         max-width: 900px; /* Tablet ve web için yeni maksimum genişlik */
+        width: 90%;
+        margin: 0 auto;
     }
 
     .container {
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
     
-    /* DERS NOTU EKRANI için özel düzenleme */
-    /* Ders Notu ekranını görüntüleyen ana wrapper'ı genişletmek için */
+    /* DERS NOTU EKRANI için TAM EKRAN DÜZELTMESİ */
+    /* Ders Notu ekranı gösterildiğinde ana sarmalayıcıyı genişlet */
+    /* body:has() Selector, tarayıcı uyumluluğu nedeniyle direkt genişliği zorlar */
     body:has(#dersNotuEkrani:not(.hidden)) .app-content-wrapper {
-        max-width: 900px;
+        max-width: 1200px; 
+        width: 90%;
     }
 
     #dersNotuEkrani {
-        max-width: 900px; 
-        width: 95%; /* Tüm alanı kullan */
+        max-width: 100%; 
+        width: 100%;
         padding: 30px; 
+        margin: 20px 0; 
     }
     
     .ders-notu-icerik {
-        height: calc(100vh - 200px); /* Web'de daha fazla yükseklik kullan */
+        height: calc(100vh - 300px); /* Web'de daha fazla yükseklik kullan */
         padding: 20px;
         font-size: 17px;
     }
     
-    /* Footer Nav kısıtlamasını kaldır */
+    /* Geniş ekranda Ders Notu kontrollerini yatayda hizala */
+    .not-nav-controls {
+        flex-wrap: nowrap; /* Alt alta inmesin */
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    
+    .speed-control-container {
+        max-width: 300px; 
+        flex: 0 0 auto; 
+    }
+    
+    .nav-button-group {
+        flex: 1 1 auto; 
+        max-width: 400px;
+    }
+
     .footer-nav {
         max-width: 900px;
     }
