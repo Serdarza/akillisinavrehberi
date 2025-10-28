@@ -114,11 +114,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Geri Sayım Fonksiyonu (28 Aralık olarak güncellendi) ---
     const startCountdown = () => {
-        const sinavTarihi = new Date('2025-12-28T00:00:00'); // Sınav tarihi 28 Aralık olarak ayarlandı
+        // Kontrol: Eğer tarih geçmişse bir sonraki yıla atar.
+        let sinavTarihi = new Date('2025-12-28T00:00:00'); 
+        const now = new Date();
+        if (sinavTarihi < now) {
+            sinavTarihi = new Date(now.getFullYear() + 1, 11, 28, 0, 0, 0); // Bir sonraki yılın 28 Aralık'ına ayarla
+        }
         
         const updateCountdown = () => {
-            const now = new Date();
-            const distance = sinavTarihi - now;
+            const distance = sinavTarihi - new Date();
 
             if (distance < 0) {
                 clearInterval(interval);
@@ -341,14 +345,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // --- DENEME TESTİ YÜKLEME LOGİĞİ (YENİ) ---
+    // --- DENEME TESTİ YÜKLEME LOGİĞİ ---
     const loadDenemeTesti = async () => {
         const dosyaListesi = Object.keys(DENEME_KOTALARI);
         let tumDenemeSorulari = [];
-        let basariliYuklemeSayisi = 0;
         const toplamSoruSayisi = Object.values(DENEME_KOTALARI).reduce((a, b) => a + b, 0);
 
-        const yukleme promises = dosyaListesi.map(async (dosyaAdi) => {
+        const yuklemePromises = dosyaListesi.map(async (dosyaAdi) => {
             const kota = DENEME_KOTALARI[dosyaAdi];
             try {
                 const response = await fetch(`${dosyaAdi}.json`);
@@ -367,19 +370,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Soruları karıştır ve kotası kadarını al
                 const secilenSorular = shuffleArray(data).slice(0, alinacakSoruSayisi);
-                if (secilenSorular.length > 0) {
-                    basariliYuklemeSayisi++;
-                }
                 return secilenSorular;
                 
             } catch (error) {
                 console.error(`Deneme testi için ${dosyaAdi}.json yüklenirken hata oluştu:`, error);
+                // Bir dosya hatası tüm sistemi durdurmasın, boş array dönsün
                 return [];
             }
         });
 
         // Tüm dosyaların yüklenmesini bekle ve sonuçları birleştir
-        const tumSonuclar = await Promise.all(yukleme promises);
+        const tumSonuclar = await Promise.all(yuklemePromises);
         tumDenemeSorulari = tumSonuclar.flat();
         
         // Toplanan tüm soruları yeniden karıştır (konular karışsın)
@@ -390,12 +391,18 @@ document.addEventListener('DOMContentLoaded', () => {
             mevcutSoruIndex = 0;
             sinavCevaplari = {}; 
             
-            alert(`50 Soruluk Deneme Testi Başlatılıyor! Toplam ${tumSorular.length} soru yüklendi.`);
+            // Tüm navigasyon butonlarını sınav moduna göre ayarla
+            geriButton.classList.add('hidden-nav-button');
+            ileriButton.classList.add('hidden-nav-button');
+            anaSayfaButton.classList.remove('hidden-nav-button');
+            soruNumarasiSpan.classList.remove('clickable-soru-numarasi'); 
+            
+            alert(`50 Soruluk Kapsamlı Deneme Testi Başlatılıyor! Toplam ${tumSorular.length} soru yüklendi.`);
             
             gosterEkrani(soruEkrani);
             renderSoru(mevcutSoruIndex);
         } else {
-            alert(`Deneme Testi için yeterli soru toplanamadı. Lütfen JSON dosyalarınızı (${basariliYuklemeSayisi}/${dosyaListesi.length} dosya yüklendi) kontrol edin.`);
+            alert(`Deneme Testi için yeterli soru toplanamadı. Lütfen JSON dosyalarınızı kontrol edin.`);
             gosterEkrani(konuSecimEkrani);
         }
     };
@@ -413,6 +420,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Deneme testi için doğrudan yükleme fonksiyonunu çağır
                 loadDenemeTesti();
             } else {
+                // Diğer dersler için alt menüyü göster
                 gosterEkrani(altMenu);
             }
         });
