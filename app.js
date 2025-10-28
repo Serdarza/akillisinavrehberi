@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Geri Sayım Fonksiyonu ---
     const startCountdown = () => {
-        const sinavTarihi = new Date('2025-12-20T00:00:00'); 
+        const sinavTarihi = new Date('2025-12-28T00:00:00'); 
         
         const updateCountdown = () => {
             const now = new Date();
