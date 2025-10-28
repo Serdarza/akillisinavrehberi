@@ -28,13 +28,13 @@ body {
     min-height: 100vh;
     padding-top: 20px; 
     flex-direction: column; 
-    width: 100%;
+    width: 100%; /* Sayfa genişliğini zorla */
 }
 
 /* Uygulama İçerik Sınırlayıcısı - Varsayılan (Mobil) */
 .app-content-wrapper {
     width: 100%;
-    max-width: 450px; 
+    max-width: 450px; /* Mobil ve dar ekran kısıtlaması */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -73,7 +73,6 @@ body {
     border-radius: 12px; 
 }
 
-/* Geri Sayım İç stilleri... (Aynı Kalıyor) */
 .countdown-header {
     font-size: 16px;
     font-weight: 500;
@@ -466,7 +465,7 @@ body {
     background-color: var(--white);
     border-radius: 10px 10px 0 0; /* Sadece üst köşeler yuvarlak kalsın */
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
-    /* YENİ: Yükseklik hesaplaması: Başlık (60px) + Kontrol Alanı (100px) + Üst/Alt padding/margin (50px) çıkarıldı */
+    /* YENİ HESAPLAMA: Mobil için içerik alanının yüksekliği ayarlandı */
     height: calc(100vh - 250px); 
     overflow-y: auto;
     line-height: 1.8;
@@ -477,12 +476,13 @@ body {
 }
 
 #sesliOkumayiDurdurButton {
+    /* Başlat/Durdur/Devam et durumları için JS ile değişir */
     background-color: var(--purple-button); 
     color: var(--white);
     box-shadow: 0 3px 6px rgba(124, 77, 255, 0.4);
 }
 
-/* --- Okuma Hızı Kontrol Stilleri (YENİ) --- */
+/* --- Okuma Hızı Kontrol Stilleri --- */
 .not-nav-controls {
     display: flex;
     gap: 10px; 
@@ -555,16 +555,16 @@ body {
     flex: 1 1 45%; 
 }
 
-/* --- RESPONSIVE DÜZENLEMELER (TABLET VE WEB İÇİN) --- */
+/* --- RESPONSIVE DÜZENLEMELER (TAM EKRAN DÜZELTME) --- */
 
 @media (min-width: 601px) {
-    /* 1. Body'yi tam genişliğe zorla */
+    
     body {
         width: 100%;
         align-items: center; 
     }
 
-    /* 2. Ana Uygulama Kabuğunu Merkeze al ve genişlet (Diğer ekranlar) */
+    /* WEB VERSİYONU İÇİN GENEL KONTEYNER GENİŞLİĞİ ARTTIRILDI */
     .app-content-wrapper, 
     .countdown-container {
         max-width: 900px; 
@@ -576,9 +576,8 @@ body {
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
     
-    /* DERS NOTU EKRANI için TAM EKRAN DÜZELTMESİ */
-    /* Ders Notu ekranı gösterildiğinde ana sarmalayıcıyı genişlet (Daha fazla alan ver) */
-    body:has(#dersNotuEkrani:not(.hidden)) .app-content-wrapper {
+    /* DERS NOTU EKRANI için KONTROLÜ ELE ALMA */
+    .app-content-wrapper:has(#dersNotuEkrani:not(.hidden)) {
         max-width: 1200px; 
         width: 90%;
     }
@@ -588,11 +587,11 @@ body {
         width: 100%;
         padding: 30px; 
         margin: 20px 0; 
-        padding-bottom: 0; /* Butonların altını boş bırakma */
+        padding-bottom: 0; 
     }
     
     .ders-notu-icerik {
-        /* Web'de başlık (60px) + Kontrol çubuğu (50px) + Navigasyon (80px) + boşluklar */
+        /* Web'de tam ekran yüksekliğinden sabit kontrol çubuklarını çıkar */
         height: calc(100vh - 280px); 
         padding: 20px;
         font-size: 17px;
@@ -602,7 +601,8 @@ body {
     .not-nav-controls {
         flex-wrap: nowrap;
         justify-content: space-between;
-        padding: 20px 30px; /* Geniş ekran padding'i */
+        padding: 20px 30px; 
+        align-items: center;
     }
     
     .speed-control-container {
