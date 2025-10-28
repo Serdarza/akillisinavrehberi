@@ -92,7 +92,30 @@ body {
     align-items: center;
     padding: 5px 0;
 }
+/* --- Ders Notu Ekranı Stilleri --- */
+#dersNotuEkrani {
+    padding: 20px;
+}
 
+.ders-notu-icerik {
+    background-color: var(--white);
+    padding: 15px;
+    border: 1px solid var(--gray-light);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    height: calc(100vh - 250px); /* Ekran yüksekliğine göre ayarlandı */
+    overflow-y: auto;
+    line-height: 1.8;
+    font-size: 16px;
+    white-space: pre-wrap; /* Eğer notlar düz metin formatında ise yeni satırları korur */
+    text-align: justify;
+}
+
+/* Sesli Okuma Durdur Butonu için özel stil */
+#sesliOkumayiDurdurButton {
+    background-color: var(--red-wrong);
+    color: var(--white);
+}
 .time-box span:first-child {
     font-size: 32px;
     font-weight: 700;
