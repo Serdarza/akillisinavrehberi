@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
     
-    // Tıklanan Yerden Okumayı Başlatma Dinleyicisi (DÜZELTİLMİŞ)
+    // Tıklanan Yerden Okumayı Başlatma Dinleyicisi (DÜZELTİLDİ)
     if (dersNotuIcerik) {
         dersNotuIcerik.addEventListener('click', (e) => {
             
@@ -319,7 +319,6 @@ document.addEventListener('DOMContentLoaded', () => {
                  metinParcasi = selection.toString(); 
             } else {
                  // Durum 2: Kullanıcı metin seçmediyse, tıklanan yerden itibaren oku.
-                 // innerText, tüm görünür metni yeni satırlarla birlikte düz metin olarak verir.
                  const tumMetin = dersNotuIcerik.innerText;
                  
                  let tiklananMetin = '';
