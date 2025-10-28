@@ -44,9 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const notGeriButton = document.getElementById('notGeriButton');
     const sesliOkumayiDurdurButton = document.getElementById('sesliOkumayiDurdurButton');
     
+    // YENİ HIZ KONTROL ELEMENTLERİ (index.html'e eklenmiştir)
+    const readingSpeedControl = document.getElementById('readingSpeed');
+    const currentSpeedSpan = document.getElementById('currentSpeed');
+    
     // YENİ: Web Speech API Servisi
     const synth = window.speechSynthesis;
     let currentUtterance = null;
+    let currentSpeed = 1.0; // Okuma hızı değişkeni
     
     // Motivasyon Sözleri Havuzu
     const quotes = [
@@ -214,9 +219,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const utterance = new SpeechSynthesisUtterance(metin);
         utterance.lang = dil; 
         
+        // Okuma Hızını Ayarla (Yeni)
+        if(readingSpeedControl) {
+            currentSpeed = parseFloat(readingSpeedControl.value);
+            utterance.rate = currentSpeed;
+        } else {
+            utterance.rate = 1.0;
+        }
+        
         utterance.onend = () => {
             currentUtterance = null;
         };
+        
+        // Okuma sesini Türkçeye ayarla (tarayıcı desteğine göre en iyi sesi seçer)
+        const voices = synth.getVoices();
+        const turkishVoice = voices.find(voice => voice.lang === 'tr-TR');
+        if (turkishVoice) {
+            utterance.voice = turkishVoice;
+        }
 
         synth.speak(utterance);
         currentUtterance = utterance;
@@ -224,21 +244,28 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const loadDersNotu = async (dosyaAdi, konuAdi) => {
         try {
-            // Notlarınızı 'konuadi.txt' dosyasında arar
-            const response = await fetch(`${dosyaAdi}.txt`); 
+            // Önce HTML dosyasını dene (Tercih edilen format)
+            let response = await fetch(`${dosyaAdi}.html`);
+            let notIcerigi;
             
             if (!response.ok) {
-                dersNotuIcerik.innerHTML = `<p style="color: red;">'${konuAdi}' dersi için not dosyası (${dosyaAdi}.txt) bulunamadı!</p>`;
-                gosterEkrani(dersNotuEkrani);
-                return;
+                // HTML bulunamazsa, TXT dosyasını dene (Geriye dönük uyumluluk)
+                response = await fetch(`${dosyaAdi}.txt`);
+                if (!response.ok) {
+                    dersNotuIcerik.innerHTML = `<p style="color: red;">'${konuAdi}' dersi için not dosyası (${dosyaAdi}.html veya ${dosyaAdi}.txt) bulunamadı!</p>`;
+                    gosterEkrani(dersNotuEkrani);
+                    return;
+                }
+                notIcerigi = await response.text();
+                // Düz metin ise HTML içine <p> ve <br> ekleyerek görselleştiriyoruz
+                dersNotuIcerik.innerHTML = notIcerigi.replace(/\n\s*\n/g, '</p><p>').replace(/\n/g, '<br>');
+            } else {
+                // HTML dosyası varsa, içeriğini direkt yüklüyoruz
+                notIcerigi = await response.text();
+                dersNotuIcerik.innerHTML = notIcerigi;
             }
             
-            const notIcerigi = await response.text();
-            
             dersNotuBaslik.textContent = `${konuAdi} Ders Notu`;
-            // Yeni satırları HTML <br> etiketine çevirir
-            dersNotuIcerik.innerHTML = notIcerigi.replace(/\n/g, '<br>'); 
-            
             gosterEkrani(dersNotuEkrani);
             
         } catch (error) {
@@ -254,11 +281,11 @@ document.addEventListener('DOMContentLoaded', () => {
             durdurSesliOkuma(); 
 
             let metinParcasi;
-            const selection = window.getSelection().toString().trim();
+            const selection = window.getSelection();
             
-            if (selection.length > 0) {
+            if (selection.toString().trim().length > 0) {
                  // Durum 1: Kullanıcı metin seçtiyse, sadece onu oku.
-                 metinParcasi = selection; 
+                 metinParcasi = selection.toString(); 
             } else {
                  // Durum 2: Kullanıcı metin seçmediyse, tıklanan yerden itibaren oku.
                  const tumMetin = dersNotuIcerik.innerText;
@@ -266,14 +293,13 @@ document.addEventListener('DOMContentLoaded', () => {
                  let tiklananMetin = '';
                  
                  // Tıklanan öğenin içeriğini almaya çalışıyoruz
+                 // Eğer element değilse (saf metin düğümü) veya ders notu div'i ise
                  if(e.target.nodeType === 1 && e.target.tagName !== 'DIV') { 
-                    // Tıklanan bir HTML öğesi ise (e.g. metin bir span veya p içindeyse)
                     tiklananMetin = e.target.innerText;
                  } else if (e.target.nodeType === 3) {
-                     // Tıklanan yer saf metin düğümü ise
                      tiklananMetin = e.target.textContent;
                  } else {
-                     // Tıklanan yer container div'in kendisiyse veya undefined ise, tümünü oku (varsayılan)
+                     // Tıklanan yer container div'in kendisiyse
                      tiklananMetin = tumMetin;
                  }
                  
@@ -282,11 +308,11 @@ document.addEventListener('DOMContentLoaded', () => {
                  // Tıklanan metnin tüm içerik içindeki başlangıç indexini bul
                  const startIndex = tumMetin.indexOf(tiklananMetin);
                  
-                 // Başlangıç indexi bulunmuşsa ve metin yeterince uzunsa, o noktadan itibaren oku
-                 if (startIndex !== -1 && startIndex < tumMetin.length - 5) { 
+                 // Başlangıç indexi bulunmuşsa, o noktadan itibaren oku
+                 if (startIndex !== -1 && tiklananMetin.length > 5) { // En az 5 karakterlik metin bulmuşsak devam et
                     metinParcasi = tumMetin.substring(startIndex).trim();
                  } else {
-                    metinParcasi = tumMetin; // Bulunamazsa/boşsa tümünü oku
+                    metinParcasi = tumMetin; // Bulunamazsa/çok kısaysa tümünü oku (Başlangıç davranışı)
                  }
             }
             
@@ -295,6 +321,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // YENİ: Okuma Hızı Kontrol Dinleyicisi
+    if (readingSpeedControl) {
+        readingSpeedControl.addEventListener('input', (e) => {
+            currentSpeed = parseFloat(e.target.value);
+            currentSpeedSpan.textContent = `${currentSpeed.toFixed(1)}x`;
+            
+            // Eğer şu anda konuşma varsa, hızı uygulamak için durdurup yeniden başlat
+            if (synth.speaking && currentUtterance) {
+                const metin = currentUtterance.text;
+                durdurSesliOkuma();
+                // Not: Hız ayarı baslatSesliOkuma içinde zaten okunur.
+                baslatSesliOkuma(metin); 
+            }
+        });
+        // Başlangıç değerini ayarla
+        currentSpeedSpan.textContent = `${parseFloat(readingSpeedControl.value).toFixed(1)}x`;
+    }
+
 
     // Sesli Okumayı Durdurma Butonu Dinleyicisi
     if (sesliOkumayiDurdurButton) {
@@ -594,5 +639,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Paylaşma İkonu dinleyicisi
     paylasIcon.addEventListener('click', shareScreenshot);
-
+    
+    // Sesleri yükle (Tarayıcının sesleri tanıması için gerekli)
+    if (synth.onvoiceschanged !== undefined) {
+        synth.onvoiceschanged = baslatSesliOkuma;
+    }
 });
