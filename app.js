@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeQuestionListModal = document.getElementById('closeQuestionListModal');
     const questionListContainer = document.getElementById('questionList');
     
-    // YENİ DERS NOTU ELEMENTLERİ (Önceki yanıtta HTML'e eklendiği varsayılmıştır)
+    // YENİ DERS NOTU ELEMENTLERİ
     const dersNotuEkrani = document.getElementById('dersNotuEkrani');
     const dersNotuBaslik = document.getElementById('dersNotuBaslik');
     const dersNotuIcerik = document.getElementById('dersNotuIcerik');
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
     paylasIcon.addEventListener('click', shareScreenshot);
 
 
-    // --- SESLİ OKUMA VE DERS NOTU YÖNETİMİ (YENİ EKLEME) ---
+    // --- SESLİ OKUMA VE DERS NOTU YÖNETİMİ ---
     
     const durdurSesliOkuma = () => {
         if (synth.speaking) {
@@ -248,18 +248,46 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
     
-    // Tıklanan Yerden Okumayı Başlatma Dinleyicisi
+    // Tıklanan Yerden Okumayı Başlatma Dinleyicisi (DÜZELTİLMİŞ)
     if (dersNotuIcerik) {
         dersNotuIcerik.addEventListener('click', (e) => {
-            // Metin seçimi var mı kontrol et
-            let selection = window.getSelection();
+            durdurSesliOkuma(); 
+
             let metinParcasi;
-    
-            if (selection.toString().length > 0) {
-                metinParcasi = selection.toString();
+            const selection = window.getSelection().toString().trim();
+            
+            if (selection.length > 0) {
+                 // Durum 1: Kullanıcı metin seçtiyse, sadece onu oku.
+                 metinParcasi = selection; 
             } else {
-                // Seçim yoksa, tüm metni okumak için
-                metinParcasi = dersNotuIcerik.innerText;
+                 // Durum 2: Kullanıcı metin seçmediyse, tıklanan yerden itibaren oku.
+                 const tumMetin = dersNotuIcerik.innerText;
+                 
+                 let tiklananMetin = '';
+                 
+                 // Tıklanan öğenin içeriğini almaya çalışıyoruz
+                 if(e.target.nodeType === 1 && e.target.tagName !== 'DIV') { 
+                    // Tıklanan bir HTML öğesi ise (e.g. metin bir span veya p içindeyse)
+                    tiklananMetin = e.target.innerText;
+                 } else if (e.target.nodeType === 3) {
+                     // Tıklanan yer saf metin düğümü ise
+                     tiklananMetin = e.target.textContent;
+                 } else {
+                     // Tıklanan yer container div'in kendisiyse veya undefined ise, tümünü oku (varsayılan)
+                     tiklananMetin = tumMetin;
+                 }
+                 
+                 tiklananMetin = tiklananMetin.trim();
+
+                 // Tıklanan metnin tüm içerik içindeki başlangıç indexini bul
+                 const startIndex = tumMetin.indexOf(tiklananMetin);
+                 
+                 // Başlangıç indexi bulunmuşsa ve metin yeterince uzunsa, o noktadan itibaren oku
+                 if (startIndex !== -1 && startIndex < tumMetin.length - 5) { 
+                    metinParcasi = tumMetin.substring(startIndex).trim();
+                 } else {
+                    metinParcasi = tumMetin; // Bulunamazsa/boşsa tümünü oku
+                 }
             }
             
             if (metinParcasi && metinParcasi.trim().length > 0) {
@@ -302,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (action === 'geri') {
                 gosterEkrani(konuSecimEkrani);
-            } else if (action === 'dersnotu') { // YENİ AKSİYON
+            } else if (action === 'dersnotu') { // DERS NOTU AKSİYONU
                 loadDersNotu(aktifKonuDosyasi, konuAdi);
             } else {
                 // SINAV veya ÖĞRENME MODU
